@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://help.complib.org/methods/adding_methods/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Adding methods - Complib Help</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Adding methods";
+        var mkdocs_page_input_path = "methods/adding_methods.md";
+        var mkdocs_page_url = "/methods/adding_methods/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Complib Help
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Introduction</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../concepts/">Core concepts</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Methods</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../overview/">Method pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../blueline_options/">Customising the blue line</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../method_properties/">Understanding method properties</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Adding methods</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#the-add-method-page">The add method page</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#validating-methods-method-errors-warnings">Validating methods, method errors &amp; warnings</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#method-errors">Method errors</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#warnings-and-other-messages">Warnings and other messages</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#things-to-consider-when-naming-methods">Things to consider when naming methods</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#private-and-public-methods">Private and public methods</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#sharing-private-methods-via-link">Sharing private methods via link</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sharing-private-methods-via-published-compositions">Sharing private methods via published compositions</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#editing-and-deleting-methods">Editing and deleting methods</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#linking-bellboard-performances">Linking Bellboard performances</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../place_notation/">Place notation</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Compositions</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../compositions/overview/">Composition pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../compositions/layout_options/">Customising composition layouts</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Collections</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../collections/overview/">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Searching Complib</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../search/basic/">Search by title or filter</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../search/extended/">Extended search</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Advanced Topics</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/row_parity/">Row parity</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/leadhead_codes/">Leadhead codes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/extensions/">Extensions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/fch_groups/">False coursehead (FCH) groups</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Additional Info</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../about/">About</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Complib Help</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Methods</li>
+      <li class="breadcrumb-item active">Adding methods</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="adding-methods">Adding Methods</h1>
+<p>Complib gives registered users the ability to create custom methods.</p>
+<p>To get started, click on <strong>Create new &gt; New method</strong> in the navbar or dropdown menu:</p>
+<p><img alt="Navbar Create New" src="../../img/navbar_create_new.png" width="300" />
+<img alt="Dropdown Menu Create New" src="../../img/dropdown_menu_create_new.png" width="300" /></p>
+<h2 id="the-add-method-page">The add method page</h2>
+<p><img alt="Add Method Page" src="../../img/add_method_page.png" width="500" /></p>
+<p>The add method page has a number of fields which allow you to specify certain properties of your custom method. These are:</p>
+<dl>
+<dt>Name (optional)</dt>
+<dd>The desired name for your custom method. This will be used by Complib to generate the method's full title. See <a href="#things-to-consider-when-naming-methods">Things to consider when naming methods</a> for advice on choosing a name for your custom method.</dd>
+</dl>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>While the name field is optional, it is strongly recommended that you give every custom method a name. This will allow you to search for it more easily later.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Complib automatically appends the method's classification and stage to its name. As such, you should not add classification- or stage-specific words such as <code>Treble Bob</code> or <code>Caters</code> to the name field.</p>
+</div>
+<dl>
+<dt>Stage (required)</dt>
+<dd>The stage at which the method is to be rung. Complib supports methods on up to twenty-eight bells.</dd>
+<dt>Place Notation (required)</dt>
+<dd>The method's place notation. This can be specified in either full or condensed form. When verifying the method, Complib will automatically condense the place notation as much as possible. To learn how to use place notation, see <a href="../place_notation/">Place notation</a>.</dd>
+<dt>Division Ends (optional)</dt>
+<dd>For methods requiring divisions, specifies the rows at the ends of each division. If the method has multiple divisions per lead, the corresponding division end rows should be separated with a colon (e.g., <code>2:8</code>).</dd>
+<dt>Notes (optional)</dt>
+<dd>Specifies a message to be displayed in the <strong>Library Details</strong> tab of the custom method's page. This is a good place to put any important information about the method which you may want to keep to hand.</dd>
+</dl>
+<h2 id="validating-methods-method-errors-warnings">Validating methods, method errors &amp; warnings</h2>
+<p>Complib will automatically attempt to validate a custom method as soon as its place notation is specified. If the provided place notation is valid, the custom method's full name, diagram and properties will be generated and displayed. Clicking the <code>Validate</code> button will force a re-validation.</p>
+<p>If the custom method is successfully validated, clicking the <code>Save</code> button will save the custom method as a <strong>private method</strong>.</p>
+<h3 id="method-errors">Method errors</h3>
+<p><img alt="Method error message" src="../../img/method_error_message.png" /></p>
+<p>If Complib encounters a problem when attempting to validate a custom method, an error message will be displayed. <strong>All errors must be cleared before a custom method can be saved.</strong></p>
+<p>There are a number of different error types:</p>
+<div class="admonition error">
+<p class="admonition-title">Error: Place notation <code>_</code> is invalid for stage...</p>
+</div>
+<p>The identified element of place notation is not valid for the specified stage. Usually this means that the place specified in the place notation element does not exist at this stage. For example, attempting to validate the element <code>18</code> at stages lower than <code>Major</code> will generate this error.</p>
+<div class="admonition error">
+<p class="admonition-title">Error: Method title already used...</p>
+</div>
+<p>The title generated for the custom method conflicts with the title of an already existing method. The custom method's name must be altered so that the generated title is unique.</p>
+<div class="admonition error">
+<p class="admonition-title">Error: Method place notation already exists as...</p>
+</div>
+<p>The specified place notation is identical to that of an already existing method. The custom method's place notation must be altered so that it is unique.</p>
+<div class="admonition error">
+<p class="admonition-title">Error: Method cannot be classified... </p>
+</div>
+<p>Complib cannot parse the specified place notation. This happens when the specified place notation does not conform to one of the accepted Method XML formats, or is empty. See <a href="../place_notation/">Place notation</a> to learn more about the place notations that Complib can accept.</p>
+<div class="admonition error">
+<p class="admonition-title">Error: Division Ends must be positive and less than the lead length.</p>
+</div>
+<p>The specified division ends exceed the bounds of the method's lead. The division ends must be rows within the lead length of the method as determined from its place notation.</p>
+<div class="admonition error">
+<p class="admonition-title">Error: Division Ends must be unique.</p>
+</div>
+<p>For custom methods with multiple divisions, two or more of the specified division ends are identical. All division ends must be unique rows within the method's lead.</p>
+<h3 id="warnings-and-other-messages">Warnings and other messages</h3>
+<p>If method validation is successful, Complib may display a number of warnings and other messages. These are designed to notify you of any additional information you may wish to take into account when naming your custom method. This information may be redundant.</p>
+<p>Unlike <a href="#method-errors">method errors</a>, warnings and other alerts will not prevent you from saving a custom method. Some of the warnings and other messages you may encounter include:</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning: Method title already used at a different stage...</p>
+</div>
+<p>The custom method's generated title is identical to another method of the same class but differing stage. The current Central Council Framework requires that such methods belong to one of the accepted <strong>extension paths</strong> (see <a href="../../advanced/extensions/">Extensions</a>). While you can save a custom method which does not belong to an accepted extension path, the method will not be able to be accepted under that name when rung.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning: Method is related to <code>___</code> as a <code>___</code> extension...</p>
+</div>
+<p>The custom method's place notation can be obtained from an existing method by following one of the accepted extension paths. When this happens, you may wish to give the custom method the same name as the existing method, provided that another method with that name does not already exist at the same stage as the custom method. </p>
+<div class="admonition note">
+<p class="admonition-title">Information: Method is related to <code>___</code>...</p>
+</div>
+<p>The custom method is related to an existing method at the same stage. This occurs when the custom method is a <strong>halflead/leadend</strong> variant, or a <strong>Single/Double/Reverse</strong> form of the existing method. See <a href="../overview/#related-methods">Method pages &gt; Related methods</a> for more information about method relationships.</p>
+<h2 id="things-to-consider-when-naming-methods">Things to consider when naming methods</h2>
+<div class="admonition tip">
+<p class="admonition-title">Definition: Method names, titles, etc.</p>
+<p>A method's <strong>title</strong> is its full descriptive designation, which consists of its <strong>name</strong>, its <strong>class</strong>, and its <strong>stage</strong>, given in that order.</p>
+</div>
+<p>It is a long-standing tradition of change ringing that anyone can name a method that has not been rung and named before. When deciding on a name for a custom method, there are a number of things you may wish to bear in mind. While the following guildelines allow a degree of flexibility (with some exceptions), they are widely accepted rules of thumb within the Exercise.</p>
+<ol>
+<li>
+<dl>
+<dt>A method's name should be unique.</dt>
+<dd>Two methods cannot share the same title. Two methods at differing stages cannot share the same name and class, with the exception of methods that are accepted as belonging to the same <strong>extension path</strong>.</dd>
+</dl>
+</li>
+<li>
+<dl>
+<dt>A method's name should be human-readable and pronounceable.</dt>
+<dd>A method's name should be something that a human being can read and say aloud. As such, method names should not consist exclusively of punctuation, numerals or other symbols. </dd>
+</dl>
+</li>
+<li>
+<dl>
+<dt>A method's name should not contain offensive or abusive language.</dt>
+<dd>The Exercise of change ringing is for everyone. As such, method names which are <strong>offensive</strong> or which contain terms considered to be <strong>hate speech</strong> are extremely likely to be rejected outright, and methods rung under such names will be forcibly renamed before they can be accepted into the Central Council's Method Library.</dd>
+<dd>While not a formal requirement, it is also worth considering the value of <strong>good taste</strong> when naming methods. The precise determination of this is, of course, subjective.</dd>
+</dl>
+</li>
+<li>
+<dl>
+<dt>A method has not been officially named until it is rung.</dt>
+<dd>According to tradition, the initial right to determine a method's name is afforded to the band which first rings it in a compliant <strong>performance</strong>. A custom method which you save to Complib under a certain name may be rung under a different name by someone else, and it is under the latter name that the method will be officially recognised.</dd>
+</dl>
+</li>
+</ol>
+<h2 id="private-and-public-methods">Private and public methods</h2>
+<p>A custom method which is successfully saved to Complib will be designated a <strong>private method</strong> and given its own <a href="../overview/">method page</a>. As noted above, a private method has not been officially named until it is performed and accepted into the Central Council's Method Library. </p>
+<p>When this happens, the method will be automatically added to Complib's <code>CCCBR</code> library. Any private methods which have identical place notation to a newly recognised method will be deleted, and any compositions using such private methods will be automatically changed to use the new public method.</p>
+<h3 id="sharing-private-methods-via-link">Sharing private methods via link</h3>
+<p>Under normal circumstances, a private method is only visible to the user who created it. However, you may wish to share your private methods with other people under certain circumstances. Complib gives you the ability to do this by way of a special link which can be generated via the private method's page.</p>
+<p>To generate the link, click the <strong>Share</strong> button at the top right of the private method's page.</p>
+<p><img alt="Share button" src="../../img/share_button.png" /></p>
+<p>This will open a window containing a link in plaintext form which you can copy to your clipboard.</p>
+<h3 id="sharing-private-methods-via-published-compositions">Sharing private methods via published compositions</h3>
+<p>Another way to share private methods is by <strong>publishing a composition</strong> which includes the private method as part of its definition (see <a href="../../compositions/adding_compositions/">Adding compositions</a> to learn more about adding and publishing compositions).</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Private methods shared via published compositions will be visible to <strong>all registered users</strong>. Please be sure that you are happy with your private method to be widely available before publishing a composition which uses it.</p>
+</div>
+<h2 id="editing-and-deleting-methods">Editing and deleting methods</h2>
+<h2 id="linking-bellboard-performances">Linking Bellboard performances</h2>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../method_properties/" class="btn btn-neutral float-left" title="Understanding method properties"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../place_notation/" class="btn btn-neutral float-right" title="Place notation">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../method_properties/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../place_notation/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
