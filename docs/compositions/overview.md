@@ -122,7 +122,7 @@ For a detailed explanation of the information contained in the properties tab, s
 ## ATW Analysis
 This tab gives an analysis of the work rung by each bell in each method in the composition. It is often the case that ringers will look for a composition which is "all-the-work", meaning that all working bells ring every place bell of every method. On the other hand, a composition which requires knowledge of only a few leads of a method can be useful for those still learning it.
 
-When expanded, the information tab will look something like this:
+When expanded, the tab will look something like this:
 
 ![ATW Analysis example](../img/atw_tab_expanded.png)
 
