@@ -57,6 +57,8 @@ Calling
 
     -   **Number of parts** (for multipart compositions);
     -   **Modifications to the calling** (e.g., calls or methods which change in certain parts);
+    -   **The observation bell**, for compositions in which it is not the highest numbered bell;
+    -   **Turning course definitions**;
     -   **Non-standard starts** (e.g., for compositions beginning at backstroke, or at a point other than the start of a lead/division);
     -   **Non-standard or user-defined calls**: these will be defined in words (e.g. Far, Near, Grandsire) or using [place notation](../methods/place_notation.md).
 
