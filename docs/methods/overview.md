@@ -22,11 +22,14 @@ Find compositions true to this
 Add to collection
 :   Adds the method to a **collection** of your choice (see [Collections](../collections/overview.md)).
 
+Design new (unrung) methods like this
+:   Opens the **method designer** with a new blank method skeleton. The method skeleton will have the same treble path as the method previously being viewed (see [Using the method designer](method_designer.md)).
+
 Clone
 :   Creates a duplicate of the method in the **method editor** which you can then edit (see [Adding methods](adding_methods.md)).
 
 Share
-:   Displays a public link to the method page so it can be shared with others.
+:   Displays a **public link** to the method page so it can be shared with others. For information on what it means for a method to be public, see [Adding methods > Private and public methods](adding_methods.md/#private-and-public-methods).
 
 Export rows
 :   Opens another tab displaying all the **rows** of the method's plain course in plaintext format.
@@ -35,16 +38,16 @@ Printable version
 :   Opens a new tab displaying the contents of the [blue line](#blue-line) tab in a form which is easy to print.
 
 !!! note
-    The `Find compositions true to this`, `Add to collection` and `Clone` buttons are only available to registered Power Users. If you are not logged in, these buttons will not be displayed.
+    The `Find compositions true to this`, `Design new (unrung) methods like this`, `Add to collection` and `Clone` buttons are only available to registered Power Users. If you are not logged in, these buttons will not be displayed.
 
 ## Tabs overview
-The majority of the page is subdivided into various expandable tabs (click on the name of a tab to skip to a detailed description of its contents):
+A method page is subdivided into various expandable tabs (click on the name of a tab to skip to a detailed description of its contents):
 
 [Blue Line](#blue-line)
 :   A visual representation of the method.
 
 [Properties](#properties)
-:   The structural properties of the method, including its **place notation**, **leadhead group**, **extension path** (if applicable) and more. A large amount of this information pertains to the method's **classification**, which derives from the Central Council's [Framework for Method Ringing](https://framework.cccbr.org.uk/version2/index.html).
+:   The structural properties of the method, including its **place notation**, **leadhead group**, **extension path** (if applicable) and more. A large amount of this information relates to the method's **classification**, which derives from the Central Council's [Framework for Method Ringing](https://framework.cccbr.org.uk/version2/index.html).
 
 [Related Methods](#related-methods)
 :   Any methods which are related to the current method, such as **halflead/leadend variants** and methods belonging to the same **extension family** (whether compliant with the Central Council Framework or not).
@@ -125,10 +128,10 @@ More specifically, Complib will determine that two methods are trivial variation
 
 It is important to note that the word trivial is not a value judgement: it does **not** imply that one method is inherently more original or "valuable" than another. It is a purely technical classification which identifies a similarity in their constructions. Indeed, the property of trivial variation is a symmetric relationship: if method B is a trivial variation of method A, then method A is necessarily a trivial variation of method B.
 
-Contrary to the name, a method might differ from its trivial variants in decidedly non-trivial ways. They may not share exactly the same rows, and subsequently may have different false coursehead groups, among other things. A consequence of this is the following:
-
 !!! warning
-    A composition which is true for one method is **not necessarily true** for all (or indeed any) of its trivial variations. You should always check a composition is true for the specific method you wish to ring.
+    A method might differ from its trivial variants in decidedly non-trivial ways. Their plain courses may not have the same rows, and they may have different [false coursehead groups](../advanced/fch_groups.md). 
+    
+    Because of this, a composition which is true to one method is **not necessarily true** to all (or indeed any) of that method's trivial variations. You should always check a composition is true to the specific method you wish to ring.
 
 ## Performances
 ![Performances tab expanded](../img/performances_tab_expanded.png)

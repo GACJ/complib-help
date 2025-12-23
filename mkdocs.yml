@@ -9,19 +9,24 @@ nav:
     - Understanding method properties: methods/method_properties.md
     - Adding methods: methods/adding_methods.md
     - Place notation: methods/place_notation.md
+    - Using the method designer: methods/method_designer.md
   - 'Compositions':
     - Composition pages: compositions/overview.md
     - Customising composition layouts: compositions/layout_options.md
+    - Adding compositions: compositions/adding_compositions.md
+    - Calling positions: compositions/calling_positions.md
   - 'Collections':
     - Overview: collections/overview.md
+    - Adding collections: collections/adding_collections.md 
   - 'Searching Complib':
     - Search by title or filter: search/basic.md
     - Extended search: search/extended.md
   - 'Advanced Topics':
-    - Row parity: advanced/row_parity.md
-    - Leadhead codes: advanced/leadhead_codes.md
     - Extensions: advanced/extensions.md
     - False coursehead (FCH) groups: advanced/fch_groups.md
+    - Leadhead codes: advanced/leadhead_codes.md
+    - Music schemes: advanced/music_schemes.md
+    #- Row parity: advanced/row_parity.md
   - 'Additional Info':
     - About: about.md
 theme: readthedocs
