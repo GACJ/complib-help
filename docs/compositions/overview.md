@@ -117,13 +117,98 @@ The rightmost column lists the number of distinct leads that each handbell pair 
 For spliced compositions, clicking on the name of the handbell pair will further expand the table to show a breakdown by individual method.
 
 ## Properties
+For a detailed explanation of the information contained in the properties tab, see the dedicated page on [Composition properties](composition_properties.md).
 
 ## ATW Analysis
+This tab gives an analysis of the work rung by each bell in each method in the composition. It is often the case that ringers will look for a composition which is "all-the-work", meaning that all working bells ring every place bell of every method. On the other hand, a composition which requires knowledge of only a few leads of a method can be useful for those still learning it.
+
+When expanded, the information tab will look something like this:
+
+![ATW Analysis example](../img/atw_tab_expanded.png)
+
+Here, each column represents the **grid** of one lead of the given method, and gives the analysis for the specified bell.
+
+The numbers in the grid represent **the number of times that the specified bell rings in that position in the method, over the whole composition**. 
+
+The numbers 1 to 9 are represented numerically. Numbers greater than or equal to 10 are denoted by `>`. A red square means the bell **never** rings in that position.
+
+The example above shows the first half of the grid of [Lessness Surprise Major](https://complib.org/method/16808), as rung [in this composition](https://complib.org/composition/24120). Bell 1 is the hunt bell, and only ever rings in the positions described by its hunt path. Bells 2 through 6 are do all the work in the given method, because the only positions they do not ring are those occupied by the hunt bell.
+
+By contrast, Bells 7 and 8 do not do all the work. Bell 7 never rings 4ths place bell, Bell 8 never rings 3rds place bell, and neither of them ring 2nds place bell. The missing place bells can be identified by the positions of the red squares in the first row of the method.
 
 ## Related Compositions
+This tab lists any compositions which are related to the current composition (and which you have access to). Each similarity relation is reciprocal: A is related to B in the same way that B is related to A. There are a number of different ways in which two compositions can be related, and they may be related in multiple ways at once. 
+
+The types of similarity relation are:
+
+Rotated calling
+:   The two compositions define the same sequence of calls, but beginning at different points.
+
+Transposed calling
+:   The two compositions have the same sequence of calls, but with the calling positions transposed.
+
+Reversed calling
+:   The two compositions have callings which are reverses of each other.
+
+Identical calling/changes/rows
+:   The two compositions have identical callings/changes/rows. Compositions related in these ways are effectively the same, although there may still be good reason to document them separately.
 
 ## Performances
+This tab lists any performances of the composition which have been submitted.
+
+![Performances tab expanded](../img/comp_performances_expanded.png)
+
+Each entry has three fields:
+
+Date
+:   The date on which the performance was rung.
+
+Type
+:   Specifies one of a number of performance types:
+
+    - **First rung on towerbells/handbells**: a performance which is recognised as being the first performance of the composition. First performances on towerbells and on handbells are recorded separately. 
+    - **[Length] on towerbells/handbells**: A recognised performance of the specified length (Peal, Quarter Peal, etc.) using the composition, rung on towerbells or handbells.
+
+Details
+:   The published details of the performance: title, performing Guild or Association (if given), location, and conductor (if given). The entry in this field acts as a link to the corresponding Bellboard performance, provided it exists and has been linked to the composition page.
 
 ## References
+This tab lists all collections which you have access to and which reference the current composition (inaccessible private collections will not be displayed). Each entry has four fields, with every entry acting as a link to the relevant Complib page:
+
+Collection
+:   The name of the collection to which the composition belongs.
+
+Chapter (optional)
+:   The chapter of the composition's entry in the collection (if specified).
+
+Page (optional)
+:   The page number of the composition's entry in the collection (if specified).
+
+Reference (optional)
+:   In the case that the collection is **referenced** by a certain index, the corresponding reference for the composition within the collection.
+
+For more on references and how they relate to collections, see [Collections](../collections/overview.md).
 
 ## Library Details
+This tab lists some of the method's Complib-specific metadata.
+
+Library
+:   The [library](../concepts.md/#the-libraries) which contains the composition. The only two libraries for compositions are `Public` and `Private`.
+
+Notes
+:   Any notes provided by the compositions's publisher.
+
+Composition Id
+:   The composition's numerical ID. This is the number featured at the end of a composition page's URL.
+
+Created on
+:   The date and time at which the composition was created and the name of the user who created it.
+
+!!! note
+    Times and dates are given in Coordinated Universal Time (UTC).
+
+Modified on
+:   The date and time at which the composition was last modified and the name of the user who modified it.
+
+Published on
+:   The date and time at which the composition was made public.

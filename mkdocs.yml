@@ -6,13 +6,14 @@ nav:
   - 'Methods': 
     - Method pages: methods/overview.md
     - Customising the blue line: methods/blueline_options.md
-    - Understanding method properties: methods/method_properties.md
+    - Method properties: methods/method_properties.md
     - Adding methods: methods/adding_methods.md
     - Place notation: methods/place_notation.md
     - Using the method designer: methods/method_designer.md
   - 'Compositions':
     - Composition pages: compositions/overview.md
     - Customising composition layouts: compositions/layout_options.md
+    - Composition properties: compositions/composition_properties.md
     - Adding compositions: compositions/adding_compositions.md
     - Calling positions: compositions/calling_positions.md
   - 'Collections':

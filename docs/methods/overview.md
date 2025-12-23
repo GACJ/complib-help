@@ -75,7 +75,7 @@ The appearance of the blue line display is highly customisable. For more informa
 
 ## Properties
 ![Properties tab expanded](../img/method_properties_tab_expanded.png)
-For an explanation of the information contained in the properties tab, see [Understanding method properties](method_properties.md/#the-properties-tab).
+For an explanation of the information contained in the properties tab, see the dedicated page on [Method properties](method_properties.md/#the-properties-tab).
 
 ## Related methods
 ![Related methods tab expanded](../img/related_methods_tab_expanded.png)

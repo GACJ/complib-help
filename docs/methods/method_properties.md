@@ -1,4 +1,4 @@
-# Understanding method properties
+# Method properties
 When a method is added to Complib, various properties of the method are determined in order to classify it, as well as highlight any of its notable features. These properties are displayed in the method page's **properties tab**.
 
 ## The properties tab
