@@ -87,10 +87,34 @@ There are a number of blue line options which are unique to compositions. These 
     
     The blue line display will also auto-resize to fit the width of your browser window. For longer compositions on higher numbers, this may result in bell numbers which are very small.
 
-
 ## Music Score
+This tab calculates a numerical score for the composition based on the various metrics, or **tests**, specified in a **music scheme**. The table in the tab provides a breakdown of this score: for each applicable test, the number of rows in the composition which satisfy the test is given.
+
+![Example Music Score table](../img/music_score_table.png)
+
+The music scheme used to calculate the score can be changed via the dropdown menu at the top right of the tab. 
+
+!!! warning
+    If the selected music scheme has no **applicable tests** which can be scored against, then the Music Score tab will be left empty.
+
+Clicking on a test will expand that test further:
+
+![Expanded Music Score test](../img/music_score_table_expanded.png)
+
+Most of the tests are self explanatory. For a full description, together with information about how to define your own tests, see [Music schemes](../advanced/music_schemes.md).
 
 ## Handbell Positions
+For handbell ringers, it is often useful to know what **positions** your two bells are in relative to each other. Each handbell pair has a corresponding position (e.g 3-4 position) which is uniquely determined by what that pair does in the **plain course**.
+
+When expanded, the tab displays a table:
+
+![Handbell Positions Table](../img/handbell_positions_table.png)
+
+Down the left hand side of the table is listed each handbell pair. The column headings give the corresponding positions. The table entries specify how long the given handbell pair spends in that position, both as a number of leads and as a percentage of the whole composition.
+
+The rightmost column lists the number of distinct leads that each handbell pair rings throughout the composition. This is used to calculate the relative **simplicity** of the composition for a given handbell pair.
+
+For spliced compositions, clicking on the name of the handbell pair will further expand the table to show a breakdown by individual method.
 
 ## Properties
 
