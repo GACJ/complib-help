@@ -10,31 +10,37 @@ At the top of the page is the composition's user-defined **title**, and its **st
 ## Toolbar
 To the right of the composition title and rating is the **toolbar**:
 
-![Composition toolbar](../img/comp_toolbar.png)
+![Composition toolbar](../img/comp_toolbar_custom.png)
 
-The toolbar buttons can be identified by hovering over them. They are, from left to right:
+The toolbar buttons can be identified by hovering over them. Some of the toolbar buttons **may not be visible on every method page**, and to every user. The buttons are, from left to right:
 
-Find methods true to this
-:   Begins an [extended search](../search/extended.md) of methods in the Composition Library to determine which ones are true to this composition. This search will include any [private methods](../methods/adding_methods.md/#private-and-public-methods) you have defined.
+![Icon: find true to this](../img/icon_findtrueto.png){width="50"} Find methods true to this
+:   Begins an [extended search](../search/extended.md) of methods in the Composition Library to determine which ones are true to this composition. This search will include any [private methods](../methods/adding_methods.md/#private-and-public-methods) you have defined. Only available to registered Power Users.
 
-Add to collection
+![Icon: add to collection](../img/icon_addtocollection.png){width="50"} Add to collection
 :   Adds the composition to a [collection](../collections/overview.md) of your choice.
 
-Clone
-:   Creates a duplicate of the composition on the **Add composition** page, which you can then edit (see [Creating a new composition](adding_compositions_overview.md)).
+![Icon: publish](../img/icon_publish.png){width="50"} Publish
+:   Publishes the composition to the `public` library. Only available to registered users, for compositions which you own.
 
-Share
+![Icon: clone](../img/icon_clone.png){width="50"} Clone
+:   Creates a duplicate of the composition on the **Add composition** page, which you can then edit (see [Creating a new composition](adding_compositions_overview.md)). Only available to registered users.
+
+![Icon: edit](../img/icon_edit.png){width="50"} Edit
+:   Opens the composition in the **composition editor**. Only available to registered users, when viewing a private composition which you own.
+
+![Icon: share](../img/icon_share.png){width="50"} Share
 :   Displays a public link to the composition page so it can be shared with others. 
 
     !!! note
         The composition will be visible via the link **regardless of whether the composition itself is public**. This is useful if you want to share a composition without publishing it.
         
-        See [Creating a new composition > Private and public compositions](adding_compositions_overview.md/#private-and-public-compositions) for more information on what it means for a composition to be public or private.
+        See [Creating a new composition > Publishing compositions](adding_compositions_overview.md/#publishing-compositions) for more information on what it means for a composition to be public or private.
 
-Export rows
+![Icon: export rows](../img/icon_exportrows.png){width="50"} Export rows
 :   Opens a new browser tab containing the pricked rows of the composition in plaintext form.
 
-Printable version
+![Icon: print](../img/icon_print.png){width="50"} Printable version
 :   Opens a new browser tab which displays the human-readable layout of the composition in a form that's easy to print. Its appearance is determined by the currently configured [composition layout options](layout_options.md).
 
 ## Tabs overview
@@ -104,6 +110,16 @@ Music
 
 Customise layout options
 :   Users can adjust the form and style of the layout to suit a wide variety of needs and preferences (see [Customising composition layouts](layout_options.md)).
+
+### Layout colour coding
+Various elements of the composition layout will change colour when displaying a composition which is false. The specific elements which change colour will depend on the format of the layout.
+
+Course/leadheads in magenta (![False course in magenta](../img/false_course_magenta.png){ width="50" }) indicate that the course/lead contains a row which is false against another row which appears later in the composition.
+
+Course/leadheads in red (![False course in red](../img/false_course_red.png){ width="50" }) indicate that either: 
+
+- The course/lead contains a row which is false against another row which appears earlier in the composition; or 
+- The course/lead is false against itself.
 
 ## Blue Line
 When expanded, this tab will render all the rows of the composition in accordance with the configured **blue line options**. By default, it should look something like this:

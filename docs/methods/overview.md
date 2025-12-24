@@ -12,33 +12,33 @@ The method's **title** is displayed at the top. If this title has changed since 
 
 To the side of the method's title is the **toolbar**:
 
-![Toolbar buttons](../img/method_toolbar_user.png)
+![Toolbar buttons](../img/method_toolbar_custom.png)
 
-The toolbar buttons can be identified by hovering over them. They are, from left to right:
+The toolbar buttons can be identified by hovering over them. Some of the toolbar buttons **may not be visible on every method page**, and to every user. The buttons are, from left to right:
 
-Find compositions true to this
-:   Begins an **extended search** of compositions in the Composition Library to determine which ones can be rung with this method (see [Extended searches](../search/extended.md)). The search will include any [private compositions](../compositions/adding_compositions_overview.md/#private-and-public-compositions) you have defined.
+![Icon: find true to this](../img/icon_findtrueto.png){width="50"} Find compositions true to this
+:   Begins an **extended search** of compositions in the Composition Library to determine which ones can be rung with this method (see [Extended searches](../search/extended.md)). The search will include any [private compositions](../compositions/adding_compositions_overview.md/#publishing-compositions) you have defined. Only available to Power Users.
 
-Add to collection
-:   Adds the method to a **collection** of your choice (see [Collections](../collections/overview.md)).
+![Icon: add to collection](../img/icon_addtocollection.png){width="50"} Add to collection
+:   Adds the method to a **collection** of your choice (see [Collections](../collections/overview.md)). Only available to registered users.
 
-Design new (unrung) methods like this
-:   Opens the **method designer** with a new blank method skeleton. The method skeleton will have the same treble path as the method previously being viewed (see [Using the method designer](method_designer.md)).
+![Icon: design unrung method](../img/icon_designnewmethod.png){width="50"} Design new (unrung) methods like this
+:   Opens the **method designer** with a new blank method skeleton. The method skeleton will have the same hunt bell path as the method currently being viewed (see [Using the method designer](method_designer.md)). Only available to registered users.
 
-Clone
-:   Creates a duplicate of the method on the **Add method** page which you can then edit (see [Adding methods](adding_methods.md)).
+![Icon: clone](../img/icon_clone.png){width="50"} Clone
+:   Creates a duplicate of the method on the **Add method** page which you can then edit (see [Adding methods](adding_methods.md)). Only available to registered users.
 
-Share
+![Icon: edit](../img/icon_edit.png){width="50"} Edit
+:   Opens the method in the **method editor**. Only available registered users when viewing a private method which you own.
+
+![Icon: share](../img/icon_share.png){width="50"} Share
 :   Displays a **public link** to the method page so it can be shared with others. For information on what it means for a method to be public, see [Adding methods > Private and public methods](adding_methods.md/#private-and-public-methods).
 
-Export rows
-:   Opens another tab displaying all the **rows** of the method's plain course in plaintext format.
+![Icon: export rows](../img/icon_exportrows.png){width="50"} Export rows
+:   Opens a new browser tab displaying all the **rows** of the method's plain course in plaintext format.
 
-Printable version
-:   Opens a new tab displaying the contents of the [blue line](#blue-line) tab in a form which is easy to print.
-
-!!! note
-    The `Find compositions true to this`, `Design new (unrung) methods like this`, `Add to collection` and `Clone` buttons are only available to registered Power Users. If you are not logged in, these buttons will not be displayed.
+![Icon: print](../img/icon_print.png){width="50"} Printable version
+:   Opens a new browser tab displaying the contents of the [blue line](#blue-line) tab in a form which is easy to print.
 
 ## Tabs overview
 A method page is subdivided into various expandable tabs (click on the name of a tab to skip to a detailed description of its contents):
@@ -115,18 +115,18 @@ Non-conforming extensions
 ![Trivial variations tab expanded](../img/trivial_variations_tab_expanded.png)
 This tab lists all named methods which are related to the current method by means of a **trivial variation**, together with their place notations. Trivial variations are ways of slightly altering the blue line of a method without changing its overall structure.
 
-![Trivial Variation Example](../img/variation_example.png)
+![Trivial Variation Example](../img/variation_example.png){width="400"}
 
 The image above shows the first leads of [Yorkshire Surprise Major](https://complib.org/method/17060) (left) and [Quedgeley Surprise Major](https://complib.org/method/17064) (right), which are trivial variations of each other. It can be seen by inspection that the two are almost identical, with only slight differences in the blue line.
 
-More specifically, Complib will determine that two methods are trivial variations if the following conditions all hold:
+Complib will determine that two methods are trivial variations if the following conditions all hold:
 
 1. There is a sequence of changes in the lead where the same two bells are working together in both methods; AND
 2. The bells are in the same relative position at the start of the sequence in both methods; AND
 3. The bells are in the same relative position at the end of the sequence in both methods; AND
 4. The methods differ only by sequences satisfying conditions 1-3.
 
-It is important to note that the word trivial is not a value judgement: it does **not** imply that one method is inherently more original or "valuable" than another. It is a purely technical classification which identifies a similarity in their constructions. Indeed, the property of trivial variation is a symmetric relationship: if method B is a trivial variation of method A, then method A is necessarily a trivial variation of method B.
+The word "trivial" is not a value judgement: it does not imply that one method is inherently more original or valuable than another. It is a purely technical classification which describes a similarity between them. Indeed, the property of trivial variation is a symmetric relationship: if method B is a trivial variation of method A, then method A is necessarily a trivial variation of method B.
 
 !!! warning
     A method might differ from its trivial variants in decidedly non-trivial ways. Their plain courses may not have the same rows, and they may have different [false coursehead groups](https://framework.cccbr.org.uk/version2/falsecourseheads.html). 
@@ -151,7 +151,7 @@ Type
     Performances are further typified by whether they were rung on towerbells or handbells.
 
 !!! note
-    There is an order of priority within performance types, which broadly corresponds with length. A performance is typically only included if no performance of that length or greater has been recorded prior to that date. Once a performance of greater length has been recorded, shorter performances from after that date will no longer be added (but will be retained if added previously). The exception to this is **long lengths**, which will always be recorded. The precedence is, in descending order:
+    There is an order of priority within performance types, which broadly corresponds with length. The priority order is, from highest to lowest:
 
     1. Long length
     2. First peal
@@ -159,6 +159,8 @@ Type
     4. First quarter peal
     5. First inclusion in a quarter peal
     6. First extent
+
+    A performance is typically only included if no performance of that length or greater has been recorded prior to that date. Once a performance of greater length has been recorded, shorter performances from after that date will no longer be added (but will be retained if added previously). The exception to this is **long lengths**, which will always be recorded. 
 
 Details
 :   The published details of the performance: title, performing Guild or Association (if given), location, and conductor (if given). The entry in this field acts as a link to the corresponding Bellboard performance, provided it exists and has been linked to the method page.

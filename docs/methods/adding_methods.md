@@ -87,7 +87,7 @@ The custom method is related to an existing method at the same stage. This occur
 !!! tip "Definition: Method names, titles, etc."
     A method's **title** is its full descriptive designation, which consists of its **name**, its **class**, and its **stage**, given in that order.
 
-It is a long-standing tradition of change ringing that anyone can name a method that has not previously been named subsequent to a qualifying performance. When deciding on a name for a custom method, there are a number of things you may wish to bear in mind. While the following guidelines allow a degree of flexibility (with some exceptions), they are widely accepted rules of thumb within the Exercise.
+It is a long-standing tradition of change ringing that anyone can name a method that has not previously been named subsequent to a qualifying performance. You are able to give a custom method on Complib any name you like. However, if you intend to ring and name a method in a qualifying performance, you should bear the following points in mind:
 
 1. A method's name should be unique.
 :   Two methods cannot share the same title. Two methods at differing stages cannot share the same name and class, with the exception of methods that are accepted as belonging to the same **extension path**, or methods whose class is not expressed as part of its title (e.g. hybrid methods and principles).
@@ -96,53 +96,43 @@ It is a long-standing tradition of change ringing that anyone can name a method 
 :   A method's name should be something that a human being can read and say aloud. As such, method names should not consist exclusively of punctuation, numerals or other symbols. 
 
 3. A method's name should not contain offensive or abusive language.
-:   The Exercise of change ringing is for everyone. As such, method names which are **offensive** or which contain terms considered to be **hate speech** are extremely likely to be rejected outright, and methods rung under such names will be forcibly renamed before they can be accepted into the Central Council's Method Library.
-:   While not a formal requirement, it is also worth considering the value of **good taste** when naming methods. The precise determination of this is, of course, subjective.
+:   The Central Council reserves the right to rename methods before they can be accepted into the Central Council's Method Library. Method names which are offensive or which contain terms considered to be hate speech are extremely likely to be rejected outright. 
+:   While not a formal requirement, it is also worth considering the value of good taste when naming methods. The precise determination of this is, of course, subjective.
 
 4. A method has not been officially named until it is rung.
 :   According to tradition, the initial right to determine a method's name is afforded to the band which first rings it in a compliant **performance**. A custom method which you save to Complib under a certain name may be rung under a different name by someone else, and it is under the latter name that the method will be officially recognised.
 
-You are of course welcome to give a custom method on Complib any name you like. However, if you intend to ring and name a method in a qualifying performance which will be published, it will be expected that you bear these guidelines (or something akin to them) in mind.
+For a full explanation of the requirements for method names, see [Section 5](https://framework.cccbr.org.uk/version2/naming.html) of the Central Council Framework for Method Ringing.
 
 ## Private and public methods
-A custom method which is successfully saved to Complib will be designated a **private method** and given its own [method page](overview.md). As noted above, a private method has not been officially named until it is performed and accepted into the Central Council's Method Library. 
+A custom method which is successfully saved to Complib will be designated a **private method** and given its own [method page](overview.md). A private method has not been officially named until it is performed and accepted into the Central Council's Method Library.
 
 When this happens, the method will be automatically added to Complib's `CCCBR` library. Any private methods which have identical place notation to a newly recognised method will be deleted, and any compositions using such private methods will be automatically changed to use the new public method.
 
 ### Sharing private methods via link
 Under normal circumstances, a private method is only visible to the user who created it. However, you may wish to share your private methods with other people under certain circumstances. Complib gives you the ability to do this by way of a special link which can be generated via the private method's page.
 
-To generate the link, click the **Share** button at the top right of the private method's page.
-
-![Share button](../img/share_button.png)
-
-This will open a window containing a link in plaintext form which you can copy to your clipboard.
+To generate the link, click the ![Icon: share](../img/icon_share.png){width="25"}share button in the toolbar on the private method's page. This will open a window containing a link which you can copy to your clipboard.
 
 ### Sharing private methods via published compositions
-Another way to share private methods is by **publishing a composition** which includes the private method as part of its definition (see [Adding compositions](../compositions/adding_compositions_overview.md) to learn more about adding and publishing compositions).
+Another way to share private methods is by [publishing a composition](../compositions/adding_compositions_overview.md/#publishing-compositions) which includes the private method as part of its definition.
 
 !!! warning
     Private methods shared via published compositions will be visible to **all registered users**, though they will not appear in method searches to anyone other than their owners. Please be sure that you are happy with your private method to be widely available before publishing a composition which uses it.
 
 ## Editing and deleting methods
-To edit a custom method, click on the edit button in the toolbar:
-
-![The edit button](../img/edit_button.png)
-
-This will open the method in the editor, allowing you to change the name, place notation and other aspects of the method as if you were creating it afresh.
+To edit a custom method, click on the ![Icon: edit](../img/icon_edit.png){width="25"}edit button in the toolbar. This will open the method in the editor, allowing you to change the name, place notation and other aspects of the method as if you were creating it afresh.
 
 !!! warning
-    Be careful about editing custom methods which feature in compositions you have saved. Changing the method's place notation or stage will likely invalidate the compositions in question. **Complib does not check to see if any of your private or public compositions will be affected by an alteration made to a custom method.** You must make sure to take care of any such cases yourself.
+    Be careful about editing custom methods which feature in compositions you have saved, as changing the method's place notation or stage will likely invalidate them. 
+    
+    **Complib does not check to see if any of your private or public compositions will be affected by an alteration made to a custom method.** You must take care of any such cases yourself.
 
-To delete a custom method, click on the delete button:
-
-![The delete button](../img/delete_button.png)
-
-This will bring up a prompt asking you to confirm that you want to delete the method. If you are sure, clicking on **Confirm Delete** will mark the custom method for deletion and remove it from your private methods.
+To delete a custom method, click on the ![Icon: delete](../img/icon_delete.png){width="25"}delete button in the toolbar. This will bring up a prompt asking you to confirm that you want to delete the method. If you are sure, clicking on **Confirm Delete** will mark the custom method for deletion and remove it from your private methods.
 
 Methods marked for deletion can no longer be found via searches, though their pages will remain active for a certain period before being permanently removed, and all links to such pages will still function for the duration of this period. 
 
-A method marked for deletion will have a special icon to distinguish it: ![Marked for deletion](../img/deleted_icon.png){ width="50"}
+A method marked for deletion will have a ![Icon: marked for deletion](../img/icon_delete.png){width="25"}special icon next to its name.
 
 !!! warning
     As with editing custom methods, you should bear in mind the effect that deleting a custom method may have on any compositions you have saved.

@@ -2,7 +2,7 @@
 Compositions entered into Complib are automatically processed and their various properties determined. These properties are listed in the composition page's **Properties tab**.
 
 ### The Properties tab
-![Composition properties example](../img/comp_properties_expanded.png)
+![Composition properties example](../img/comp_properties_expanded.png){width="500"}
 
 When expanded, the top of the tab shows a number of checkboxes, each of which corresponds to a different potential feature of the composition. These properties are arranged into a number of groups.
 

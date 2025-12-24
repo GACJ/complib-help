@@ -1,12 +1,10 @@
 # Customising composition layouts
 
-The composition layout options menu can be accessed by clicking the cog button at the top right of a composition page's [Layout tab](overview.md/#layout).
-
-![Composition layout options button](../img/comp_layout_options_button.png)
+The composition layout options menu can be accessed by clicking the ![Icon: cog](../img/icon_cog.png){width="25"} cog button at the top right of a composition page's [Layout tab](overview.md/#layout).
 
 This opens a window which allows you to customise the appearance of composition layouts across the whole Composition Library.
 
-![Composition layout options window](../img/comp_layout_options.png)
+![Composition layout options window](../img/comp_layout_options.png){width="500"}
 
 Once you have selected the layout options you want, click `Save changes` to save your changes and close the options menu. Your new layout options will be reflected in the Layout tab. Clicking `Close` or the cross in the upper right will close the window without saving your changes. To restore Complib's default layout, click `Default settings`.
 

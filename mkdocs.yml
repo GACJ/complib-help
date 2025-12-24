@@ -3,6 +3,14 @@ site_url: https://help.complib.org
 nav:
   - Introduction: index.md
   - Core concepts: concepts.md
+  - 'Compositions':
+    - Composition pages: compositions/overview.md
+    - Customising composition layouts: compositions/layout_options.md
+    - Composition properties: compositions/composition_properties.md
+  - 'Adding & Editing Compositions':
+    - Adding compositions: compositions/adding_compositions_overview.md
+    - General info: compositions/adding_compositions_tabs_general.md
+    - Calling positions: compositions/calling_positions.md
   - 'Methods': 
     - Method pages: methods/overview.md
     - Customising the blue line: methods/blueline_options.md
@@ -10,14 +18,6 @@ nav:
     - Adding methods: methods/adding_methods.md
     - Place notation: methods/place_notation.md
     - Using the method designer: methods/method_designer.md
-  - 'Compositions':
-    - Composition pages: compositions/overview.md
-    - Customising composition layouts: compositions/layout_options.md
-    - Composition properties: compositions/composition_properties.md
-  - 'Adding & Editing Compositions':
-    - Adding a new composition: compositions/adding_compositions_overview.md
-    - General info: compositions/adding_compositions_general_info.md
-    - Calling positions: compositions/calling_positions.md
   - 'Collections':
     - Overview: collections/overview.md
     - Adding collections: collections/adding_collections.md 
