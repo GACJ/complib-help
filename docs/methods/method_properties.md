@@ -1,7 +1,6 @@
 # Method properties
 When a method is added to Complib, various properties of the method are determined in order to classify it, as well as highlight any of its notable features. These properties are listed in the method page's **Properties tab**.
 
-### The Properties tab
 ![Method Properties Checkboxes](../img/method_properties_checkboxes.png)
 
 When expanded, the top of the tab shows a number of checkboxes, each of which corresponds to a different potential feature of the method.

@@ -14,7 +14,9 @@ nav:
     - Composition pages: compositions/overview.md
     - Customising composition layouts: compositions/layout_options.md
     - Composition properties: compositions/composition_properties.md
-    - Adding compositions: compositions/adding_compositions.md
+  - 'Adding & Editing Compositions':
+    - Adding a new composition: compositions/adding_compositions_overview.md
+    - General info: compositions/adding_compositions_general_info.md
     - Calling positions: compositions/calling_positions.md
   - 'Collections':
     - Overview: collections/overview.md

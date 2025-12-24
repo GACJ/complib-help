@@ -17,7 +17,7 @@ To the side of the method's title is the **toolbar**:
 The toolbar buttons can be identified by hovering over them. They are, from left to right:
 
 Find compositions true to this
-:   Begins an **extended search** of all Complib compositions to determine which ones can be rung with this method (see [Extended searches](../search/extended.md)).
+:   Begins an **extended search** of compositions in the Composition Library to determine which ones can be rung with this method (see [Extended searches](../search/extended.md)). The search will include any [private compositions](../compositions/adding_compositions_overview.md/#private-and-public-compositions) you have defined.
 
 Add to collection
 :   Adds the method to a **collection** of your choice (see [Collections](../collections/overview.md)).
@@ -26,7 +26,7 @@ Design new (unrung) methods like this
 :   Opens the **method designer** with a new blank method skeleton. The method skeleton will have the same treble path as the method previously being viewed (see [Using the method designer](method_designer.md)).
 
 Clone
-:   Creates a duplicate of the method in the **method editor** which you can then edit (see [Adding methods](adding_methods.md)).
+:   Creates a duplicate of the method on the **Add method** page which you can then edit (see [Adding methods](adding_methods.md)).
 
 Share
 :   Displays a **public link** to the method page so it can be shared with others. For information on what it means for a method to be public, see [Adding methods > Private and public methods](adding_methods.md/#private-and-public-methods).
@@ -75,7 +75,7 @@ The appearance of the blue line display is highly customisable. For more informa
 
 ## Properties
 ![Properties tab expanded](../img/method_properties_tab_expanded.png)
-For an explanation of the information contained in the properties tab, see the dedicated page on [Method properties](method_properties.md/#the-properties-tab).
+For an explanation of the information contained in the properties tab, see the dedicated page on [Method properties](method_properties.md).
 
 ## Related methods
 ![Related methods tab expanded](../img/related_methods_tab_expanded.png)

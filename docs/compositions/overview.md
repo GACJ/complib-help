@@ -1,7 +1,41 @@
 # Composition Pages
-As its name suggests, Complib has been designed as a library for change ringing **compositions**. In the most general terms, a composition is a specified **calling** for a change ringing performance. A composition is stored in Complib as this calling, together with specified method(s) for which it has been designed.
+The Composition Library has been designed as a library for change ringing **compositions**. In the most general terms, a composition is a specified **calling** for a change ringing performance. A composition is stored in Complib as this calling, together with specified method(s) for which it has been designed.
 
-Complib automatically **pricks** (generates the rows of) any composition when it is entered in order to establish its **truth**. Stored compositions are then given their own dedicated page.
+Complib automatically **pricks** (generates the rows of) any composition when it is entered in order to establish its **truth**. Stored compositions are then given their own dedicated pages, which might look something like this:
+
+![Composition page full view](../img/comp_page.png)
+
+At the top of the page is the composition's user-defined **title**, and its **star rating**. The star rating displays a weighted average of any submitted ratings by registered users.
+
+## Toolbar
+To the right of the composition title and rating is the **toolbar**:
+
+![Composition toolbar](../img/comp_toolbar.png)
+
+The toolbar buttons can be identified by hovering over them. They are, from left to right:
+
+Find methods true to this
+:   Begins an [extended search](../search/extended.md) of methods in the Composition Library to determine which ones are true to this composition. This search will include any [private methods](../methods/adding_methods.md/#private-and-public-methods) you have defined.
+
+Add to collection
+:   Adds the composition to a [collection](../collections/overview.md) of your choice.
+
+Clone
+:   Creates a duplicate of the composition on the **Add composition** page, which you can then edit (see [Creating a new composition](adding_compositions_overview.md)).
+
+Share
+:   Displays a public link to the composition page so it can be shared with others. 
+
+    !!! note
+        The composition will be visible via the link **regardless of whether the composition itself is public**. This is useful if you want to share a composition without publishing it.
+        
+        See [Creating a new composition > Private and public compositions](adding_compositions_overview.md/#private-and-public-compositions) for more information on what it means for a composition to be public or private.
+
+Export rows
+:   Opens a new browser tab containing the pricked rows of the composition in plaintext form.
+
+Printable version
+:   Opens a new browser tab which displays the human-readable layout of the composition in a form that's easy to print. Its appearance is determined by the currently configured [composition layout options](layout_options.md).
 
 ## Tabs overview
 A composition page is subdivided into various expandable tabs (click on the name of a tab to skip to a detailed description of its contents):

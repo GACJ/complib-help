@@ -29,7 +29,7 @@ Division Ends (optional)
 Notes (optional)
 :   Specifies a message to be displayed in the **Library Details** tab of the custom method's page. This is a good place to put any important information about the method which you may want to keep to hand.
 
-## Validating methods, method errors & warnings
+## Saving methods, method errors & warnings
 Complib will automatically attempt to validate a custom method as soon as its place notation is specified. If the provided place notation is valid, the custom method's full name, diagram and properties will be generated and displayed. Clicking the `Validate` button will force a re-validation.
 
 If the custom method is successfully validated, clicking the `Save` button will save the custom method as a **private method**.
@@ -40,7 +40,7 @@ If the custom method is successfully validated, clicking the `Save` button will 
 
 If Complib encounters a problem when attempting to validate a custom method, an error message will be displayed. **All errors must be cleared before a custom method can be saved.**
 
-There are a number of different error types. Most errors will give an indication of how to clear them. The following is a non-exhaustive list of some of the more common examples:
+There are a number of different error types. Most errors will give an indication of how to clear them. The following is a non-exhaustive list of some of the more common errors:
 
 !!! error "Error: Place notation `_` is invalid for stage..."
 
@@ -119,7 +119,7 @@ To generate the link, click the **Share** button at the top right of the private
 This will open a window containing a link in plaintext form which you can copy to your clipboard.
 
 ### Sharing private methods via published compositions
-Another way to share private methods is by **publishing a composition** which includes the private method as part of its definition (see [Adding compositions](../compositions/adding_compositions.md) to learn more about adding and publishing compositions).
+Another way to share private methods is by **publishing a composition** which includes the private method as part of its definition (see [Adding compositions](../compositions/adding_compositions_overview.md) to learn more about adding and publishing compositions).
 
 !!! warning
     Private methods shared via published compositions will be visible to **all registered users**, though they will not appear in method searches to anyone other than their owners. Please be sure that you are happy with your private method to be widely available before publishing a composition which uses it.

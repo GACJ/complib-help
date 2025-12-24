@@ -36,7 +36,7 @@ Change every lead
 :   There is a change of method at the end of every lead in the composition (for compositions of spliced).
 
 Every lead different
-:   No working bell ever repeats a place bell in the composition.
+:   No working bell ever repeats a place bell of any method in the composition.
 
 Jump method
 :   The composition includes one or more methods which have **jump changes**.
