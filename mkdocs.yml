@@ -25,9 +25,9 @@ nav:
   - 'Advanced Topics':
     - Extensions: advanced/extensions.md
     #- False coursehead (FCH) groups: advanced/fch_groups.md
-    #- Leadhead codes: advanced/leadhead_codes.md
+    - Leadhead codes: advanced/leadhead_codes.md
     - Music schemes: advanced/music_schemes.md
-    #- Row parity: advanced/row_parity.md
+    - Row parity: advanced/row_parity.md
   - 'Additional Info':
     - About: about.md
 theme: readthedocs
