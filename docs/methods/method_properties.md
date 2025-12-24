@@ -1,12 +1,12 @@
 # Method properties
 When a method is added to Complib, various properties of the method are determined in order to classify it, as well as highlight any of its notable features. These properties are listed in the method page's **Properties tab**.
 
-## The Properties tab
+### The Properties tab
 ![Method Properties Checkboxes](../img/method_properties_checkboxes.png)
 
 When expanded, the top of the tab shows a number of checkboxes, each of which corresponds to a different potential feature of the method.
 
-### Changes
+## Changes
 A method consists of a sequence of **rows** rung in sequence. The relationship between two adjacent rows with regard to how bells move from one row to the other is referred to as a **change**. There are a number of different types of change that can be made between subsequent rows of a method:
 
 Adjacent
@@ -24,7 +24,7 @@ Static
 Dynamic
 :   The changes of the method are not fixed, and are dynamically altered as the method is rung. One type of "method" with dynamic changes is the loosely defined family of **Dixonoids**, where places are made depending on which numbered bell is leading. Complib does not currently support the definition of methods with dynamic changes.
 
-### Hunt bells
+## Hunt bells
 Methods can fall into one of two distinct categories depending on the presence or absence of a **hunt bell**.
 
 !!! hint "Definition"
@@ -40,7 +40,7 @@ Hunter
     * **Multiple** indicates that there are multiple hunt bells (e.g. Grandsire).
     * **All** indicates that all the bells are hunt bells (e.g. [12 Victoria Street Surprise Minor](https://complib.org/method/29824)). In this case, the plain course of the method is a single lead/division long. Historically, methods of this kind came under the umbrella classification of **blocks**, a term which has since been retired.
 
-### Working bell cycles
+## Working bell cycles
 All bells in a method which are not hunt bells are referred to as **working bells**. The plain course of a method involves the working bells moving through one or more **cycles** of place bells.
 
 Monocyclic
@@ -52,7 +52,7 @@ Isocyclic
 Differential
 :   The working bells are divided up into two or more cycles of different lengths. Here, the plain course is equal to the **least common multiple** of the lengths of all the cycles.
 
-### Hunter classes
+## Hunter classes
 All methods which are hunters (see [Hunt Bells](#hunt-bells)) can be further divided into a number of different **classes**. The different hunter classes are arranged in a hierarchy as follows:
 
 - **Plain**
@@ -77,7 +77,7 @@ A method with a single non-stationary hunt bell will fall into one and only one 
 
 For a detailed explanation of the different hunter classes and how they are distinguished, please refer to [Section 4 of the Central Council Framework](https://framework.cccbr.org.uk/version2/classification.html).
 
-### Symmetry
+## Symmetry
 A **symmetry** is a transformation (rotation, reflection, translation, etc.) which leaves the appearance of something unchanged. A method has one or more **symmetry types**:
 
 Asymmetric
@@ -104,7 +104,7 @@ Offset
 
 For a visual demonstration of the different symmetry types, see [this infographic](https://framework.cccbr.org.uk/version2/images/classification/symmetries.pdf).
 
-### Leadheads
+## Leadheads
 Almost all methods (currently all methods in Complib's `CCCBR` library) have a plain course which can be divided into one or more sections of fixed, finite length, which are called **leads** or **divisions**. It is common to refer to the starting row of a lead (or division) as the **leadhead** (or **division end**). The collected set of leadheads of a method may satisfy one of a number of conditions:
 
 Plain Bob
@@ -125,7 +125,7 @@ Rounds
 !!! note
     There are methods whose leadheads do not fall into any of the above categories (though a significant majority of methods do).
 
-### Course properties
+## Course properties
 Taken as a whole, the plain course of the method can have certain properties which may be of particular interest:
 
 True plain course
@@ -143,7 +143,7 @@ Uneven parity
 Layered
 :   Each row of the plain course can be separated into two or more **non-overlapping groups** of adjacent bells such that no bell strays outside of its starting group during the course. For example, [Plain Bob Minor](https://complib.org/method/11349) rung on 8 bells with 7 and 8 dodging behind is equivalent to the layered method [Broadley Little Bob Major](https://complib.org/method/29080).
 
-### Miscellaneous
+## Miscellaneous
 In addition to the above, the properties tab also lists miscellaneous information about the method in text form. The listed items are:
 
 Place notation

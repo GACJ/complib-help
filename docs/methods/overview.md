@@ -129,7 +129,7 @@ More specifically, Complib will determine that two methods are trivial variation
 It is important to note that the word trivial is not a value judgement: it does **not** imply that one method is inherently more original or "valuable" than another. It is a purely technical classification which identifies a similarity in their constructions. Indeed, the property of trivial variation is a symmetric relationship: if method B is a trivial variation of method A, then method A is necessarily a trivial variation of method B.
 
 !!! warning
-    A method might differ from its trivial variants in decidedly non-trivial ways. Their plain courses may not have the same rows, and they may have different [false coursehead groups](../advanced/fch_groups.md). 
+    A method might differ from its trivial variants in decidedly non-trivial ways. Their plain courses may not have the same rows, and they may have different [false coursehead groups](https://framework.cccbr.org.uk/version2/falsecourseheads.html). 
     
     Because of this, a composition which is true to one method is **not necessarily true** to all (or indeed any) of that method's trivial variations. You should always check a composition is true to the specific method you wish to ring.
 
