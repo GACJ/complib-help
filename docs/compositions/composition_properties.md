@@ -135,7 +135,7 @@ Changes of method
         This does not include any implied changes of method between the final and starting methods of a round block. A performance which comprises multiple repetitions of such a round block will therefore have additional changes of method not accounted for here.
 
 Stage
-:   The name of the **effective stage** of the composition. For mixed stage compositions, this is the name of the highest-numbered stage. See [Section 3 (A)](https://framework.cccbr.org.uk/version2/fundamentals.html#stages) of the Central Council Framework for an explanation of stages and their names.
+:   The name of the **effective stage** of the composition. For mixed stage compositions, this is the name of the highest-numbered stage. See [Section 3A](https://framework.cccbr.org.uk/version2/fundamentals.html#stages) of the Central Council Framework for an explanation of stages and their names.
 
 True rows
 :   The number of true rows in the composition. For [true](#truth) compositions, this will be equal to the length of the touch. For false compositions, this will be the length of the touch after subtracting any **false rows** (see below).

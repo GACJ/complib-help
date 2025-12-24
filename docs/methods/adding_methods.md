@@ -6,10 +6,10 @@ To get started, click on **Create new > New method** in the navbar or dropdown m
 ![Navbar Create New](../img/navbar_create_new.png){ width="300" }
 ![Dropdown Menu Create New](../img/dropdown_menu_create_new.png){ width="300" }
 
-## The add method page
+## The Add method page
 ![Add Method Page](../img/add_method_page.png){ width="500"}
 
-The add method page has a number of fields which allow you to specify certain properties of your custom method. These are:
+The [Add method page](https://complib.org/method/add) has a number of fields which allow you to specify certain properties of your custom method. These are:
 
 Name (required)
 :   The desired name for your custom method. This will be used by Complib to generate the method's full title. See [Things to consider when naming methods](#things-to-consider-when-naming-methods) for advice on choosing a name for your custom method.
