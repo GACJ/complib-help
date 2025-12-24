@@ -1,10 +1,10 @@
 # Method properties
-When a method is added to Complib, various properties of the method are determined in order to classify it, as well as highlight any of its notable features. These properties are displayed in the method page's **properties tab**.
+When a method is added to Complib, various properties of the method are determined in order to classify it, as well as highlight any of its notable features. These properties are listed in the method page's **Properties tab**.
 
-## The properties tab
+## The Properties tab
 ![Method Properties Checkboxes](../img/method_properties_checkboxes.png)
 
-When expanded, the top of the tab comprises a number of boxes, each of which describes a different feature of the method.
+When expanded, the top of the tab shows a number of checkboxes, each of which corresponds to a different potential feature of the method.
 
 ### Changes
 A method consists of a sequence of **rows** rung in sequence. The relationship between two adjacent rows with regard to how bells move from one row to the other is referred to as a **change**. There are a number of different types of change that can be made between subsequent rows of a method:
