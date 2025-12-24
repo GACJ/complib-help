@@ -3,19 +3,19 @@ Complib gives registered users the ability to create custom methods.
 
 To get started, click on **Create new > New method** in the navbar or dropdown menu:
 
-![Navbar Create New](../img/navbar_create_new.png){ width="300" }
-![Dropdown Menu Create New](../img/dropdown_menu_create_new.png){ width="300" }
+![Navbar Create New](../img/navbar_create_new.png){ width="200" }
+![Dropdown Menu Create New](../img/dropdown_menu_create_new.png){ width="200" }
 
 ## The Add method page
 ![Add Method Page](../img/add_method_page.png){ width="500"}
 
-The [Add method page](https://complib.org/method/add) has a number of fields which allow you to specify certain properties of your custom method. These are:
+The Add method page ([https://complib.org/method/add](https://complib.org/method/add)) has a number of fields which allow you to specify certain properties of your custom method. These are:
 
 Name (required)
-:   The desired name for your custom method. This will be used by Complib to generate the method's full title. See [Things to consider when naming methods](#things-to-consider-when-naming-methods) for advice on choosing a name for your custom method.
+:   The name for your custom method. This will be used by Complib to generate the method's full title. See [Things to consider when naming methods](#things-to-consider-when-naming-methods) for advice on choosing a name for your custom method.
 
-!!! note
-    Complib automatically appends the method's class descriptors and stage to its name to give the method's full title. As such, you should not add classification- or stage-specific words such as `Treble Bob` or `Caters` to the name field.
+    !!! note
+        Complib automatically appends the method's class descriptors and stage to its name to give the method's full title. As such, you should not add classification- or stage-specific words such as `Treble Bob` or `Caters` to the name field.
 
 Stage (required)
 :   The stage at which the method is to be rung. Complib supports methods on numbers from two to twenty-eight bells.

@@ -1,6 +1,6 @@
 # Composition Library Help
 
-[Composition Library](https://complib.org) is an interactive tool for all change ringers, not just conductors and composers. It is intended to act as a comprehensive reference for **methods** and **compositions** and has a number of useful features. For example, you can:
+The [Composition Library](https://complib.org), also known as Complib, is an interactive tool for all change ringers, not just conductors and composers. It is intended as a comprehensive reference for **methods** and **compositions** and has a number of useful features. For example, you can:
 
 - [Search](search/basic.md) for existing methods and compositions by **name**, **title**, or a large number of other criteria;
 - Display the [blue line of methods](methods/blueline_options.md) or compositions, as well as other detailed information;
@@ -13,7 +13,7 @@ By registering for an account, you will also gain the ability to contribute mate
 - Ask questions, raise issues and request bespoke compositions from other Complib users.
 
 ## Using the Help
-You can navigate this website using the sidebar: simply click on the section or subsection you'd like to read. Alternatively, you can look for help on a specific topic using the **search** feature.
+You can navigate this website using the sidebar: simply click on the section or subsection you'd like to read. You can also look for help on a specific topic using the **search** feature.
 
 For more information about the Help and how to raise an issue, please refer to the [About](about.md) section.
 
