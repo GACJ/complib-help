@@ -9,7 +9,8 @@ nav:
     - Composition properties: compositions/composition_properties.md
   - 'Adding & Editing Compositions':
     - Adding compositions: compositions/adding_compositions_overview.md
-    - General info: compositions/adding_compositions_tabs_general.md
+    - General tab: compositions/adding_compositions_tabs_general.md
+    - Methods tab: compositions/adding_compositions_tabs_methods.md
     - Calling positions: compositions/calling_positions.md
   - 'Methods': 
     - Method pages: methods/overview.md

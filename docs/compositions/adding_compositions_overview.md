@@ -14,7 +14,7 @@ The Add composition page ([https://complib.org/composition/add](https://complib.
 [General](adding_compositions_tabs_general.md)
 :   Specify high-level information about the composition such as its title, composer/arranger, number of parts, and so on.
 
-Methods
+[Methods](adding_compositions_tabs_methods.md)
 :   Specify which methods are used in the composition, including custom definitions of existing methods and their method mnemonics.
 
 Calls
@@ -84,7 +84,7 @@ For more info on the blue line display for compositions, see [Composition pages 
 ## Publishing compositions
 A custom composition which is successfully saved to Complib becomes a **private composition** and is given its own [composition page](overview.md). Private compositions are only visible to their owners, until they are published or shared via public link.
 
-To publish a private composition, click the ![Icon: publish](../img/icon_publish.png){width="25"} Publish button in the toolbar at the top of the composition page. This will add the composition to Complib's `public` library, so that it is visible to anyone using the site.
+To publish a private composition, click the ![Icon: publish](../img/icon_publish.png){width="25"} Publish button in the toolbar at the top of the composition page. This will add the composition to Complib's `Public` library, so that it is visible to anyone using the site.
 
 !!! warning
     A published composition cannot be un-published (though it can still be edited or deleted). You should make sure that you want a composition to be visible before publishing it.
@@ -99,7 +99,7 @@ Sharing a private composition via public link **does not publish it**. If you wa
 ## Editing and deleting compositions
 To edit a custom composition, click on the ![Icon: edit](../img/icon_edit.png){width="25"}edit button in the toolbar. This will open the composition in the editor, allowing you to change its various properties.
 
-To delete a custom composition, click on the ![Icon: delete](../img/icon_delete.png){width="25"}delete button in the toolbar. This will bring up a prompt asking you to confirm that you want to delete the composition. If you are sure, clicking on **Confirm Delete** will delete the composition from Complib.
+To delete a custom composition, click on the ![Icon: delete](../img/icon_delete.png){width="25"}delete button in the toolbar. This will bring up a prompt asking you to confirm that you want to delete the composition. Clicking on `Confirm Delete` will delete the composition from Complib.
 
 !!! warning 
     Unlike [deleted methods](../methods/adding_methods.md/#editing-and-deleting-methods), compositions are deleted immediately and can no longer be recovered. If you have [shared the composition via a public link](#sharing-via-public-link), the link will no longer function.
