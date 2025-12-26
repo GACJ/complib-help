@@ -42,20 +42,20 @@ If Complib encounters a critical problem when attempting to validate the composi
 There are a number of different error types. Most errors will give an indication of how to clear them. The following is a non-exhaustive list of some of the more common errors:
 
 !!! error "Error: Composition is false and cannot be saved unless overriden in the General tab"
-The composition as specified is false (that is, not true). See [Composition properties > Truth](composition_properties.md/#truth) for an explanation of what it means for a composition to be true.
+    The composition as specified is false (that is, not true). See [Composition properties > Truth](composition_properties.md/#truth) for an explanation of what it means for a composition to be true.
 
-Since the vast majority of compositions which ringers want to ring are true, the Composition Library will not allow false compositions to be saved and published by default. However, this behaviour can be overridden in the General tab (see [General info > Allow save if false](adding_compositions_tabs_general.md/#allow-save-if-false)).
+    Since the vast majority of compositions which change ringers want to ring are true, Complib will not allow false compositions to be saved and published by default. However, this behaviour can be overridden in the General tab (see [General info > Allow save if false](adding_compositions_tabs_general.md/#allow-save-if-false)).
 
-A composition which is false will have an ![False icon](../img/false.svg) icon displayed next to its generated title.
+    A false composition will be indicated with a ![Icon: false](../img/false.svg) next to its title on its composition page and in search results.
 
 !!! error "Error: Composition is not a round block."
-The composition as specified does not end at the same row it started from. There are various things which can cause this to happen, but most often it is due to a mistake in the calling.
+    The composition as specified does not end at the same row it started from. There are various things which can cause this to happen, but most often it is due to a mistake in the calling.
 
 !!! error "Error: Unable to prick composition, or other errors need to be cleared."
-Complib is not able to prick (generate the rows of) the composition as it has been defined. Usually this means that some other error is preventing Complib from parsing the composition.
+    Complib is not able to prick (generate the rows of) the composition as it has been defined. Usually this means that some other error is preventing Complib from parsing the composition.
 
 !!! error "Error: Maximum false row limit reached."
-Complib will not automatically stop pricking a composition as soon as it runs false. However, in order to prevent the pricker from entering an infinite loop, there is an upper limit on the number of false rows which will be generated. This error means that the composition has reached that upper limit, and no more rows will be pricked in the [blue line display](#blue-line).
+    Complib will not automatically stop pricking a composition as soon as it runs false. However, in order to prevent the pricker from entering an infinite loop, there is an upper limit on the number of false rows which will be generated. This error means that the composition has reached that upper limit, and no more rows will be pricked in the [blue line display](#blue-line).
 
 ## Validation warnings
 ![Composition warnings](../img/comp_warnings.png)

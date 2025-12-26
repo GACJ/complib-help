@@ -68,7 +68,7 @@ A method page is subdivided into various expandable tabs (click on the name of a
 ![Blue Line tab expanded](../img/blueline_tab_expanded.png)
 This tab renders a visual representation of the method. By default, this is done in the traditional *Diagrams* style with all hunt bells plus a single working bell drawn in coloured lines. The method's **grid**, which consists of a single lead/division with all bells drawn in coloured lines, is also shown by default.
 
-The appearance of the blue line display is highly customisable. For more information about how to adjust the display style, see [Customising blue lines](blueline_options.md).
+The appearance of the blue line display is highly customisable. For more information about how to adjust the display style, see [Customising the blue line](blueline_options.md).
 
 !!! note
     You need to be logged in as a registered user to adjust the Blue Line display style.
@@ -79,12 +79,11 @@ For an explanation of the information contained in the properties tab, see the d
 
 ## Related methods
 ![Related methods tab expanded](../img/related_methods_tab_expanded.png)
-Methods may be **related** to other methods in a number of different ways. Named methods which are related to the current method in any of the following ways will be listed in this tab in the appropriate field.
+Methods may be **related** to other methods in a number of different ways. Methods which are related to the current method in any of the following ways will be listed in this tab.
 
 Halflead/leadend variants
-:   A halflead/leadend variant of a method is any method which differs from it only by which place is made at the halflead/leadend. For example, [Cambridge Surprise Minor](https://complib.org/method/14568) and [Primrose Surprise Minor](https://complib.org/method/14570) are leadend variants.
+:   A halflead/leadend variant of a method is any method which differs from it only by which change is made at the halflead/leadend. For example, [Cambridge Surprise Minor](https://complib.org/method/14568) and [Primrose Surprise Minor](https://complib.org/method/14570) are leadend variants.
 
-!!! tip
     Hovering over the name of a halflead/leadend variant will indicate the way in which its halflead (HL) and/or leadend (LE) differs from the current method.
 
 Reverse
@@ -94,7 +93,7 @@ Double work above/below
 :   For methods with a single hunt bell, the combination of the work done above/below the hunt bell with an inverted copy of itself will give a double method, which may or may not have been named.
 
 Extensions
-:   Two methods at **differing stages** are extensions of one another if they are related by any of the recognised **extension paths**. If the method can be extended using any of the recognised extension paths, all methods in the path will be listed up to stage Twenty-Four (see [Extensions](../advanced/extensions.md)).
+:   Two methods at different stages are extensions of one another if they are related by any of the recognised **extension paths**. If the method can be extended using any of the recognised extension paths, all methods in the path will be listed up to stage Twenty-Four (see [Extensions](../advanced/extensions.md)).
 
 Non-conforming extensions
 :   If two methods share the same name and class but are not related by any of the recognised extension paths, then they are **non-conforming extensions** of one another. A previously non-conforming extension may become a conforming extension in the event that: 
@@ -121,12 +120,14 @@ The image above shows the first leads of [Yorkshire Surprise Major](https://comp
 
 Complib will determine that two methods are trivial variations if the following conditions all hold:
 
-1. There is a sequence of changes in the lead where the same two bells are working together in both methods; AND
-2. The bells are in the same relative position at the start of the sequence in both methods; AND
-3. The bells are in the same relative position at the end of the sequence in both methods; AND
+1. There is a sequence of changes in the lead where the same two bells are working together in both methods; **and**
+2. The bells are in the same relative position at the start of the sequence in both methods; **and**
+3. The bells are in the same relative position at the end of the sequence in both methods; **and**
 4. The methods differ only by sequences satisfying conditions 1-3.
 
-The word "trivial" is not a value judgement: it does not imply that one method is inherently more original or valuable than another. It is a purely technical classification which describes a similarity between them. Indeed, the property of trivial variation is a symmetric relationship: if method B is a trivial variation of method A, then method A is necessarily a trivial variation of method B.
+The word "trivial" is not a value judgement: it does not imply that one method is inherently more original or valuable than another. It is a purely technical classification which describes a similarity between them. 
+
+Indeed, the property of trivial variation is a symmetric relationship: if method B is a trivial variation of method A, then method A is necessarily a trivial variation of method B.
 
 !!! warning
     A method might differ from its trivial variants in decidedly non-trivial ways. Their plain courses may not have the same rows, and they may have different [false coursehead groups](https://framework.cccbr.org.uk/version2/falsecourseheads.html). 
@@ -135,6 +136,7 @@ The word "trivial" is not a value judgement: it does not imply that one method i
 
 ## Performances
 ![Performances tab expanded](../img/performances_tab_expanded.png)
+
 This tab lists any documented performances of the method which have been added to its Complib page. Each entry has three fields:
 
 Date
@@ -167,24 +169,26 @@ Details
 
 ## References
 ![References tab expanded](../img/references_tab_expanded.png)
-This tab lists all collections which you have access to and which reference the current method (inaccessible private collections will not be displayed). Each entry has four fields, with every entry acting as a link to the relevant Complib page:
+
+This tab lists all collections which you have access to and which reference the current method (inaccessible private collections will not be displayed). Each entry has four fields, with most entries acting as links to the relevant Complib pages:
 
 Collection
 :   The name of the collection to which the method belongs.
 
-Chapter (optional)
+Chapter
 :   The chapter of the method's entry in the collection (if specified).
 
-Page (optional)
+Page
 :   The page number of the method's entry in the collection (if specified).
 
-Reference (optional)
-:   In the case that the collection is **referenced** by a certain index, the corresponding reference for the method within the collection.
+Reference
+:   In the case that the collection links the method to an internal or external reference, or provides a text description, that reference will be given here.
 
 For more on references and how they relate to collections, see [Collections](../collections/overview.md).
 
 ## Library details
-![Library Details tab expanded](../img/library_details_tab_expanded.png)
+![Library Details tab expanded](../img/library_details_tab_expanded.png){width="500"}
+
 This tab lists some of the method's Complib-specific metadata.
 
 Library
@@ -199,11 +203,11 @@ Method Id
 Created on
 :   The date and time at which the method was created and the name of the user who created it.
 
-!!! note
-    Times and dates are given in Coordinated Universal Time (UTC).
-
 Modified on
 :   The date and time at which the method was last modified and the name of the user who modified it.
 
 Published on
 :   The date and time at which the method was made public.
+
+!!! note
+    Times and dates are given in Coordinated Universal Time (UTC).

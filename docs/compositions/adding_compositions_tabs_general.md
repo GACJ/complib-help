@@ -353,6 +353,8 @@ The text entered in this field will be displayed in the [Library details tab](ov
 
 
 ## Allow save if false
-The vast majority of compositions that change ringers use are true (i.e., not false). By default, Complib will not allow you to save or publish a composition which is false. Enabling this option will override that behaviour, allowing a false composition to be saved.
+The vast majority of compositions that change ringers use are true (i.e., not false). See [Composition properties > Truth](composition_properties.md/#truth) for an explanation of what it means for a composition to be true. 
+
+By default, Complib will not allow you to save or publish a composition which is false. Enabling this option will override that behaviour, allowing a false composition to be saved.
 
 A false composition will be indicated with a ![Icon: false](../img/false.svg) next to its title on its composition page and in search results.
