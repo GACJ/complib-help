@@ -1,10 +1,9 @@
 # About the Help
 
-The Composition Library, or Complib, is a powerful resource offering a wide array of features to its users. An unfortunate downside is that the website can be unintuitive to use. Our hope is that this documentation can help you get to grips with Complib and how it works.
+The Composition Library is a powerful resource offering a wide array of features to its users. An unfortunate downside is that the website can be unintuitive to use. Our hope is that this Help documentation can help you get to grips with Complib and how it works.
 
 ## Giving feedback
-
-The Composition Library is a work-in-progress, and the Help contained here is no different. You can provide feedback on the Help via Complib's [Issues](hhtps://complib.org/issue/search) page.
+The Composition Library is a work-in-progress, and the Help is no different. You can provide feedback on the Help via Complib's [Issues](hhtps://complib.org/issue/search) page.
 
 ![Issue page](img/issues_page.png)
 

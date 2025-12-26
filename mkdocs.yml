@@ -3,14 +3,17 @@ site_url: https://help.complib.org
 nav:
   - Introduction: index.md
   - Core concepts: concepts.md
+  - About the Help: about.md
   - 'Compositions':
     - Composition pages: compositions/overview.md
     - Customising composition layouts: compositions/layout_options.md
     - Composition properties: compositions/composition_properties.md
   - 'Adding & Editing Compositions':
-    - Adding compositions: compositions/adding_compositions_overview.md
-    - General tab: compositions/adding_compositions_tabs_general.md
-    - Methods tab: compositions/adding_compositions_tabs_methods.md
+    - "Adding compositions: overview": compositions/adding_compositions_overview.md
+    - The General tab: compositions/adding_compositions_tabs_general.md
+    - The Methods tab: compositions/adding_compositions_tabs_methods.md
+    - The Calls tab: compositions/adding_compositions_tabs_calls.md
+    - The Calling tab: compositions/adding_compositions_tabs_calling.md
     - Calling positions: compositions/calling_positions.md
   - 'Methods': 
     - Method pages: methods/overview.md
@@ -31,8 +34,7 @@ nav:
     - Leadhead codes: advanced/leadhead_codes.md
     - Music schemes: advanced/music_schemes.md
     - Row parity: advanced/row_parity.md
-  - 'Additional Info':
-    - About: about.md
+
 theme: readthedocs
 markdown_extensions: 
   - admonition

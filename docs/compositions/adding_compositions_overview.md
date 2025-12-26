@@ -17,10 +17,10 @@ The Add composition page ([https://complib.org/composition/add](https://complib.
 [Methods](adding_compositions_tabs_methods.md)
 :   Specify which methods are used in the composition, including custom definitions of existing methods and their method mnemonics.
 
-Calls
+[Calls](adding_compositions_tabs_calls.md)
 :   Specify the calls used in the composition, together with their corresponding calling positions.
 
-Calling
+[Calling](adding_compositions_tabs_calling.md)
 :   Edit the calling, or sequence of calls, which defines the composition.
 
 Performances

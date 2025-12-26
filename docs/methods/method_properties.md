@@ -154,12 +154,14 @@ Leadhead
 Divisions
 :   Gives the length and arrangement of the method's division(s) if applicable.
 
-    - The **length** of each division is the number of rows it contains.
-    - If the method has more than one division per lead, the lengths of each division are listed and separated by colons (e.g. `6:6`).
-    - If the method is usually started at a point **other than the start of a division**, the starting point for the first division will be specified. For example, `6:6 after row 2` means that the divisions have lengths of 6 and 6, with the first division starting after row 2.
+    The **length** of each division is the number of rows it contains.
+    
+    If the method has more than one division per lead, the lengths of each division are listed and separated by colons (e.g. `6:6`).
+    
+    If the method is usually started at a point **other than the start of a division**, the starting point for the first division will be specified. For example, `6:6 after row 2` means that the divisions have lengths of 6 and 6, with the first division starting after row 2.
 
-!!! tip
-    When counting rows, remember that the method starts from row 0.
+    !!! tip
+        When counting rows, remember that the method starts from row 0.
 
 Default calls
 :   The **call type** determines which calls will be used by default when creating a composition for the method. The call types that Complib recognises are:
@@ -174,8 +176,8 @@ Default calls
 Method above/below
 :   For methods which are hunters, if the method shares **above/below work** with another method that was rung prior to it, that method will be listed here. The method listed will (with some exceptions) be the earliest applicable method rung to a peal.
 
-!!! note 
-    The exceptions to this are where a method which is much more widely known was nevertheless rung to a peal *after* another more obscure method sharing the same above/below work. One such example is [New Cambridge Surprise Major](https://complib.org/method/17029), which was pealed almost 50 years before [Cambridge Surprise Major](https://complib.org/method/16694) even though the latter was (pretty obviously!) known to the Exercise before the former.
+    !!! note 
+        The exceptions to this are where a method which is much more widely known was nevertheless rung to a peal *after* another more obscure method sharing the same above/below work. One such example is [New Cambridge Surprise Major](https://complib.org/method/17029), which was pealed almost 50 years before [Cambridge Surprise Major](https://complib.org/method/16694) even though the latter was (pretty obviously!) known to the Exercise before the former.
 
 FCH Groups
 :   Lists the codes for the method's **false coursehead groups** (if applicable). See [this section of the Central Council Framework](https://framework.cccbr.org.uk/version2/falsecourseheads.html) for a definition of the false course head groups.
