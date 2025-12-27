@@ -23,7 +23,7 @@ nav:
     - Place notation: methods/place_notation.md
     - Using the method designer: methods/method_designer.md
   - 'Collections':
-    - Overview: collections/overview.md
+    - What are collections?: collections/overview.md
     - Adding collections: collections/adding_collections.md 
   - 'Searching Complib':
     - Search by title or filter: search/basic.md
@@ -40,3 +40,4 @@ markdown_extensions:
   - admonition
   - def_list
   - attr_list
+  - pymdownx.details

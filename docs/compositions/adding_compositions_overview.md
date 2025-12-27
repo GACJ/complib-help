@@ -18,7 +18,7 @@ The Add composition page ([https://complib.org/composition/add](https://complib.
 :   Specify which methods are used in the composition, including custom definitions of existing methods and their method mnemonics.
 
 [Calls](adding_compositions_tabs_calls.md)
-:   Specify the calls used in the composition, together with their corresponding calling positions.
+:   Define the calls used in the composition, together with their corresponding [calling positions](calling_positions.md). This tab is often not needed, as most compositions use calls which Complib provides by default.
 
 [Calling](adding_compositions_tabs_calling.md)
 :   Edit the calling, or sequence of calls, which defines the composition.
@@ -30,9 +30,9 @@ References
 :   Link the composition to collections within the Composition Library.
 
 ## Validating and saving compositions
-If Complib is able to parse the composition as entered, then its generated title, [composition layout](#layout-display) and [blue line](#blue-line) will be displayed at the bottom of the page. Complib will automatically attempt to validate any composition it can parse. Clicking the `Validate` button will force a re-validation.
+If Complib is able to parse the composition as entered, then its generated title, [composition layout](#layout-display) and [blue line](#blue-line) will be displayed at the bottom of the page. Complib will automatically attempt to validate any composition it can parse. Clicking the **Validate** button will force a re-validation.
 
-A composition which passes validation can be saved as a **private composition** by clicking the `Save` button. If the composition does not pass validation, one or more [validation errors](#validation-errors) will be displayed. The composition layout and blue line displays will highlight certain specific errors, to aid in troubleshooting. Non-critical [warnings](#validation-warnings) may also be given.
+A composition which passes validation can be saved as a **private composition** by clicking the **Save** button. If the composition does not pass validation, one or more [validation errors](#validation-errors) will be displayed. The composition layout and blue line displays will highlight certain specific errors, to aid in troubleshooting. Non-critical [warnings](#validation-warnings) may also be given.
 
 ## Validation errors
 ![Composition errors](../img/comp_errors.png)
@@ -41,20 +41,20 @@ If Complib encounters a critical problem when attempting to validate the composi
 
 There are a number of different error types. Most errors will give an indication of how to clear them. The following is a non-exhaustive list of some of the more common errors:
 
-!!! error "Error: Composition is false and cannot be saved unless overriden in the General tab"
+??? error "Error: Composition is false and cannot be saved unless overriden in the General tab"
     The composition as specified is false (that is, not true). See [Composition properties > Truth](composition_properties.md/#truth) for an explanation of what it means for a composition to be true.
 
     Since the vast majority of compositions which change ringers want to ring are true, Complib will not allow false compositions to be saved and published by default. However, this behaviour can be overridden in the General tab (see [General info > Allow save if false](adding_compositions_tabs_general.md/#allow-save-if-false)).
 
     A false composition will be indicated with a ![Icon: false](../img/false.svg) next to its title on its composition page and in search results.
 
-!!! error "Error: Composition is not a round block."
+??? error "Error: Composition is not a round block."
     The composition as specified does not end at the same row it started from. There are various things which can cause this to happen, but most often it is due to a mistake in the calling.
 
-!!! error "Error: Unable to prick composition, or other errors need to be cleared."
+??? error "Error: Unable to prick composition, or other errors need to be cleared."
     Complib is not able to prick (generate the rows of) the composition as it has been defined. Usually this means that some other error is preventing Complib from parsing the composition.
 
-!!! error "Error: Maximum false row limit reached."
+??? error "Error: Maximum false row limit reached."
     Complib will not automatically stop pricking a composition as soon as it runs false. However, in order to prevent the pricker from entering an infinite loop, there is an upper limit on the number of false rows which will be generated. This error means that the composition has reached that upper limit, and no more rows will be pricked in the [blue line display](#blue-line).
 
 ## Validation warnings
@@ -70,14 +70,14 @@ Information on how to clear tab-specific warnings and errors can be found on the
 ## Layout display
 A parsed composition will be laid out by Complib at the bottom of the page. For an overview of the various parts of a composition layout, see [Composition pages > Layout](overview.md/#layout). 
 
-The appearance of the layout is determined by the current configuration of the [composition layout options](layout_options.md). The layout options can be adjusted by clicking on the ![Icon: cog](../img/icon_cog.png){width="25"} cog icon next to the `Validate` button.
+The appearance of the layout is determined by the current configuration of the [composition layout options](layout_options.md). The layout options can be adjusted by clicking on the ![Icon: cog](../img/icon_cog.png){width="25"} cog next to the **Validate** button.
 
 ## Blue line
 Underneath the layout of a parsed composition, Complib will also give the pricked rows of the composition in a dedicated Blue line tab. The tab can be expanded by clicking on its name. When expanded, it will look something like this:
 
 ![Composition blue line example](../img/comp_blueline_expanded.png){width="500"}
 
-The appearance of the blue line display is determined by the [blue line display options](../methods/blueline_options.md) you have configured. These can be adjusted by clicking on the ![Icon: cog](../img/icon_cog.png){width="25"} cog icon at the top right of the tab.
+The appearance of the blue line display is determined by the [blue line display options](../methods/blueline_options.md) you have configured. These can be adjusted by clicking on the ![Icon: cog](../img/icon_cog.png){width="25"} cog at the top right of the tab.
 
 For more info on the blue line display for compositions, see [Composition pages > Blue line](overview.md/#blue-line).
 
@@ -99,7 +99,7 @@ Sharing a private composition via public link **does not publish it**. If you wa
 ## Editing and deleting compositions
 To edit a custom composition, click on the ![Icon: edit](../img/icon_edit.png){width="25"}edit button in the toolbar. This will open the composition in the editor, allowing you to change its various properties.
 
-To delete a custom composition, click on the ![Icon: delete](../img/icon_delete.png){width="25"}delete button in the toolbar. This will bring up a prompt asking you to confirm that you want to delete the composition. Clicking on `Confirm Delete` will delete the composition from Complib.
+To delete a custom composition, click on the ![Icon: delete](../img/icon_delete.png){width="25"}delete button in the toolbar. This will bring up a prompt asking you to confirm that you want to delete the composition. Clicking on **Confirm Delete** will delete the composition from Complib.
 
 !!! warning 
     Unlike [deleted methods](../methods/adding_methods.md/#editing-and-deleting-methods), compositions are deleted immediately and can no longer be recovered. If you have [shared the composition via a public link](#sharing-via-public-link), the link will no longer function.

@@ -242,7 +242,7 @@ Reference (optional)
 For more on references and how they relate to collections, see [Collections](../collections/overview.md).
 
 ## Library Details
-This tab lists some of the method's Complib-specific metadata.
+This tab lists some of the composition's Complib-specific metadata.
 
 Library
 :   The [library](../concepts.md/#the-libraries) which contains the composition. The only two libraries for compositions are `Public` and `Private`.

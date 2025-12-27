@@ -81,7 +81,9 @@ Hunt bell weight
 :   Specifies the **line weight** of all hunt bells. A value of 0 will hide the lines.
 
 Working bell weight
-:   Specifies the line weight of the default working bell. A value of 0 will hide the line.
+:   Specifies the line weight of the default working bell(s). A value of 0 will hide the line.
+
+    When a non-zero weight is set, Complib will choose one bell from each of the method's [working bell cycles](method_properties.md/#working-bell-cycles) and draw lines through them in different colours.
 
 Line styles
 :   Allows you to specify line styles for each numbered bell.

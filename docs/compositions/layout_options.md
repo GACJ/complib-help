@@ -6,7 +6,9 @@ This opens a window which allows you to customise the appearance of composition 
 
 ![Composition layout options window](../img/comp_layout_options.png){width="500"}
 
-Once you have selected the layout options you want, click `Save changes` to save your changes and close the options menu. Your new layout options will be reflected in the Layout tab. Clicking `Close` or the cross in the upper right will close the window without saving your changes. To restore Complib's default layout, click `Default settings`.
+Once you have selected the layout options you want, click **Save changes** to save your changes and close the options menu. Your new layout options will be reflected in the Layout tab. Clicking **Close** or the cross in the upper right will close the window without saving your changes. 
+
+To restore Complib's default layout, click **Default settings**, then **Save changes**.
 
 !!! note
     Compositions layouts for **single-method** and **spliced** compositions are configured separately. If you are not seeing changes you make reflected in the layout of a composition, check that you are configuring the correct composition type.
@@ -39,7 +41,7 @@ Calling positions (by courses)
     :   The calling positions are listed in the order in which their resulting place bells appear in the plain course.
 
     - In concise layout order
-    :   The order of the calling positions will be adjusted to minimise the number of rows in the layout.
+    :   The order of the calling positions will be chosen so as to minimise the number of rows in the layout.
 
     !!! note
         These secondary options are only available for **single-method compositions**.

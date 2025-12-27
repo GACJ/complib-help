@@ -1,8 +1,8 @@
 # Method pages
 
-Complib acts as a method collection, and has dedicated pages for all methods in its [libraries](../concepts.md/#the-libraries), including every method officially named and rung. The official `CCCBR` library is regularly updated and newly named methods automatically added in order to keep the collection up to date.
+Complib acts as a method collection, and has dedicated pages for all methods in its [libraries](../concepts.md/#the-libraries), including every method officially named and rung. The official `CCCBR` library is regularly updated and newly named methods added in order to keep the collection up to date.
 
-When a new method is added to any of its libraries, Complib classifies it and derives its various properties. It then creates a page for the method where all relevant information can be viewed. For example, the method page for [Bristol Surprise Major](https://complib.org/method/19048/) looks something like this:
+When a new method is added to any of its libraries, Complib classifies it and derives its various properties. It then creates a page for the method where its related information can be viewed. For example, the method page for [Bristol Surprise Major](https://complib.org/method/19048/) looks something like this:
 
 ![Bristol Surprise Major](../img/method_sample_page.png)
 
@@ -17,7 +17,7 @@ To the side of the method's title is the **toolbar**:
 The toolbar buttons can be identified by hovering over them. Some of the toolbar buttons **may not be visible on every method page**, and to every user. The buttons are, from left to right:
 
 ![Icon: find true to this](../img/icon_findtrueto.png){width="50"} Find compositions true to this
-:   Begins an **extended search** of compositions in the Composition Library to determine which ones can be rung with this method (see [Extended searches](../search/extended.md)). The search will include any [private compositions](../compositions/adding_compositions_overview.md/#publishing-compositions) you have defined. Only available to Power Users.
+:   Begins an **extended search** of compositions in the Composition Library to determine which ones can be rung with this method (see [Extended searches](../search/extended.md)). The search will include any [private compositions](../compositions/adding_compositions_overview.md/#publishing-compositions) you have defined. Only available to registered Power Users.
 
 ![Icon: add to collection](../img/icon_addtocollection.png){width="50"} Add to collection
 :   Adds the method to a **collection** of your choice (see [Collections](../collections/overview.md)). Only available to registered users.
@@ -26,7 +26,7 @@ The toolbar buttons can be identified by hovering over them. Some of the toolbar
 :   Opens the **method designer** with a new blank method skeleton. The method skeleton will have the same hunt bell path as the method currently being viewed (see [Using the method designer](method_designer.md)). Only available to registered users.
 
 ![Icon: clone](../img/icon_clone.png){width="50"} Clone
-:   Creates a duplicate of the method on the **Add method** page which you can then edit (see [Adding methods](adding_methods.md)). Only available to registered users.
+:   Creates a duplicate of the method on the **Add method** page which you can then edit (see [Adding methods](adding_methods.md)). Only available to registered Power users.
 
 ![Icon: edit](../img/icon_edit.png){width="50"} Edit
 :   Opens the method in the **method editor**. Only available registered users when viewing a private method which you own.
@@ -104,11 +104,10 @@ Non-conforming extensions
 !!! note
     There are a number of reasons why a method may be listed on Complib as a non-conforming extension. These include (but are not limited to):
 
-    * The method was named and rung before the formal framework of method extension was developed.
-    * The method is non-palindromic (Complib does not currently process extensions for non-palindromic methods, but this will hopefully change at some point in the future).
-    * The method was not previously recognised as a conforming extension and was named accordingly, and now is.
+    * The method (or another method related to it) was named and rung before the formal framework of method extension was developed, or before computer analysis was available to aid in spotting naming conflicts.
+    * The method is non-palindromic. No systematic framework for extending non-palindromic methods yet exists, and so Complib does not currently process extensions for non-palindromic methods. This will hopefully change at some point in the future.
 
-    Method classification has a complex history, and its development has reflected changing values within the Exercise. For the most part, there is a general agreement that more rigorous modern classification practices should be balanced with the preservation of ringing history.
+    Method classification is still a field of active development, and over the centuries it has reflected changing values within the Exercise. For the most part, there is a general agreement that more rigorous modern classification practices should be balanced with the preservation of ringing history.
 
 ## Trivial variations
 ![Trivial variations tab expanded](../img/trivial_variations_tab_expanded.png)
@@ -120,7 +119,7 @@ The image above shows the first leads of [Yorkshire Surprise Major](https://comp
 
 Complib will determine that two methods are trivial variations if the following conditions all hold:
 
-1. There is a sequence of changes in the lead where the same two bells are working together in both methods; **and**
+1. There is a sequence of adjacent changes in the lead where the same two bells are working together in both methods; **and**
 2. The bells are in the same relative position at the start of the sequence in both methods; **and**
 3. The bells are in the same relative position at the end of the sequence in both methods; **and**
 4. The methods differ only by sequences satisfying conditions 1-3.
@@ -165,12 +164,12 @@ Type
     A performance is typically only included if no performance of that length or greater has been recorded prior to that date. Once a performance of greater length has been recorded, shorter performances from after that date will no longer be added (but will be retained if added previously). The exception to this is **long lengths**, which will always be recorded. 
 
 Details
-:   The published details of the performance: title, performing Guild or Association (if given), location, and conductor (if given). The entry in this field acts as a link to the corresponding Bellboard performance, provided it exists and has been linked to the method page.
+:   The published details of the performance: title, performing Guild or Association (if given), location, and conductor (if given).
 
 ## References
 ![References tab expanded](../img/references_tab_expanded.png)
 
-This tab lists all collections which you have access to and which reference the current method (inaccessible private collections will not be displayed). Each entry has four fields, with most entries acting as links to the relevant Complib pages:
+This tab lists all collections which you have access to and which reference the current method (inaccessible private collections will not be displayed). Each entry has four fields, with most entries acting as links to external references or to other pages in the Composition Library:
 
 Collection
 :   The name of the collection to which the method belongs.
@@ -179,7 +178,7 @@ Chapter
 :   The chapter of the method's entry in the collection (if specified).
 
 Page
-:   The page number of the method's entry in the collection (if specified).
+:   The page number of the method's entry in an external reference (if specified).
 
 Reference
 :   In the case that the collection links the method to an internal or external reference, or provides a text description, that reference will be given here.
@@ -192,13 +191,13 @@ For more on references and how they relate to collections, see [Collections](../
 This tab lists some of the method's Complib-specific metadata.
 
 Library
-:   The smallest [library](../concepts.md/#the-libraries) which contains the method. Methods in the `Provisional` library will be listed as `Public`.
+:   The [library](../concepts.md/#the-libraries) which contains the method.
 
 Notes
 :   Any notes provided by the method's publisher (see [Adding methods](adding_methods.md)).
 
 Method Id
-:   The method's numerical ID. This is the number featured at the end of a method page's URL.
+:   The method's numerical ID. This is the number featured at the end of a method page's URL. It is also recorded in the CCCBR's methods library as an immutable identifier.
 
 Created on
 :   The date and time at which the method was created and the name of the user who created it.

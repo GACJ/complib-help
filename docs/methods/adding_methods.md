@@ -55,10 +55,10 @@ There are a number of different error types. Most errors will give an indication
     Complib cannot parse the specified place notation. This happens when the specified place notation does not conform to one of the accepted Method XML formats, or is empty. See [Place notation](place_notation.md) to learn more about the place notations that Complib can accept.
 
 !!! error "Error: Division Ends must be positive and less than the lead length."
-    The specified division ends exceed the bounds of the method's lead. The division ends must be rows within the lead length of the method as determined from its place notation.
+    The specified division ends exceed the bounds of the method's lead. The division ends must be row numbers within the lead length of the method as determined from its place notation.
 
 !!! error "Error: Division Ends must be unique."
-    For custom methods with multiple divisions, two or more of the specified division ends are identical. All division ends must be unique rows within the method's lead.
+    For custom methods with multiple divisions, two or more of the specified division ends are identical. All division ends must be unique row numbers within the method's lead.
 
 ### Warnings and other messages
 If method validation is successful, Complib may display a number of warnings and other messages. These are designed to notify you of any additional information you may wish to take into account when naming your custom method. This information may be redundant.

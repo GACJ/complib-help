@@ -6,7 +6,7 @@ When a method is added to Complib, various properties of the method are determin
 When expanded, the top of the tab shows a number of checkboxes, each of which corresponds to a different potential feature of the method.
 
 ## Changes
-A method consists of a sequence of **rows** rung in sequence. The relationship between two adjacent rows with regard to how bells move from one row to the other is referred to as a **change**. There are a number of different types of change that can be made between subsequent rows of a method:
+A method consists of a set of **rows** rung in sequence. The relationship between two subsequent rows with regard to how bells move from one row to the other is referred to as a **change**. There are a number of different types of change that can be made between subsequent rows of a method:
 
 Adjacent
 :   The method only contains changes where bells move at most one place between rows. All traditional methods fall into this category.
