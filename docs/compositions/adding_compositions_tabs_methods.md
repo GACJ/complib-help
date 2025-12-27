@@ -62,11 +62,11 @@ Bells in positions which fall outside the bounds of the method will remain stati
     This means that it is only possible for a method to have a starting place greater than 1 when used in a composition whose stage is greater than its own, such as in **mixed-stage compositions**.
 
 ## Rotate by
-This field specifies an amount by which the method's [place notation](../methods/place_notation.md) will be rotated. 
+This field specifies an amount by which the method's changes will be rotated. 
 
-When Complib pricks (generates the rows of) a composition, it does so by applying the elements of the current method's place notation in sequence. By default, the pricker will begin from the first element of the method's place notation. When it reaches the end, it will start the place notation again from the beginning, provided there is no change of method.
+When Complib pricks (generates the rows of) a composition, it does so by sequentially applying the changes of the method as specified in its [place notation](../methods/place_notation.md). By default, the pricker will start every lead from the first change of the method, given by the first element of the place notation. When it reaches the end, it will start again from the beginning, provided there is no change of method.
 
-When a **Rotate by** value is specified, that many elements will be removed from the front of the method's place notation and reinserted at the end. This modified place notation then becomes the place notation for the method within the composition, and its final element is the new leadend change.
+When a **Rotate by** value is specified, that many changes and their the corresponding place notation elements will be removed from the start of the lead and reinserted at the end. This modified set of changes has become the definition of a lead of the method within the composition, and the final change is the new leadend change.
 
 ??? note "Example"
     ---
@@ -91,7 +91,7 @@ When a **Rotate by** value is specified, that many elements will be removed from
 ## Start row number
 This field specifies which row of the method it should be started from. The default value is 0. Almost all methods are rung with a starting row of 0.
 
-When a Start row number is specified, that many elements will be removed from the method's [place notation](../methods/place_notation.md). The removed elements are **not** reinserted elsewhere, and the leadend change remains the same. The place notation of subsequent (consecutive) leads of the method is not affected. 
+When a Start row number is specified, that many changes will be removed from the front of the first lead of the method. The removed changes are **not** reinserted elsewhere, and the leadend change remains the same. The changes in subsequent (consecutive) leads of the method are not affected. 
 
 Whenenever a change-of-method results in this method being rung, this operation is applied again.
 
@@ -100,7 +100,7 @@ Whenenever a change-of-method results in this method being rung, this operation 
 
     ![Double Norwich Court Bob Major, starting at row 5](../img/dncbm_startrow_5.png){width="300"}
 
-    The above diagram shows part of a composition of [Double Norwich Court Bob Major](https://complib.org/method/12470) in which the method's Start row number has been set to 4. Four elements have been removed from the place notation of the first lead, resulting in a lead which is four rows shorter.  
+    The above diagram shows part of a composition of [Double Norwich Court Bob Major](https://complib.org/method/12470) in which the method's Start row number has been set to 4. Four changes have been removed from the first lead, resulting in a lead which is four rows shorter. 
 
 ### Rotate by vs. Start row number
 The effects of a method's Start row number on the actual rows of the composition are, in some cases, identical to that of the [Rotate by](#rotate-by) field. The main difference is in which rows of the method will be treated as **leadheads and courseheads** when laying out the composition.
@@ -138,8 +138,66 @@ The effects of a method's Start row number on the actual rows of the composition
     If **both** a method and the composition's Start row numbers are non-zero, then their effects may be combined. This can have unintended consequences. In almost all cases, it is only necessary to set one of them.
 
 ## Length
+This value specifies how many changes are in each lead of the method. 
 
-## Lead position row number
+Whenever a lead of the method is reached in the composition, Complib will apply the method's changes in sequence until the number of rows in the lead is equal to the Length value.
 
-## Lead position name
+By default, this value will be equal to the method's **Lead length**, which can be found under the [Properties tab](../methods/overview.md/#properties) on its method page.
 
+??? error "Error: [Method name] (`__`) - The defined length (`__`) is greater than its lead length (`__`)."
+    ---
+    
+    The Length value must be equal to, or less than, the method's Lead length.
+
+    If you want to have a partial lead of a method, there are two ways of achieving the same effect:
+
+    1. You can define a special call, called a **trim**, which removes a number of changes from a lead of the method. See [Calls](adding_compositions_tabs_calls.md) for help with using trims.
+    2. You can define a second instance of the same method in the Methods table with a Length that is less than its Lead length. If so, you will need to give this instance a unique [method mnemonic](#mnemonic), and indicate a change-of-method at the appropriate place in the [Calling](adding_compositions_tabs_calling.md).
+
+??? error "Error: [Method name] (`__`) - Length must be greater than zero."
+    ---
+
+    Self-explanatory.
+
+## Lead position row number and name
+These two values together define the location and name of a **Lead position**.
+
+Lead position
+:   A position within a lead of the method where a call can be applied.
+
+The **Lead position row number** is the number of the row to which a call's change is applied, or to which the final change of the call is applied, if it has more than one.
+
+??? note "Example: Grandsire calls"
+    ---
+
+    [Grandsire Triples](https://complib.org/method/12415) has 14 rows per lead, and conventionally uses a bob with place notation `3.1`. These changes are applied to rows 13 and 14 in the lead. The Lead position row number is therefore 14.
+
+    ![Grandsire Triples with a standard bob](../img/grandsire_lead_position_example.png){width="250"}
+
+    In the diagram, the highlighted elements of the place notation represent the changes caused by the Bob. The marked row is number 14 in the lead.
+
+??? note "Example: Cambridge S Minor with a halflead call"
+    ---
+
+    In this example, an unusual call with place notation `12.36` is made at the half-lead of [Cambridge Surprise Minor](https://complib.org/method/14568). The call affects rows number 11 and 12 in the lead. The Lead position row number for the call is therefore 12.
+
+    ![Cambridge S Minor with a halflead call](../img/cambridge_minor_hl_call.png){width="250"}
+
+    The highlighted elements of the place notation are the ones caused by the call. The final change of the call affects row number 12, which has been marked in red.
+
+By default, the Lead position row number will be equal to the method's Length value, since most calls occur at the end of a lead.
+
+The **Lead position name** is an identifier which is used to refer to this Lead position in places such as a [call definition](adding_compositions_tabs_calls.md), and in the composition [layout](overview.md/#layout). 
+
+The Lead position name can be any string of characters you like: you can even use emoji or other special symbols. The only requirement is that it must exactly match the name you use for that position in the [Calls tab](adding_compositions_tabs_calls.md).
+
+### Default Lead position names
+Every method has a default Lead position name which Complib uses by default. Unlike custom Lead position names, default Lead position names will not be given in the composition's layout.
+
+The default name used depends on the method's type.
+
+LE
+:   Short for "Lead end". This is the default Lead position name for methods which are **hunters** (see [Method properties > Hunt bells](../methods/method_properties.md/#hunt-bells)).
+
+SE
+:   Short for "Six end". This is the default Lead position name for **principles**, which are methods with no hunt bells. The term "six end" is taken from the name used for the division ends in Stedman, by far the most commonly rung principle.

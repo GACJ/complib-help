@@ -51,7 +51,7 @@ This field allows you to specify an Opus for the composition. Some composers use
 Text entered in the Opus field will be automatically appended to the end of the composition's title whenever it is referenced elsewhere in the Composition Library. For this reason, there is no need to include it in the [Title](#title). The Opus text will be listed in the form **Op. [text]**.
 
 ## Stage
-This field is a drop-down menu which allows you to select the stage the composition is designed for. For mixed-stage compositions, this should be the highest numbered stage (also called the **effective stage**).
+This field is a drop-down menu which allows you to select the stage the composition is designed for. For mixed-stage compositions, this should be the highest numbered stage.
 
 The stage of a composition indicates how many bells are being rung. Many stages have historical names which must be learned. The table below gives the names for every stage at which Complib can accept compositions.
 
@@ -346,6 +346,9 @@ When enabled, a supplementary note will be added to the composition's layout whi
     It may also lead to errors in the calculated [Music score](overview.md/#music-score), e.g. when accounting for handstroke and backstroke wraps, or when using a half-muffled music scheme (see [Music schemes](../advanced/music_schemes.md) for more on this).
 
 ## Extents
+This field is used to signal to Complib the number of complete and partial extents the composition contains. If this field is left blank, Complib will infer the number of extents from the composition's [Title](#title) and [Stage](#stage) if it can. Otherwise, it will default to a value of 1.
+
+Complib uses the Extents value to determine how many times the composition is expected to return to rounds. If the Extents value is too small, there may sections of the composition which are ignored because the composition comes round before that point is reached.
 
 ## Default calls
 This field is a dropdown menu, from which you can select a default call type for the composition. This will determine the way that standard call symbols such as `-` and `s` are interpreted in the composition's [calling](adding_compositions_tabs_calling.md). It will also determine the default behaviour of entries in the [Calls tab](adding_compositions_tabs_calls.md).
