@@ -167,19 +167,10 @@ Lead position
 
 The **Lead position row number** is the number of the row to which a call's change is applied, or to which the final change of the call is applied, if it has more than one.
 
-??? note "Example: Grandsire calls"
-    ---
-
-    [Grandsire Triples](https://complib.org/method/12415) has 14 rows per lead, and conventionally uses a bob with place notation `3.1`. These changes are applied to rows 13 and 14 in the lead. The Lead position row number is therefore 14.
-
-    ![Grandsire Triples with a standard bob](../img/grandsire_lead_position_example.png){width="250"}
-
-    In the diagram, the highlighted elements of the place notation represent the changes caused by the Bob. The marked row is number 14 in the lead.
-
 ??? note "Example: Cambridge S Minor with a halflead call"
     ---
 
-    In this example, an unusual call with place notation `12.36` is made at the half-lead of [Cambridge Surprise Minor](https://complib.org/method/14568). The call affects rows number 11 and 12 in the lead. The Lead position row number for the call is therefore 12.
+    In this (rather contrived) example, an unusual call with place notation `12.36` is made at the half-lead of [Cambridge Surprise Minor](https://complib.org/method/14568). The call affects rows number 11 and 12 in the lead. The Lead position row number for the call is therefore 12.
 
     ![Cambridge S Minor with a halflead call](../img/cambridge_minor_hl_call.png){width="250"}
 
@@ -191,13 +182,20 @@ The **Lead position name** is an identifier which is used to refer to this Lead 
 
 The Lead position name can be any string of characters you like: you can even use emoji or other special symbols. The only requirement is that it must exactly match the name you use for that position in the [Calls tab](adding_compositions_tabs_calls.md).
 
-### Default Lead position names
-Every method has a default Lead position name which Complib uses by default. Unlike custom Lead position names, default Lead position names will not be given in the composition's layout.
+### Defining multiple Lead positions
+It's possible to define multiple different Lead positions for the same method. To do this, enter a new Lead position row number and name in the table row beneath the original method definition. The rest of the row should be left blank.
 
-The default name used depends on the method's type.
+![Plain Bob with LE and HL Lead positions](../img/lead_positions_multiple.png)
+
+### Default Lead positions
+Every method has a Lead position which Complib uses for it by default. Unlike custom Lead position names, default Lead position names will not be given in the composition's layout.
+
+The default name and row number used depends on the method's type.
 
 LE
-:   Short for "Lead end". This is the default Lead position name for methods which are **hunters** (see [Method properties > Hunt bells](../methods/method_properties.md/#hunt-bells)).
+:   Short for "lead end". This is the default Lead position for methods which are **hunters** (see [Method properties > Hunt bells](../methods/method_properties.md/#hunt-bells)). The default position is the final row of the lead.
 
 SE
-:   Short for "Six end". This is the default Lead position name for **principles**, which are methods with no hunt bells. The term "six end" is taken from the name used for the division ends in Stedman, by far the most commonly rung principle.
+:   Short for "six end". This is the default Lead position for **principles**, which are methods with no hunt bells. The default row number is 1, the *first* row of the lead. 
+
+    The term "six end" is the name used for the division ends in Stedman, which is by far the most commonly rung principle.
