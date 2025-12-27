@@ -15,7 +15,7 @@ nav:
     - The Calls tab: compositions/adding_compositions_tabs_calls.md
     - The Calling tab: compositions/adding_compositions_tabs_calling.md
     - Calling positions: compositions/calling_positions.md
-  - 'Methods': 
+  - 'Methods':
     - Method pages: methods/overview.md
     - Customising the blue line: methods/blueline_options.md
     - Method properties: methods/method_properties.md
@@ -24,7 +24,7 @@ nav:
     - Using the method designer: methods/method_designer.md
   - 'Collections':
     - Overview: collections/overview.md
-    - Adding collections: collections/adding_collections.md 
+    - Adding collections: collections/adding_collections.md
   - 'Searching Complib':
     - Search by title or filter: search/basic.md
     - Extended search: search/extended.md
@@ -36,7 +36,10 @@ nav:
     - Row parity: advanced/row_parity.md
 
 theme: readthedocs
-markdown_extensions: 
+markdown_extensions:
   - admonition
   - def_list
   - attr_list
+  - pymdownx.superfences
+  - pymdownx.magiclink
+  - pymdownx.betterem
