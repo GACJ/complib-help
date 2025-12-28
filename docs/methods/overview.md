@@ -17,7 +17,7 @@ To the side of the method's title is the **toolbar**:
 The toolbar buttons can be identified by hovering over them. Some of the toolbar buttons **may not be visible on every method page**, and to every user. The buttons are, from left to right:
 
 ![Icon: find true to this](../img/icon_findtrueto.png){width="50"} Find compositions true to this
-:   Begins an **extended search** of compositions in the Composition Library to determine which ones can be rung with this method (see [Extended searches](../search/extended.md)). The search will include any [private compositions](../compositions/adding_compositions_overview.md/#publishing-compositions) you have defined. Only available to registered Power Users.
+:   Begins an **extended search** of compositions in the Composition Library to determine which ones can be rung with this method (see [Extended searches](../search/extended_search.md)). The search will include any [private compositions](../compositions/adding_compositions_overview.md/#publishing-compositions) you have defined. Only available to registered Power Users.
 
 ![Icon: add to collection](../img/icon_addtocollection.png){width="50"} Add to collection
 :   Adds the method to a **collection** of your choice (see [Collections](../collections/overview.md)). Only available to registered users.
@@ -93,7 +93,7 @@ Double work above/below
 :   For methods with a single hunt bell, the combination of the work done above/below the hunt bell with an inverted copy of itself will give a double method, which may or may not have been named.
 
 Extensions
-:   Two methods at different stages are extensions of one another if they are related by any of the recognised **extension paths**. If the method can be extended using any of the recognised extension paths, all methods in the path will be listed up to stage Twenty-Four (see [Extensions](../advanced/extensions.md)).
+:   Two methods at different stages are extensions of one another if they are related by any of the recognised **extension paths**. If the method can be extended using any of the recognised extension paths, methods in the path will be listed up to stage Twenty-Four (see [Extensions](../advanced/extensions.md)).
 
 Non-conforming extensions
 :   If two methods share the same name and class but are not related by any of the recognised extension paths, then they are **non-conforming extensions** of one another. A previously non-conforming extension may become a conforming extension in the event that: 
@@ -149,7 +149,18 @@ Type
     - **First extent**: for methods at stages Minor and below, a performance containing an extent of the method at that stage where the method is recognised to have been rung for the first time.
     - **Long Length**: a performance of 10,000 changes or more.
 
-    Performances are further typified by whether they were rung on towerbells or handbells.
+    Performances are further typified by their Ringing Style:
+
+    - **Towerbell**: a traditional performance on towerbells using ropes and wheels;
+    - **Handbell**: a double-handed performance on handbells, either with real handbells or with an electronic substitute;
+    - **Keyboard**: a performance in which bell sounds are achieved by pressing a keyboard, either analogue (e.g. a carillon) or digital (e.g. a computer keyboard);
+    - **Other**: a performance which does not fit into any of the above categories, such as tapped performances;
+    - **Mixed**: a performance in which a mixture of the above are used.
+
+    For more about Ringing Styles and how performances are reported, see [Section 6](https://framework.cccbr.org.uk/version2/reporting.html) of the Central Council Framework for Method Ringing.
+
+Details
+:   The published details of the performance: title, performing Guild or Association (if given), location, and conductor (if given).
 
 !!! note
     There is an order of priority within performance types, which broadly corresponds with length. The priority order is, from highest to lowest:
@@ -163,8 +174,6 @@ Type
 
     A performance is typically only included if no performance of that length or greater has been recorded prior to that date. Once a performance of greater length has been recorded, shorter performances from after that date will no longer be added (but will be retained if added previously). The exception to this is **long lengths**, which will always be recorded. 
 
-Details
-:   The published details of the performance: title, performing Guild or Association (if given), location, and conductor (if given).
 
 ## References
 ![References tab expanded](../img/references_tab_expanded.png)
@@ -209,4 +218,4 @@ Published on
 :   The date and time at which the method was made public.
 
 !!! note
-    Times and dates are given in Coordinated Universal Time (UTC).
+    Times and dates are given in your Local Time.

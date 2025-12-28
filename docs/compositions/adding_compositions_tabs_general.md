@@ -1,15 +1,7 @@
 # The General tab
 The General tab allows you to specify various high-level properties of a custom composition. When creating a new custom composition, this is usually the tab that you will use first.
 
-Several fields in the General tab will **automatically update** other tabs when populated. This can save a lot of time when defining a custom composition.
-
-!!! warning "Required fields"
-    Many fields in the General tab are optional. However, a composition cannot be saved without an entry in any **required fields**. The required fields in the General tab are:
-
-    - [Title](#title)
-    - [Stage](#stage)
-
-    Once a custom composition has been parsed by Complib, it will automatically repopulate these required fields if you delete them.
+Complib will attempt to infer as much information as it can about a composition based on data you have already entered. In particular, several fields in the General tab will **automatically update** other tabs when populated. This can save a lot of time when defining a custom composition.
 
 The sections on this page describe the entry fields on the General tab in detail. [Validation errors](adding_compositions_overview.md/#validation-errors) and [warnings](adding_compositions_overview.md/#validation-warnings) specific to fields in the General tab are listed at the end of the section pertaining to that field.
 

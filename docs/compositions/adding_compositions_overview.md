@@ -96,6 +96,11 @@ A parsed composition will be laid out by Complib at the bottom of the page. For 
 
 The appearance of the layout is determined by the current configuration of the [composition layout options](layout_options.md). The layout options can be adjusted by clicking on the ![Icon: cog](../img/icon_cog.png){width="25"} cog next to the **Validate** button.
 
+!!! note
+    The format that another user sees the composition in is determined exclusively by their own display settings. **The appearance of the Layout display and Blue line on the Add composition page have no bearing on how a composition is saved, and will not affect how it will appear to other users**. 
+    
+    In short, adjusting the Layout display and Blue line on the Add composition page is useful for debugging purposes, but not much else.
+
 ## Blue line
 Underneath the layout of a parsed composition, Complib will also give the pricked rows of the composition in a dedicated Blue line tab. The tab can be expanded by clicking on its name. When expanded, it will look something like this:
 

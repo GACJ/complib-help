@@ -37,8 +37,14 @@ Static
 Dynamic
 :   The changes of the method are not fixed, and are dynamically altered as the method is rung. One type of "method" with dynamic changes is the loosely defined family of **Dixonoids**, where places are made depending on which numbered bell is leading. Complib does not currently support the definition of methods with dynamic changes.
 
+Cross
+:   The method's [place notation](place_notation.md) contains the cross change. This means that there is at least one change when no bell remains in the same place as in the previous row.
+
 Penultimate
-:   The method contains a change (which is not the halflead change in palindromic methods) where a place is made in the penultimate position in the row (e.g., 5ths made in Minor, 7ths made in Major). 
+:   The method contains a change where:
+
+    - A place is made in the penultimate position in the row (e.g., 5ths made in Minor, 7ths made in Major); **and**
+    - The principle [hunt bell](#hunt-bells) is not in either of the last two places when the place is made.
 
     ??? note "Example"
         ---
@@ -47,7 +53,11 @@ Penultimate
 
         ![Aldrin Surprise Minor blue line](../img/aldrin_surprise_minor.png)
 
-    Historically, ringers have tended to avoid methods at even stages which have places made in the last two positions in the row. The reason is that this (usually) results in backstroke rows with the two heaviest bells reversed, which is considered by many to be unmusical.
+        In each lead of Aldrin Surprise Minor, two bells make 5ths under bells which are not the treble.
+
+        The fact that a bell makes 5ths under the treble at the half-lead is ignored.
+
+    Historically, ringers have tended to avoid methods at even stages which have a penultimate place made. The reason is that this (usually) results in backstroke rows with the two heaviest bells reversed, which is considered by many to be unmusical.
 
 ## Hunt bells
 Methods can fall into one of two distinct categories depending on the presence or absence of a **hunt bell**.
@@ -166,7 +176,7 @@ Uneven parity
 :   For principles, this means that the plain course contains an unequal number of **odd** and **even** rows (see [Row Parity](../advanced/row_parity.md)). For hunters, this means that there are an unequal number of odd and even rows for any given position in the hunt path of the **principal hunt bell**.
 
 Layered
-:   Each row of the plain course can be separated into two or more **non-overlapping groups** of adjacent bells such that no bell strays outside of its starting group during the course. For example, [Plain Bob Minor](https://complib.org/method/11349) rung on 8 bells with 7 and 8 dodging behind is equivalent to the layered method [Broadley Little Bob Major](https://complib.org/method/29080).
+:   Each row of the plain course can be separated into two or more **non-overlapping groups** of bells in contiguous positions such that no bell strays outside of its starting group during the course. For example, [Plain Bob Minor](https://complib.org/method/11349) rung on 8 bells with 7 and 8 dodging behind is equivalent to the layered method [Broadley Little Bob Major](https://complib.org/method/29080).
 
 ## Miscellaneous
 In addition to the above, the properties tab also lists miscellaneous information about the method in text form. The listed items are:
@@ -234,3 +244,6 @@ Stationary bells
 
 Maximum blows in one place
 :   The maximum number of times any bell remains in the same place between consecutive rows of the method.
+
+Music score (default music scheme)
+:   The music score of the plain course of the method, as determined by the default [music scheme](../advanced/music_schemes.md).

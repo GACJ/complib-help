@@ -8,10 +8,10 @@ This opens a window which allows you to customise the appearance of composition 
 
 Once you have selected the layout options you want, click **Save changes** to save your changes and close the options menu. Your new layout options will be reflected in the Layout tab. Clicking **Close** or the cross in the upper right will close the window without saving your changes. 
 
-To restore Complib's default layout, click **Default settings**, then **Save changes**.
-
 !!! note
     Compositions layouts for **single-method** and **spliced** compositions are configured separately. If you are not seeing changes you make reflected in the layout of a composition, check that you are configuring the correct composition type.
+
+To restore Complib's default layout, click **Default settings**, then **Save changes**.
 
 The following sections outline the different customisation options. Certain options may only be applicable to single-method or spliced compositions.
 
@@ -44,7 +44,7 @@ Calling positions (by courses)
     :   The order of the calling positions will be chosen so as to minimise the number of rows in the layout.
 
     !!! note
-        These secondary options are only available for **single-method compositions**.
+        These secondary options are only available for **single-method compositions**. In Spliced compositions, the concise layout order is always used.
 
 Calls (by leads)
 :   Displays a column listing the calling position and call type of each call.
@@ -58,17 +58,29 @@ Method mnemonics
     - Mid-lead finish in parentheses
     :   When selected, compositions which finish in the middle of a lead will display the mnemonic for that lead in (parentheses).
 
+??? hint "Hint: Method mnemonics in single-method compositions"
+    ---
+
+    A benefit of using method mnemonics in single-method compositions is that it gives a very simple indication of where the calls occur. In the below example, each lead of Bristol Surprise Royal is represented with a letter B. A full-stop after a lead in the mnemonic indicates a call at the end of that lead.
+
+    ![Single method with mnemonics](../img/single_method_with_mnemonics.png){width="400"}
+
+??? warning "Warning: Calling positions and Method mnemonics in Spliced"
+    ---
+
+    Be cautious about disabling Calling positions or Method mnemonics in compositions of Spliced, as in most cases this will make it impossible for the conductor to know how the composition is called.
+
 Course lengths (by courses)
-:   When selected, compositions in which calling positions correspond to a number of leads after the coursehead will display additional information about how many leads are in the course.
+:   When selected, compositions in which calling positions correspond to a number of leads after the coursehead will display additional information about how many leads are in the course. Unchecking the option will disable the display.
 
     - Auto
-    :   Course lengths will only be displayed for courses which deviate from the standard length for the method(s) in the composition.
+    :   The most common course length for the composition is designated the "standard" course length. Any course whose length differs from the standard length has its number of leads indicated in (parentheses).
     - All
     :   Course lengths will be given for all courses.
 
 ## Rows
 Show all parts
-:   By default, multipart compositions only show the calling for one part. When this option is selected, the subsequent parts will instead be fully expanded.
+:   By default, multipart compositions only show the calling for one part. When this option is selected, the subsequent parts will instead be fully expanded, and all notes regarding calling insertions/omissions/substitutions will be suppressed.
 
 Show all courseheads (by courses)
 :   By default, compositions laid out by courses will compress consecutive calls into a single row to save space. Sometimes this means that not all courseheads rung in the composition are listed in the coursehead column. When this option is selected, calls will be expanded so that all courseheads are shown.
