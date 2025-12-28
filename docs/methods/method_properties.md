@@ -13,9 +13,23 @@ Adjacent
 
 Identity
 :   The method contains a change where no bells move place.
+    
+    ??? note "Example"
+        ---
+
+        [Reverse Court Singles](https://complib.org/method/34027)
+
+        ![Reverse Court Singles blue line](../img/reverse_court_singles.png)
 
 Jump
 :   The method contains a change where a bell moves more than one place (for example, the change between the rows ``1 2 3 4 5 6`` and ``2 3 1 4 6 5``). Methods containing jump changes are referred to as Jump methods.
+
+    ??? note "Example"
+        ---
+
+        [Double Simple Jump Minimus](https://complib.org/method/43059)
+
+        ![Double Simple Jump Minimus blue line](../img/double_simple_jump_minimus.png)
 
 Static
 :   The changes of the method are fixed, which is to say that they are not altered as the method is rung (unless a **call** is made).
@@ -23,11 +37,23 @@ Static
 Dynamic
 :   The changes of the method are not fixed, and are dynamically altered as the method is rung. One type of "method" with dynamic changes is the loosely defined family of **Dixonoids**, where places are made depending on which numbered bell is leading. Complib does not currently support the definition of methods with dynamic changes.
 
+Penultimate
+:   The method contains a change (which is not the halflead change in palindromic methods) where a place is made in the penultimate position in the row (e.g., 5ths made in Minor, 7ths made in Major). 
+
+    ??? note "Example"
+        ---
+
+        [Aldrin Surprise Minor](https://complib.org/method/14383)
+
+        ![Aldrin Surprise Minor blue line](../img/aldrin_surprise_minor.png)
+
+    Historically, ringers have tended to avoid methods at even stages which have places made in the last two positions in the row. The reason is that this (usually) results in backstroke rows with the two heaviest bells reversed, which is considered by many to be unmusical.
+
 ## Hunt bells
 Methods can fall into one of two distinct categories depending on the presence or absence of a **hunt bell**.
 
-!!! hint "Definition"
-    A **hunt bell** is a bell which returns to the same place at the start of each lead/division.
+Hunt bell
+:   A **hunt bell** is a bell which returns to the same place at the start of each lead/division.
 
 Principle
 :   A method with no hunt bells (e.g. Stedman, Erin).

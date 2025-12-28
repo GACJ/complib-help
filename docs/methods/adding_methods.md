@@ -42,22 +42,34 @@ If Complib encounters a problem when attempting to validate a custom method, an 
 
 There are a number of different error types. Most errors will give an indication of how to clear them. The following is a non-exhaustive list of some of the more common errors:
 
-!!! error "Error: Place notation `_` is invalid for stage..."
+??? error "Error: Place notation `_` is invalid for stage..."
+    ---
+
     The identified element of place notation is not valid for the specified stage. Usually this means that the place specified in the place notation element does not exist at this stage. For example, attempting to validate the element `18` at stages lower than `Major` will generate this error.
 
-!!! error "Error: Method title already used..."
+??? error "Error: Method title already used..."
+    ---
+
     The title generated for the custom method conflicts with the title of an already existing method. The custom method's name must be altered so that the generated title is unique.
 
-!!! error "Error: Method place notation already exists as..."
+??? error "Error: Method place notation already exists as..."
+    ---
+
     The specified place notation is identical to that of an already existing method. The custom method's place notation must be altered so that it is unique.
 
-!!! error "Error: Method cannot be classified... "
+??? error "Error: Method cannot be classified... "
+    ---
+
     Complib cannot parse the specified place notation. This happens when the specified place notation does not conform to one of the accepted Method XML formats, or is empty. See [Place notation](place_notation.md) to learn more about the place notations that Complib can accept.
 
-!!! error "Error: Division Ends must be positive and less than the lead length."
+??? error "Error: Division Ends must be positive and less than the lead length."
+    ---
+
     The specified division ends exceed the bounds of the method's lead. The division ends must be row numbers within the lead length of the method as determined from its place notation.
 
-!!! error "Error: Division Ends must be unique."
+??? error "Error: Division Ends must be unique."
+    ---
+
     For custom methods with multiple divisions, two or more of the specified division ends are identical. All division ends must be unique row numbers within the method's lead.
 
 ### Warnings and other messages
@@ -65,17 +77,23 @@ If method validation is successful, Complib may display a number of warnings and
 
 Unlike [method errors](#method-errors), warnings and other alerts will not prevent you from saving a custom method. Some of the warnings and other messages you may encounter include:
 
-!!! warning "Warning: Method title already used at a different stage..."
+??? warning "Warning: Method title already used at a different stage..."
+    ---
+
     The custom method's generated title is identical to another method of the same class but differing stage. The current Central Council Framework requires that such methods belong to one of the accepted **extension paths** (see [Extensions](../advanced/extensions.md)). 
     
     While you can save a custom method which does not belong to an accepted extension path, the method will not be able to be accepted under that name when rung.
 
-!!! warning "Warning: Method is related to `___` as a `___` extension..."
+??? warning "Warning: Method is related to `___` as a `___` extension..."
+    ---
+
     The custom method's place notation can be obtained from an existing method by following one of the accepted extension paths. When this happens, you will likely wish to give the custom method the same name as the existing method, provided that another method with that name does not already exist at the same stage as the custom method. 
     
     Additionally, while this is expressed as a warning, there are circumstances under which you are obliged to name a method in accordance with an extension path if you wish to do so officially. See [Extensions](../advanced/extensions.md) for an in-depth explanation of this topic.
 
-!!! note "Information: Method is related to `___`..."
+??? note "Information: Method is related to `___`..."
+    ---
+    
     The custom method is related to an existing method at the same stage. This occurs when the custom method is a **halflead/leadend** variant, or a **Single/Double/Reverse** form of the existing method. See [Method pages > Related methods](overview.md/#related-methods) for more information about method relationships.
 
 ## Things to consider when naming methods

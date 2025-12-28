@@ -131,7 +131,7 @@ The effects of a method's Start row number on the actual rows of the composition
 !!! warning 
     A method's Start row number should not be confused with the [composition's Start row number](adding_compositions_tabs_general.md/#start-row-number), which is set under the General tab. 
     
-    The difference is that a method's Start row number is part of its definition, and will combine with other parts of the method's definition (such as [Length](#length) and [Lead position row number](#lead-position-row-number)) to determine how every lead of it in the composition is rung. 
+    The difference is that a method's Start row number is part of its definition, and will combine with other parts of the method's definition (such as [Length](#length) and [Lead position row number](#lead-position-row-number-and-name)) to determine how every lead of it in the composition is rung. 
     
     By contrast, a composition's Start row number affects only the first lead of the composition, and has no bearing on a method's definition.
 

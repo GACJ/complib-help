@@ -26,8 +26,11 @@ nav:
     - What are collections?: collections/overview.md
     - Adding collections: collections/adding_collections.md 
   - 'Searching Complib':
-    - Search by title or filter: search/basic.md
-    - Extended search: search/extended.md
+    - Quick search: search/quick_search.md
+    - Method search: search/method_search.md
+    - Composition search: search/composition_search.md
+    - Collection search: search/collection_search.md
+    - Extended search: search/extended_search.md
   - 'Advanced Topics':
     - Extensions: advanced/extensions.md
     #- False coursehead (FCH) groups: advanced/fch_groups.md

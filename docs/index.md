@@ -2,14 +2,14 @@
 
 The [Composition Library](https://complib.org), also known as Complib, is an interactive tool for all change ringers, not just conductors and composers. It is intended as a comprehensive reference for methods and compositions and has a number of useful features. For example, you can:
 
-- [Search](search/basic.md) for existing methods and compositions by name, title, or a large number of other criteria;
+- [Search](search/quick_search.md) for existing methods and compositions by name, title, or a large number of other criteria;
 - Display the [blue line of methods](methods/blueline_options.md) or [compositions](compositions/overview.md/#blue-line), as well as other detailed information;
 
 If you register for an account, you will gain the ability to contribute material to the Composition Library, and take full advantage of its more powerful tools. For instance, you will be able to:
 
 - Define [new compositions](compositions/adding_compositions_overview.md) and [methods](methods/adding_methods.md).
 - Create [collections](collections/adding_collections.md) of methods or compositions (e.g. your personal favourites, or the hottest new 23-spliced).
-- Find compositions which are true to a particular method, or methods which are true to a particular composition via an [extended search](search/extended.md).
+- Find compositions which are true to a particular method, or methods which are true to a particular composition via an [extended search](search/extended_search.md).
 
 Registered users can also ask questions, raise issues and request bespoke compositions from other Complib users.
 
