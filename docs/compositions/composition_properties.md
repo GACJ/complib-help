@@ -41,7 +41,9 @@ Spliced
 :   The composition involves multiple methods.
 
 ATW
-:   The composition is "all the work", meaning that all **working bells** ring every place bell of every method in the composition at least once. A breakdown of the composition's ATW status can be viewed in its [ATW analysis tab](overview.md/#atw-analysis).
+:   The composition is "all the work", meaning that all **working bells** ring every place bell of every method in the composition at least once. If a composition is not all the work, a note to this effect will appear at the bottom of its [layout](overview.md/#layout).
+
+    A breakdown of a composition's ATW status can be viewed in its [ATW analysis tab](overview.md/#atw-analysis).
 
     ??? note "Note: ATW for variable hunt, variable cover and mixed stage compositions"
         ---
@@ -223,7 +225,6 @@ Default calls
 
     - **Near**: calls default toward the front of the change (e.g. 4ths place bobs).
     - **Far**: calls default toward the back of the change (e.g. n-2's place bobs).
-    - **Mixed**: the composition uses multiple call types.
     - **Grandsire**: the composition uses Grandsire-type calls.
     - **Stedman**: the composition uses Stedman-type calls.
     - **None**: the composition has no specified call type.

@@ -99,7 +99,7 @@ The appearance of the layout is determined by the current configuration of the [
 !!! note
     The format that another user sees the composition in is determined exclusively by their own display settings. **The appearance of the Layout display and Blue line on the Add composition page have no bearing on how a composition is saved, and will not affect how it will appear to other users**. 
     
-    In short, adjusting the Layout display and Blue line on the Add composition page is useful for debugging purposes, but not much else.
+    However, adjusting the Layout display and Blue line options here can help you to see how the composition might appear to users with different configurations, and can be useful when debugging the composition if it is not pricking correctly.
 
 ## Blue line
 Underneath the layout of a parsed composition, Complib will also give the pricked rows of the composition in a dedicated Blue line tab. The tab can be expanded by clicking on its name. When expanded, it will look something like this:
@@ -131,7 +131,9 @@ To edit a custom composition, click on the ![Icon: edit](../img/icon_edit.png){w
 To delete a custom composition, click on the ![Icon: delete](../img/icon_delete.png){width="25"}delete button in the toolbar. This will bring up a prompt asking you to confirm that you want to delete the composition. Clicking on **Confirm Delete** will delete the composition from Complib.
 
 !!! warning 
-    Unlike [deleted methods](../methods/adding_methods.md/#editing-and-deleting-methods), compositions are deleted immediately and can no longer be recovered. If you have [shared the composition via a public link](#sharing-via-public-link), the link will no longer function.
+    Unlike [deleted methods](../methods/adding_methods.md/#editing-and-deleting-methods), compositions are deleted immediately and can no longer be recovered. If you have [shared the composition via a public link](#sharing-via-public-link), or if the composition has been linked to from an external site such as [BellBoard](https://bb.ringingworld.co.uk/), the link will no longer function.
+
+    **You should exercise great caution when deleting a composition which has been shared publicly, especially if there is any possibility of its being rung.** If a composition has already been rung, you should avoid deleting it altogether. If deletion is absolutely necessary, then you should supply a redirection to another Complib presentation of the same composition. See **Redirecting external references** below.
 
 ### Redirecting external references
 Complib allows various external sites such as BellBoard ([https://bb.ringingworld.co.uk/](https://bb.ringingworld.co.uk/)) to reference public compositions via their Composition Id. Deleting a composition will break any external links which reference it.

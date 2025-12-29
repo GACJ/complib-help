@@ -84,10 +84,18 @@ To add an attribution to the composition, click on `Add composer`. This will cre
 
 To delete an attribution, click the ![Icon: cross](../img/icon_x.png){width="20"} cross to the right of the name field.
 
-!!! note "Note: adding multiple attributions"
-    You can add multiple attributions to the same composition. 
+!!! warning "Warning: adding multiple attributions"
+    **You should only ever add one composer name per attribution**. If you want to attribute the composition to multiple people, you must add them separately by clicking **Add composer** to bring up additional attribution fields.
     
-    However, you should generally avoid attributing a composition to the same person in multiple different ways (see [Attributions in search results, etc.](#attributions-in-search-results-etc)).
+    You should generally avoid attributing a composition to the same person in multiple different ways (see [Attributions in search results, etc.](#attributions-in-search-results-etc)).
+
+### Composer name
+This is a text field in which you can enter the name of the person or entity which you wish to attribute. Complib will attempt to auto-complete the name using all the registered composer names in its database. Clicking on a composer's name in the drop-down list will add that name to the text field.
+
+!!! warning "Warning: Composer names"
+    **You should not add anything to the Composer name field other than a person's name**. Similarly, you should exercise great care when entering a composer's name, as any mistakes will be reflected in Complib's Report data and will have to be corrected manually.
+
+    If the name you enter does not match an existing composer, then saving the composition will create a new composer page under that name. **You should make sure that the name is listed correctly before saving or publishing a composition attributed to a new composer.**
 
 ### Attribution type
 This field is a drop-down menu which allows you to further specify the kind of attribution you want to make. These attribution types do not have set definitions, and to some extent they are open to interpretation. However, most have commonly accepted meanings. 
@@ -120,11 +128,6 @@ Inspired by
 Also attributed to
 :   Generally used to identify other composers who have previously been credited with producing the composition.
 
-### Composer name
-This is a text field in which you can enter the name of the person or entity which you wish to attribute. Complib will attempt to auto-complete the name using all the registered composer names in its database.
-
-If the name you enter does not match an existing composer, then saving the composition will create a new composer page under that name. You should make sure that the name is listed correctly before saving or publishing a composition attributed to a new composer.
-
 ### Attribution ordering
 There is an implicit order of priority between the attribute types, given by the order in which they appear in the drop-down menu. This determines the order in which attributions are listed on the composition's page as part of its [layout](overview.md/#layout).
 
@@ -141,14 +144,16 @@ Complib will **not** identify whether any of the listed names are identical, whi
 ??? warning "Warning: [Name] will be added as a new composer."
     ---
 
-    The entered name does not match any existing composer in Complib's database. Saving the composition will create a new composer page with the same name as the attribution. 
+    The entered name does not match any existing composer in Complib's database. Saving the composition will create a new composer page with the same name as the attribution. **You should only make an attribution using a new name if the name does not appear in the drop-down list**.
 
-    You should make sure that the name is listed correctly before saving or publishing a composition attributed to a new composer.
+    You should also make sure that the name is listed correctly before saving or publishing a composition attributed to a new composer.
 
 ## Year, month or date composed
-This field lets you specify a year, month or date when the composition was composed. Dates are given in the format [Day][Month][Year] and will appear in the composition's [properties tab](composition_properties.md/#miscellaneous).
+This field lets you specify a year, month or date when the composition was composed. Dates are given in the format **[Day][Month][Year]** and will appear in the composition's [properties tab](composition_properties.md/#miscellaneous).
 
-There are a number of different ways a year, month or date can be entered. The following are all accepted ways of entering the same date:
+It's not necessary to specify a full date, as often it is either not known or unnecessarily specific. For example, you might want to record the date as a month and year (e.g. **Feb 2003**), or simply a year (e.g. **1987**).
+
+There are a number of different ways a year, month or date can be entered. The following are all equivalent ways of entering the same date:
 
 -   1/1/10
 -   1-1-2010
@@ -242,6 +247,8 @@ When the composition is laid out by leads and [Rows > Show all leadheads](layout
 
 Most of the time, Complib is able to infer the intended courseheads. However, if your composition uses unusual courseheads, or courses of non-standard lengths, you may need to specify the courseheads you want displayed.
 
+Additionally, if your composition specifies call positions by a number of leads, Complib needs to have courseheads provided to it in order to count the leads properly.
+
 Manually specifying all courseheads in a composition can be time-consuming and prone to mistakes. To avoid this, Complib allows you to use **row masks**.
 
 ### What is a row mask?
@@ -333,14 +340,18 @@ While most compositions are started at handstroke, some compositions are designe
 When enabled, a supplementary note will be added to the composition's layout which reads **"Start at backstroke."** Any additional instructions relating to how the composition starts (such as a specific [starting row](#start-row-number)) will be appended to this.
 
 !!! warning
-    Forgetting to set this option may result in the composition's [blue line](overview.md/#blue-line) being displayed incorrectly when [Column display > Show handstroke/backstroke](../methods/blueline_options.md/#column-display-options) is enabled. 
+    Forgetting to set this option may result in the composition's [blue line](overview.md/#blue-line) being displayed incorrectly when [Column display > Show handstroke/backstroke](../methods/blueline_options.md/#column-display-options) is enabled. Similarly, stroke-specific properties of the composition such as [Changes > Tenors reversed](composition_properties.md/#changes) may not be listed accurately. 
 
     It may also lead to errors in the calculated [Music score](overview.md/#music-score), e.g. when accounting for handstroke and backstroke wraps, or when using a half-muffled music scheme (see [Music schemes](../advanced/music_schemes.md) for more on this).
+
+    For the benefit of conductors who might want to ring your composition, please remember to set this option if appropriate!
 
 ## Extents
 This field is used to signal to Complib the number of complete and partial extents the composition contains. If this field is left blank, Complib will infer the number of extents from the composition's [Title](#title) and [Stage](#stage) if it can. Otherwise, it will default to a value of 1.
 
-Complib uses the Extents value to determine how many times the composition is expected to return to rounds. If the Extents value is too small, there may sections of the composition which are ignored because the composition comes round before that point is reached.
+Complib uses the Extents value to determine how many times the composition is expected to return to rounds, as well as the maximum allowable repetitions of a given row before the composition runs false.
+
+If the Extents value is set too small, there may sections of the composition which are ignored because the composition comes round before that point is reached, or because the maximum number of false rows is been reached.
 
 ## Default calls
 This field is a dropdown menu, from which you can select a default call type for the composition. This will determine the way that standard call symbols such as `-` and `s` are interpreted in the composition's [calling](adding_compositions_tabs_calling.md). It will also determine the default behaviour of entries in the [Calls tab](adding_compositions_tabs_calls.md).
@@ -353,11 +364,8 @@ Near
 Far
 :   Calls will default towards the back of the change. Standard bobs and singles will be assumed to be (*N*-2)ths-place calls unless otherwise specified in the Calls tab.
 
-Mixed
-:   Calls will not default to any particular type. If this call type is selected, then all calls used in the calling must be manually defined in the Calls tab. You should use this call type to signal to the conductor that the composition contains a mixture of other default call types.
-
 Grandsire
-:   Calls will be assumed to represent Grandsire-type calls appropriate to the composition's stage. This call type is normally only used in compositions of twin-hunt methods such as Grandsire and Single Oxford.
+:   Calls will be assumed to represent Grandsire-type calls appropriate to the composition's stage. This call type is normally only used in compositions of twin-hunt methods such as Grandsire and Single Oxford, or in Doubles variations like April Day.
 
 Stedman
 :   Calls will be assumed to represent Stedman-type calls appropriate to the composition's stage. This call type is normally only used in compositions of Stedman and Erin.
@@ -377,6 +385,10 @@ The text entered in this field will be displayed in the [Library details tab](ov
 ## Allow save if false
 The vast majority of compositions that change ringers use are true (i.e., not false). See [Composition properties > Truth](composition_properties.md/#truth) for an explanation of what it means for a composition to be true. 
 
-By default, Complib will not allow you to save or publish a composition which is false. Enabling this option will override that behaviour, allowing a false composition to be saved.
+By default, Complib will not allow you to save or publish a composition which is false. Enabling this option will override that behaviour, allowing a false composition to be saved and potentially published. 
+
+There are a number of reasons you might want to save a false composition. For example, some compositions are of historical note, having been used in performances which were only subsequently discovered to be false. Short touches used for practice are usually not held to the same standard as performances, but are still valid and useful compositions in and of themselves.
+
+Being able to save a work-in-progress so that you can come back to it later, regardless of falseness, is useful in cases when debugging a complex composition, or when testing out new ideas.
 
 A false composition will be indicated with a ![Icon: false](../img/false.svg) next to its title on its composition page and in search results.
