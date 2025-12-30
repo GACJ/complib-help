@@ -97,7 +97,7 @@ A parsed composition will be laid out by Complib at the bottom of the page. For 
 The appearance of the layout is determined by the current configuration of the [composition layout options](layout_options.md). The layout options can be adjusted by clicking on the ![Icon: cog](../img/icon_cog.png){width="25"} cog next to the **Validate** button.
 
 !!! note
-    The format that another user sees the composition in is determined exclusively by their own display settings. **The appearance of the Layout display and Blue line on the Add composition page have no bearing on how a composition is saved, and will not affect how it will appear to other users**. 
+    The format in which another user sees the composition is determined exclusively by their own display settings. **The appearance of the Layout display and Blue line on the Add composition page have no bearing on how a composition is saved, and will not affect how it will appear to other users**. 
     
     However, adjusting the Layout display and Blue line options here can help you to see how the composition might appear to users with different configurations, and can be useful when debugging the composition if it is not pricking correctly.
 
@@ -113,7 +113,7 @@ For more info on the blue line display for compositions, see [Composition pages 
 ## Publishing compositions
 A custom composition which is successfully saved to Complib becomes a **private composition** and is given its own [composition page](overview.md). Private compositions are only visible to their owners, until they are published or shared via public link.
 
-To publish a private composition, click the ![Icon: publish](../img/icon_publish.png){width="25"} Publish button in the toolbar at the top of the composition page. This will add the composition to Complib's `Public` library, so that it is visible to anyone using the site.
+To publish a private composition, click the ![Icon: publish](../img/icon_publish.png){width="25"} Publish button in the toolbar at the top of the composition page. This will add the composition to Complib's **Public** library, so that it is visible to anyone using the site.
 
 !!! warning
     A published composition cannot be un-published (though it can still be edited or deleted). You should make sure that you want a composition to be visible before publishing it.
@@ -133,12 +133,12 @@ To delete a custom composition, click on the ![Icon: delete](../img/icon_delete.
 !!! warning 
     Unlike [deleted methods](../methods/adding_methods.md/#editing-and-deleting-methods), compositions are deleted immediately and can no longer be recovered. If you have [shared the composition via a public link](#sharing-via-public-link), or if the composition has been linked to from an external site such as [BellBoard](https://bb.ringingworld.co.uk/), the link will no longer function.
 
-    **You should exercise great caution when deleting a composition which has been shared publicly, especially if there is any possibility of its being rung.** If a composition has already been rung, you should avoid deleting it altogether. If deletion is absolutely necessary, then you should supply a redirection to another Complib presentation of the same composition. See **Redirecting external references** below.
+    **You should exercise great caution when deleting a composition which has been shared publicly, especially if there is any possibility of its being rung.** If a composition has already been rung, you should avoid deleting it altogether. If deletion is absolutely necessary, then you should supply a redirection to another Complib presentation of the same composition (see below).
 
 ### Redirecting external references
-Complib allows various external sites such as BellBoard ([https://bb.ringingworld.co.uk/](https://bb.ringingworld.co.uk/)) to reference public compositions via their Composition Id. Deleting a composition will break any external links which reference it.
+As noted above, Complib allows various external sites such as [BellBoard](https://bb.ringingworld.co.uk/) to reference public compositions via their Composition Id. Deleting a composition will break any external links which reference it.
 
-For this reason, the delete confirmation prompt lets you specify another composition which any such external links should be redirected to: simply enter the alternative composition's Composition Id in the provided text box. The Composition Id can be found in the [Library Details tab](overview.md/#library-details) on its composition page; it is also the string of numbers at the end of the composition page URL.
+The delete confirmation prompt lets you specify another composition which any such external links should be redirected to: simply enter the alternative composition's Composition Id in the provided text box. The Composition Id can be found in the [Library Details tab](overview.md/#library-details) on its composition page; it is also the string of numbers at the end of the composition page URL.
 
 !!! warning
     The redirection process cannot be undone, unless the new composition is also one that you own. You should be certain that the new composition is an appropriate substitute for the old one before redirecting.

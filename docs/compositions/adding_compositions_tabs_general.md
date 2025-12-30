@@ -78,7 +78,7 @@ The stage of a composition indicates how many bells are being rung. Many stages 
 ## Composer details
 This field allows you to list the names of people or other named entities (such as computer programs) which were involved in creating a composition.
 
-To add an attribution to the composition, click on `Add composer`. This will create a new attribution, which has two parts: an **attribution type** and a **name field**.
+To add an attribution to the composition, click on **Add composer**. This will create a new attribution, which has two parts: an **attribution type** and a **name field**.
 
 ![Add composer details](../img/add_composer.png){width="500"}
 
@@ -164,12 +164,12 @@ There are a number of different ways a year, month or date can be entered. The f
 ### Year
 The year can be given as either a two- or four-digit number. 
 
-If a two-digit number is used, it is assumed represent a year in the present century, unless that date would be in the future, in which case it is assumed to be in the previous century.
+If a two-digit number is used, it is assumed to represent a year in the present century, unless that date would be in the future, in which case it is assumed to be in the previous century.
 
 ### Month
 The month can be entered as a one- or two-digit number, or as a short or long month name. 
 
-If a month is specified, but no year, then the year will be assumed to be the same as the current year in Coordinated Universal Time (UTC).
+If a month is specified, but no year, then the year will be assumed to be the same as the current year in Local Time.
 
 ### Day
 The day can be entered as a one- or two-digit number.
@@ -190,7 +190,7 @@ The day can be entered as a one- or two-digit number.
 ??? danger "Error: `____` is in the future."
     ---
 
-    Composition dates must be in the past with respect to the present date in Coordinated Universal Time (UTC).
+    Composition dates must be in the past with respect to the present date in Local Time.
 
     If you have good reason to believe you are in possession of a composition originating from the future, you should immediately seek medical attention.
 
