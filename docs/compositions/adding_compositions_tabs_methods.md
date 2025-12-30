@@ -13,7 +13,10 @@ To manually add methods to the table, begin typing its title in the [Method titl
 Once a recognised method title has been entered, the rest of the cells in the row will auto-populate with default values appropriate to that method.
 
 ### Deleting methods
-Deleting a method's name in the table will delete all its associated information as well.
+Deleting a method's name in the table will delete all its associated information as well. 
+
+!!! warning "Warning: Replacing methods"
+    It is best practice to delete a method from the table before replacing it with another, instead of simply changing the method name. **Changing the name will not automatically update the rest of the table to match the default entries for the new method.** This can result in peculiar behaviour, e.g. a treble-dodging method with the Length of a plain method, or vice versa.
 
 ### Adding methods from a collection
 You can add methods directly from an existing method collection. This can be useful if you need to add a large number of methods to the tab.
@@ -54,8 +57,13 @@ Bells in positions which fall outside the bounds of the method will remain stati
 
     These examples show the first half-lead of [Bristol Surprise Major](https://complib.org/method/19048) being rung on 10 bells, but with different starting places. Since the method's stage has 8 bells, there are two stationary bells.
 
-!!! warning "Starting place restrictions"
-    The starting place cannot cause the method to go outside the bounds of the composition's stage. 
+!!! warning
+    It is highly unlikely that you will ever need to adjust the Starting place value; it is currently only used in extremely rare types of composition.. In fact, it is **strongly recommended that you leave this value at 1 at all times.** 
+
+??? warning "Warning: [Method name] (`__`) - Stage is higher than the composition's stage with a starting place of `__`."
+    ---
+
+    The starting place cannot cause the method to go outside the bounds of the composition's stage.
     
     The minimum starting place is 1. The maximum starting place is (*N* – *M* + 1), where *N* is the stage of the composition and *M* is the stage of the method.
 
@@ -144,12 +152,12 @@ Whenever a lead of the method is reached in the composition, Complib will apply 
 
 By default, this value will be equal to the method's **Lead length**, which can be found under the [Properties tab](../methods/overview.md/#properties) on its method page.
 
-??? error "Error: [Method name] (`__`) - The defined length (`__`) is greater than its lead length (`__`)."
+??? warning "Warning: [Method name] (`__`) - The defined length (`__`) is greater than its lead length (`__`)."
     ---
     
-    The Length value must be equal to, or less than, the method's Lead length.
+    You should in almost all circumstances avoid using a Length value greater than the lead length of the method, as it can cause unnecessary confusion.
 
-    If you want to have a partial lead of a method, there are two ways of achieving the same effect:
+    If you want to have a partial lead of a method, there are multiple ways of achieving the same effect:
 
     1. You can define a special call, called a **trim**, which removes a number of changes from a lead of the method. See [Calls](adding_compositions_tabs_calls.md) for help with using trims.
     2. You can define a second instance of the same method in the Methods table with a Length that is less than its Lead length. If so, you will need to give this instance a unique [method mnemonic](#mnemonic), and indicate a change-of-method at the appropriate place in the [Calling](adding_compositions_tabs_calling.md).
@@ -182,6 +190,14 @@ The **Lead position name** is an identifier which is used to refer to this Lead 
 
 The Lead position name can be any string of characters you like: you can even use emoji or other special symbols. The only requirement is that it must exactly match the name you use for that position in the [Calls tab](adding_compositions_tabs_calls.md).
 
+The Lead position name will be included at the bottom of the composition layout as part of a call's definition. This means that, for example, the Lead position name can be used to name calls used in Doubles variations.
+
+??? note "Example: Plain Bob with a Pink's Single"
+    ---
+
+    By naming the lead position "**Pink's**" in an an extent of Plain Bob Doubles with an appropriate [call definition](adding_compositions_tabs_calls.md), you get the variation May Day Doubles with the layout showing the call as:
+    > **s = 145.345.123.345.145 Pink's Single**.
+
 ### Defining multiple Lead positions
 It's possible to define multiple different Lead positions for the same method. To do this, enter a new Lead position row number and name in the table row beneath the original method definition. The rest of the row should be left blank.
 
@@ -196,6 +212,4 @@ LE
 :   Short for "lead end". This is the default Lead position for methods which are **hunters** (see [Method properties > Hunt bells](../methods/method_properties.md/#hunt-bells)). The default position is the final row of the lead.
 
 SE
-:   Short for "six end". This is the default Lead position for **principles**, which are methods with no hunt bells. The default row number is 1, the *first* row of the lead. 
-
-    The term "six end" is the name used for the division ends in Stedman, which is by far the most commonly rung principle.
+:   Short for "section end". This is the default Lead position for **principles**, which are methods with no hunt bells. The default row number is 1, the *first* row of the lead. 
