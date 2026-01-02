@@ -1,6 +1,6 @@
 # Customising the blue line
 
-The blue line options menu can be viewed by clicking on the ![Icon: cog](../img/icon_cog.png){width="25"} cog icon at the top right of a method page's [Blue Line tab](overview.md/#blue-line).
+The blue line options menu can be viewed by clicking on the ![Icon: cog](../img/icon_cog.png){width="25"}cog icon at the top right of a method page's [Blue Line tab](overview.md/#blue-line).
 
 Clicking on this button will open a window which allows you to customise the appearance of the blue line.
 

@@ -94,7 +94,7 @@ Information on how to clear tab-specific warnings and errors can be found on the
 ## Layout display
 A parsed composition will be laid out by Complib at the bottom of the page. For an overview of the various parts of a composition layout, see [Composition pages > Layout](overview.md/#layout). 
 
-The appearance of the layout is determined by the current configuration of the [composition layout options](layout_options.md). The layout options can be adjusted by clicking on the ![Icon: cog](../img/icon_cog.png){width="25"} cog next to the **Validate** button.
+The appearance of the layout is determined by the current configuration of the [composition layout options](layout_options.md). The layout options can be adjusted by clicking on the ![Icon: cog](../img/icon_cog.png){width="25"}cog next to the **Validate** button.
 
 !!! note
     The format in which another user sees the composition is determined exclusively by their own display settings. **The appearance of the Layout display and Blue line on the Add composition page have no bearing on how a composition is saved, and will not affect how it will appear to other users**. 
@@ -106,14 +106,14 @@ Underneath the layout of a parsed composition, Complib will also give the pricke
 
 ![Composition blue line example](../img/comp_blueline_expanded.png){width="500"}
 
-The appearance of the blue line display is determined by the [blue line display options](../methods/blueline_options.md) you have configured. These can be adjusted by clicking on the ![Icon: cog](../img/icon_cog.png){width="25"} cog at the top right of the tab.
+The appearance of the blue line display is determined by the [blue line display options](../methods/blueline_options.md) you have configured. These can be adjusted by clicking on the ![Icon: cog](../img/icon_cog.png){width="25"}cog at the top right of the tab.
 
 For more info on the blue line display for compositions, see [Composition pages > Blue line](overview.md/#blue-line).
 
 ## Publishing compositions
 A custom composition which is successfully saved to Complib becomes a **private composition** and is given its own [composition page](overview.md). Private compositions are only visible to their owners, until they are published or shared via public link.
 
-To publish a private composition, click the ![Icon: publish](../img/icon_publish.png){width="25"} Publish button in the toolbar at the top of the composition page. This will add the composition to Complib's **Public** library, so that it is visible to anyone using the site.
+To publish a private composition, click the ![Icon: publish](../img/icon_publish.png){width="25"}Publish button in the toolbar at the top of the composition page. This will add the composition to Complib's **Public** library, so that it is visible to anyone using the site.
 
 !!! warning
     A published composition cannot be un-published (though it can still be edited or deleted). You should make sure that you want a composition to be visible before publishing it.

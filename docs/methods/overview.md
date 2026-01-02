@@ -14,30 +14,30 @@ To the side of the method's title is the **toolbar**:
 
 ![Toolbar buttons](../img/method_toolbar_custom.png)
 
-The toolbar buttons can be identified by hovering over them. Some of the toolbar buttons **may not be visible on every method page**, and to every user. The buttons are, from left to right:
+The toolbar buttons can be identified by hovering over them. Some of the toolbar buttons **may not be visible on every method page**, or to every user. The buttons are, from left to right:
 
-![Icon: find true to this](../img/icon_findtrueto.png){width="50"} Find compositions true to this
+![Icon: find true to this](../img/icon_findtrueto.png){width="50"}Find compositions true to this
 :   Begins an **extended search** of compositions in the Composition Library to determine which ones can be rung with this method (see [Extended searches](../search/extended_search.md)). The search will include any [private compositions](../compositions/adding_compositions_overview.md/#publishing-compositions) you have defined. Only available to registered Power Users.
 
-![Icon: add to collection](../img/icon_addtocollection.png){width="50"} Add to collection
+![Icon: add to collection](../img/icon_addtocollection.png){width="50"}Add to collection
 :   Adds the method to a **collection** of your choice (see [Collections](../collections/overview.md)). Only available to registered users.
 
-![Icon: design unrung method](../img/icon_designnewmethod.png){width="50"} Design new (unrung) methods like this
+![Icon: design unrung method](../img/icon_designnewmethod.png){width="50"}Design new (unrung) methods like this
 :   Opens the **method designer** with a new blank method skeleton. The method skeleton will have the same hunt bell path as the method currently being viewed (see [Using the method designer](method_designer.md)). Only available to registered users.
 
-![Icon: clone](../img/icon_clone.png){width="50"} Clone
+![Icon: clone](../img/icon_clone.png){width="50"}Clone
 :   Creates a duplicate of the method on the **Add method** page which you can then edit (see [Adding methods](adding_methods.md)). Only available to registered Power users.
 
-![Icon: edit](../img/icon_edit.png){width="50"} Edit
+![Icon: edit](../img/icon_edit.png){width="50"}Edit
 :   Opens the method in the **method editor**. Only available registered users when viewing a private method which you own.
 
-![Icon: share](../img/icon_share.png){width="50"} Share
+![Icon: share](../img/icon_share.png){width="50"}Share
 :   Displays a **public link** to the method page so it can be shared with others. For information on what it means for a method to be public, see [Adding methods > Private and public methods](adding_methods.md/#private-and-public-methods).
 
-![Icon: export rows](../img/icon_exportrows.png){width="50"} Export rows
+![Icon: export rows](../img/icon_exportrows.png){width="50"}Export rows
 :   Opens a new browser tab displaying all the **rows** of the method's plain course in plaintext format.
 
-![Icon: print](../img/icon_print.png){width="50"} Printable version
+![Icon: print](../img/icon_print.png){width="50"}Printable version
 :   Opens a new browser tab displaying the contents of the [blue line](#blue-line) tab in a form which is easy to print.
 
 ## Tabs overview
