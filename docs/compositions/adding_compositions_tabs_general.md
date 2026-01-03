@@ -357,7 +357,7 @@ If there are courses in the composition which do not contain rows matching any c
         Extra commas will prompt Complib to expect additional coursehead mask(s): if it cannot find any, it will interpret this as a coursehead mask of stage zero, which will not match the specified stage.
 
 ## Start row number
-Allows you to specify which row of the first [specified method](adding_compositions_tabs_methods.md) the composition starts from. Most compositions are rung starting from row 0.
+Allows you to define which row of the first method's lead/division the composition starts from. Most compositions are rung starting from row 0.
 
 If no start row number is specified, the field defaults to a value of 0. 
 
