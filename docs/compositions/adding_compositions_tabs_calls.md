@@ -13,7 +13,7 @@ To edit any value in the table, simply click on the relevant cell, then type a n
 ## Call Type & Symbol
 These fields determine which of a number of standard types the call falls under, and what symbol is used to represent it in the composition's [calling](adding_compositions_tabs_calling.md). 
 
-Complib gives you the flexibility to define calls in whatever way you want. However, most compositions tend to use one of a small number of standard call types. These types (Bob, Single, etc.) are widely used, have commonly accepted meanings, and are often represented with a set of standard symbols. Others are rarer, and may have varied uses across different methods and composers. 
+Complib gives you the flexibility to define calls in whatever way you want. However, most compositions tend to use one of a small number of standard call types. Some of these types (Bob, Single, etc.) are widely used, have commonly accepted meanings, and are often represented with a set of standard symbols. Others are rarer and may have seen a variety of historical uses, or may be wholly modern innovations.
 
 The default behaviour of some call types depend on the [default calls](../methods/method_properties.md/#miscellaneous) of the method(s) currently defined for the composition. However, since there is no need to define any of the default calls explicitly (and in fact Complib will remove any such extraneous definitions), the below examples are included more as a guide as to what each call type "usually" means.
 
@@ -148,7 +148,7 @@ Used by default to represent:
 ### Big Single
 *Default symbol*: *none*
 
-Notionally a counterpart to the big bob. This call type has no default behaviour.
+Notionally a counterpart to the big bob. Has no default behaviour.
 
 ### Bob Single 
 *Default symbol*: **b**

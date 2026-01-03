@@ -12,13 +12,13 @@ Forenames & Last name
 :   The forenames and last name of the account holder. **Editable**.
 
 Email address
-:   The email address which the account is registered to. This is the email used to log in, and to which any email notifications are sent to (see [User Subscriptions](#user-subscriptions)). **Editable**.
+:   The email address which the account is registered to. This is the email used to log in, and to which any email notifications are sent (see [User Subscriptions](#user-subscriptions)). **Editable**.
 
 User type
 :   Indicates whether the account is a Basic or Power user. Some of the more powerful Complib functions such as [extended searches](../search/extended_search.md) are restricted to Power users. **Not editable**.
 
 Account status
-:   Indicates whether the account is active or inactive *(PD: more clarification on what this means?)*. **Not editable**.
+:   Indicates whether the account is Pending (awaiting confirmation of email address), Active or Suspended. **Not editable**.
 
 Date registered
 :   The date and time at which the account was created. **Not editable**.
@@ -28,10 +28,10 @@ This section indicates which (if any) email notifications your account is subscr
 
 ### Email notifications
 All Issues
-:   Notifications will be sent whenever any Issue is opened, updated, or closed (see: Raising an Issue).
+:   Notifications will be sent whenever an Issue or Composition request is opened, updated, or closed by anybody.
 
 My Issues
-:   Notifications will be sent whenever an issue you opened is updated or closed.
+:   Notifications will be sent whenever an Issue you opened is updated or closed (see: Raising an Issue).
 
 Composition Requests
 :   Notifications will be sent whenever a new composition request is opened (*PD: at least, I assume so. I have never personally used this*).
@@ -96,7 +96,7 @@ Modified on
 :   The date and time at which the account was last modified, and who edited it.
 
 ## Editing your profile
-Your account's user profile can be edited by clicking the ![Icon: edit](../img/icon_edit.png){width="25"}**Edit** icon at the top right of the user profile page. When you are happy with the changes you have made, click **Save** at the bottom of the page.
+Your account's user profile can be edited by clicking the ![Icon: edit](../img/icon_edit.png){width="25"}**Edit** button at the top right of the user profile page. When you are happy with the changes you have made, click **Save** at the bottom of the page.
 
 The following items on the user profile page can be edited: 
 
@@ -111,7 +111,7 @@ To change the password used to log in to your account, click the ![Icon: padlock
 If you have forgotten your password, you can [reset it](../user/reset_password.md) via the login page (NB: requires logging out).
 
 ## Deleting your account
-You can delete your Complib account entirely by clicking the ![Icon: delete](../img/icon_delete.png){width="25"}**Delete** icon at the top right of the user profile page. You will be prompted to confirm that you are sure before the account is deleted.
+You can delete your Complib account entirely by clicking the ![Icon: delete](../img/icon_delete.png){width="25"}**Delete** button at the top right of the user profile page. You will be prompted to confirm that you are sure before the account is deleted.
 
 !!! warning "Warning: Account deletion"
     You should think very seriously before deleting your Complib account. 
