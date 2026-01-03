@@ -1,5 +1,6 @@
 # User profile and settings
 Once you have signed up for an account and logged in, your user profile page can be accessed by clicking your account name in the Navigation bar:
+
 <center>
 ![User profile button](../img/user_profile_button.png){width="300"}
 </center>
