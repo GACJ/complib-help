@@ -102,7 +102,6 @@ The second most common type of call. Singles are the counterparts to bobs, in th
 
 A utility call, used to prevent the pricker from inserting another call at the corresponding position. Plains should only ever be used to help Complib interpret a composition correctly: **plain calls are not displayed in the composition's layout**.
 
-
 There are two cases in which the use of plain calls is required.
 
 1. To force the pricker to ignore a calling position, to prevent the next call in the calling from being applied too soon. This quite often happens in compositions which specify calling positions by a number of leads after the course end.
@@ -135,8 +134,6 @@ There are two cases in which the use of plain calls is required.
         
         Try deleting the plain at 5, and note the effect it has on the Blue Line display.
 
-
-
 ### Big Bob
 *Default symbol*: **x**
 
@@ -147,7 +144,6 @@ Used by default to represent:
     - A (*n*–4)'s place bob at stages above Royal.
 - Far calls:
     - A (*n*–4)'s place bob.
-
 
 ### Big Single
 *Default symbol*: *none*
@@ -186,7 +182,6 @@ By default, represents:
 - Far calls:
     - **1(*****n*****–4)...(*****n*****–1)*****n*** at even stages;
     - **(*****n*****–4)...(*****n*****–1)*****n*** at odd stages.
-
 
 ### Extreme 
 *Default symbol*: **e**
@@ -291,7 +286,6 @@ An observation mask is a [**row mask**](adding_compositions_tabs_general.md/#wha
     </center>
 
     Each observation mask specifies the position of bell 2 *after* the call at the corresponding calling position. All other bells are represented using wildcards (**x**).
-
 
 ## Further examples
 For more examples of compositions using the Calls tab, [see the Examples reference collection](https://complib.org/collection/10184/?chapter=Calls%20and%20Calling%20Positions). Click on a composition in the collection, then click ![Icon: clone](../img/icon_clone.png){width="25"}**Clone** to duplicate it in the composition editor. Navigating to the Calls tab will give you a peek at how the submitter has defined the calls in their composition.
