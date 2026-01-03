@@ -6,7 +6,8 @@ nav:
   - About the Help: about.md
   - 'User Accounts':
     - Signing up for an account: user/account_signup.md
-    - Customising your profile: user/user_profile.md
+    - Resetting your password: user/reset_password.md
+    - User profile and settings: user/user_profile.md
   - 'Compositions':
     - Composition pages: compositions/overview.md
     - Customising composition layouts: compositions/layout_options.md

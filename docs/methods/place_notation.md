@@ -1,5 +1,5 @@
 # Place notation
-There are many different ways that change ringing methods can be written down. Most often they are represented visually as a *blue line diagram*, which can aid in memorisation. Some methods can be learned according to a rule such as *"first, treble-bob, last, near, full, far..."* which expresses the blue line concisely as a short phrase.
+There are many different ways that change ringing methods can be written down. Most often they are represented visually as a *blue line diagram*, which can aid in memorisation. Some methods can be learned according to a rule such as *"first, treble-bob, last, near, full, far..."* which expresses the blue line as a short phrase.
 
 However, in order to refer to a specific method uniquely, we need a (compact) way of expressing what exactly every bell does while ringing it. Place notation is a tool invented in order to do just that.
 
