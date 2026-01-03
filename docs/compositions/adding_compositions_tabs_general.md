@@ -199,7 +199,58 @@ This field allows you to specify one or more partheads. In a composition that ha
 
 Partheads must be valid rows, and must match the currently specified [stage](#stage). If more than one parthead is entered, they must be separated by commas (`,`).
 
-Complib will use any specified partheads to generate a closed set of partheads. The size of this set depends on the partheads themselves. Any generated partheads will be listed in the validation readout, with the user-specified parthead(s) highlighted in grey.
+Complib will use any specified partheads to generate a set of partheads. The size of this set depends on the partheads themselves, as well as the order in which they are entered. Specifically, Complib generates the set of partheads by repeatedly transposing any defined parthead by itself, and by any which were defined *before* it.
+
+??? note "Example: Parthead 135264"
+    ---
+    Suppose that your composition uses the parthead 135264. Complib will repeatedly apply the transposition implied by this parthead to obtain the additional partheads 156342, 164523 and 142635. These generated partheads do not themselves generate any new partheads, so these four partheads (together with rounds) form a closed set.
+
+??? note "Example: Partheads 123465, 123645"
+    ---
+    Partheads 123465 and 123645 together will generate a set of six partheads: 123465, 123645, 123546, 123654, 123564 and 123456.
+    The same set will be generated regardless of the ordering of the two specified partheads.
+
+It is important to bear in mind that the ordering of the custom partheads can change the resulting set of generated partheads. The next example demonstrates this.
+
+??? note "Example: Partheads 123564, 124536"
+    ---
+    The two partheads 123564 and 124536 will produce a total of nine generated partheads. However, the members of those sets depends on which order the two given partheads are specified in.
+
+    123564, 124536:
+
+    > 123456, 123564, 123645, 124536, 124365, **124653**, 125346, **125463**, 125634
+
+    124536, 123564:
+
+    > 123456, 124536, 125346, 123564, 125634, **126354**, 123645, **126435**, 124365
+
+    It can be seen by inspection that the **bolded** partheads are not shared between the two sets.
+
+Any generated partheads will be listed in the validation readout, with the user-specified parthead(s) highlighted in grey. You should use this to check that Complib is correctly identifying the partheads used in the composition.
+
+### Non-transposing partheads
+In some cases, it can be difficult to work out the correct ordering of partheads. There are also some cases in which a generated parthead will not appear in the composition despite being implied by other partheads—for example, a composition might make use of an [omit](adding_compositions_tabs_calls.md/#omit) to skip one of the partheads.
+
+If this is causing problems, you can specify that a parthead provided to Complib should *not* be used to generate additional partheads. This is done by putting a plus (+) at the front of the parthead.
+
+??? note "Example: 13425678, +12436578"
+    ---
+    Normally, the partheads 13425678 and 12436578 together would generate a set of six partheads. However, if the second of these is made a non-transposing parthead, +12436578, then the set generated is:
+
+    13425678, 14235678, 12345678, 12436578
+
+    It can be seen that 13425678 has only been used to transpose itself, and that 12436578 has been left as-is.
+
+### Partheads and mid-lead starts/finishes
+It is important that the partheads provided to Complib are the actual partheads of the composition. Particular care should be taken when a multipart composition uses a mid-lead start/finish, such as in many multipart compositions of Stedman. 
+
+In such compositions, **the parthead rows typically occur in the middle of a lead/division**—they are not simply the nearest lead- or section-end, as is sometimes used for convenience when writing a composition down by hand.
+
+??? note "Example: Multipart beginning at the backstroke snap"
+    ---
+    [5056 Bristol Surprise Major](https://complib.org/composition/51258), Op. 3 (rotated) by Alan G Reading is a two-part composition of [Bristol Surprise Major](https://complib.org/method/19048) which begins at the backstroke snap, or row 2 in the lead. 
+    
+    The leadhead row closest to the partend is 12437586, but the true parthead, 12435678, occurs two changes later. It is this true parthead which the composition must specify. By [opening a clone of the composition](https://complib.org/composition/51258/copy) (NB: must be logged in) we can see that 12435678 is indeed the parthead used.
 
 ### Parthead warnings and errors
 
@@ -247,7 +298,10 @@ When the composition is laid out by leads and [Rows > Show all leadheads](layout
 
 Most of the time, Complib is able to infer the intended courseheads. However, if your composition uses unusual courseheads, or courses of non-standard lengths, you may need to specify the courseheads you want displayed.
 
-Additionally, if your composition specifies call positions by a number of leads, Complib needs to have courseheads provided to it in order to count the leads properly.
+!!! warning 
+    If your composition specifies call positions by a number of leads after the course end, Complib needs to have courseheads provided to it in order to count the leads properly. 
+    
+    Additionally, if a composition has multiple parts, **you must remember to provide appropriate coursehead masks for all the parts**.
 
 Manually specifying all courseheads in a composition can be time-consuming and prone to mistakes. To avoid this, Complib allows you to use **row masks**.
 
@@ -355,6 +409,8 @@ If the Extents value is set too small, there may sections of the composition whi
 
 ## Default calls
 This field is a dropdown menu, from which you can select a default call type for the composition. This will determine the way that standard call symbols such as `-` and `s` are interpreted in the composition's [calling](adding_compositions_tabs_calling.md). It will also determine the default behaviour of entries in the [Calls tab](adding_compositions_tabs_calls.md).
+
+This field may autofill with a certain value depending on which [calling positions](calling_positions.md) have been used in the composition's [Calling tab](adding_compositions_tabs_calling.md), and which method is defined in the [Methods tab](adding_compositions_tabs_methods.md).
 
 The default call types are: 
 

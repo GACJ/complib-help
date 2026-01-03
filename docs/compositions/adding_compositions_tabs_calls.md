@@ -17,126 +17,147 @@ Complib gives you the flexibility to define calls in whatever way you want. Howe
 
 The default behaviour of some call types depend on the [default calls](../methods/method_properties.md/#miscellaneous) of the method(s) currently defined for the composition. However, since there is no need to define any of the default calls explicitly (and in fact Complib will remove any such extraneous definitions), the below examples are included more as a guide as to what each call type "usually" means.
 
-A call symbol can be **any lowercase letter [a–z], or a dash (-)**, with the constraint that **all call symbols in a composition must be unique**.
+A call symbol can be **any lowercase letter [a–z], or a dash (–)**, with the constraint that **all call symbols in a composition must be unique**.
 
 The standard call types and their default symbols are:
 
-### Bob (-)
-:   The simplest, most common type of call. In single-hunt methods and principles, a bob generally replaces a place made at/after the lead- or section-end with another made elsewhere in the row.
+### Bob
+*Default symbol*: **–**
 
-    ??? note "Example: Plain Bob, 4ths place bob"
-        ---
-        The diagrams below show the leadend of [Plain Bob Minor](https://complib.org/method/11349) with no call (top) and with a standard "near" bob (bottom). The bob replaces 2nds over the treble with 4ths over the treble.
-        <center>
-        ![Plain Bob Minor, plain lead](../img/plainbob_plain.png){width="200"}
-        
-        ![Plain Bob Minor with 4ths place bob](../img/plainbob_bob.png){width="200"}
-        </center>
+The simplest, most common type of call. In single-hunt methods and principles, a bob generally replaces a place made at/after the lead- or section-end with another made elsewhere in the row.
 
-    ??? note "Example: Double Norwich Court Bob Major, 6ths place bob"
-        ---
-        [Double Norwich Court Bob Major](https://complib.org/method/12470) with no call (top) and with a standard "far" bob (bottom). The bob replaces *n*ths place over the treble with (*n*–2)'s place over the treble.
-        <center>
-        ![DNCBM, plain lead](../img/dncbm_plain.png){width="200"}
-        
-        ![DNCBM, bob lead](../img/dncbm_far_bob.png){width="200"}
-        </center>
+??? note "Example: Plain Bob, 4ths place bob"
+    ---
+    The diagrams below show the leadend of [Plain Bob Minor](https://complib.org/method/11349) with no call (top) and with a standard "near" bob (bottom). The bob replaces 2nds over the treble with 4ths over the treble.
+    <center>
+    ![Plain Bob Minor, plain lead](../img/plainbob_plain.png){width="200"}
     
-    ??? note "Example: Stedman Triples, Stedman bob"
-        ---
-        The six-end of [Stedman Triples](https://complib.org/method/27985) with no call (top) and with a standard "Stedman" bob (bottom). The bob replaces *n*ths place over the six-end with (*n*–2)'s place over the six-end.
-        <center>
-        ![Stedman, plain six](../img/stedman_plain.png){width="200"}
-        
-        ![Stedman, bob six](../img/stedman_bob.png){width="200"}
-        </center>
+    ![Plain Bob Minor with 4ths place bob](../img/plainbob_bob.png){width="200"}
+    </center>
 
-    In twin-hunt methods, a bob generally replaces *n*ths place *before* the lead end with 3rds made *before* the lead end.
-
-    ??? note "Example: Grandsire Triples, Grandsire bob"
-        ---
-        [Grandsire Triples](https://complib.org/method/12415) with no call and with a standard "Grandsire" bob. 
-        <center>
-        ![Grandsire, plain lead](../img/grandsire_plain.png){width="200"}
-        
-        ![Grandsire, bob lead](../img/grandsire_bob.png){width="200"}
-        </center>
-
-### Single (s)
-:   The second most common type of call. Singles are the counterparts to bobs, in the sense that they usually involve two extra places made in addition to the one(s) made at a standard bob.
-
-    ??? note "Example: Plain Bob, 4ths place single"
-        ---
-        The diagram below shows the leadend of [Plain Bob Minor](https://complib.org/method/11349) with a standard "near" single. The single replaces 2nds over the treble with 2nds, 3rds and 4ths over the treble.
-        <center>
-        ![Plain Bob Minor with 4ths place single](../img/plainbob_single.png){width="200"}
-        </center>
-
-    ??? note "Example: Double Norwich Court Bob Major, 6ths place single"
-        ---
-        [Double Norwich Court Bob Major](https://complib.org/method/12470) with a standard "far" single. The single replaces *n*ths place over the treble with (*n*–2)'s, (*n*–1)'s and *n*ths place over the treble.
-        <center>
-        ![DNCBM, single lead](../img/dncbm_far_single.png){width="200"}
-        </center>
+??? note "Example: Double Norwich Court Bob Major, 6ths place bob"
+    ---
+    [Double Norwich Court Bob Major](https://complib.org/method/12470) with no call (top) and with a standard "far" bob (bottom). The bob replaces *n*ths place over the treble with (*n*–2)'s place over the treble.
+    <center>
+    ![DNCBM, plain lead](../img/dncbm_plain.png){width="200"}
     
-    ??? note "Example: Stedman Triples, Stedman single"
-        ---
-        The six-end of [Stedman Triples](https://complib.org/method/27985) with a standard "Stedman" single. The single replaces *n*ths place over the six-end with (*n*–2)'s, (*n*–1)'s and *n*ths place over the six-end.
-        <center>
-        ![Stedman, single six](../img/stedman_single.png){width="200"}
-        </center>
-
-    ??? note "Example: Grandsire Triples, Grandsire single"
-        ---
-        [Grandsire Triples](https://complib.org/method/12415) with a standard "Grandsire" single. Here, 2nds and 3rds are made over the treble at the leadend, in addition to the thirds made *before* the leadend.
-        <center>
-        ![Grandsire, single lead](../img/grandsire_single.png){width="200"}
-        </center>
-
-### Plain (p)
-:   Not traditionally considered a call, a plain indicates a plain lead- or section-end. This call type is mostly only used to explicitly signal to Complib that a lead or section should not have a call made, in cases where it would otherwise attempt to insert a call there.
-
-### Big Bob (x)
-:   Usually used to represent:
+    ![DNCBM, bob lead](../img/dncbm_far_bob.png){width="200"}
+    </center>
     
-    - A (*n*-4)'s place bob in single-hunt methods on more than eight bells; *or*
-    - A 6ths place bob on eight bells, if "near" bobs are also being used.
+??? note "Example: Stedman Triples, Stedman bob"
+    ---
+    The six-end of [Stedman Triples](https://complib.org/method/27985) with no call (top) and with a standard "Stedman" bob (bottom). The bob replaces *n*ths place over the six-end with (*n*–2)'s place over the six-end.
+    <center>
+    ![Stedman, plain six](../img/stedman_plain.png){width="200"}
+    
+    ![Stedman, bob six](../img/stedman_bob.png){width="200"}
+    </center>
 
-### Big Single (z)
-:   Notionally a counterpart to the big bob. This call type has no default behaviour.
+In twin-hunt methods, a bob generally replaces *n*ths place *before* the lead end with 3rds made *before* the lead end.
 
-### Bob Single (b)
-:   This rare call type takes its name from those used by John Holt in his landmark [10-part composition of Grandsire Triples](https://complib.org/composition/29040). It is generally used to indicate a call in which 4ths, 5ths and 6ths are made over the treble at the lead-end (in addition to *n*ths, for odd-bell methods).
+??? note "Example: Grandsire Triples, Grandsire bob"
+    ---
+    [Grandsire Triples](https://complib.org/method/12415) with no call and with a standard "Grandsire" bob. 
+    <center>
+    ![Grandsire, plain lead](../img/grandsire_plain.png){width="200"}
+    
+    ![Grandsire, bob lead](../img/grandsire_bob.png){width="200"}
+    </center>
 
-    ??? note "Example: Grandsire Triples with Holt's bob single."
-        ---
-        [Grandsire Triples](https://complib.org/method/12415) with a Holt's bob single. Thirds is made *before* the leadend as usual; all the bells except those in 2-3 then lie still across the leadend.
-        <center>
-        ![Grandsire, bob single](../img/grandsire_bobsingle.png){width="200"}
-        </center>
+### Single
+*Default symbol*: **s**
 
-### Double (d)
-:   Generally used for a call which extends the standard single with two additional places made.
+The second most common type of call. Singles are the counterparts to bobs, in the sense that they usually involve two extra places made in addition to the one(s) made at a standard bob.
 
-    ??? note "Example: Plain Bob Major with a 123456 double"
-        ---
-        [Plain Bob Major](https://complib.org/method/12834) with a standard double: 2nds, 3rds, 4ths, 5ths and 6ths are all made over the treble at the leadend.
-        <center>
-        ![Plain Bob, double](../img/pb_8_double.png){width="200"}
-        </center>
+??? note "Example: Plain Bob, 4ths place single"
+    ---
+    The diagram below shows the leadend of [Plain Bob Minor](https://complib.org/method/11349) with a standard "near" single. The single replaces 2nds over the treble with 2nds, 3rds and 4ths over the treble.
+    <center>
+    ![Plain Bob Minor with 4ths place single](../img/plainbob_single.png){width="200"}
+    </center>
 
-### Extreme (e)
-:   This call type has no default behaviour. Similar to the big bob, extremes are usually used to indicate a call with a place made further to the back of the change than a standard bob. 
+??? note "Example: Double Norwich Court Bob Major, 6ths place single"
+    ---
+    [Double Norwich Court Bob Major](https://complib.org/method/12470) with a standard "far" single. The single replaces *n*ths place over the treble with (*n*–2)'s, (*n*–1)'s and *n*ths place over the treble.
+    <center>
+    ![DNCBM, single lead](../img/dncbm_far_single.png){width="200"}
+    </center>
 
-### Omit (o)
+??? note "Example: Stedman Triples, Stedman single"
+    ---
+    The six-end of [Stedman Triples](https://complib.org/method/27985) with a standard "Stedman" single. The single replaces *n*ths place over the six-end with (*n*–2)'s, (*n*–1)'s and *n*ths place over the six-end.
+    <center>
+    ![Stedman, single six](../img/stedman_single.png){width="200"}
+    </center>
 
-### Trim (t)
+??? note "Example: Grandsire Triples, Grandsire single"
+    ---
+    [Grandsire Triples](https://complib.org/method/12415) with a standard "Grandsire" single. Here, 2nds and 3rds are made over the treble at the leadend, in addition to the thirds made *before* the leadend.
+    <center>
+    ![Grandsire, single lead](../img/grandsire_single.png){width="200"}
+    </center>
 
-### Fill (f)
+### Plain
+*Default symbol*: **p**
 
-### Jump (z)
+Not traditionally considered a call, a plain indicates a plain lead- or section-end. This call type is mostly only used to explicitly signal to Complib that a lead or section should not have a call made, in cases where it would otherwise attempt to insert a call there.
 
-### Special (z)
+### Big Bob
+*Default symbol*: **x**
+
+Usually used to represent:
+    
+- A (*n*-4)'s place bob in single-hunt methods on more than eight bells; *or*
+- A 6ths place bob on eight bells, if "near" bobs are also being used.
+
+### Big Single
+*Default symbol*: *none*
+
+Notionally a counterpart to the big bob. This call type has no default behaviour.
+
+### Bob Single 
+*Default symbol*: **b**
+
+This rare call type takes its name from those used by John Holt in his landmark [10-part composition of Grandsire Triples](https://complib.org/composition/29040). It is generally used to indicate a call in which 4ths, 5ths and 6ths are made over the treble at the lead-end (in addition to *n*ths, for odd-bell methods).
+
+??? note "Example: Grandsire Triples with Holt's bob single."
+    ---
+    [Grandsire Triples](https://complib.org/method/12415) with a Holt's bob single. Thirds is made *before* the leadend as usual; all the bells except those in 2-3 then lie still across the leadend.
+    <center>
+    ![Grandsire, bob single](../img/grandsire_bobsingle.png){width="200"}
+    </center>
+
+### Double
+*Default symbol*: **d**
+
+Generally used for a call which extends the standard single with two additional places made.
+
+??? note "Example: Plain Bob Major with a 123456 double"
+    ---
+    [Plain Bob Major](https://complib.org/method/12834) with a standard double: 2nds, 3rds, 4ths, 5ths and 6ths are all made over the treble at the leadend.
+    <center>
+    ![Plain Bob, double](../img/pb_8_double.png){width="200"}
+    </center>
+
+### Extreme 
+*Default symbol*: **e**
+
+This call type has no default behaviour. Similar to the big bob, extremes are usually used to indicate a call with a place made further to the back of the change than a standard bob. 
+
+### Omit 
+*Default symbol*: **o**
+
+### Trim 
+*Default symbol*: **t**
+
+### Fill 
+*Default symbol*: **f**
+
+### Jump 
+*Default symbol*: *none*
+
+### Special 
+*Default symbol*: *none*
 
 ## Notation
 The [place notation](../methods/place_notation.md) of the call. If the call affects multiple changes, the notation will have multiple elements.

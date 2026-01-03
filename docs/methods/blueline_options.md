@@ -28,7 +28,7 @@ Choose working bells from smallest
 :   By default, Complib will choose the biggest working bell (if any exist) and draw its line in the method display. If this option is selected, the smallest working bell will be chosen instead.
 
 !!! note
-    Complib will choose one working bell from each **working bell cycle** for its default line drawing. For methods with more than one cycle, this means that one bell from each of the disjoint cycles will be selected according to the criterion specified here, and each drawn in a different colour. See [Working bell cycles](method_properties.md#working-bell-cycles) for more details.
+    Complib will choose one working bell from each **working bell cycle** for its default line drawing. For methods with more than one cycle, this means that one bell from each of the disjoint cycles will be selected according to the criterion specified here, and each drawn in a different colour. See [Method properties > Working bell cycles](method_properties.md#working-bell-cycles) for more details.
 
 Maximum columns
 :   Sets the maximum number of columns which can be fit horizontally in the window before the display wraps. A value of 0 tells Complib to auto-resize the columns to fit them all within the window without wrapping.
@@ -45,8 +45,7 @@ Starting after row
 ## Column display options
 
 Place notation
-:   Displays the method's **place notation** to the left of the first displayed column. For methods with palindromic symmetry, only the condensed form of the place notation will be shown. For more information, see [Place notation](place_notation.md).
-
+:   Displays the method's [place notation](place_notation.md) to the left of the first displayed column. For methods with palindromic symmetry, only the condensed form of the place notation will be shown.
 !!! warning
     Place notation will only be shown if **Starting after row** is set to 0.
 
