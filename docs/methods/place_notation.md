@@ -105,7 +105,7 @@ There is a special type of change possible on even numbers of bells in which no 
 2 1 4 3 6 5
 ```
 
-This change is sometimes called the *cross change* for obvious reasons, and is notated using the special element **–** (or **x**).
+This change is sometimes called the **cross change**, and is notated using the special element **–** (or **x**).
 
 To perform a method, several changes must be made one after the other in sequence. To use place notation to write methods, we need a way of concatenating place notation elements together.
 
@@ -127,13 +127,13 @@ This simple notation is already powerful enough to uniquely express every "conve
 ## Condensed place notation
 Strings of place notation can become rather cumbersome when written out in full. However, for many methods we may leverage their inherent symmetry to produce a *condensed form* of the place notation.
 
-The very significant majority of named methods are *palindromic*, which means that their sequence of changes is the same when reversed. Looking at the three examples above, if we ignore the final elements in each case, the remaining strings are all symmetrical about their central elements. For example, take Cambridge Surprise Minor:
+The very significant majority of named methods are **palindromic**, which means that their sequence of changes is the same when reversed. Looking at the three examples above, if we ignore the final elements in each case, the remaining strings are all symmetrical about their central elements. For example, take Cambridge Surprise Minor:
 
 -36-14-12-36-14-**56**-14-36-12-14-36-(12)
 
 The lead has a symmetry point at the change **56** (and also at the final change, if you want to be picky). This means that this place notation string is about twice as long as it needs to be, because all the changes in the second half are already expressed in the first half in reverse order.
 
-We can now introduce the convention that a comma `,` within a place notation string separates any *palindromic substrings*. With this convention, the place notation for Cambridge becomes
+We can now introduce the convention that a comma `,` within a place notation string separates any palindromic substrings. With this convention, the place notation for Cambridge becomes
 
 -36-14-12-36-14-56,12
 
@@ -170,7 +170,7 @@ Step 5: Concatenate the strings obtained from steps 3 and 5.
 
 And we are done.
 
-Step 4 seems somewhat trivial in this example because the substring after the comma in the condensed place notation has only a single element. However, it is crucial that *both* substrings be treated as palindromic for this convention to work. This is because there are many palindromic methods which have their points of symmetry in a different place. 
+Step 4 seems somewhat trivial in this example because the substring after the comma in the condensed place notation has only a single element. However, it is crucial that both substrings be treated as palindromic for this convention to work. This is because there are many palindromic methods which have their points of symmetry in a different place. 
 
 The best example of this is Grandsire, in which the point of palindromic symmetry is offset from the midpoint of the lead. The full place notation for a lead of [Grandsire Doubles](https://complib.org/method/10587) is
 
@@ -183,26 +183,43 @@ which condenses to
 ## Alternative conventions
 When [creating a custom method](adding_methods.md) on Complib, you may use either the full or condensed form of the notation as specified above. You can use either **–** or **x** to represent the cross change. Complib will automatically condense the notation when validating the method, provided that the place notation itself is valid.
 
-While they can't be used for defining methods on Complib, there are other conventions for writing place notation, many of which are still very common. For the sake of convenience, here are a few you are most likely to encounter.
+While they can't be used for defining methods on Complib, there are other conventions for writing place notation, many of which are still very common. For the sake of convenience, here are a few you are likely to encounter elsewhere.
 
-Ampersand notation
+### MicroSIRIL notation
+MicroSIRIL notation consists of three parts: a method group indicator, a symmetry indicator, and the place notation itself. 
+
+Method group indicator
+:   This is the alphanumeric code which specifies the first leadhead of the method, as well as what change is made at the leadend (see [Leadhead codes](../advanced/leadhead_codes.md)).
+
+    A code of **z** indicates that the method does not have a standard leadhead code. In such cases, the place notation will be given in full.
+
+Symmetry indicator
 :   An ampersand **&** at the start of a place notation string is used to indicate that the string which follows is palindromic about its last element. This is similar to the comma notation.
 
     For example, **&-16-14** represents the same string as **-16-14,**
 
+    A plus symbol **+** is used to indicate that the following string is non-palindromic, and should be read verbatim.
+
+??? note "Example: Cambridge Surprise Minor"
+    ---
+    In the MicroSIRIL format, Cambridge Surprise Minor is written:
+
+    > b &-36-14-12-36-14-56
+
+    From this we can read off that the method is in group **b**, meaning the leadend change is **12**, and that the method is palindromic.
+
+??? note "Example: Scientific Triples"
+    ---
+    In MicroSIRIL format, [Scientific Triples](https://complib.org/method/27989) is written:
+
+    > z +3.1.7.1.5.1.7.1.7.5.1.7.1.7.1.7.1.7.1.5.1.5.1.7.1.7.1.7.1.7
+
+    The method group indicator is z, meaning that it does not have a standard leadhead code. **+** indicates the place notation should be read as-is, and should not be interpreted as palindromic.
+
 Leadhead change
-:   A place notation element prefixed with **lh** or **le**, or sometimes simply separated from the main string by a space, is used to denote the *leadhead* (or *leadend*) change. This is most often used in conjunction with ampersand notation. 
+:   A place notation element prefixed with **lh** or **le**, or sometimes simply separated from the main string by a space, is used to denote the leadhead (or leadend) change. This is most often used as an alternative to the method group indicator in MicroSIRIL format.
 
     Sometimes the actual leadhead row will be given rather than the place notation element. In order to obtain the terminal element, you will need to work out what change must be made at the end of the lead to get to the specified row.
-
-Leadhead codes
-:   Many commonly rung methods have Plain Bob leadheads, each of which has a special alphanumerical code at a given stage (see [Leadhead codes](../advanced/leadhead_codes.md)). Some conventions allow the use of a leadhead code instead of a terminal element of place notation. This is almost always used in conjunction with ampersand notation.
-
-    For example, the place notation of Cambridge Surprise Minor is sometimes condensed as
-
-    b &-36-14-12-36-14-56
-
-    which means the full string is palindromic about the element **56**, and the leadend change is the element which corresponds to the code **b**, which is **12**. This convention requires knowledge of the leadhead codes and which elements they represent, and so can be a little trickier to use.
 
 ## Jump changes
 Coming soon!
