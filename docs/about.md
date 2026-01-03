@@ -15,7 +15,7 @@ If...
 
 - you encounter a problem when using the Help; 
 - you notice something about the Help which doesn't seem correct (and you're reasonably sure);
-- you have feedback about a section of the Help which is unclear or could be expanded upon (and you have reason to believe that this isn't being done already);
+- you have feedback about a section of the Help which is unclear or could be expanded upon;
 - you have feedback about the way the Help is structured;
 
 then these are good reasons to raise an issue.

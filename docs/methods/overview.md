@@ -1,6 +1,6 @@
 # Method pages
 
-Complib acts as a method collection, and has dedicated pages for all methods in its [libraries](../concepts.md/#the-libraries), including every method officially named and rung. The official `CCCBR` library is regularly updated and newly named methods added in order to keep the collection up to date.
+Complib acts as a method collection, and has dedicated pages for all methods in its [libraries](../concepts.md/#the-libraries), including every method officially named and rung. The official **CCCBR** library is regularly updated and newly named methods added in order to keep the collection up to date.
 
 When a new method is added to any of its libraries, Complib classifies it and derives its various properties. It then creates a page for the method where its related information can be viewed. For example, the method page for [Bristol Surprise Major](https://complib.org/method/19048/) looks something like this:
 
@@ -105,9 +105,9 @@ Non-conforming extensions
     There are a number of reasons why a method may be listed on Complib as a non-conforming extension. These include (but are not limited to):
 
     * The method (or another method related to it) was named and rung before the formal framework of method extension was developed, or before computer analysis was available to aid in spotting naming conflicts.
-    * The method is non-palindromic. No systematic framework for extending non-palindromic methods yet exists, and so Complib does not currently process extensions for non-palindromic methods. This will hopefully change at some point in the future.
+    * The method is non-palindromic. No systematic framework for extending non-palindromic methods yet exists (although Complib can currently handle a limited number of cases).
 
-    Method classification is still a field of active development, and over the centuries it has reflected changing values within the Exercise. For the most part, there is a general agreement that more rigorous modern classification practices should be balanced with the preservation of ringing history.
+    Method classification and extension is still a field of active development, and over the centuries it has reflected changing values within the Exercise. For the most part, there is a general agreement that more rigorous modern practices should be balanced with the preservation of ringing history.
 
 ## Trivial variations
 ![Trivial variations tab expanded](../img/trivial_variations_tab_expanded.png)
