@@ -9,7 +9,7 @@ The user profile page displays important information and settings tied to your a
 This section contains basic account details such as your registered name, email address, and user type. Some of the entries here can be adjusted by [editing your profile](#editing-your-profile).
 
 Forenames & Last name
-:   The forenames and last name of the account holder. **Editable**.
+:   The forename(s) and last name of the account holder. **Editable**.
 
 Email address
 :   The email address which the account is registered to. This is the email used to log in, and to which any email notifications are sent (see [User Subscriptions](#user-subscriptions)). **Editable**.
@@ -28,16 +28,16 @@ This section indicates which (if any) email notifications your account is subscr
 
 ### Email notifications
 All Issues
-:   Notifications will be sent whenever an Issue or Composition request is opened, updated, or closed by anybody.
+:   Notifications will be sent whenever an Issue is raised or commented on by other users.
 
 My Issues
-:   Notifications will be sent whenever an Issue you opened is updated or closed (see: Raising an Issue).
+:   Notifications will be sent whenever an Issue you raised, or which you have commented on, is commented on by other users (see: Raising an Issue).
 
 Composition Requests
-:   Notifications will be sent whenever a new composition request is opened (*PD: at least, I assume so. I have never personally used this*).
+:   Notifications will be sent whenever a composition request is raised or commented on by other users.
 
 All News
-:   Notifications will be sent whenever a new News item is published to the Complib homepage.
+:   Notifications will be sent whenever a News item is published to the Complib homepage.
 
 ### Functionality
 These settings control the appearance and behaviour of some Complib features.
@@ -46,7 +46,7 @@ Show hunt bell properties in method view and search
 :   Adds a **Hunt bell properties** tab to both [method pages](../methods/overview.md) and [method searches](../search/method_search.md). These properties can, for example, be used to explicitly specify a hunt bell path when searching for methods.
 
 Show jump methods and compositions in searches
-:   By default, Complib does not show methods and compositions including jump changes in searches, though they can still be viewed with a link. Enabling this setting will allow such methods and compositions to be searched for directly. 
+:   By default, Complib does not show methods and compositions including jump changes in searches, though they can still be viewed with a link. Enabling this setting will allow such methods and compositions to be included in search results. 
 
     For more on jump changes, see [Method properties > Changes](../methods/method_properties.md/#changes) and [Place notation > Jump changes](../methods/place_notation.md/#jump-changes).
 
@@ -78,7 +78,7 @@ Private compositions
 :   The number of compositions in the **Private** library which you created using this account. Acts as a link to a [composition search](../search/composition_search.md) which lists them all.
 
 Private collections
-:   The number of collections in the **Private** which you created using this account. Acts as a link to a [collection search](../search/collection_search.md) which lists them all.
+:   The number of collections in the **Private** library which you created using this account. Acts as a link to a [collection search](../search/collection_search.md) which lists them all.
 
 Compositions published
 :   The number of compositions in the **Public** library which you created and published using this account. Acts as a link to a [composition search](../search/composition_search.md) which lists them all. The total number of published compositions including those which have since been deleted is also given.
@@ -87,7 +87,7 @@ Compositions published
 Lists metadata relating to the account.
 
 User Id
-:   The unique numerical ID of the account. Appears at the end of the URL of the account's user profile page.
+:   A unique reference number for the user account. Appears at the end of the URL of the account's user profile page.
 
 Created on
 :   The date and time at which the account was created, and who created it.
@@ -105,6 +105,11 @@ The following items on the user profile page can be edited:
 - Email address
 - [User Subscriptions](#user-subscriptions)
 
+!!! note "Note: Forenames and Surname"
+    The forenames and surname attached to your account determine how your name will appear under [Library Details](../compositions/overview.md/#library-details) when you publish compositions and collections, and when you raise or comment on Issues. It is also how you will be addressed in email correspondence.
+
+    **You are requested not to use a pseudonym**, as this can cause confusion as to the providence of library entries. If you are a change ringer, the name attached to your account should be the one you are known by in performance reports on [BellBoard](https://bb.ringingworld.co.uk/).
+
 ## Changing your password
 To change the password used to log in to your account, click the ![Icon: padlock](../img/icon_padlock.png){width="25"}**Change password** button at the top right of the user profile page. You will be asked to enter your existing password as well as the new one.
 
@@ -118,4 +123,4 @@ You can delete your Complib account entirely by clicking the ![Icon: delete](../
     
     Once an account is deleted, you will no longer have access to any private methods, compositions or collections you created with it. In addition, you will no longer be able to edit any public compositions which you have published using the account.
 
-    If there is a problem with your account which you feel might be fixed by deleting and remaking it, you should instead consider raising an Issue under the **Help** category (*PD: unless getting in touch with you directly is better, GACJ?*).
+    If there is a problem with your account, or if you accidentally delete your account, you should get in touch directly by sending an email to [support@complib.org](mailto:support@complib.org).
