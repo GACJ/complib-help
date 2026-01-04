@@ -9,6 +9,7 @@ nav:
     - User profile and settings: user/user_profile.md
   - 'Compositions':
     - Composition pages: compositions/overview.md
+    - How to read compositions: compositions/reading_compositions.md
     - Customising composition layouts: compositions/layout_options.md
     - Composition properties: compositions/composition_properties.md
   - 'Adding & Editing Compositions':
