@@ -3,7 +3,6 @@ site_url: https://help.complib.org
 nav:
   - Introduction: index.md
   - Core concepts: concepts.md
-  - About the Help: about.md
   - 'User Accounts':
     - Signing up for an account: user/account_signup.md
     - Resetting your password: user/reset_password.md
