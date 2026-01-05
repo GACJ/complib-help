@@ -3,7 +3,7 @@ Compositions have historically been recorded in a variety of ways. A host of con
 
 This section is intended as an introduction to reading and interpreting compositions as they are commonly encountered, such as in your Ringing World Diary, or on Complib itself. 
 
-The examples given, while fairly typical, are not intended to be representative of all the different kinds of compositions you might encounter. However, understanding them will equip you well to approach a broad spectrum of unfamiliar compositions and figure out how they work for yourself.
+The examples given, while fairly typical, are not a complete representation of all the different kinds of compositions you might encounter. However, understanding them well will equip you to approach a broad spectrum of unfamiliar compositions and figure out how they work for yourself.
 
 !!! note "Callings versus Layouts" 
     It's important to remember that **a composition is defined by its calling**, but not by its layout or style of presentation. The same composition can be represented in many different ways. Indeed, Complib gives users [a lot of control](layout_options.md) over the way that any composition appears to them. 
@@ -67,7 +67,7 @@ At the end of the lead of Lessness, another bob is called to bring up the next l
 ## Calls
 
 ## Calling positions
-Calling positions indicate to the conductor exactly where a call is supposed to take place. There are a number of different conventions regarding calling positions, and a large number of standard names which conductors and composers need to be familiar with. 
+Calling positions indicate to the conductor exactly where a call is supposed to take place. There are a number of different conventions regarding calling positions, and a number of standard names which conductors and composers need to be familiar with. 
 
 See the dedicated page on [Calling positions](calling_positions.md) for a full explanation of the different types of calling position, as well as a full list of the standard calling position names which Complib uses.
 
