@@ -21,13 +21,13 @@ The toolbar buttons can be identified by hovering over them. Some of the toolbar
 :   Adds the composition to a [collection](../collections/overview.md) of your choice.
 
 ![Icon: publish](../img/icon_publish.png){width="50"}Publish
-:   Publishes the composition to the **Public** library. Only available to registered users, for compositions which you own.
+:   Publishes the composition to the **Public** library. Only available to registered users, for private compositions which you own.
 
 ![Icon: clone](../img/icon_clone.png){width="50"}Clone
 :   Creates a duplicate of the composition on the **Add composition** page, which you can then edit (see [Creating a new composition](adding_compositions_overview.md)). Only available to registered users.
 
 ![Icon: edit](../img/icon_edit.png){width="50"}Edit
-:   Opens the composition in the **composition editor**. Only available to registered users, when viewing a private composition which you own.
+:   Opens the composition in the **composition editor**. Only available to registered users, when viewing a composition which you created.
 
 ![Icon: share](../img/icon_share.png){width="50"}Share
 :   Displays a public link to the composition page so it can be shared with others. 
