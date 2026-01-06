@@ -15,7 +15,7 @@ To edit the calling, simply click on a cell in the table and type a value to ent
 
 Multiple cells can be selected by clicking and dragging. Alternatively, you can click on a cell, hold <kbd>Shift</kbd>, and then click on another cell to highlight a rectangle with those cells at opposite corners. Hold <kbd>Ctrl</kbd>/<kbd>⌘ Command</kbd> and click to select multiple individual cells.
 
-⌫/<kbd>Backspace</kbd>/<kbd>Delete</kbd> will delete any values in selected cells.
+<kbd>Backspace</kbd>/<kbd>Delete</kbd> will delete any values in selected cells.
 
 Right-clicking on a cell will open a contextual menu, allowing you to manipulate the table by inserting or removing table rows and columns:
 
@@ -242,6 +242,8 @@ Compositions which involve changes of method must indicate this in the Calling t
 
 Method mnemonics must appear in a column which has the word "**Methods**", and nothing else, in its top row. The heading is not case-sensitive: methods, METHODS and MeThOdS are all equally acceptable. There can be multiple Methods columns if desired.
 
+![Methods column dos and donts](../img/calling_method_column.png){width="600"}
+
 An **X** in the Methods column indicates a lead of the method whose mnemonic is X. 
 
 **XXY** would indicate two leads of method X, followed by a change to method Y.
@@ -254,9 +256,9 @@ The syntax **#(XYZ...)** in the method calling indicates to Complib that the com
 **Only one infinite loop can exist in the calling.** Any method mnemonics before the loop will be processed as normal, but any after the loop will be ignored.
 
 ### Loops in compositions of Stedman
-Compositions of Stedman, which define Quick and Slow sixes with separate mnemonics Q and S in the Methods tab, use an implicit loop of **#(QS)** by default. This loop does not need to be included in the Calling tab. 
+Compositions of Stedman, which define quick and slow sixes with separate mnemonics Q and S in the Methods tab, use an implicit loop of **#(QS)** by default. This loop does not need to be included in the Calling tab. 
 
-However, if a composition of Stedman starts from any row of a Slow six, the implicit loop must be overriden with an explicit **#(SQ)** loop in the Calling tab.
+However, if a composition of Stedman starts from any row of a slow six, the implicit loop must be overriden with an explicit **#(SQ)** loop in the Calling tab.
 
 !!! warning "Stedman in spliced"
     Because all changes of method after an infinite loop are ignored, they cannot generally be used when Stedman is spliced with other methods. When entering the calling for such compositions, you must specify the sequence of alternating quick and slow sixes by hand. 
