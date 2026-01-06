@@ -55,7 +55,12 @@ Calling positions are column headers which signal to Complib when a [call](#call
 
 **A calling position should be entered in the top row of a column, with nothing in any cell above it.** Failing to do this will cause the calling positions to be incorrectly identified as other objects, such as calls or named blocks.
 
-Compositions generally use one of two types of calling position: [named positions](#named-calling-positions) (represented with letters), or [numbered positions](#numbered-calling-positions). A special kind of named position, unique to Stedman Triples, is used in [twin-bob compositions](#twin-bob-calling-positions).
+!!! hint "Tip: Repeated calling positions"
+    There is no restriction on the number of times that a given calling position appears. There are circumstances in which you may find it convenient to have the same calling position at the head of multiple columns in the Calling tab.
+
+Compositions generally two types of calling position: [named positions](#named-calling-positions) (represented with letters), or [numbered positions](#numbered-calling-positions). While it's common to only use one type or the other in a given composition, you are free to use a mixture of both.
+
+A special kind of named position, unique to Stedman Triples, is used in [twin-bob compositions](#twin-bob-calling-positions).
 
 ### Named calling positions
 Named calling positions indicate that a call should be made when an **observation bell** reaches a specific part of the course. By default, the observation bell is the heaviest working bell.
@@ -67,7 +72,7 @@ Custom named positions can be created by defining a new [Mnemonic](adding_compos
 ### Numbered calling positions
 Numbered calling positions indicate a number of leads/divisions since the last **coursehead**.
 
-When using numbered calling positions, you must provide additional information to Complib to allow it to count the leads/divisions correctly. If possible, you should specify appropriate [coursehead masks](adding_compositions_tabs_general.md/#coursehead-masks) in the General tab. You can also directly [control the length of courses](#manipulating-course-length) in the Calling tab itself.
+When using numbered calling positions, you must provide additional information to Complib to allow it to count the leads/divisions correctly. If possible, you should specify appropriate [coursehead masks](adding_compositions_tabs_general.md/#coursehead-masks) in the General tab. You can also directly [control the length of courses](#manipulating-course-length-with-colons) in the Calling tab itself.
 
 Since a course can be arbitrarily long, a numbered calling position can be any positive whole number. However, in practice it is very unusual to have courses requiring numbered calling positions with more than two digits. Bear in mind that anyone calling the composition has to count up to that number!
 
@@ -88,12 +93,14 @@ The twin-bob calling positions correspond to numbered positions as follows:
 **When entering a twin-bob composition in the Calling tab, you should use numbered calling positions**. Complib will automatically recognise the twin-bob calling positions and display them appropriately in the composition layout (provided the user viewing it has [Layout Options > Rows > Expand twin bobs](layout_options.md/#rows) disabled in the [composition layout options](layout_options.md)).
 
 ## Calls
-Calls such as bobs and singles are indicated by symbols and numbers in cells which are beneath [calling positions](#calling-positions). Multiple calls can be entered into the same cell, including calls of different types. The calls in the cell will be processed in left-to-right reading order.
+Calls such as bobs and singles are indicated by symbols and numbers in cells which are beneath [calling positions](#calling-positions). Multiple calls can be entered into the same cell, including calls of different types. 
+
+**Calls are always processed in left-to-right reading order.**
 
 The majority of compositions use a small set of standard call symbols. Accordingly, Complib has a standard set of [default call symbols](adding_compositions_tabs_calls.md/#bob) which it will interpret automatically. Any other symbols must be explicitly defined in the [Calls tab](adding_compositions_tabs_calls.md).
 
 !!! warning "Defining custom calls"
-    When defining a custom call in the Calls tab, remember that you must specify an [observation mask](adding_compositions_tabs_calls.md/#observation-mask), [Mnemonic](adding_compositions_tabs_calls.md/#mnemonic) and [Heading](adding_compositions_tabs_calls.md/#heading) for every **named calling position** at which that call occurs. 
+    When defining a custom call in the Calls tab, remember that you must specify an [observation mask](adding_compositions_tabs_calls.md/#observation-mask), [Mnemonic](adding_compositions_tabs_calls.md/#mnemonic) and [Heading](adding_compositions_tabs_calls.md/#heading) for every **named calling position** at which that call occurs (it's not necessary to do this for numbered calling positions). 
     
     Symbols and calling position headings in the Calls tab should exactly match those in the calling, otherwise you will get a validation error.
 
@@ -192,12 +199,72 @@ Courseheads and leadheads, while a key feature of many composition layouts, **ar
 
 The main way of signalling to Complib which rows should be considered courseheads in your composition is by entering appropriate [coursehead masks](adding_compositions_tabs_general.md/#coursehead-masks) under the [General tab](adding_compositions_tabs_general.md). However, some compositions use many different courseheads and require a large number of masks, some of which might not be known in advance. In such cases, it is often preferable to control the courseheads directly from the Calling tab.
 
-### Manipulating course length
+### Manipulating course length with colons
+A course can be forcibly ended at any point in the calling by inserting a colon ( **:** ) in a column headed by a **numbered calling position**. This signals to Complib that the next coursehead will come after a number of leads equal to the column heading.
+
+??? note "Example: Colon in cell with a call."
+    ---
+    <center>
+    ![Colon notation with shared cell](../img/colon_notation_shared_cell.png){width="200"}
+    </center>
+    
+    Entering the above into the Calling tab would produce a course which is 5 leads long, with a bob called at the end of lead 5 to bring up the coursehead.
+
+Colons in the calling are processed just like calls, i.e. in reading order. However, **colons are not calls, and the two are processed independently of one another**. The first colon in the calling will set the length of the first course, regardless of any calls.
+
+Similarly, a call appearing after a colon in reading order may nevertheless occur "before" it, if the calling position for the call is reached before the number of leads specified by the colon.
+
+??? note "Example: Colon ignoring calls."
+    <center>
+    ![Colon notation ignoring reading order](../img/colon_ordering_example.png){width="200"}
+    </center>
+
+    Looking at the above example, you might think that the first bob occurs at the end of the second lead of the touch. However, the colon at position 1 sets the length of the first course to one lead **regardless of any calls**. This means that the first course ends after just one lead, before the call at 2 can be processed. 
+
+    The bob at 2 occurs in the **second** course, at the end of the third lead of the touch. The bob at 3 happens at the end of the lead after that.
+
+!!! warning "Colons: Things to watch out for"
+    Colons are only valid at numbered calling positions
+    :   Colons set a course's length equal to a number of leads. Inserting a colon at a named position (such as **H**) is not valid, and will cause an error.
+
+    Colons disable coursehead masks
+    :   If there are any colons in the calling, all [coursehead masks](adding_compositions_tabs_general.md/#coursehead-masks) will be disabled. 
+    
+        This means that colons are all-or-nothing: if you want to use a colon, then you must use them to specify the length of every course in the touch.
+    
+    Colons are not included in the layout
+    :   Colons are a purely internal signal which forces Complib to behave a certain way. They are not rendered in a composition's layout, regardless of user settings.
+    
+        Similarly, if a calling position is used with colons to manipulate course length, but no calls ever occur there, then that calling position will not appear in the composition layout.
 
 ## Methods
+Compositions which involve changes of method must indicate this in the Calling tab using the [method mnemonics](adding_compositions_tabs_methods.md/#mnemonic) defined in the [Methods tab](adding_compositions_tabs_methods.md).
 
-### Method alterations and substitutions
+Method mnemonics must appear in a column which has the word "**Methods**", and nothing else, in its top row. The heading is not case-sensitive: methods, METHODS and MeThOdS are all equally acceptable. There can be multiple Methods columns if desired.
+
+An **X** in the Methods column indicates a lead of the method whose mnemonic is X. 
+
+**XXY** would indicate two leads of method X, followed by a change to method Y.
+
+Method mnemonics are processed in reading order across all Method columns in the calling. When the last mnemonic in the calling has been processed, any additional leads will be pricked using the last indicated method. A touch which comes round at the end of multiple consecutive leads of method X only needs to specify mnemonics up to and including the final change to method X.
+
+### Looping method sequences
+The syntax **#(XYZ...)** in the method calling indicates to Complib that the composition should enter an infinite loop of the method sequence **XYZ...** when that point is reached.
+
+**Only one infinite loop can exist in the calling.** Any method mnemonics before the loop will be processed as normal, but any after the loop will be ignored.
+
+### Loops in compositions of Stedman
+Compositions of Stedman, which define Quick and Slow sixes with separate mnemonics Q and S in the Methods tab, use an implicit loop of **#(QS)** by default. This loop does not need to be included in the Calling tab. 
+
+However, if a composition of Stedman starts from any row of a Slow six, the implicit loop must be overriden with an explicit **#(SQ)** loop in the Calling tab.
+
+!!! warning "Stedman in spliced"
+    Because all changes of method after an infinite loop are ignored, they cannot generally be used when Stedman is spliced with other methods. When entering the calling for such compositions, you must specify the sequence of alternating quick and slow sixes by hand. 
+
+### Method alterations in multipart callings
+Alterations to changes of method in multipart callings use the same syntax as for calls ([see above](#multipart-compositions-call-alterations)).
 
 ## Named blocks
 
 ## Troubleshooting
+Coming soon... hopefully.
