@@ -53,7 +53,7 @@ Calling positions are column headers which signal to Complib when a [call](#call
 
 **A calling position must be a single uppercase or lowercase letter [A–Z, a–z] or a positive whole number**.
 
-**A calling position should be entered in the top row of a column, with nothing in any cell above it.** Failing to do this will cause the calling positions to be incorrectly identified as other objects, such as calls or named blocks.
+**A calling position must be entered in the top row of a column, with nothing in any cell above it.** Failing to do this will cause the calling positions to be incorrectly identified as other objects, such as calls or named blocks.
 
 !!! hint "Tip: Repeated calling positions"
     There is no restriction on the number of times that a given calling position appears. There are circumstances in which you may find it convenient to have the same calling position at the head of multiple columns in the Calling tab.
@@ -267,6 +267,50 @@ However, if a composition of Stedman starts from any row of a slow six, the impl
 Alterations to changes of method in multipart callings use the same syntax as for calls ([see above](#multipart-compositions-call-alterations)).
 
 ## Named blocks
+Some compositions which do not reduce to a simple multipart calling nevertheless contain repeated sections, or **blocks**. For compactness, it can be useful to give a name to such a block which can stand in for its full calling.
+
+To designate a section of the calling as a named block, the calling must have a column with the word "**Blocks**", and nothing else, in its top row. The heading is not case-sensitive, and there can be multiple Blocks columns.
+
+![Blocks column dos and donts](../img/calling_namedblock_dosanddonts.png){width="500"}
+
+Entries in the Blocks column are **block names**. Block names can contain any number of upper and lowercase letters **[A–Z, a–z]**, but not numbers or other symbols.
+
+If a table row contains a block name, the whole table row is included in a block with that name. Adjacent table rows are included in the same block if their block names are the same.
+
+**Table rows can be included in multiple blocks at once**. This requires the use of multiple Blocks columns. If two blocks overlap, then **one of the blocks must be fully contained inside the other**.
+
+![Named blocks overlapping](../img/calling_namedblocks_overlap.png){width="400"}
+
+Once a block has been defined, the block name can be used in place the contents of the block in the calling. Named blocks are expanded by the pricker when it reaches them in the calling. Like calls, blocks are processed in reading order. **Unlike calls, block names must occupy separate cells**.
+
+A block can be called multiple times in a row by enclosing the block name in ( parentheses ) with the number of instances in front, or by entering the block name in multiple adjacent cells.
+
+??? note "Example: A and B blocks"
+    ---
+    *Example: [5120 6-Spliced Surprise Major](https://complib.org/composition/10478) by Marcus C W Sherwood*.
+
+    ![Named blocks annotated](../img/calling_namedblock_annotated_1.png){width="600"}
+
+    The above calling is reflected in the layout as:
+
+    ![Named blocks in layout](../img/calling_namedblocks_layout.png){width="500"}
+
+??? note "Example: Nested A, B and C blocks"
+    ---
+    *Example: [10371 Stedman Caters](https://complib.org/composition/91069/) by Robert Dennis*.
+
+    ![Nested blocks calling](../img/calling_nestedblocks.png){width="600"}
+
+    The above calling, which includes nested blocks, is reflected in the layout as:
+
+    ![Nested blocks layout](../img/calling_nestedblocks_layout.png){width="400"}
+
+    Notice that block A appears twice inside block B: in both explicit form and as its block name. Similarly, block B appears twice inside of block C.
+
+!!! note
+    You will not see named blocks in the composition layout if **Rows > Expand named blocks** is selected in your [layout options](layout_options.md).
+
+
 
 ## Troubleshooting
 Coming soon... hopefully.
