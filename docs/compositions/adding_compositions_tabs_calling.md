@@ -281,7 +281,7 @@ If a table row contains a block name, the whole table row is included in a block
 
 ![Named blocks overlapping](../img/calling_namedblocks_overlap.png){width="400"}
 
-Once a block has been defined, the block name can be used in place the contents of the block in the calling. Named blocks are expanded by the pricker when it reaches them in the calling. Like calls, blocks are processed in reading order. **Unlike calls, block names must occupy separate cells**.
+Once a block has been defined, the block name can be used in the calling in place of the contents of the block. Named blocks are expanded by the pricker when it reaches them in the calling. Like calls, blocks are processed in reading order. **Unlike calls, block names must occupy separate cells**.
 
 A block can be called multiple times in a row by enclosing the block name in ( parentheses ) with the number of instances in front, or by entering the block name in multiple adjacent cells.
 
