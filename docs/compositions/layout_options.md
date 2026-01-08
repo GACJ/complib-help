@@ -65,11 +65,6 @@ Method mnemonics
 
     ![Single method with mnemonics](../img/single_method_with_mnemonics.png){width="400"}
 
-??? warning "Warning: Calling positions and Method mnemonics in Spliced"
-    ---
-
-    Be cautious about disabling Calling positions or Method mnemonics in compositions of Spliced, as in most cases this will make it impossible for the conductor to know how the composition is called.
-
 Course lengths (by courses)
 :   When selected, compositions in which calling positions correspond to a number of leads after the coursehead will display additional information about how many leads are in the course. Unchecking the option will disable the display.
 
