@@ -14,10 +14,12 @@ nav:
     - Composition properties: compositions/composition_properties.md
   - 'Adding & Editing Compositions':
     - "Adding compositions: overview": compositions/adding_compositions_overview.md
-    - The General tab: compositions/adding_compositions_tabs_general.md
-    - The Methods tab: compositions/adding_compositions_tabs_methods.md
-    - The Calls tab: compositions/adding_compositions_tabs_calls.md
-    - The Calling tab: compositions/adding_compositions_tabs_calling.md
+    - General tab: compositions/adding_compositions_tabs_general.md
+    - Methods tab: compositions/adding_compositions_tabs_methods.md
+    - Calls tab: compositions/adding_compositions_tabs_calls.md
+    - Calling tab: compositions/adding_compositions_tabs_calling.md
+    - Performances tab: compositions/adding_compositions_tabs_performances.md
+    - References tab: compositions/adding_compositions_tabs_references.md
     - Calling positions: compositions/calling_positions.md
   - 'Methods':
     - Method pages: methods/overview.md

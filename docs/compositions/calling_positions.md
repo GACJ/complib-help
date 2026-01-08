@@ -25,7 +25,7 @@ Note that some calling positions mean different things depending on the stage, d
 | **N** (Ninths)   | 9 ||
 
 ## Impact on default calls
-Complib will attempt to guess what the [default calls](adding_compositions_tabs_general.md/#default-calls) of a composition are, depending on what standard calling positions are used in the Calling tab.
+Complib will attempt to guess the [default calls](adding_compositions_tabs_general.md/#default-calls) of a composition based on what standard calling positions are used in the Calling tab.
 
 If a composition only uses calls at **H**, **W**, **M** and **B**, the composition will default to **near** calls.
 
