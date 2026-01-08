@@ -72,25 +72,32 @@ Custom named positions can be created by defining a new [Mnemonic](adding_compos
 ### Numbered calling positions
 Numbered calling positions indicate a number of leads/divisions since the last **coursehead**.
 
-When using numbered calling positions, you must provide additional information to Complib to allow it to count the leads/divisions correctly. If possible, you should specify appropriate [coursehead masks](adding_compositions_tabs_general.md/#coursehead-masks) in the General tab. You can also directly [control the length of courses](#manipulating-course-length-with-colons) in the Calling tab itself.
+When using numbered calling positions, you must provide additional information to Complib to allow it to count the leads/divisions correctly. If possible, you should specify appropriate [coursehead masks](adding_compositions_tabs_general.md/#coursehead-masks) in the General tab. You can also directly [control the length of courses](#setting-course-length-with-colons) in the Calling tab itself.
 
 Since a course can be arbitrarily long, a numbered calling position can be any positive whole number. However, in practice it is very unusual to have courses requiring numbered calling positions with more than two digits. Bear in mind that anyone calling the composition has to count up to that number!
 
 ### Twin-bob calling positions
-For historical reasons, many compositions of Stedman Triples use a special type of calling position which indicates **pairs of calls**. Such "twin-bob" compositions use four named calling positions, each of which is usually shortened to its initial letter:
+For historical reasons, many compositions of Stedman Triples use a special type of calling position which indicates **pairs of calls**. Such "twin-bob" compositions use four named calling positions whose names derive from the work of the observation bell (usually the 7). Each is usually shortened to a single letter:
 
-> **S**low, **H**alf turn, **L**ast whole turn and **Q**uick.
+> Going in **S**low, **H**alf turns, **L**ast whole turn and going in **Q**uick.
 
-The twin-bob calling positions correspond to numbered positions as follows:
+In a typical course, these correspond to numbered positions as follows:
 
-|Position|Bobs at...|
-|-----|--------|
-|**S**| 3 and 4|
-|**H**| 5 and 6|
-|**L**| 7 and 8|
-|**Q**| 12 and 13|
+|Position|Bobs at...| Diagram |
+|-----|--------|--------------|
+|**S**| 3 and 4| ![Twin bobs at S](../img/twin_bob_S.png){width="250"} |
+|**H**| 5 and 6| ![Twin bobs at H](../img/twin_bob_H.png){width="250"} |
+|**L**| 7 and 8| ![Twin bobs at L](../img/twin_bob_L.png){width="250"} |
+|**Q**| 12 and 13| ![Twin bobs at Q](../img/twin_bob_Q.png){width="250"} |
 
 **When entering a twin-bob composition in the Calling tab, you should use numbered calling positions**. Complib will automatically recognise the twin-bob calling positions and display them appropriately in the composition layout (provided the user viewing it has [Layout Options > Rows > Expand twin bobs](layout_options.md/#rows) disabled in the [composition layout options](layout_options.md)).
+
+!!! warning "Twin-bob positions: Things to watch out for"
+    Limitations
+    :   Complib will only recognise the twin-bob calling positions if the composition contains bobs at those positions *and no others*. 
+
+    Courses with non-standard lengths
+    :   The numbered positions given above assume that all the courses have a standard length of 14 sixes. Twin-bob compositions which use different course lengths (i.e, because the observation bell is affected by **singles**) can still be recognised as such by making use of [consecutive colon syntax](#starting-courses-from-different-numbered-positions) to start a course at a different numbered position.
 
 ## Calls
 Calls such as bobs and singles are indicated by symbols and numbers in cells which are beneath [calling positions](#calling-positions). Multiple calls can be entered into the same cell, including calls of different types. 
@@ -227,7 +234,7 @@ This will prompt the pricker to repeat the calling inside the round brackets *n*
     The [method](#methods) sequence **ABC** called twice
     </center>
 
-!!! warning 
+!!! warning "Calling repetitions in layouts"
     Calling repetitions are **written out in full** in the composition's layout display, regardless of the viewer's layout options. If you would like to explicitly signal to the conductor that a section of the calling is used multiple times, consider using a [named block](#named-blocks) instead.
   
 ### Infinite repetition
@@ -242,7 +249,7 @@ Courseheads and leadheads, while a key feature of many composition layouts, **ar
 
 The main way of signalling to Complib which rows should be considered courseheads in your composition is by entering appropriate [coursehead masks](adding_compositions_tabs_general.md/#coursehead-masks) under the [General tab](adding_compositions_tabs_general.md). However, some compositions use many different courseheads and require a large number of masks, some of which might not be known in advance. In such cases, it is often preferable to control the courseheads directly from the Calling tab.
 
-### Manipulating course length with colons
+### Setting course length with colons
 A course can be forcibly ended at any point in the calling by inserting a colon ( **:** ) in a column headed by a **numbered calling position**. This signals to Complib that the next coursehead will come after a number of leads equal to the column heading.
 
 ??? note "Example: Colon in cell with a call."
@@ -265,6 +272,11 @@ Similarly, a call appearing after a colon in reading order may nevertheless occu
     Looking at the above example, you might think that the first bob occurs at the end of the second lead of the touch. However, the colon at position 1 sets the length of the first course to one lead **regardless of any calls**. This means that the first course ends after just one lead, before the call at 2 can be processed. 
 
     The bob at 2 occurs in the **second** course, at the end of the third lead of the touch. The bob at 3 happens at the end of the lead after that.
+
+### Starting courses from different numbered positions
+By default, calling positions in a course are counted starting from 1. However, in some situations it is desirable to start counting from a different number.
+
+**A colon at a numbered calling position will restart the lead count from that position,** provided the previous course was ended with a colon, and there are no calls between the two colons.
 
 !!! warning "Colons: Things to watch out for"
     Colons are only valid at numbered calling positions
