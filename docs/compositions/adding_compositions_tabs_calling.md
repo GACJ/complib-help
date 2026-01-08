@@ -227,6 +227,9 @@ This will prompt the pricker to repeat the calling inside the round brackets *n*
     The [method](#methods) sequence **ABC** called twice
     </center>
 
+!!! warning 
+    Calling repetitions are **written out in full** in the composition's layout display, regardless of the viewer's layout options. If you would to explicitly signal to the conductor that a section of the calling is used multiple times, consider using a [named block](#named-blocks) instead.
+  
 ### Infinite repetition
 A hash ( **#** ) symbol in place of a number indicates that the section in brackets should be repeated **indefinitely**. The pricker will continue this "infinite" repetition until the composition comes round (or runs false). 
 
