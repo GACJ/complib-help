@@ -1,7 +1,7 @@
 # Calling positions
-Named calling positions denote to specific leadheads by reference to the position of an **observation bell**, which on this page is always assumed to be the heaviest working bell.
+Named calling positions denote specific leadheads by reference to the position of an **observation bell**, which on this page is always assumed to be the heaviest working bell.
 
-Compositions have historically used common positions whose names have become standard. When entering a calling in the [Calling tab](adding_compositions_tabs_calling.md), these named calling positions can be used without needing to define them explicitly elsewhere.
+Compositions have historically used common positions whose names have become standard. When entering a calling in the [Calling tab](adding_compositions_tabs_calling.md), these named positions can be used without needing to define them explicitly elsewhere.
 
 ## Standard named positions
 The table below sets out the named calling positions which Complib uses by default. 
