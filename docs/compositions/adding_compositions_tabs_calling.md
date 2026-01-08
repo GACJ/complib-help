@@ -194,6 +194,46 @@ Be aware that if a calling alteration causes the next parthead to be different f
 ### Alterations affecting methods
 The same syntax for call alterations also applies to any [methods](#methods) specified in the calling, allowing you to add, omit, or replace sequences of methods in certain parts.
 
+## Calling repetitions 
+There are many instances where it can be useful to repeat a section of the calling a set number of times. [Calls](#calls), [method sequences](#methods), and [named blocks](#named-blocks) can all be enclosed in ( round brackets ) with a number in front:
+
+> ***n*( ... )**
+
+This will prompt the pricker to repeat the calling inside the round brackets *n* times. **The brackets can span multiple cells**. The only requirement is that a left bracket must be paired with a corresponding right bracket.
+
+??? note "Examples: Repetitions of calls, blocks and method sequences"
+    ---
+    <center>
+    ![Calling repetition: one call](../img/calling_repetition_one_call.png){width="100"}
+
+    Five consecutive bobs at **W**rong
+
+    ---
+
+    ![Calling repetition: multiple calls](../img/calling_repetition_multiple_calls.png){width="200"}
+
+    Single **H**ome, single **M**iddle, repeated 
+
+    ---
+
+    ![Calling repetition: named block](../img/calling_repetition_block.png){width="100"}
+
+    The [named block](#named-blocks) **B** called four times
+
+    ---
+
+    ![Calling repetition: method sequence](../img/calling_repetition_methods.png){width="150"}
+
+    The [method](#methods) sequence **ABC** called twice
+    </center>
+
+### Infinite repetition
+A hash ( **#** ) symbol in place of a number indicates that the section in brackets should be repeated **indefinitely**. The pricker will continue this "infinite" repetition until the composition comes round (or runs false). 
+
+**Only one infinite repetition can exist in the calling.** The calling before the repeated section will be processed as normal, but everything after it will be ignored.
+
+A common use for infinite repetitions is in [compositions of Stedman](#infinite-repetition-in-compositions-of-stedman).
+
 ## Courses, courseheads, etc.
 Courseheads and leadheads, while a key feature of many composition layouts, **are not entered into the Calling tab directly**. Instead, Complib derives them from the calling when it pricks the composition. 
 
@@ -250,18 +290,13 @@ An **X** in the Methods column indicates a lead of the method whose mnemonic is 
 
 Method mnemonics are processed in reading order across all Method columns in the calling. When the last mnemonic in the calling has been processed, any additional leads will be pricked using the last indicated method. A touch which comes round at the end of multiple consecutive leads of method X only needs to specify mnemonics up to and including the final change to method X.
 
-### Looping method sequences
-The syntax **#(XYZ...)** in the method calling indicates to Complib that the composition should enter an infinite loop of the method sequence **XYZ...** when that point is reached.
-
-**Only one infinite loop can exist in the calling.** Any method mnemonics before the loop will be processed as normal, but any after the loop will be ignored.
-
-### Loops in compositions of Stedman
-Compositions of Stedman, which define quick and slow sixes with separate mnemonics Q and S in the Methods tab, use an implicit loop of **#(QS)** by default. This loop does not need to be included in the Calling tab. 
+### Infinite repetition in compositions of Stedman
+Compositions of Stedman, which define quick and slow sixes with separate mnemonics Q and S in the Methods tab, use an [indefinite repeat](#calling-repetitions) of **#(QS)** by default. This loop does not need to be included in the Calling tab. 
 
 However, if a composition of Stedman starts from any row of a slow six, the implicit loop must be overriden with an explicit **#(SQ)** loop in the Calling tab.
 
 !!! warning "Stedman in spliced"
-    Because all changes of method after an infinite loop are ignored, they cannot generally be used when Stedman is spliced with other methods. When entering the calling for such compositions, you must specify the sequence of alternating quick and slow sixes by hand. 
+    Because all changes of method after an infinite repeat are ignored, they cannot generally be used when Stedman is spliced with other methods. When entering the calling for such compositions, you must specify the sequence of alternating quick and slow sixes by hand. 
 
 ### Method alterations in multipart callings
 Alterations to changes of method in multipart callings use the same syntax as for calls ([see above](#multipart-compositions-call-alterations)).
@@ -309,8 +344,6 @@ A block can be called multiple times in a row by enclosing the block name in ( p
 
 !!! note
     You will not see named blocks in the composition layout if **Rows > Expand named blocks** is selected in your [layout options](layout_options.md).
-
-
 
 ## Troubleshooting
 Coming soon... hopefully.
