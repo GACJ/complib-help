@@ -274,9 +274,9 @@ Similarly, a call appearing after a colon in reading order may nevertheless occu
     The bob at 2 occurs in the **second** course, at the end of the third lead of the touch. The bob at 3 happens at the end of the lead after that.
 
 ### Starting courses from different numbered positions
-By default, calling positions in a course are counted starting from 1. However, in some situations it is desirable to start counting from a different number.
+By default, numbered calling positions are counted starting from 1. However, in some situations it is desirable to start counting from a different number in a particular course.
 
-**A colon at a numbered calling position will restart the lead count from that position,** provided the previous course was ended with a colon, and there are no calls between the two colons.
+**A colon at a numbered calling position will restart the course from that numbered position,** provided the previous course was ended with a colon, and there are no calls between the two colons.
 
 !!! warning "Colons: Things to watch out for"
     Colons are only valid at numbered calling positions
