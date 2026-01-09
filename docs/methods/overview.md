@@ -49,6 +49,11 @@ A method page is subdivided into various expandable tabs (click on the name of a
 [Properties](#properties)
 :   The structural properties of the method, including its **place notation**, **leadhead group**, **extension path** (if applicable) and more. A large amount of this information relates to the method's **classification**, which derives from the Central Council's [Framework for Method Ringing](https://framework.cccbr.org.uk/version2/index.html).
 
+[Hunt Bell Path(s)](#hunt-bell-paths)
+:   The features and properties of the paths of the **hunt bell(s)**, if any. 
+
+    Will only be visible if [Show hunt bell properties in method view and search](../user/user_profile.md/#functionality) is enabled on your user profile page.
+
 [Related Methods](#related-methods)
 :   Any methods which are related to the current method, such as **halflead/leadend variants** and methods belonging to the same **extension family** (whether compliant with the Central Council Framework or not).
 
@@ -75,10 +80,17 @@ The appearance of the blue line display is highly customisable. For more informa
 
 ## Properties
 ![Properties tab expanded](../img/method_properties_tab_expanded.png)
-For an explanation of the information contained in the properties tab, see the dedicated page on [Method properties](method_properties.md).
+
+See the page on [Method properties](method_properties.md) for an explanation of the information in this tab.
+
+## Hunt bell path(s)
+![Hunt bell paths tab expanded](../img/method_huntbell_tab_expanded.png)
+
+See [Advanced > Hunt bell properties](../advanced/huntbell_properties.md) for an explanation of the information in this tab.
 
 ## Related methods
 ![Related methods tab expanded](../img/related_methods_tab_expanded.png)
+
 Methods may be **related** to other methods in a number of different ways. Methods which are related to the current method in any of the following ways will be listed in this tab.
 
 Halflead/leadend variants

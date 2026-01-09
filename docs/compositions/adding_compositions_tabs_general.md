@@ -434,8 +434,10 @@ This field allows you to provide additional notes to accompany the composition. 
 
 The text entered in this field will be displayed in the [Library details tab](overview.md/#library-details) on the composition's page.
 
-!!! warning 
-    The Notes field has a character limit of 1000. Entries longer than this will be truncated.
+!!! warning "Notes: Things to bear in mind"
+    It is unnecessary to include certain things in the notes which might be common in other printed or online collections, such as special calls, calling alterations, truth to other methods and musical features. Complib derives and displays all this information automatically.
+
+    The notes field has a character limit of 1000. Entries longer than this will be truncated.
 
 
 ## Allow save if false

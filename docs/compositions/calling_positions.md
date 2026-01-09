@@ -6,7 +6,7 @@ Compositions have historically used common positions whose names have become sta
 ## Standard named positions
 The table below sets out the named calling positions which Complib uses by default. 
 
-Note that some calling positions mean different things depending on the stage, denoted here by *n*, or on what place is made at the leadend (either **12** or **1*n***). Some positions are also typically reserved for certain call types.
+Note that some calling positions mean different things depending on the stage, denoted here by *n*, or on what places are made at the call. Some positions are also typically reserved for certain call types.
 
 | Calling position | Position of obs. bell after call        | Note|
 |------------------|-----------------------------------------|-----|
@@ -14,7 +14,7 @@ Note that some calling positions mean different things depending on the stage, d
 | **W** (Wrong)    | *n*–1 (even stages); *n*–2 (odd stages) ||
 | **M** (Middle)   | *n*–2 (even stages); *n*–1 (odd stages) ||
 | **I** (In)       | 2                                       | Runs *in* to lead.         |
-| **B** (Before)   | 2 (LE **12**) or 3 (LE **1*n***)        | Has just led *before* the treble. |
+| **B** (Before)   | 2 if 2nds made at call, 3 otherwise     | Has just led *before* the treble. |
 | **O** (Out)      | 3                                       | Runs *out*. Usually used for bobs. |
 | **T** (Thirds)   | 3                                       | Usually used for singles. |
 | **F** (Fourths)  | 4 ||
@@ -25,8 +25,10 @@ Note that some calling positions mean different things depending on the stage, d
 | **N** (Ninths)   | 9 ||
 
 ## Impact on default calls
-Complib will attempt to guess the [default calls](adding_compositions_tabs_general.md/#default-calls) of a composition based on what standard calling positions are used in the Calling tab.
+If you have not specified any under the General tab, Complib will attempt to guess the [default calls](adding_compositions_tabs_general.md/#default-calls) of a composition based on what named positions are present in the Calling tab.
 
-If a composition only uses calls at **H**, **W**, **M** and **B**, the composition will default to **near** calls.
+If calling positions **H**, **W**, **M** and **B** are in the majority, then **near** calls will be used by default. 
 
-*(PMD: perhaps you could clarify what the condition for defaulting to far calls is, GACJ?)*
+If calling positions **I**, **O** and **V** are in the majority, then **far** calls will be used by default.
+
+This generally works well, but it is always a good idea to make sure the default calls have been set correctly.

@@ -38,6 +38,7 @@ nav:
     - Collection search: search/collection_search.md
     - Extended search: search/extended_search.md
   - 'Advanced Topics':
+    - Hunt bell properties: advanced/huntbell_properties.md
     - Extensions: advanced/extensions.md
     #- False coursehead (FCH) groups: advanced/fch_groups.md
     - Leadhead codes: advanced/leadhead_codes.md
