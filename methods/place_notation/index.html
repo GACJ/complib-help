@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://help.complib.org/methods/place_notation/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Place notation - Complib Help</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Place notation";
+        var mkdocs_page_input_path = "methods/place_notation.md";
+        var mkdocs_page_url = "/methods/place_notation/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Complib Help
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Introduction</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../concepts/">Core concepts</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User Accounts</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../user/account_signup/">Signing up for an account</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../user/reset_password/">Resetting your password</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../user/user_profile/">User profile and settings</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Compositions</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../compositions/overview/">Composition pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../compositions/reading_compositions/">How to read compositions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../compositions/layout_options/">Customising composition layouts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../compositions/composition_properties/">Composition properties</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Adding & Editing Compositions</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../compositions/adding_compositions_overview/">Adding compositions: overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../compositions/adding_compositions_tabs_general/">General tab</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../compositions/adding_compositions_tabs_methods/">Methods tab</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../compositions/adding_compositions_tabs_calls/">Calls tab</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../compositions/adding_compositions_tabs_calling/">Calling tab</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../compositions/adding_compositions_tabs_performances/">Performances tab</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../compositions/adding_compositions_tabs_references/">References tab</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../compositions/calling_positions/">Calling positions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Methods</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../overview/">Method pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../blueline_options/">Customising the blue line</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../method_properties/">Method properties</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../adding_methods/">Adding methods</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Place notation</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#the-basic-concept">The basic concept</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#place-notation-elements-and-strings">Place notation elements and strings</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#condensed-place-notation">Condensed place notation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#alternative-conventions">Alternative conventions</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#microsiril-notation">MicroSIRIL notation</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#jump-changes">Jump changes</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../method_designer/">Using the method designer</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Collections</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../collections/overview/">What are collections?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../collections/adding_collections/">Adding collections</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Searching Complib</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../search/quick_search/">Quick search</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../search/method_search/">Method search</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../search/composition_search/">Composition search</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../search/collection_search/">Collection search</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../search/extended_search/">Extended search</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Advanced Topics</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/huntbell_properties/">Hunt bell properties</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/extensions/">Extensions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/leadhead_codes/">Leadhead codes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/music_schemes/">Music schemes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/row_parity/">Row parity</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Complib Help</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Methods</li>
+      <li class="breadcrumb-item active">Place notation</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="place-notation">Place notation</h1>
+<p>There are many different ways that change ringing methods can be written down. Most often they are represented visually as a <em>blue line diagram</em>, which can aid in memorisation. Some methods can be learned according to a rule such as <em>"first, treble-bob, last, near, full, far..."</em> which expresses the blue line as a short phrase.</p>
+<p>However, in order to refer to a specific method uniquely, we need a (compact) way of expressing what exactly every bell does while ringing it. Place notation is a tool invented in order to do just that.</p>
+<h2 id="the-basic-concept">The basic concept</h2>
+<p>We'll be making use of the following definitions:</p>
+<dl>
+<dt>Row</dt>
+<dd>
+<p>An ordering of the bells 1 to <em>n</em>, where <em>n</em> is the total number of bells being rung. A row is written in ringing order left to right. Each bell rings once and only once within a row. </p>
+<p>For example:</p>
+<ul>
+<li><strong>135246</strong> is a row;</li>
+<li><strong>987654321</strong> is a row;</li>
+<li><strong>113478</strong> is <em>not</em> a row (why?).</li>
+</ul>
+</dd>
+<dt>Change</dt>
+<dd>
+<p>The action of moving from one row to another by altering the order of the bells; or, the relationship between two rows in terms of how they differ. In order to qualify as a change, the following condition must be satisfied:</p>
+<ul>
+<li>The two rows must have the same number of bells.</li>
+</ul>
+<p>For most of change ringing history, changes were also required to satisfy a second condition:</p>
+<ul>
+<li>In going from one row to another, no bell should move more than one position forward or backward within the row.</li>
+</ul>
+<p>Changes which do not satisfy this latter condition are known as <strong>jump changes</strong>. </p>
+</dd>
+</dl>
+<p>Methods using jump changes are still extremely rare, and so we will assume for the moment that we are dealing with changes which satisfy both of the conditions above.</p>
+<p>Consider these two rows related by a change:</p>
+<pre><code class="language-text">A: 1 4 2 5 3 6
+
+B: 4 1 2 3 5 6
+</code></pre>
+<p>How can we express the change? </p>
+<p>We can start by making a note of which bells do <em>not</em> change position between the two rows. In the above example, bells <code>2</code> and <code>6</code> are the only ones which remain fixed across the change. We could try writing down the numbers of the bells, but that would not be a sensible solution. To see why, consider this other pair of rows related by a change:</p>
+<pre><code class="language-text">C: 6 5 4 3 2 1
+
+D: 5 6 4 2 3 1
+</code></pre>
+<p>It should be apparent that the relationship between rows C and D is the same as that between rows A and B: if we were to relabel the bells in row C so as to match row A, then the row D obtained under the same relabelling would match row B.</p>
+<p>In other words, the change between rows A and B is <em>the same</em> as the change between rows C and D, even though the rows themselves are different. Any sensible notation should be able to express this in a way which is independent of the specific rows. Therefore, rather than the numbers of the bells which do not move between rows, we should note the <em>position</em> of those bells instead.</p>
+<p>Here's the first example again, this time with lines drawn to show the motion of the bells between rows:</p>
+<pre><code class="language-text">A: 1 4 2 5 3 6
+    x  |  x  |
+B: 4 1 2 3 5 6
+</code></pre>
+<p>Bells 2 and 6 are the only ones which stay in the same place, those places being 3rd and 6th within the row. Similarly, going from row C to row D, the bells in positions 3 and 6 are the only ones which don't move:</p>
+<pre><code class="language-text">C: 6 5 4 3 2 1
+    x  |  x  |
+D: 5 6 4 2 3 1
+</code></pre>
+<p>In change ringing, a bell which stays in the same position between rows is said to <em>make a place</em> in that position. Place notation is so named because it expresses changes exclusively in terms of which places are made between rows.</p>
+<h2 id="place-notation-elements-and-strings">Place notation elements and strings</h2>
+<p>To represent a change, we list the positions of the bells which make places between two rows in numerical order. The change in the examples above would be written as <strong>36</strong>. This is an <em>element</em> of place notation (sometimes also called a <em>unit</em>). Each element of place notation expresses a single change.</p>
+<p>Here are some more example changes and the place notation elements which represent them:</p>
+<pre><code class="language-text">1 3 2 5 4 6
+| |  x   x
+1 3 5 2 6 4
+</code></pre>
+<p>Place notation: <strong>12</strong></p>
+<pre><code class="language-text">1 3 5 7 2 4 6 8
+|  x  | |  x  |
+1 5 3 7 2 6 4 8
+</code></pre>
+<p>Place notation: <strong>1458</strong></p>
+<pre><code class="language-text">1 2 3 4 5 6 7 8 9 0
+ x  |  x   x  | | |    
+2 1 3 5 4 7 6 8 9 0
+</code></pre>
+<p>Place notation: <strong>3890</strong></p>
+<p>There is a special type of change possible on even numbers of bells in which no bell makes a place between rows. For example:</p>
+<pre><code class="language-text">1 2 3 4 5 6
+ x   x   x
+2 1 4 3 6 5
+</code></pre>
+<p>This change is sometimes called the <strong>cross change</strong>, and is notated using the special element <strong>–</strong> (or <strong>x</strong>).</p>
+<p>To perform a method, several changes must be made one after the other in sequence. To use place notation to write methods, we need a way of concatenating place notation elements together.</p>
+<p>A <em>string</em> of place notation is a series of elements written in sequence. To avoid ambiguity about the boundaries between elements, dots . are added between any two elements which are not the cross change. For example, the sequence of changes in which change <strong>14</strong> is followed by change <strong>36</strong>, which is followed by change <strong>1458</strong>, would be written <strong>14.36.1458</strong>.</p>
+<p>It is not necessary to use dots to mark the bounds of the cross change: replacing <strong>36</strong> with the cross change in the former example would give <strong>14-1458</strong>.</p>
+<p>This simple notation is already powerful enough to uniquely express every "conventional" method that has ever been rung. For example, here are some place notation strings corresponding to a single lead of some well known methods:</p>
+<dl>
+<dt><a href="https://complib.org/method/11349">Plain Bob Minor</a></dt>
+<dd>-16-16-16-16-16-12</dd>
+<dt><a href="https://complib.org/method/14568">Cambridge Surprise Minor</a></dt>
+<dd>-36-14-12-36-14-56-14-36-12-14-36-12</dd>
+<dt><a href="https://complib.org/method/19048">Bristol Surprise Major</a></dt>
+<dd>-58-14.58-58.36.14-14.58-14-18-14-58.14-14.36.58-58.14-58-18</dd>
+</dl>
+<h2 id="condensed-place-notation">Condensed place notation</h2>
+<p>Strings of place notation can become rather cumbersome when written out in full. However, for many methods we may leverage their inherent symmetry to produce a <em>condensed form</em> of the place notation.</p>
+<p>The very significant majority of named methods are <strong>palindromic</strong>, which means that their sequence of changes is the same when reversed. Looking at the three examples above, if we ignore the final elements in each case, the remaining strings are all symmetrical about their central elements. For example, take Cambridge Surprise Minor:</p>
+<p>-36-14-12-36-14-<strong>56</strong>-14-36-12-14-36-(12)</p>
+<p>The lead has a symmetry point at the change <strong>56</strong> (and also at the final change, if you want to be picky). This means that this place notation string is about twice as long as it needs to be, because all the changes in the second half are already expressed in the first half in reverse order.</p>
+<p>We can now introduce the convention that a comma <code>,</code> within a place notation string separates any palindromic substrings. With this convention, the place notation for Cambridge becomes</p>
+<p>-36-14-12-36-14-56,12</p>
+<p>The full place notation can be obtained from the condensed form by way of the following steps:</p>
+<ol>
+<li>List the elements before the comma from left to right;</li>
+<li>List the elements before the comma from right to left;</li>
+<li>Join the strings obtained from steps 1 and 2 together at the repeated element;</li>
+<li>Repeat steps 1 and 2 for the section after the comma;</li>
+<li>Concatenate the strings obtained from steps 3 and 5.</li>
+</ol>
+<p>Writing these steps out for our example, we have:</p>
+<p>Step 1: List the elements before the comma from left to right.</p>
+<p>-36-14-12-36-14-56</p>
+<p>Step 2: List the elements before the comma from right to left.</p>
+<p>56-14-36-12-14-36-</p>
+<p>Step 3: Join the strings obtained from steps 1 and 2 together at the repeated element.</p>
+<p>-36-14-12-36-14-56-14-36-12-14-36-</p>
+<p>Step 4: Repeat steps 1 and 2 for the section after the comma.</p>
+<p>12</p>
+<p>Step 5: Concatenate the strings obtained from steps 3 and 5.</p>
+<p>-36-14-12-36-14-56-14-36-12-14-36-12</p>
+<p>And we are done.</p>
+<p>Step 4 seems somewhat trivial in this example because the substring after the comma in the condensed place notation has only a single element. However, it is crucial that both substrings be treated as palindromic for this convention to work. This is because there are many palindromic methods which have their points of symmetry in a different place. </p>
+<p>The best example of this is Grandsire, in which the point of palindromic symmetry is offset from the midpoint of the lead. The full place notation for a lead of <a href="https://complib.org/method/10587">Grandsire Doubles</a> is</p>
+<p>3.1.5.1.5.1.5.1.5.1</p>
+<p>which condenses to</p>
+<p>3,1.5.1.5.1</p>
+<h2 id="alternative-conventions">Alternative conventions</h2>
+<p>When <a href="../adding_methods/">creating a custom method</a> on Complib, you may use either the full or condensed form of the notation as specified above. You can use either <strong>–</strong> or <strong>x</strong> to represent the cross change. Complib will automatically condense the notation when validating the method, provided that the place notation itself is valid.</p>
+<p>While they can't be used for defining methods on Complib, there are other conventions for writing place notation, many of which are still very common. For the sake of convenience, here are a few you are likely to encounter elsewhere.</p>
+<h3 id="microsiril-notation">MicroSIRIL notation</h3>
+<p>MicroSIRIL notation consists of three parts: a method group indicator, a symmetry indicator, and the place notation itself. </p>
+<dl>
+<dt>Method group indicator</dt>
+<dd>
+<p>This is the alphanumeric code which specifies the first leadhead of the method, as well as what change is made at the leadend (see <a href="../../advanced/leadhead_codes/">Leadhead codes</a>).</p>
+<p>A code of <strong>z</strong> indicates that the method does not have a standard leadhead code. In such cases, the place notation will be given in full.</p>
+</dd>
+<dt>Symmetry indicator</dt>
+<dd>
+<p>An ampersand <strong>&amp;</strong> at the start of a place notation string is used to indicate that the string which follows is palindromic about its last element. This is similar to the comma notation.</p>
+<p>For example, <strong>&amp;-16-14</strong> represents the same string as <strong>-16-14,</strong></p>
+<p>A plus symbol <strong>+</strong> is used to indicate that the following string is non-palindromic, and should be read verbatim.</p>
+</dd>
+</dl>
+<details class="note">
+<summary>Example: Cambridge Surprise Minor</summary>
+<hr />
+<p>In the MicroSIRIL format, Cambridge Surprise Minor is written:</p>
+<blockquote>
+<p>b &amp;-36-14-12-36-14-56</p>
+</blockquote>
+<p>From this we can read off that the method is in group <strong>b</strong>, meaning the leadend change is <strong>12</strong>, and that the method is palindromic.</p>
+</details>
+<details class="note">
+<summary>Example: Scientific Triples</summary>
+<hr />
+<p>In MicroSIRIL format, <a href="https://complib.org/method/27989">Scientific Triples</a> is written:</p>
+<blockquote>
+<p>z +3.1.7.1.5.1.7.1.7.5.1.7.1.7.1.7.1.7.1.5.1.5.1.7.1.7.1.7.1.7</p>
+</blockquote>
+<p>The method group indicator is z, meaning that it does not have a standard leadhead code. <strong>+</strong> indicates the place notation should be read as-is, and should not be interpreted as palindromic.</p>
+</details>
+<dl>
+<dt>Leadhead change</dt>
+<dd>
+<p>A place notation element prefixed with <strong>lh</strong> or <strong>le</strong>, or sometimes simply separated from the main string by a space, is used to denote the leadhead (or leadend) change. This is most often used as an alternative to the method group indicator in MicroSIRIL format.</p>
+<p>Sometimes the actual leadhead row will be given rather than the place notation element. In order to obtain the terminal element, you will need to work out what change must be made at the end of the lead to get to the specified row.</p>
+</dd>
+</dl>
+<h2 id="jump-changes">Jump changes</h2>
+<p>Coming soon!</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../adding_methods/" class="btn btn-neutral float-left" title="Adding methods"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../method_designer/" class="btn btn-neutral float-right" title="Using the method designer">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../adding_methods/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../method_designer/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

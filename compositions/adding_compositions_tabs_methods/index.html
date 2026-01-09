@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://help.complib.org/compositions/adding_compositions_tabs_methods/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Methods tab - Complib Help</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Methods tab";
+        var mkdocs_page_input_path = "compositions/adding_compositions_tabs_methods.md";
+        var mkdocs_page_url = "/compositions/adding_compositions_tabs_methods/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Complib Help
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Introduction</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../concepts/">Core concepts</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User Accounts</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../user/account_signup/">Signing up for an account</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../user/reset_password/">Resetting your password</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../user/user_profile/">User profile and settings</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Compositions</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../overview/">Composition pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../reading_compositions/">How to read compositions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../layout_options/">Customising composition layouts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../composition_properties/">Composition properties</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Adding & Editing Compositions</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../adding_compositions_overview/">Adding compositions: overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../adding_compositions_tabs_general/">General tab</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Methods tab</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#method-title">Method title</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#deleting-methods">Deleting methods</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#adding-methods-from-a-collection">Adding methods from a collection</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#mnemonic">Mnemonic</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#default-mnemonics">Default mnemonics</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#starting-place">Starting place</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#rotate-by">Rotate by</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#start-row-number">Start row number</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#rotate-by-vs-start-row-number">Rotate by vs. Start row number</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#length">Length</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#lead-position-row-number-and-name">Lead position row number and name</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#defining-multiple-lead-positions">Defining multiple Lead positions</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#default-lead-positions">Default Lead positions</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../adding_compositions_tabs_calls/">Calls tab</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../adding_compositions_tabs_calling/">Calling tab</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../adding_compositions_tabs_performances/">Performances tab</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../adding_compositions_tabs_references/">References tab</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../calling_positions/">Calling positions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Methods</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../methods/overview/">Method pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../methods/blueline_options/">Customising the blue line</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../methods/method_properties/">Method properties</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../methods/adding_methods/">Adding methods</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../methods/place_notation/">Place notation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../methods/method_designer/">Using the method designer</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Collections</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../collections/overview/">What are collections?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../collections/adding_collections/">Adding collections</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Searching Complib</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../search/quick_search/">Quick search</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../search/method_search/">Method search</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../search/composition_search/">Composition search</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../search/collection_search/">Collection search</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../search/extended_search/">Extended search</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Advanced Topics</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/huntbell_properties/">Hunt bell properties</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/extensions/">Extensions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/leadhead_codes/">Leadhead codes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/music_schemes/">Music schemes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/row_parity/">Row parity</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Complib Help</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Adding & Editing Compositions</li>
+      <li class="breadcrumb-item active">Methods tab</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="the-methods-tab">The Methods tab</h1>
+<p><img alt="Methods tab example" src="../../img/methods_tab_example.png" /></p>
+<p>The Methods tab is a table which allows you to define the methods which are used in a custom composition. Every composition must have at least one method definition. </p>
+<p>To edit any value in the table, simply click on the relevant cell, then type a new value. Multiple cells can be highlighted by clicking and dragging. Alternatively, you can click on a cell, hold <kbd>Shift</kbd>, and then click on another cell to highlight a rectangle with those cells at opposite corners.</p>
+<p>If you have filled out the <a href="../adding_compositions_tabs_general/#title">Title</a> field under the <a href="../adding_compositions_tabs_general/">General tab</a>, then the Methods tab may already be populated with one or more entries.</p>
+<h2 id="method-title">Method title</h2>
+<p>To manually add methods to the table, begin typing its title in the <a href="#method-title">Method title</a> column. As you type, Complib will attempt to auto-complete with the titles of any matching public methods, or private methods which you own. </p>
+<p>Once a recognised method title has been entered, the rest of the cells in the row will auto-populate with default values appropriate to that method.</p>
+<h3 id="deleting-methods">Deleting methods</h3>
+<p>Deleting a method's name in the table will delete all its associated information as well. </p>
+<div class="admonition warning">
+<p class="admonition-title">Warning: Replacing methods</p>
+<p>It is best practice to delete a method from the table before replacing it with another, instead of simply changing the method name. <strong>Changing the name will not automatically update the rest of the table to match the default entries for the new method.</strong> This can result in peculiar behaviour, e.g. a treble-dodging method with the Length of a plain method, or vice versa.</p>
+</div>
+<h3 id="adding-methods-from-a-collection">Adding methods from a collection</h3>
+<p>You can add methods directly from an existing method collection. This can be useful if you need to add a large number of methods to the tab.</p>
+<p>To add methods from a collection, click on the dropdown menu above the methods table, then click on a method collection. The table will be populated with all the methods in that collection.</p>
+<p>It's possible to add methods from multiple collections in this way, though the methods must all be at the same stage for this to work.</p>
+<p>Methods already in the table will not be duplicated if they are added again via collection. <strong>If you want multiple copies of a method, you must add them manually.</strong></p>
+<h2 id="mnemonic">Mnemonic</h2>
+<p>A method mnemonic is a one- or two-character code which is used to represent the method in the composition's <a href="../overview/#layout">layout</a>. Mnemonics are displayed by default in compositions of spliced, but they can be enabled for any composition by selecting <strong>Columns &gt; Method mnemonics</strong> in the <a href="../layout_options/">composition layout options</a>.</p>
+<p><img alt="Mnemonics example" src="../../img/mnemonics_annotated.png" width="400" /></p>
+<div class="admonition warning">
+<p class="admonition-title">Mnemonic restrictions</p>
+<p>Method mnemonics must have an uppercase letter [A–Z] as their first character. This may be optionally followed by a lowercase letter [a–z] or number [0–9].</p>
+<p>Method mnemonics must be unique. If two methods used in a composition have the same mnemonic, it will cause an error.</p>
+</div>
+<h3 id="default-mnemonics">Default mnemonics</h3>
+<p>When a method is added to the Methods tab, its mnemonic will be the <strong>first letter in its title</strong> by default. Any numbers and special characters at the beginning of the title will be ignored. For example, <a href="https://complib.org/method/30148">'ogwash Delight Minor</a> has a default mnemonic of "O".</p>
+<p>Deleting a method's mnemonic from the table will reset the mnemonic to its default value.</p>
+<p>If a method is given a mnemonic which is different from its default in a composition of spliced, then the mnemonic will be appended to the method's name at the bottom of the composition layout.</p>
+<h2 id="starting-place">Starting place</h2>
+<p>This field defines the row position above which the changes of the method will be applied. In effect, this defines where the "front" of the change is when ringing the specified method. </p>
+<p>Bells in positions which fall outside the bounds of the method will remain stationary whenever the method is rung in the composition.</p>
+<details class="note">
+<summary>Example</summary>
+<hr />
+<p><img alt="Bristol Major on 10 with starting place of 1" src="../../img/starting_place_1.png" width="150" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img alt="Bristol Major on 10 with starting place of 3" src="../../img/starting_place_3.png" width="150" /></p>
+<p>These examples show the first half-lead of <a href="https://complib.org/method/19048">Bristol Surprise Major</a> being rung on 10 bells, but with different starting places. Since the method's stage has 8 bells, there are two stationary bells.</p>
+</details>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>It is highly unlikely that you will ever need to adjust the Starting place value; it is currently only used in extremely rare types of composition.. In fact, it is <strong>strongly recommended that you leave this value at 1 at all times.</strong> </p>
+</div>
+<details class="warning">
+<summary>Warning: [Method name] (<code>__</code>) - Stage is higher than the composition's stage with a starting place of <code>__</code>.</summary>
+<hr />
+<p>The starting place cannot cause the method to go outside the bounds of the composition's stage.</p>
+<p>The minimum starting place is 1. The maximum starting place is (<em>N</em> – <em>M</em> + 1), where <em>N</em> is the stage of the composition and <em>M</em> is the stage of the method.</p>
+<p>This means that it is only possible for a method to have a starting place greater than 1 when used in a composition whose stage is greater than its own, such as in <strong>mixed-stage compositions</strong>.</p>
+</details>
+<h2 id="rotate-by">Rotate by</h2>
+<p>This field specifies an amount by which the method's changes will be rotated. </p>
+<p>When Complib pricks (generates the rows of) a composition, it does so by sequentially applying the changes of the method as specified in its <a href="../../methods/place_notation/">place notation</a>. By default, the pricker will start every lead from the first change of the method, given by the first element of the place notation. When it reaches the end, it will start again from the beginning, provided there is no change of method.</p>
+<p>When a <strong>Rotate by</strong> value is specified, that many changes and their the corresponding place notation elements will be removed from the start of the lead and reinserted at the end. This modified set of changes has become the definition of a lead of the method within the composition, and the final change is the new leadend change.</p>
+<details class="note">
+<summary>Example</summary>
+<hr />
+<p>Below are the plain courses of two different rotations of <a href="https://complib.org/method/11118">Double Court Bob Minor</a>, together with their place notations. Lines are drawn through bell number 2, as well as the hunt bell in each case.</p>
+<p><strong>Rotate by = 0</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>-14-36-16-36-14-16</code></p>
+<p><img alt="Double Court Bob Minor, unrotated" src="../../img/double_court_unrotated.png" /></p>
+<hr />
+<p><strong>Rotate by = 5</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>16-36-14-16-14-36-</code></p>
+<p><img alt="Double Court Bob Minor, rotated by 5" src="../../img/double_court_rotated.png" /></p>
+</details>
+<div class="admonition warning">
+<p class="admonition-title">Rotate by: restrictions</p>
+<p>The <strong>Rotate by</strong> value must be between 0 and (<em>L</em> – 1), where <em>L</em> is the <strong>lead length</strong> of the method. Attempting to specify a <strong>Rotate by</strong> value that falls outside this range will cause an error.</p>
+<p>The lead length of a method is listed under the Properties tab on its Method page (see <a href="../../methods/method_properties/#miscellaneous">Method properties &gt; Miscellaneous</a>).</p>
+</div>
+<h2 id="start-row-number">Start row number</h2>
+<p>This field specifies which row of the method it should be started from. The default value is 0. Almost all methods are rung with a starting row of 0.</p>
+<p>When a Start row number is specified, that many changes will be removed from the front of the first lead of the method. The removed changes are <strong>not</strong> reinserted elsewhere, and the leadend change remains the same. The changes in subsequent (consecutive) leads of the method are not affected. </p>
+<p>Whenenever a change-of-method results in this method being rung, this operation is applied again.</p>
+<details class="note">
+<summary>Example</summary>
+<hr />
+<p><img alt="Double Norwich Court Bob Major, starting at row 5" src="../../img/dncbm_startrow_5.png" width="300" /></p>
+<p>The above diagram shows part of a composition of <a href="https://complib.org/method/12470">Double Norwich Court Bob Major</a> in which the method's Start row number has been set to 4. Four changes have been removed from the first lead, resulting in a lead which is four rows shorter. </p>
+</details>
+<h3 id="rotate-by-vs-start-row-number">Rotate by vs. Start row number</h3>
+<p>The effects of a method's Start row number on the actual rows of the composition are, in some cases, identical to that of the <a href="#rotate-by">Rotate by</a> field. The main difference is in which rows of the method will be treated as <strong>leadheads and courseheads</strong> when laying out the composition.</p>
+<details class="note">
+<summary>Example</summary>
+<hr />
+<p>In this example, a plain course of Grandsire Triples is being rung with a Start row number of 4.</p>
+<p><img alt="Grandsire Triples starting at row 4, blue line" src="../../img/grandsire_startrow_4.png" /></p>
+<p>In a blue line diagram, the rows which Complib considers leadheads have horizontal lines drawn above them by default. For coursehead rows, the lines are blue.</p>
+<p>When laid out by leads, the layout for this composition looks like this:</p>
+<p><img alt="Grandsire Triples starting at row 4, layout" src="../../img/grandsire_startrow_4_layout.png" width="300" /></p>
+<hr />
+<p>A touch containing identical rows can be defined using a rotation instead. However, the appearance of the composition will be different. If instead the <strong>Rotate by</strong> value is set to 4, the blue line diagram becomes:</p>
+<p><img alt="Grandsire Triples rotated 4 changes, blue line" src="../../img/grandsire_rotated.png" /></p>
+<p>And the corresponding layout:</p>
+<p><img alt="Grandsire Triples rotated 4 changes, layout" src="../../img/grandsire_rotated_layout.png" width="300" /></p>
+</details>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>A method's Start row number should not be confused with the <a href="../adding_compositions_tabs_general/#start-row-number">composition's Start row number</a>, which is set under the General tab. </p>
+<p>The difference is that a method's Start row number is part of its definition, and will combine with other parts of the method's definition (such as <a href="#length">Length</a> and <a href="#lead-position-row-number-and-name">Lead position row number</a>) to determine how every lead of it in the composition is rung. </p>
+<p>By contrast, a composition's Start row number affects only the first lead of the composition, and has no bearing on a method's definition.</p>
+<p>If <strong>both</strong> a method and the composition's Start row numbers are non-zero, then their effects may be combined. This can have unintended consequences. In almost all cases, it is only necessary to set one of them.</p>
+</div>
+<h2 id="length">Length</h2>
+<p>This value specifies how many changes are in each lead of the method. </p>
+<p>Whenever a lead of the method is reached in the composition, Complib will apply the method's changes in sequence until the number of rows in the lead is equal to the Length value.</p>
+<p>By default, this value will be equal to the method's <strong>Lead length</strong>, which can be found under the <a href="../../methods/overview/#properties">Properties tab</a> on its method page.</p>
+<details class="warning">
+<summary>Warning: [Method name] (<code>__</code>) - The defined length (<code>__</code>) is greater than its lead length (<code>__</code>).</summary>
+<hr />
+<p>You should in almost all circumstances avoid using a Length value greater than the lead length of the method, as it can cause unnecessary confusion.</p>
+<p>If you want to have a partial lead of a method, there are multiple ways of achieving the same effect:</p>
+<ol>
+<li>You can define a special call, called a <strong>trim</strong>, which removes a number of changes from a lead of the method. See <a href="../adding_compositions_tabs_calls/">Calls</a> for help with using trims.</li>
+<li>You can define a second instance of the same method in the Methods table with a Length that is less than its Lead length. If so, you will need to give this instance a unique <a href="#mnemonic">method mnemonic</a>, and indicate a change-of-method at the appropriate place in the <a href="../adding_compositions_tabs_calling/">Calling</a>.</li>
+</ol>
+</details>
+<details class="error">
+<summary>Error: [Method name] (<code>__</code>) - Length must be greater than zero.</summary>
+<hr />
+<p>Self-explanatory.</p>
+</details>
+<h2 id="lead-position-row-number-and-name">Lead position row number and name</h2>
+<p>These two values together define the location and name of a <strong>Lead position</strong>.</p>
+<dl>
+<dt>Lead position</dt>
+<dd>A position within a lead of the method where a call can be applied.</dd>
+</dl>
+<p>The <strong>Lead position row number</strong> is the number of the row to which a call's change is applied, or to which the final change of the call is applied, if it has more than one.</p>
+<details class="note">
+<summary>Example: Cambridge S Minor with a halflead call</summary>
+<hr />
+<p>In this (rather contrived) example, an unusual call with place notation <code>12.36</code> is made at the half-lead of <a href="https://complib.org/method/14568">Cambridge Surprise Minor</a>. The call affects rows number 11 and 12 in the lead. The Lead position row number for the call is therefore 12.</p>
+<p><img alt="Cambridge S Minor with a halflead call" src="../../img/cambridge_minor_hl_call.png" width="250" /></p>
+<p>The highlighted elements of the place notation are the ones caused by the call. The final change of the call affects row number 12, which has been marked in red.</p>
+</details>
+<p>By default, the Lead position row number will be equal to the method's Length value, since most calls occur at the end of a lead.</p>
+<p>The <strong>Lead position name</strong> is an identifier which is used to refer to this Lead position in places such as a <a href="../adding_compositions_tabs_calls/">call definition</a>, and in the composition <a href="../overview/#layout">layout</a>. </p>
+<p>The Lead position name can be any string of characters you like: you can even use emoji or other special symbols. The only requirement is that it must exactly match the name you use for that position in the <a href="../adding_compositions_tabs_calls/">Calls tab</a>.</p>
+<p>The Lead position name will be included at the bottom of the composition layout as part of a call's definition. This means that, for example, the Lead position name can be used to name calls used in Doubles variations.</p>
+<details class="note">
+<summary>Example: Plain Bob with a Pink's Single</summary>
+<hr />
+<p>By naming the lead position "<strong>Pink's</strong>" in an an extent of Plain Bob Doubles with an appropriate <a href="../adding_compositions_tabs_calls/">call definition</a>, you get the variation May Day Doubles with the layout showing the call as:</p>
+<blockquote>
+<p><strong>s = 145.345.123.345.145 Pink's Single</strong>.</p>
+</blockquote>
+</details>
+<h3 id="defining-multiple-lead-positions">Defining multiple Lead positions</h3>
+<p>It's possible to define multiple different Lead positions for the same method. To do this, enter a new Lead position row number and name in the table row beneath the original method definition. The rest of the row should be left blank.</p>
+<p><img alt="Plain Bob with LE and HL Lead positions" src="../../img/lead_positions_multiple.png" /></p>
+<h3 id="default-lead-positions">Default Lead positions</h3>
+<p>Every method has a Lead position which Complib uses for it by default. Unlike custom Lead position names, default Lead position names will not be given in the composition's layout.</p>
+<p>The default name and row number used depends on the method's type.</p>
+<dl>
+<dt>LE</dt>
+<dd>Short for "lead end". This is the default Lead position for methods which are <strong>hunters</strong> (see <a href="../../methods/method_properties/#hunt-bells">Method properties &gt; Hunt bells</a>). The default position is the final row of the lead.</dd>
+<dt>SE</dt>
+<dd>Short for "section end". This is the default Lead position for <strong>principles</strong>, which are methods with no hunt bells. The default row number is 1, the <em>first</em> row of the lead. </dd>
+</dl>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../adding_compositions_tabs_general/" class="btn btn-neutral float-left" title="General tab"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../adding_compositions_tabs_calls/" class="btn btn-neutral float-right" title="Calls tab">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../adding_compositions_tabs_general/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../adding_compositions_tabs_calls/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

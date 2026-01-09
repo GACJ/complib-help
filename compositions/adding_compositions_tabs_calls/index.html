@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://help.complib.org/compositions/adding_compositions_tabs_calls/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Calls tab - Complib Help</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Calls tab";
+        var mkdocs_page_input_path = "compositions/adding_compositions_tabs_calls.md";
+        var mkdocs_page_url = "/compositions/adding_compositions_tabs_calls/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Complib Help
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Introduction</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../concepts/">Core concepts</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User Accounts</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../user/account_signup/">Signing up for an account</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../user/reset_password/">Resetting your password</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../user/user_profile/">User profile and settings</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Compositions</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../overview/">Composition pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../reading_compositions/">How to read compositions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../layout_options/">Customising composition layouts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../composition_properties/">Composition properties</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Adding & Editing Compositions</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../adding_compositions_overview/">Adding compositions: overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../adding_compositions_tabs_general/">General tab</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../adding_compositions_tabs_methods/">Methods tab</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Calls tab</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#call-type-symbol">Call Type &amp; Symbol</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#bob">Bob</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#single">Single</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#plain">Plain</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#big-bob">Big Bob</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#big-single">Big Single</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#bob-single">Bob Single</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#double">Double</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#extreme">Extreme</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#omit">Omit</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#trim">Trim</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#fill">Fill</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#jump">Jump</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#special">Special</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#notation">Notation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#changes-replaced">Changes replaced</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#lead-position-name">Lead position name</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#default-lead-positions">Default Lead positions</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#mnemonic">Mnemonic</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#heading">Heading</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#observation-mask">Observation mask</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#further-examples">Further examples</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../adding_compositions_tabs_calling/">Calling tab</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../adding_compositions_tabs_performances/">Performances tab</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../adding_compositions_tabs_references/">References tab</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../calling_positions/">Calling positions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Methods</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../methods/overview/">Method pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../methods/blueline_options/">Customising the blue line</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../methods/method_properties/">Method properties</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../methods/adding_methods/">Adding methods</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../methods/place_notation/">Place notation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../methods/method_designer/">Using the method designer</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Collections</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../collections/overview/">What are collections?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../collections/adding_collections/">Adding collections</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Searching Complib</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../search/quick_search/">Quick search</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../search/method_search/">Method search</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../search/composition_search/">Composition search</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../search/collection_search/">Collection search</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../search/extended_search/">Extended search</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Advanced Topics</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/huntbell_properties/">Hunt bell properties</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/extensions/">Extensions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/leadhead_codes/">Leadhead codes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/music_schemes/">Music schemes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/row_parity/">Row parity</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Complib Help</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Adding & Editing Compositions</li>
+      <li class="breadcrumb-item active">Calls tab</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="the-calls-tab">The Calls tab</h1>
+<p><img alt="Calling tab example" src="../../img/calls_tab_example.png" /></p>
+<p>The Calls tab is a table which allows you to define any custom calls which are used in a composition.</p>
+<p>To edit any value in the table, simply click on the relevant cell, then type a new value. Multiple cells can be highlighted by clicking and dragging. Alternatively, you can click on a cell, hold <kbd>Shift</kbd>, and then click on another cell.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Unlike the <a href="../adding_compositions_tabs_methods/">Methods tab</a>, you do not need to enter anything into the Calls tab in order to create a valid composition. This is because Complib has a number of default calls which account for the majority of those used in actual compositions.</p>
+<p>It's recommended that you leave the Calls tab empty unless your composition requires explicit call definitions. Complib will <strong>automatically remove call definitions that it considers to be unnecessary</strong> before any composition is saved.</p>
+</div>
+<h2 id="call-type-symbol">Call Type &amp; Symbol</h2>
+<p>These fields determine which of a number of standard types the call falls under, and what symbol is used to represent it in the composition's <a href="../adding_compositions_tabs_calling/">calling</a>. </p>
+<p>Complib gives you the flexibility to define calls in whatever way you want. However, most compositions tend to use one of a small number of standard call types. Some of these types (Bob, Single, etc.) are widely used, have commonly accepted meanings, and are often represented with a set of standard symbols. Others are rarer and may have seen a variety of historical uses, or may be wholly modern innovations.</p>
+<p>The default behaviour of some call types depend on the <a href="../../methods/method_properties/#miscellaneous">default calls</a> of the method(s) currently defined for the composition. However, since there is no need to define any of the default calls explicitly (and in fact Complib will remove any such extraneous definitions), the below examples are included more as a guide as to what each call type "usually" means.</p>
+<p>A call symbol can be <strong>any lowercase letter [a–z], or a dash (–)</strong>, with the constraint that <strong>all call symbols in a composition must be unique</strong>.</p>
+<p>The standard call types and their default symbols are:</p>
+<h3 id="bob">Bob</h3>
+<p><em>Default symbol</em>: <strong>–</strong></p>
+<p>The simplest, most common type of call. In single-hunt methods and principles, a bob generally replaces a place made at/after the lead- or section-end with another made elsewhere in the row.</p>
+<details class="note">
+<summary>Example: Plain Bob, 4ths place bob</summary>
+<hr />
+<p>The diagrams below show the leadend of <a href="https://complib.org/method/11349">Plain Bob Minor</a> with no call (top) and with a standard "near" bob (bottom). The bob replaces 2nds over the treble with 4ths over the treble.
+<center>
+<img alt="Plain Bob Minor, plain lead" src="../../img/plainbob_plain.png" width="200" /></p>
+<p><img alt="Plain Bob Minor with 4ths place bob" src="../../img/plainbob_bob.png" width="200" />
+</center></p>
+</details>
+<details class="note">
+<summary>Example: Double Norwich Court Bob Major, 6ths place bob</summary>
+<hr />
+<p><a href="https://complib.org/method/12470">Double Norwich Court Bob Major</a> with no call (top) and with a standard "far" bob (bottom). The bob replaces <em>n</em>ths place over the treble with (<em>n</em>–2)'s place over the treble.
+<center>
+<img alt="DNCBM, plain lead" src="../../img/dncbm_plain.png" width="200" /></p>
+<p><img alt="DNCBM, bob lead" src="../../img/dncbm_far_bob.png" width="200" />
+</center></p>
+</details>
+<details class="note">
+<summary>Example: Stedman Triples, Stedman bob</summary>
+<hr />
+<p>The six-end of <a href="https://complib.org/method/27985">Stedman Triples</a> with no call (top) and with a standard "Stedman" bob (bottom). The bob replaces <em>n</em>ths place over the six-end with (<em>n</em>–2)'s place over the six-end.
+<center>
+<img alt="Stedman, plain six" src="../../img/stedman_plain.png" width="200" /></p>
+<p><img alt="Stedman, bob six" src="../../img/stedman_bob.png" width="200" />
+</center></p>
+</details>
+<p>In twin-hunt methods, a bob generally replaces <em>n</em>ths place <em>before</em> the lead end with 3rds made <em>before</em> the lead end.</p>
+<details class="note">
+<summary>Example: Grandsire Triples, Grandsire bob</summary>
+<hr />
+<p><a href="https://complib.org/method/12415">Grandsire Triples</a> with no call and with a standard "Grandsire" bob. 
+<center>
+<img alt="Grandsire, plain lead" src="../../img/grandsire_plain.png" width="200" /></p>
+<p><img alt="Grandsire, bob lead" src="../../img/grandsire_bob.png" width="200" />
+</center></p>
+</details>
+<h3 id="single">Single</h3>
+<p><em>Default symbol</em>: <strong>s</strong></p>
+<p>The second most common type of call. Singles are the counterparts to bobs, in the sense that they usually involve two extra places made in addition to the one(s) made at a standard bob.</p>
+<details class="note">
+<summary>Example: Plain Bob, 4ths place single</summary>
+<hr />
+<p>The diagram below shows the leadend of <a href="https://complib.org/method/11349">Plain Bob Minor</a> with a standard "near" single. The single replaces 2nds over the treble with 2nds, 3rds and 4ths over the treble.
+<center>
+<img alt="Plain Bob Minor with 4ths place single" src="../../img/plainbob_single.png" width="200" />
+</center></p>
+</details>
+<details class="note">
+<summary>Example: Double Norwich Court Bob Major, 6ths place single</summary>
+<hr />
+<p><a href="https://complib.org/method/12470">Double Norwich Court Bob Major</a> with a standard "far" single. The single replaces <em>n</em>ths place over the treble with (<em>n</em>–2)'s, (<em>n</em>–1)'s and <em>n</em>ths place over the treble.
+<center>
+<img alt="DNCBM, single lead" src="../../img/dncbm_far_single.png" width="200" />
+</center></p>
+</details>
+<details class="note">
+<summary>Example: Stedman Triples, Stedman single</summary>
+<hr />
+<p>The six-end of <a href="https://complib.org/method/27985">Stedman Triples</a> with a standard "Stedman" single. The single replaces <em>n</em>ths place over the six-end with (<em>n</em>–2)'s, (<em>n</em>–1)'s and <em>n</em>ths place over the six-end.
+<center>
+<img alt="Stedman, single six" src="../../img/stedman_single.png" width="200" />
+</center></p>
+</details>
+<details class="note">
+<summary>Example: Grandsire Triples, Grandsire single</summary>
+<hr />
+<p><a href="https://complib.org/method/12415">Grandsire Triples</a> with a standard "Grandsire" single. Here, 2nds and 3rds are made over the treble at the leadend, in addition to the thirds made <em>before</em> the leadend.
+<center>
+<img alt="Grandsire, single lead" src="../../img/grandsire_single.png" width="200" />
+</center></p>
+</details>
+<h3 id="plain">Plain</h3>
+<p><em>Default symbol</em>: <strong>p</strong></p>
+<p>A utility call, used to prevent the pricker from inserting another call at the corresponding position. Plains should only ever be used to help Complib interpret a composition correctly: <strong>plain calls are not displayed in the composition's layout</strong>.</p>
+<p>There are two cases in which the use of plain calls is required.</p>
+<ol>
+<li>
+<p>To force the pricker to ignore a calling position, to prevent the next call in the calling from being applied too soon. This quite often happens in compositions which specify calling positions by a number of leads after the course end.</p>
+<details class="note">
+<summary>Example: Grandsire Triples</summary>
+<hr />
+<p><center>
+<img alt="Plain call example: Grandsire Triples" src="../../img/plain_call_example_grandsire.png" width="300" />
+</center></p>
+<p><a href="https://complib.org/composition/10835">The above composition of Grandsire Triples</a> begins with a single at 1. The next call is at 2 in the <em>following</em> course. However, naïvely putting a bob at 2 in the calling will cause Complib to wrongly insert the call immediately instead of waiting until the next course.</p>
+<p>To prevent this, the composition makes use of a plain call at 2 to force the pricker to wait until the next time the calling position is reached to apply the bob. The plain call is not displayed in the layout.</p>
+</details>
+</li>
+<li>
+<p>To prevent Complib from interpreting a <strong>phantom parthead</strong> as a true parthead. Phantom partheads are repeated parthead rows which need to be ignored in multi-extent compositions. In most cases, they are ignored automatically because Complib will not look for a parthead until all calls in a part have been used. </p>
+<p>In the rare instance that a phantom parthead occurs between the last call and the true parthead, a plain call is needed to suppress it. In a few instances, it may be necessary to define a new calling position on the last row of the part.</p>
+<details class="note">
+<summary>Example: Erin Doubles</summary>
+<hr />
+<p><center>
+<img alt="Plain call example: Erin Doubles" src="../../img/plain_call_example_erin.png" width="250" />
+</center></p>
+<p>The above composition of Erin Doubles has 6 true partheads: 12345, 13245, 23145, 21345, 31245 and 32145. An Erin six which contains one of these partheads will also contain two of the others, so this composition has a large number of phantom partheads.</p>
+<p>Most of these are ignored, because there are calls remaining in the part. However, the six after the final single at 4 contains two phantom partheads in addition to the true parthead at the six end. The pricker will pick the first of these by default, which is incorrect. To prevent this, a plain call is inserted at 5 in the final course.</p>
+<p>By making <a href="https://complib.org/composition/22327/copy">a clone of the composition</a> (NB: must be logged in) and examining the Calls and Methods tabs, we can see that a new Lead position of <strong>LE</strong> has been used to define a plain call at the six end. </p>
+<p>Try deleting the plain at 5, and note the effect it has on the Blue Line display.</p>
+</details>
+</li>
+</ol>
+<h3 id="big-bob">Big Bob</h3>
+<p><em>Default symbol</em>: <strong>x</strong></p>
+<p>Used by default to represent:</p>
+<ul>
+<li>Near calls:<ul>
+<li>A 6ths place bob for stages Royal and below;</li>
+<li>A (<em>n</em>–4)'s place bob at stages above Royal.</li>
+</ul>
+</li>
+<li>Far calls:<ul>
+<li>A (<em>n</em>–4)'s place bob.</li>
+</ul>
+</li>
+</ul>
+<h3 id="big-single">Big Single</h3>
+<p><em>Default symbol</em>: <em>none</em></p>
+<p>Notionally a counterpart to the big bob. Has no default behaviour.</p>
+<h3 id="bob-single">Bob Single</h3>
+<p><em>Default symbol</em>: <strong>b</strong></p>
+<p>This rare call type takes its name from those used by John Holt in his landmark <a href="https://complib.org/composition/29040">10-part composition of Grandsire Triples</a>. By default, it represents:</p>
+<ul>
+<li>Near calls:<ul>
+<li><strong>1456</strong> at even stages;</li>
+<li><strong>1456<em>n</em></strong> at odd stages.</li>
+</ul>
+</li>
+<li>Far calls:<ul>
+<li><strong>1(<em>n</em></strong><strong>–4)(</strong><strong><em>n</em></strong><strong>–3)(</strong><strong><em>n</em></strong><strong>–2)</strong> at even stages;</li>
+<li><strong>(<em>n</em>–4)(<em>n</em>–3)(<em>n</em>–2)</strong> at odd stages.</li>
+</ul>
+</li>
+</ul>
+<h3 id="double">Double</h3>
+<p><em>Default symbol</em>: <strong>d</strong></p>
+<p>Generally used for a call which extends the standard single with two additional places made.</p>
+<details class="note">
+<summary>Example: Plain Bob Major with a 123456 double</summary>
+<hr />
+<p><a href="https://complib.org/method/12834">Plain Bob Major</a> with a standard double: 2nds, 3rds, 4ths, 5ths and 6ths are all made over the treble at the leadend.
+<center>
+<img alt="Plain Bob, double" src="../../img/pb_8_double.png" width="200" />
+</center></p>
+</details>
+<p>By default, represents:</p>
+<ul>
+<li>Near calls:<ul>
+<li><strong>123456</strong> at even stages;</li>
+<li><strong>123456<em>n</em></strong> at odd stages.</li>
+</ul>
+</li>
+<li>Far calls:<ul>
+<li><strong>1(</strong><strong><em>n</em></strong><strong>–4)...(</strong><strong><em>n</em></strong><strong>–1)</strong><strong><em>n</em></strong> at even stages;</li>
+<li><strong>(</strong><strong><em>n</em></strong><strong>–4)...(</strong><strong><em>n</em></strong><strong>–1)</strong><strong><em>n</em></strong> at odd stages.</li>
+</ul>
+</li>
+</ul>
+<h3 id="extreme">Extreme</h3>
+<p><em>Default symbol</em>: <strong>e</strong></p>
+<p>By default, represents <strong>125</strong> in Doubles. Has no default behaviour at other stages.</p>
+<h3 id="omit">Omit</h3>
+<p><em>Default symbol</em>: <strong>o</strong></p>
+<p>By default, represents <strong>1</strong> in Doubles. Has no default behaviour at other stages.</p>
+<h3 id="trim">Trim</h3>
+<p><em>Default symbol</em>: <strong>t</strong></p>
+<p>Used to indicate a call which often (but not always) changes the length of a lead. Usually a trim will <strong>skips changes</strong> within a method's lead, or substitutes some of the method's changes with a shorter sequence. Requires a <a href="#changes-replaced">Changes replaced</a> value to be specified.</p>
+<h3 id="fill">Fill</h3>
+<p><em>Default symbol</em>: <strong>f</strong></p>
+<p>Used to indicate a call which often (but not always) changes the length of a lead. Usually a fill <strong>inserts extra changes</strong> within a lead, or substitutes some of the method's original changes with a longer sequence. Requires a <a href="#changes-replaced">Changes replaced</a> value to be specified.</p>
+<h3 id="jump">Jump</h3>
+<p><em>Default symbol</em>: <em>none</em></p>
+<p>This call type must be used if the call involves Jump changes and uses <a href="../../methods/place_notation/#jump-changes">Jump place notation</a>.</p>
+<h3 id="special">Special</h3>
+<p><em>Default symbol</em>: <em>none</em></p>
+<h2 id="notation">Notation</h2>
+<p>The <a href="../../methods/place_notation/">place notation</a> of the call. If the call affects multiple changes, the notation will have multiple elements.</p>
+<h2 id="changes-replaced">Changes replaced</h2>
+<p>This value is only used with the <a href="#trim">trim</a> and <a href="#fill">fill</a> call types, in order to specify how many changes (if any) are to be replaced with the change(s) in the <a href="#notation">Notation</a> column.</p>
+<p>If a lead originally has length <em>L</em>, and a trim or fill call changes that length to <em>M</em> by inserting or substituting a sequence of <em>N</em> changes, then:</p>
+<blockquote>
+<p>Changes replaced = <em>L</em> – <em>M</em> + <em>N</em></p>
+</blockquote>
+<p>All values in the above equation must be positive. <strong>This means that for fill calls, where <em>M</em> ≥ <em>L</em>, the Changes replaced value must be less than or equal to <em>N</em>.</strong></p>
+<details class="note">
+<summary>Examples: Fills and trims</summary>
+<hr />
+<p>Click on the names of the example compositions below to open them directly in the composition editor so that you can see how the submitter has defined the calls (NB: must be logged in).</p>
+<dl>
+<dt>Fills</dt>
+<dd><a href="https://complib.org/composition/79358/copy">5040 Kent Treble Bob Royal</a> by John Reeves</dd>
+<dt>Trims</dt>
+<dd>
+<p><a href="https://complib.org/composition/79359/copy">5099 Compton Castle Surprise Major</a> by Robert D S Brown</p>
+<p><a href="https://complib.org/composition/79371/copy">5000 41-Spliced Surprise Minor</a> by Alexander E Holroyd</p>
+</dd>
+</dl>
+</details>
+<h2 id="lead-position-name">Lead position name</h2>
+<p>The unique identifier for a Lead position at which the call can occur. This can be anything you want, so long as it exactly matches a corresponding <a href="../adding_compositions_tabs_methods/#lead-position-row-number-and-name">Methods &gt; Lead position name</a> entry under the <a href="../adding_compositions_tabs_methods/">Methods tab</a>.</p>
+<p>The Lead position name will appear in the composition's <a href="../overview/#layout">layout</a> as part of a custom call definition. However, if the call uses the <strong>LE</strong> Lead position name (see below), this will be omitted from the layout.</p>
+<h3 id="default-lead-positions">Default Lead positions</h3>
+<p>Many of the default call types have a default Lead position name which they use. Since they correspond to common calling positions, you may wish to use them even when definining custom calls. The common ones are:</p>
+<dl>
+<dt>LE</dt>
+<dd>
+<p>Short for "lead end". Used by default for: </p>
+<ul>
+<li>Near/far/Grandsire bobs and singles;</li>
+<li>Plains;</li>
+<li>Big bobs and big singles;</li>
+<li>Bob singles;</li>
+<li>Doubles and extremes.</li>
+</ul>
+<p>This calling position, being by far the most commonly used, will <strong>not</strong> be explicitly named in the composition's layout as part of the call's definition.</p>
+</dd>
+<dt>SE</dt>
+<dd>Short for "section end". This is used for Stedman-type bobs and singles by default. </dd>
+<dt>HL</dt>
+<dd>Short for "half lead". Used for trims and fills by default.</dd>
+</dl>
+<h2 id="mnemonic">Mnemonic</h2>
+<h2 id="heading">Heading</h2>
+<p>Only used when defining a custom calling position, or when specifying an observation bell which is not the highest numbered bell. </p>
+<p>The heading must be a single uppercase or lowercase letter [<strong>A–Z, a–z</strong>], or left blank. The heading value is used as a column heading for the corresponding calling position in the composition <a href="../overview/#layout">layout</a> when laid out by courses; the heading is inserted after the call's <a href="#call-type-symbol">symbol</a> in the layout when laid out by leads, or when a calling alteration is given.</p>
+<p>The heading used should exactly match a calling position heading used under the <a href="../adding_compositions_tabs_calling/">Calling tab</a>. </p>
+<h2 id="observation-mask">Observation mask</h2>
+<p>Only used when defining a custom calling position, or when specifying an observation bell which is not the highest numbered bell.</p>
+<p>An observation mask is a <a href="../adding_compositions_tabs_general/#what-is-a-row-mask"><strong>row mask</strong></a> which gives the position of the observation bell <em>after</em> the call is made at the calling position indicated by the <a href="#heading">Heading</a> value.</p>
+<details class="note">
+<summary>Example: 2nd as observation</summary>
+<hr />
+<p><center>
+<img alt="Observation mask example: Yorkshire Surprise Royal" src="../../img/observation_mask_example_yorkshire.png" width="250" />
+</center></p>
+<p>In this composition of Yorkshire Surprise Royal, the 2nd is the observation bell: all the calls are made in reference to its position, rather than that of the tenor. To achieve this, observation masks have been specified for all the calling positions used. These can be seen under the Calls tab by opening a <a href="https://complib.org/composition/123109/copy">clone of the composition</a> (NB: must be logged in):</p>
+<p><center>
+<img alt="Observation mask example: Row masks" src="../../img/observation_mask_example_masks.png" width="500" />
+</center></p>
+<p>Each observation mask specifies the position of bell 2 <em>after</em> the call at the corresponding calling position. All other bells are represented using wildcards (<strong>x</strong>).</p>
+</details>
+<h2 id="further-examples">Further examples</h2>
+<p>For more examples of compositions using the Calls tab, <a href="https://complib.org/collection/10184/?chapter=Calls%20and%20Calling%20Positions">see the Examples reference collection</a>. Click on a composition in the collection, then click <img alt="Icon: clone" src="../../img/icon_clone.png" width="25" /><strong>Clone</strong> to duplicate it in the composition editor. Navigating to the Calls tab will give you a peek at how the submitter has defined the calls in their composition.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../adding_compositions_tabs_methods/" class="btn btn-neutral float-left" title="Methods tab"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../adding_compositions_tabs_calling/" class="btn btn-neutral float-right" title="Calling tab">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../adding_compositions_tabs_methods/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../adding_compositions_tabs_calling/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

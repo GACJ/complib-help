@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://help.complib.org/compositions/adding_compositions_tabs_calling/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Calling tab - Complib Help</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Calling tab";
+        var mkdocs_page_input_path = "compositions/adding_compositions_tabs_calling.md";
+        var mkdocs_page_url = "/compositions/adding_compositions_tabs_calling/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Complib Help
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Introduction</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../concepts/">Core concepts</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User Accounts</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../user/account_signup/">Signing up for an account</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../user/reset_password/">Resetting your password</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../user/user_profile/">User profile and settings</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Compositions</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../overview/">Composition pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../reading_compositions/">How to read compositions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../layout_options/">Customising composition layouts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../composition_properties/">Composition properties</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Adding & Editing Compositions</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../adding_compositions_overview/">Adding compositions: overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../adding_compositions_tabs_general/">General tab</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../adding_compositions_tabs_methods/">Methods tab</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../adding_compositions_tabs_calls/">Calls tab</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Calling tab</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#editing-the-calling">Editing the calling</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#copy-paste-from-other-sources">Copy-paste from other sources</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#anatomy-of-callings">Anatomy of callings</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#calling-positions">Calling positions</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#named-calling-positions">Named calling positions</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#numbered-calling-positions">Numbered calling positions</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#twin-bob-calling-positions">Twin-bob calling positions</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#calls">Calls</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#multiple-bobs">Multiple bobs</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#multipart-compositions-call-alterations">Multipart compositions &amp; call alterations</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#insertion-and-deletion">Insertion and deletion</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#call-substitution">Call substitution</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#calling-alterations-and-partheads">Calling alterations and partheads</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#alterations-affecting-methods">Alterations affecting methods</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#calling-repetitions">Calling repetitions</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#infinite-repetition">Infinite repetition</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#courses-courseheads-etc">Courses, courseheads, etc.</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#setting-course-length-with-colons">Setting course length with colons</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#starting-courses-from-different-numbered-positions">Starting courses from different numbered positions</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#methods">Methods</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#infinite-repetition-in-compositions-of-stedman">Infinite repetition in compositions of Stedman</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#method-alterations-in-multipart-callings">Method alterations in multipart callings</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#named-blocks">Named blocks</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#troubleshooting">Troubleshooting</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../adding_compositions_tabs_performances/">Performances tab</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../adding_compositions_tabs_references/">References tab</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../calling_positions/">Calling positions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Methods</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../methods/overview/">Method pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../methods/blueline_options/">Customising the blue line</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../methods/method_properties/">Method properties</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../methods/adding_methods/">Adding methods</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../methods/place_notation/">Place notation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../methods/method_designer/">Using the method designer</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Collections</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../collections/overview/">What are collections?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../collections/adding_collections/">Adding collections</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Searching Complib</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../search/quick_search/">Quick search</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../search/method_search/">Method search</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../search/composition_search/">Composition search</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../search/collection_search/">Collection search</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../search/extended_search/">Extended search</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Advanced Topics</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/huntbell_properties/">Hunt bell properties</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/extensions/">Extensions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/leadhead_codes/">Leadhead codes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/music_schemes/">Music schemes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/row_parity/">Row parity</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Complib Help</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Adding & Editing Compositions</li>
+      <li class="breadcrumb-item active">Calling tab</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="the-calling-tab">The Calling tab</h1>
+<p><img alt="Calling tab: Middleton/Johnson calling" src="../../img/calling_middleton.png" width="400" /></p>
+<p>The Calling tab is a spreadsheet in which the calling for a composition is defined. The calling specifies the sequence of calls (such as bobs and singles) which need to be made during a performance, including changes of method in Spliced.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In the explanation which follows, it will be assumed that you know how to read compositions. </p>
+<p>If you are not already familiar with how compositions are typically laid out and interpreted, you should visit <a href="../reading_compositions/">How to read compositions</a> before continuing.</p>
+</div>
+<h2 id="editing-the-calling">Editing the calling</h2>
+<p>To edit the calling, simply click on a cell in the table and type a value to enter it into that cell. </p>
+<p>Multiple cells can be selected by clicking and dragging. Alternatively, you can click on a cell, hold <kbd>Shift</kbd>, and then click on another cell to highlight a rectangle with those cells at opposite corners. Hold <kbd>Ctrl</kbd>/<kbd>⌘ Command</kbd> and click to select multiple individual cells.</p>
+<p><kbd>Backspace</kbd>/<kbd>Delete</kbd> will delete any values in selected cells.</p>
+<p>Right-clicking on a cell will open a contextual menu, allowing you to manipulate the table by inserting or removing table rows and columns:</p>
+<p><img alt="Calling tab: right click menu" src="../../img/calling_rightclick_menu.png" width="300" /></p>
+<h3 id="copy-paste-from-other-sources">Copy-paste from other sources</h3>
+<p>In many instances you can save time by copy-pasting a calling from another source. This might be another web page, or a file on your computer.</p>
+<p>With the calling highlighted in the source, <kbd>Ctrl</kbd>+<kbd>C</kbd> (<kbd>⌘ Command</kbd>+<kbd>C</kbd>) will copy. Then, in the Calling tab, select <strong>a single cell</strong> and press <kbd>Ctrl</kbd>+<kbd>V</kbd> (<kbd>⌘ Command</kbd>+<kbd>V</kbd>) to paste. </p>
+<p>The calling will be pasted into the table such that the selected cell is in its top left corner.</p>
+<p>In many instances you will have to clean up the calling after copy-pasting, as the text formatting in the source can cause problems. Copy-pasting tends to work best if the original is in <strong>plaintext format</strong>, such as a composition attached to a performance on BellBoard.</p>
+<h2 id="anatomy-of-callings">Anatomy of callings</h2>
+<p>Callings are entered into the Calling tab laid out by <strong>courses</strong>. If a composition was originally laid out by leads, you will need to reinterpret this into a course format as you enter it into the Calling tab.</p>
+<div class="admonition note">
+<p class="admonition-title">Callings versus Layout</p>
+<p>It's important to remember that <strong>a composition is defined by its calling</strong>, but not by its layout or style of presentation. The same composition can be represented in many different ways. Indeed, Complib gives users <a href="../layout_options/">a lot of control</a> over the way that any composition appears to them. </p>
+<p>When defining a custom composition on Complib, the most important (and pretty much only) task is to correctly define the calling.</p>
+</div>
+<p>A typical composition, when entered into the Calling tab, might look like this:</p>
+<p><img alt="Calling tab example: Spliced Plain Major" src="../../img/calling_tab_annotated.png" width="550" /></p>
+<p><em>Example: <a href="https://complib.org/composition/21029">5000 2-Spliced Bob Major</a> by Edward W Martin</em></p>
+<p>Since you know <a href="../reading_compositions/">how to read compositions</a>, it should be clear from the above example that there is a direct correspondence between the way the calling is entered into the table and how it would normally be written when laid out by courses.</p>
+<p>Some composition callings may not have all the features labelled here, while others may have more. The following sections contain information on all the calling features Complib supports and how to use them correctly.</p>
+<h2 id="calling-positions">Calling positions</h2>
+<p>Calling positions are column headers which signal to Complib when a <a href="#calls">call</a> in the table should occur.</p>
+<p><strong>A calling position must be a single uppercase or lowercase letter [A–Z, a–z] or a positive whole number</strong>.</p>
+<p><strong>A calling position must be entered in the top row of a column, with nothing in any cell above it.</strong> Failing to do this will cause the calling positions to be incorrectly identified as other objects, such as calls or named blocks.</p>
+<div class="admonition hint">
+<p class="admonition-title">Tip: Repeated calling positions</p>
+<p>There is no restriction on the number of times that a given calling position appears. There are circumstances in which you may find it convenient to have the same calling position at the head of multiple columns in the Calling tab.</p>
+</div>
+<p>Compositions generally two types of calling position: <a href="#named-calling-positions">named positions</a> (represented with letters), or <a href="#numbered-calling-positions">numbered positions</a>. While it's common to only use one type or the other in a given composition, you are free to use a mixture of both.</p>
+<p>A special kind of named position, unique to Stedman Triples, is used in <a href="#twin-bob-calling-positions">twin-bob compositions</a>.</p>
+<h3 id="named-calling-positions">Named calling positions</h3>
+<p>Named calling positions indicate that a call should be made when an <strong>observation bell</strong> reaches a specific part of the course. By default, the observation bell is the heaviest working bell.</p>
+<p>Most compositions use a small number of well-known calling positions with special names, such as <strong>H</strong> (Home) and <strong>W</strong> (Wrong). Complib also uses these named calling positions by default. <a href="../calling_positions/">See the dedicated page on calling positions</a> for a full list of the default positions and their names.</p>
+<p>Custom named positions can be created by defining a new <a href="../adding_compositions_tabs_calls/#mnemonic">Mnemonic</a> and <a href="../adding_compositions_tabs_calls/#heading">Heading</a> in the <a href="../adding_compositions_tabs_calls/">Calls tab</a>. A different observation bell can also be specified using <a href="../adding_compositions_tabs_calls/#observation-mask">observation masks</a>.</p>
+<h3 id="numbered-calling-positions">Numbered calling positions</h3>
+<p>Numbered calling positions indicate a number of leads/divisions since the last <strong>coursehead</strong>.</p>
+<p>When using numbered calling positions, you must provide additional information to Complib to allow it to count the leads/divisions correctly. If possible, you should specify appropriate <a href="../adding_compositions_tabs_general/#coursehead-masks">coursehead masks</a> in the General tab. You can also directly <a href="#setting-course-length-with-colons">control the length of courses</a> in the Calling tab itself.</p>
+<p>Since a course can be arbitrarily long, a numbered calling position can be any positive whole number. However, in practice it is very unusual to have courses requiring numbered calling positions with more than two digits. Bear in mind that anyone calling the composition has to count up to that number!</p>
+<h3 id="twin-bob-calling-positions">Twin-bob calling positions</h3>
+<p>For historical reasons, many compositions of Stedman Triples use a special type of calling position which indicates <strong>pairs of calls</strong>. Such "twin-bob" compositions use four named calling positions whose names derive from the work of the observation bell (usually the 7). Each is usually shortened to a single letter:</p>
+<blockquote>
+<p>Going in <strong>S</strong>low, <strong>H</strong>alf turns, <strong>L</strong>ast whole turn and going in <strong>Q</strong>uick.</p>
+</blockquote>
+<p>In a typical course, these correspond to numbered positions as follows:</p>
+<table>
+<thead>
+<tr>
+<th>Position</th>
+<th>Bobs at...</th>
+<th>Diagram</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>S</strong></td>
+<td>3 and 4</td>
+<td><img alt="Twin bobs at S" src="../../img/twin_bob_S.png" width="250" /></td>
+</tr>
+<tr>
+<td><strong>H</strong></td>
+<td>5 and 6</td>
+<td><img alt="Twin bobs at H" src="../../img/twin_bob_H.png" width="250" /></td>
+</tr>
+<tr>
+<td><strong>L</strong></td>
+<td>7 and 8</td>
+<td><img alt="Twin bobs at L" src="../../img/twin_bob_L.png" width="250" /></td>
+</tr>
+<tr>
+<td><strong>Q</strong></td>
+<td>12 and 13</td>
+<td><img alt="Twin bobs at Q" src="../../img/twin_bob_Q.png" width="250" /></td>
+</tr>
+</tbody>
+</table>
+<p><strong>When entering a twin-bob composition in the Calling tab, you should use numbered calling positions</strong>. Complib will automatically recognise the twin-bob calling positions and display them appropriately in the composition layout (provided the user viewing it has <a href="../layout_options/#rows">Layout Options &gt; Rows &gt; Expand twin bobs</a> disabled in the <a href="../layout_options/">composition layout options</a>).</p>
+<div class="admonition warning">
+<p class="admonition-title">Twin-bob positions: Things to watch out for</p>
+<dl>
+<dt>Limitations</dt>
+<dd>Complib will only recognise the twin-bob calling positions if the composition contains bobs at those positions <em>and no others</em>. </dd>
+<dt>Courses with non-standard lengths</dt>
+<dd>The numbered positions given above assume that all the courses have a standard length of 14 sixes. Twin-bob compositions which use different course lengths (i.e, because the observation bell is affected by <strong>singles</strong>) can still be recognised as such by making use of <a href="#starting-courses-from-different-numbered-positions">consecutive colon syntax</a> to start a course at a different numbered position.</dd>
+</dl>
+</div>
+<h2 id="calls">Calls</h2>
+<p>Calls such as bobs and singles are indicated by symbols and numbers in cells which are beneath <a href="#calling-positions">calling positions</a>. Multiple calls can be entered into the same cell, including calls of different types. </p>
+<p><strong>Calls are always processed in left-to-right reading order.</strong></p>
+<p>The majority of compositions use a small set of standard call symbols. Accordingly, Complib has a standard set of <a href="../adding_compositions_tabs_calls/#bob">default call symbols</a> which it will interpret automatically. Any other symbols must be explicitly defined in the <a href="../adding_compositions_tabs_calls/">Calls tab</a>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Defining custom calls</p>
+<p>When defining a custom call in the Calls tab, remember that you must specify an <a href="../adding_compositions_tabs_calls/#observation-mask">observation mask</a>, <a href="../adding_compositions_tabs_calls/#mnemonic">Mnemonic</a> and <a href="../adding_compositions_tabs_calls/#heading">Heading</a> for every <strong>named calling position</strong> at which that call occurs (it's not necessary to do this for numbered calling positions). </p>
+<p>Symbols and calling position headings in the Calls tab should exactly match those in the calling, otherwise you will get a validation error.</p>
+</div>
+<h3 id="multiple-bobs">Multiple bobs</h3>
+<p>The <a href="../adding_compositions_tabs_calls/#bob">default bob</a> call is unique: it can be represented in the calling using numbers as well as the standard dash (–) symbol.</p>
+<p>A positive whole number in a cell beneath a calling position will be interpreted to mean that many <strong>consecutive</strong> bobs at that calling position. In particular, the number 1 can be used as an alternative to the dash (–) symbol.</p>
+<h2 id="multipart-compositions-call-alterations">Multipart compositions &amp; call alterations</h2>
+<p>Many compositions have callings which are supposed to be repeated a number of times—these are known as <strong>multipart</strong> compositions.</p>
+<p>When defining a multipart composition, you should enter the calling for the first part into the Calling tab, and indicate the <a href="../adding_compositions_tabs_general/#partheads">parthead(s)</a> under the <a href="../adding_compositions_tabs_general/">General tab</a>. This will prompt Complib to repeatedly apply the calling until rounds is reached.</p>
+<p>Some multipart compositions require alterations to the calling in specific parts. The Calling tab has a robust syntax which allows you to specify these alterations, such as inserted or omitted calls, and even method substitutions in Spliced.</p>
+<h3 id="insertion-and-deletion">Insertion and deletion</h3>
+<p>A basic call alteration looks something like this:</p>
+<p><img alt="Call insertion deletion" src="../../img/calling_insertion_deletion.png" width="400" /></p>
+<dl>
+<dt>Calls</dt>
+<dd>
+<p>The call or sequence of calls affected by an alteration is always enclosed in [square brackets]. </p>
+<p>The opening and closing brackets do not have to be in the same cell, or even the same row. Pairs of brackets can even be nested inside each other. The only requirement is that every left [ bracket is paired with a corresponding right ] bracket later in the calling.</p>
+</dd>
+<dt>Part number(s)</dt>
+<dd>Directly in front of the opening bracket are the numbers of any parts in which the alteration takes place. When multiple part numbers are listed, they should be separated by a pipe character ( <strong>|</strong> ).</dd>
+<dt>Insertion/deletion indicator</dt>
+<dd>Directly in front of the part number(s) is a symbol which indicates whether the calls in brackets are to be inserted (+) or deleted (-) in the numbered parts.</dd>
+</dl>
+<p>If entered correctly, the call alteration will be marked with a superscript number in the generated layout, with a corresponding footnote of the form:</p>
+<blockquote>
+<p>[<em>#</em>] Include/omit in part(s)...</p>
+</blockquote>
+<h3 id="call-substitution">Call substitution</h3>
+<p>A more complex form of call alteration is a <strong>call substitution</strong>. This is when a call (or sequence of calls) is replaced with a different call (or sequence of calls) in a particular part.</p>
+<p>A call substitution has the following form:</p>
+<p><img alt="Call substitution" src="../../img/calling_substitution.png" width="400" /></p>
+<dl>
+<dt>Original calling</dt>
+<dd>The call or sequence of calls to be replaced in the numbered parts. Separated from the substituted calling by a <strong>comma</strong>.</dd>
+<dt>Substituted calling</dt>
+<dd>The call or sequence of calls to be substituted in place of the original calling in the numbered parts.</dd>
+<dt>Substitution indicator</dt>
+<dd>A combination of the insertion and deletion indicators. Can be entered by typing both + and - (in either order) in front of the part number(s).</dd>
+</dl>
+<p>The original and substituted calling can be in the same cell, or spread across multiple cells and rows:</p>
+<p><img alt="Call substitution with line breaks" src="../../img/calling_substitution_long.png" width="400" /></p>
+<p>The only requirement is that the parts of the syntax appear in their proper order when read left-to-right, top-to-bottom. In the above example, all nine calls between the left bracket and the comma are replaced by the lone bob to the right of the comma.</p>
+<p>If entered correctly, the original calling will be marked with a superscript number in the generated layout, with a corresponding footnote of the form:</p>
+<blockquote>
+<p>[<em>#</em>] Replace bracketed calls with (substituted calling) in part(s)...</p>
+</blockquote>
+<h3 id="calling-alterations-and-partheads">Calling alterations and partheads</h3>
+<p>Be aware that if a calling alteration causes the next parthead to be different from what it would otherwise have been, you must make sure that the new parthead is included in the set generated by the <a href="../adding_compositions_tabs_general/#partheads">specified parthead(s)</a> under the <a href="../adding_compositions_tabs_general/">General tab</a>.</p>
+<details class="note">
+<summary>Example: Simple six-part</summary>
+<hr />
+<p>Consider this very simple touch of Plain Bob Minor:
+<center>
+<img alt="360 Plain Bob Minor, one-part version" src="../../img/calling_simpletouch_onepart.png" width="200" />
+</center></p>
+<p>To turn it into a multi-part composition, we should identify the first parthead, which is 142356. Entering this into the General &gt; Parthead(s) field will prompt Complib to expect a multipart calling. In the calling tab, we enter the first part only, with the required calling substitution in parts 3 and 6:
+<center>
+<img alt="360 Plain Bob Minor, six-part calling" src="../../img/calling_simpletouch_6part_calling.png" width="150" />
+</center></p>
+<p>Now we get an error:
+<center>
+<img alt="360 Plain Bob Minor, error" src="../../img/calling_simpletouch_error.png" width="400" />
+</center></p>
+<p>By looking at the generated layout, we can see the reason: Complib is still only expecting 3 parts, even though our calling indicates that there are 6. In the validation readout, Complib gives the generated partheads:</p>
+<blockquote>
+<p><strong>Partheads: (3) 123456, 142356, 134256</strong></p>
+</blockquote>
+<p>This is too few. The partheads after the first single are missing. The fourth parthead in the touch, which would be 123456 without the calling substitution, is actually <strong>124356</strong>. Adding this parthead to General &gt; Parthead(s) fixes the issue, and now the composition pricks correctly:
+<center>
+<img alt="360 Plain Bob Minor, 6-part, fixed" src="../../img/calling_simpletouch_6part_layout.png" width="400" />
+</center></p>
+</details>
+<h3 id="alterations-affecting-methods">Alterations affecting methods</h3>
+<p>The same syntax for call alterations also applies to any <a href="#methods">methods</a> specified in the calling, allowing you to add, omit, or replace sequences of methods in certain parts.</p>
+<h2 id="calling-repetitions">Calling repetitions</h2>
+<p>There are many instances where it can be useful to repeat a section of the calling a set number of times. <a href="#calls">Calls</a>, <a href="#methods">method sequences</a>, and <a href="#named-blocks">named blocks</a> can all be enclosed in ( round brackets ) with a number in front:</p>
+<blockquote>
+<p><strong><em>n</em>( ... )</strong></p>
+</blockquote>
+<p>This will prompt the pricker to repeat the calling inside the round brackets <em>n</em> times. <strong>The brackets can span multiple cells</strong>. The only requirement is that a left bracket must be paired with a corresponding right bracket.</p>
+<details class="note">
+<summary>Examples: Repetitions of calls, blocks and method sequences</summary>
+<hr />
+<p><center>
+<img alt="Calling repetition: one call" src="../../img/calling_repetition_one_call.png" width="100" /></p>
+<p>Five consecutive bobs at <strong>W</strong>rong</p>
+<hr />
+<p><img alt="Calling repetition: multiple calls" src="../../img/calling_repetition_multiple_calls.png" width="200" /></p>
+<p>Single <strong>H</strong>ome, single <strong>M</strong>iddle, repeated </p>
+<hr />
+<p><img alt="Calling repetition: named block" src="../../img/calling_repetition_block.png" width="100" /></p>
+<p>The <a href="#named-blocks">named block</a> <strong>B</strong> called four times</p>
+<hr />
+<p><img alt="Calling repetition: method sequence" src="../../img/calling_repetition_methods.png" width="150" /></p>
+<p>The <a href="#methods">method</a> sequence <strong>ABC</strong> called twice
+</center></p>
+</details>
+<div class="admonition warning">
+<p class="admonition-title">Calling repetitions in layouts</p>
+<p>Calling repetitions are <strong>written out in full</strong> in the composition's layout display, regardless of the viewer's layout options. If you would like to explicitly signal to the conductor that a section of the calling is used multiple times, consider using a <a href="#named-blocks">named block</a> instead.</p>
+</div>
+<h3 id="infinite-repetition">Infinite repetition</h3>
+<p>A hash ( <strong>#</strong> ) symbol in place of a number indicates that the section in brackets should be repeated <strong>indefinitely</strong>. The pricker will continue this "infinite" repetition until the composition comes round (or runs false). </p>
+<p><strong>Only one infinite repetition can exist in the calling.</strong> The calling before the repeated section will be processed as normal, but everything after it will be ignored.</p>
+<p>A common use for infinite repetitions is in <a href="#infinite-repetition-in-compositions-of-stedman">compositions of Stedman</a>.</p>
+<h2 id="courses-courseheads-etc">Courses, courseheads, etc.</h2>
+<p>Courseheads and leadheads, while a key feature of many composition layouts, <strong>are not entered into the Calling tab directly</strong>. Instead, Complib derives them from the calling when it pricks the composition. </p>
+<p>The main way of signalling to Complib which rows should be considered courseheads in your composition is by entering appropriate <a href="../adding_compositions_tabs_general/#coursehead-masks">coursehead masks</a> under the <a href="../adding_compositions_tabs_general/">General tab</a>. However, some compositions use many different courseheads and require a large number of masks, some of which might not be known in advance. In such cases, it is often preferable to control the courseheads directly from the Calling tab.</p>
+<h3 id="setting-course-length-with-colons">Setting course length with colons</h3>
+<p>A course can be forcibly ended at any point in the calling by inserting a colon ( <strong>:</strong> ) in a column headed by a <strong>numbered calling position</strong>. This signals to Complib that the next coursehead will come after a number of leads equal to the column heading.</p>
+<details class="note">
+<summary>Example: Colon in cell with a call.</summary>
+<hr />
+<p><center>
+<img alt="Colon notation with shared cell" src="../../img/colon_notation_shared_cell.png" width="200" />
+</center></p>
+<p>Entering the above into the Calling tab would produce a course which is 5 leads long, with a bob called at the end of lead 5 to bring up the coursehead.</p>
+</details>
+<p>Colons in the calling are processed just like calls, i.e. in reading order. However, <strong>colons are not calls, and the two are processed independently of one another</strong>. The first colon in the calling will set the length of the first course, regardless of any calls.</p>
+<p>Similarly, a call appearing after a colon in reading order may nevertheless occur "before" it, if the calling position for the call is reached before the number of leads specified by the colon.</p>
+<details class="note">
+<summary>Example: Colon ignoring calls.</summary>
+<p><center>
+<img alt="Colon notation ignoring reading order" src="../../img/colon_ordering_example.png" width="200" />
+</center></p>
+<p>Looking at the above example, you might think that the first bob occurs at the end of the second lead of the touch. However, the colon at position 1 sets the length of the first course to one lead <strong>regardless of any calls</strong>. This means that the first course ends after just one lead, before the call at 2 can be processed. </p>
+<p>The bob at 2 occurs in the <strong>second</strong> course, at the end of the third lead of the touch. The bob at 3 happens at the end of the lead after that.</p>
+</details>
+<h3 id="starting-courses-from-different-numbered-positions">Starting courses from different numbered positions</h3>
+<p>By default, numbered calling positions are counted starting from 1. However, in some situations it is desirable to start counting from a different number in a particular course.</p>
+<p><strong>A colon at a numbered calling position will restart the course from that numbered position,</strong> provided the previous course was ended with a colon, and there are no calls between the two colons.</p>
+<div class="admonition warning">
+<p class="admonition-title">Colons: Things to watch out for</p>
+<dl>
+<dt>Colons are only valid at numbered calling positions</dt>
+<dd>Colons set a course's length equal to a number of leads. Inserting a colon at a named position (such as <strong>H</strong>) is not valid, and will cause an error.</dd>
+<dt>Colons disable coursehead masks</dt>
+<dd>
+<p>If there are any colons in the calling, all <a href="../adding_compositions_tabs_general/#coursehead-masks">coursehead masks</a> will be disabled. </p>
+<p>This means that colons are all-or-nothing: if you want to use a colon, then you must use them to specify the length of every course in the touch.</p>
+</dd>
+<dt>Colons are not included in the layout</dt>
+<dd>
+<p>Colons are a purely internal signal which forces Complib to behave a certain way. They are not rendered in a composition's layout, regardless of user settings.</p>
+<p>Similarly, if a calling position is used with colons to manipulate course length, but no calls ever occur there, then that calling position will not appear in the composition layout.</p>
+</dd>
+</dl>
+</div>
+<h2 id="methods">Methods</h2>
+<p>Compositions which involve changes of method must indicate this in the Calling tab using the <a href="../adding_compositions_tabs_methods/#mnemonic">method mnemonics</a> defined in the <a href="../adding_compositions_tabs_methods/">Methods tab</a>.</p>
+<p>Method mnemonics must appear in a column which has the word "<strong>Methods</strong>", and nothing else, in its top row. The heading is not case-sensitive: methods, METHODS and MeThOdS are all equally acceptable. There can be multiple Methods columns if desired.</p>
+<p><img alt="Methods column dos and donts" src="../../img/calling_method_column.png" width="600" /></p>
+<p>An <strong>X</strong> in the Methods column indicates a lead of the method whose mnemonic is X. </p>
+<p><strong>XXY</strong> would indicate two leads of method X, followed by a change to method Y.</p>
+<p>Method mnemonics are processed in reading order across all Method columns in the calling. When the last mnemonic in the calling has been processed, any additional leads will be pricked using the last indicated method. A touch which comes round at the end of multiple consecutive leads of method X only needs to specify mnemonics up to and including the final change to method X.</p>
+<h3 id="infinite-repetition-in-compositions-of-stedman">Infinite repetition in compositions of Stedman</h3>
+<p>Compositions of Stedman, which define quick and slow sixes with separate mnemonics Q and S in the Methods tab, use an <a href="#calling-repetitions">indefinite repeat</a> of <strong>#(QS)</strong> by default. This loop does not need to be included in the Calling tab. </p>
+<p>However, if a composition of Stedman starts from any row of a slow six, the implicit loop must be overriden with an explicit <strong>#(SQ)</strong> loop in the Calling tab.</p>
+<div class="admonition warning">
+<p class="admonition-title">Stedman in spliced</p>
+<p>Because all changes of method after an infinite repeat are ignored, they cannot generally be used when Stedman is spliced with other methods. When entering the calling for such compositions, you must specify the sequence of alternating quick and slow sixes by hand. </p>
+</div>
+<h3 id="method-alterations-in-multipart-callings">Method alterations in multipart callings</h3>
+<p>Alterations to changes of method in multipart callings use the same syntax as for calls (<a href="#multipart-compositions-call-alterations">see above</a>).</p>
+<h2 id="named-blocks">Named blocks</h2>
+<p>Some compositions which do not reduce to a simple multipart calling nevertheless contain repeated sections, or <strong>blocks</strong>. For compactness, it can be useful to give a name to such a block which can stand in for its full calling.</p>
+<p>To designate a section of the calling as a named block, the calling must have a column with the word "<strong>Blocks</strong>", and nothing else, in its top row. The heading is not case-sensitive, and there can be multiple Blocks columns.</p>
+<p><img alt="Blocks column dos and donts" src="../../img/calling_namedblock_dosanddonts.png" width="500" /></p>
+<p>Entries in the Blocks column are <strong>block names</strong>. Block names can contain any number of upper and lowercase letters <strong>[A–Z, a–z]</strong>, but not numbers or other symbols.</p>
+<p>If a table row contains a block name, the whole table row is included in a block with that name. Adjacent table rows are included in the same block if their block names are the same.</p>
+<p><strong>Table rows can be included in multiple blocks at once</strong>. This requires the use of multiple Blocks columns. If two blocks overlap, then <strong>one of the blocks must be fully contained inside the other</strong>.</p>
+<p><img alt="Named blocks overlapping" src="../../img/calling_namedblocks_overlap.png" width="400" /></p>
+<p>Once a block has been defined, the block name can be used in the calling in place of the contents of the block. Named blocks are expanded by the pricker when it reaches them in the calling. Like calls, blocks are processed in reading order. <strong>Unlike calls, block names must occupy separate cells</strong>.</p>
+<p>A block can be called multiple times in a row by enclosing the block name in ( parentheses ) with the number of instances in front, or by entering the block name in multiple adjacent cells.</p>
+<details class="note">
+<summary>Example: A and B blocks</summary>
+<hr />
+<p><em>Example: <a href="https://complib.org/composition/10478">5120 6-Spliced Surprise Major</a> by Marcus C W Sherwood</em>.</p>
+<p><img alt="Named blocks annotated" src="../../img/calling_namedblock_annotated_1.png" width="600" /></p>
+<p>The above calling is reflected in the layout as:</p>
+<p><img alt="Named blocks in layout" src="../../img/calling_namedblocks_layout.png" width="500" /></p>
+</details>
+<details class="note">
+<summary>Example: Nested A, B and C blocks</summary>
+<hr />
+<p><em>Example: <a href="https://complib.org/composition/91069/">10371 Stedman Caters</a> by Robert Dennis</em>.</p>
+<p><img alt="Nested blocks calling" src="../../img/calling_nestedblocks.png" width="600" /></p>
+<p>The above calling, which includes nested blocks, is reflected in the layout as:</p>
+<p><img alt="Nested blocks layout" src="../../img/calling_nestedblocks_layout.png" width="400" /></p>
+<p>Notice that block A appears twice inside block B: in both explicit form and as its block name. Similarly, block B appears twice inside of block C.</p>
+</details>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You will not see named blocks in the composition layout if <strong>Rows &gt; Expand named blocks</strong> is selected in your <a href="../layout_options/">layout options</a>.</p>
+</div>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<p>Coming soon... hopefully.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../adding_compositions_tabs_calls/" class="btn btn-neutral float-left" title="Calls tab"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../adding_compositions_tabs_performances/" class="btn btn-neutral float-right" title="Performances tab">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../adding_compositions_tabs_calls/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../adding_compositions_tabs_performances/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

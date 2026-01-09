@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://help.complib.org/methods/method_properties/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Method properties - Complib Help</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Method properties";
+        var mkdocs_page_input_path = "methods/method_properties.md";
+        var mkdocs_page_url = "/methods/method_properties/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Complib Help
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Introduction</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../concepts/">Core concepts</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User Accounts</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../user/account_signup/">Signing up for an account</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../user/reset_password/">Resetting your password</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../user/user_profile/">User profile and settings</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Compositions</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../compositions/overview/">Composition pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../compositions/reading_compositions/">How to read compositions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../compositions/layout_options/">Customising composition layouts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../compositions/composition_properties/">Composition properties</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Adding & Editing Compositions</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../compositions/adding_compositions_overview/">Adding compositions: overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../compositions/adding_compositions_tabs_general/">General tab</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../compositions/adding_compositions_tabs_methods/">Methods tab</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../compositions/adding_compositions_tabs_calls/">Calls tab</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../compositions/adding_compositions_tabs_calling/">Calling tab</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../compositions/adding_compositions_tabs_performances/">Performances tab</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../compositions/adding_compositions_tabs_references/">References tab</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../compositions/calling_positions/">Calling positions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Methods</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../overview/">Method pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../blueline_options/">Customising the blue line</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Method properties</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#changes">Changes</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#hunt-bells">Hunt bells</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#working-bell-cycles">Working bell cycles</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#hunter-classes">Hunter classes</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#symmetry">Symmetry</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#leadheads">Leadheads</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#course-properties">Course properties</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#miscellaneous">Miscellaneous</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../adding_methods/">Adding methods</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../place_notation/">Place notation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../method_designer/">Using the method designer</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Collections</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../collections/overview/">What are collections?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../collections/adding_collections/">Adding collections</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Searching Complib</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../search/quick_search/">Quick search</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../search/method_search/">Method search</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../search/composition_search/">Composition search</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../search/collection_search/">Collection search</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../search/extended_search/">Extended search</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Advanced Topics</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/huntbell_properties/">Hunt bell properties</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/extensions/">Extensions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/leadhead_codes/">Leadhead codes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/music_schemes/">Music schemes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/row_parity/">Row parity</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Complib Help</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Methods</li>
+      <li class="breadcrumb-item active">Method properties</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="method-properties">Method properties</h1>
+<p>When a method is added to Complib, various properties of the method are determined in order to classify it, as well as highlight any of its notable features. These properties are listed in the method page's <strong>Properties tab</strong>.</p>
+<p><img alt="Method Properties Checkboxes" src="../../img/method_properties_checkboxes.png" /></p>
+<p>When expanded, the top of the tab shows a number of checkboxes, each of which corresponds to a different potential feature of the method.</p>
+<h2 id="changes">Changes</h2>
+<p>A method consists of a set of <strong>rows</strong> rung in sequence. The relationship between two subsequent rows with regard to how bells move from one row to the other is referred to as a <strong>change</strong>. There are a number of different types of change that can be made between subsequent rows of a method:</p>
+<dl>
+<dt>Adjacent</dt>
+<dd>The method only contains changes where bells move at most one place between rows. All traditional methods fall into this category.</dd>
+<dt>Identity</dt>
+<dd>
+<p>The method contains a change where no bells move place.</p>
+<details class="note">
+<summary>Example</summary>
+<hr />
+<p><a href="https://complib.org/method/34027">Reverse Court Singles</a></p>
+<p><img alt="Reverse Court Singles blue line" src="../../img/reverse_court_singles.png" /></p>
+</details>
+</dd>
+<dt>Jump</dt>
+<dd>
+<p>The method contains a change where a bell moves more than one place (for example, the change between the rows <code>1 2 3 4 5 6</code> and <code>2 3 1 4 6 5</code>). Methods containing jump changes are referred to as Jump methods.</p>
+<details class="note">
+<summary>Example</summary>
+<hr />
+<p><a href="https://complib.org/method/43059">Double Simple Jump Minimus</a></p>
+<p><img alt="Double Simple Jump Minimus blue line" src="../../img/double_simple_jump_minimus.png" /></p>
+</details>
+</dd>
+<dt>Static</dt>
+<dd>The changes of the method are fixed, which is to say that they are not altered as the method is rung (unless a <strong>call</strong> is made).</dd>
+<dt>Dynamic</dt>
+<dd>The changes of the method are not fixed, and are dynamically altered as the method is rung. One type of "method" with dynamic changes is the loosely defined family of <strong>Dixonoids</strong>, where places are made depending on which numbered bell is leading. Complib does not currently support the definition of methods with dynamic changes.</dd>
+<dt>Cross</dt>
+<dd>The method's <a href="../place_notation/">place notation</a> contains the cross change. This means that there is at least one change when no bell remains in the same place as in the previous row.</dd>
+<dt>Penultimate</dt>
+<dd>
+<p>The method contains a change where:</p>
+<ul>
+<li>A place is made in the penultimate position in the row (e.g., 5ths made in Minor, 7ths made in Major); <strong>and</strong></li>
+<li>The principle <a href="#hunt-bells">hunt bell</a> is not in either of the last two places when the place is made.</li>
+</ul>
+<details class="note">
+<summary>Example</summary>
+<hr />
+<p><a href="https://complib.org/method/14383">Aldrin Surprise Minor</a></p>
+<p><img alt="Aldrin Surprise Minor blue line" src="../../img/aldrin_surprise_minor.png" /></p>
+<p>In each lead of Aldrin Surprise Minor, two bells make 5ths under bells which are not the treble.</p>
+<p>The fact that a bell makes 5ths under the treble at the half-lead is ignored.</p>
+</details>
+<p>Historically, ringers have tended to avoid methods at even stages which have a penultimate place made. The reason is that this (usually) results in backstroke rows with the two heaviest bells reversed, which is considered by many to be unmusical.</p>
+</dd>
+</dl>
+<h2 id="hunt-bells">Hunt bells</h2>
+<p>Methods can fall into one of two distinct categories depending on the presence or absence of a <strong>hunt bell</strong>.</p>
+<dl>
+<dt>Hunt bell</dt>
+<dd>A <strong>hunt bell</strong> is a bell which returns to the same place at the start of each lead/division.</dd>
+<dt>Principle</dt>
+<dd>A method with no hunt bells (e.g. Stedman, Erin).</dd>
+<dt>Hunter</dt>
+<dd>
+<p>A method with one or more hunt bells. Hunters are further classified depending on the number of hunt bells:</p>
+<ul>
+<li><strong>One</strong> indicates that there is a single hunt bell (e.g. Plain Bob).</li>
+<li><strong>Multiple</strong> indicates that there are multiple hunt bells (e.g. Grandsire).</li>
+<li><strong>All</strong> indicates that all the bells are hunt bells (e.g. <a href="https://complib.org/method/29824">12 Victoria Street Surprise Minor</a>). In this case, the plain course of the method is a single lead/division long. Historically, methods of this kind came under the umbrella classification of <strong>blocks</strong>, a term which has since been retired.</li>
+</ul>
+</dd>
+</dl>
+<h2 id="working-bell-cycles">Working bell cycles</h2>
+<p>All bells in a method which are not hunt bells are referred to as <strong>working bells</strong>. The plain course of a method involves the working bells moving through one or more <strong>cycles</strong> of place bells.</p>
+<dl>
+<dt>Monocyclic</dt>
+<dd>The working bells are all part of the same cycle: all working bells ring all the distinct place bells during a plain course. The plain course is the same length as the number of leads in the cycle.</dd>
+<dt>Isocyclic</dt>
+<dd>The working bells are divided up into two more cycles, all of which are the same length. In this case, the plain course is the same length as the number of leads in any one of the cycles.</dd>
+<dt>Differential</dt>
+<dd>The working bells are divided up into two or more cycles of different lengths. Here, the plain course is equal to the <strong>least common multiple</strong> of the lengths of all the cycles.</dd>
+</dl>
+<h2 id="hunter-classes">Hunter classes</h2>
+<p>All methods which are hunters (see <a href="#hunt-bells">Hunt Bells</a>) can be further divided into a number of different <strong>classes</strong>. The different hunter classes are arranged in a hierarchy as follows:</p>
+<ul>
+<li><strong>Plain</strong><ul>
+<li>Place</li>
+<li>Bob</li>
+<li>Single*</li>
+</ul>
+</li>
+<li><strong>Treble Dodging</strong><ul>
+<li>Treble Bob</li>
+<li>Delight</li>
+<li>Surprise</li>
+</ul>
+</li>
+<li><strong>Alliance</strong></li>
+<li><strong>Treble Place</strong></li>
+<li><strong>Hybrid</strong></li>
+<li><strong>Little</strong>**</li>
+</ul>
+<p>A method with a single non-stationary hunt bell will fall into one and only one hunter class.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>* Single is not strictly speaking a method class, but a specific subtype of Plain method with certain properties.</p>
+<p>** A method may be Little in addition to its main hunter class.</p>
+</div>
+<p>For a detailed explanation of the different hunter classes and how they are distinguished, please refer to <a href="https://framework.cccbr.org.uk/version2/classification.html">Section 4 of the Central Council Framework</a>.</p>
+<h2 id="symmetry">Symmetry</h2>
+<p>A <strong>symmetry</strong> is a transformation (rotation, reflection, translation, etc.) which leaves the appearance of something unchanged. A method has one or more <strong>symmetry types</strong>:</p>
+<dl>
+<dt>Asymmetric</dt>
+<dd>The method has no symmetry.</dd>
+<dt>Palindromic</dt>
+<dd>The method is the same when rung forwards and backwards. Equivalently, the method's <strong>line</strong> is the same when reflected in an axis perpendicular to the direction of the line.</dd>
+<dt>Double</dt>
+<dd>
+<p>The method is the same when transformed in any of the following equivalent ways: </p>
+<ul>
+<li>The method's place notation is <strong>inverted</strong> (see <a href="../place_notation/">Place notation</a>).</li>
+<li>The method's rows are written back to front (e.g. <code>1 2 3 4</code> becomes <code>4 3 2 1</code>). </li>
+<li>The method's line is viewed from the reverse side of a sheet of paper, or held up to a mirror.</li>
+<li>The method's line is reflected in an axis parallel to the direction of the line and shifted along the same axis by some amount (known mathematically as a <strong>glide reflection</strong>).</li>
+</ul>
+</dd>
+<dt>Rotational</dt>
+<dd>The method is the same when rotated one half-turn about a point.</dd>
+</dl>
+<p>For palindromic methods there is also one symmetry subtype:</p>
+<dl>
+<dt>Offset</dt>
+<dd>A palindromic method whose axis of symmetry is not at the halfway point of its place notation. Many twin hunt methods such as Grandsire fall into this category.</dd>
+</dl>
+<p>For a visual demonstration of the different symmetry types, see <a href="https://framework.cccbr.org.uk/version2/images/classification/symmetries.pdf">this infographic</a>.</p>
+<h2 id="leadheads">Leadheads</h2>
+<p>Almost all methods (currently all methods in Complib's <code>CCCBR</code> library) have a plain course which can be divided into one or more sections of fixed, finite length, which are called <strong>leads</strong> or <strong>divisions</strong>. It is common to refer to the starting row of a lead (or division) as the <strong>leadhead</strong> (or <strong>division end</strong>). The collected set of leadheads of a method may satisfy one of a number of conditions:</p>
+<dl>
+<dt>Plain Bob</dt>
+<dd>The leadhead rows form a (non-trivial) subset of the leadheads of Plain Bob on the same number of bells.</dd>
+<dt>Grandsire</dt>
+<dd>The leadhead rows form a (non-trivial) subset of the leadheads of Grandsire on the same number of bells.</dd>
+<dt>Original</dt>
+<dd>The leadhead rows form a (non-trivial) subset of the division ends of Original on the same number of bells.</dd>
+<dt>Cyclic</dt>
+<dd>The leadhead rows form a (non-trivial) subset of the cyclic rotations of rounds on the same number of bells (e.g. <code>2 3 4 5 1</code>, <code>3 4 5 1 2</code>, etc.). </dd>
+<dt>Rounds</dt>
+<dd>The method has only one lead/division and therefore only one leadhead, which must necessarily be equal to rounds on the same number of bells.</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>There are methods whose leadheads do not fall into any of the above categories (though a significant majority of methods do).</p>
+</div>
+<h2 id="course-properties">Course properties</h2>
+<p>Taken as a whole, the plain course of the method can have certain properties which may be of particular interest:</p>
+<dl>
+<dt>True plain course</dt>
+<dd>The method has a plain course which is <strong>true</strong>.</dd>
+<dt>True leads</dt>
+<dd>The plain course comprises leads which are <strong>individually true</strong> (but which may be <strong>false</strong> against each other).</dd>
+<dt>Right place</dt>
+<dd>All <strong>places</strong> in the plain course are made <strong>right</strong> (i.e., rung handstroke-backstroke).</dd>
+<dt>Uneven parity</dt>
+<dd>For principles, this means that the plain course contains an unequal number of <strong>odd</strong> and <strong>even</strong> rows (see <a href="../../advanced/row_parity/">Row Parity</a>). For hunters, this means that there are an unequal number of odd and even rows for any given position in the hunt path of the <strong>principal hunt bell</strong>.</dd>
+<dt>Layered</dt>
+<dd>Each row of the plain course can be separated into two or more <strong>non-overlapping groups</strong> of bells in contiguous positions such that no bell strays outside of its starting group during the course. For example, <a href="https://complib.org/method/11349">Plain Bob Minor</a> rung on 8 bells with 7 and 8 dodging behind is equivalent to the layered method <a href="https://complib.org/method/29080">Broadley Little Bob Major</a>.</dd>
+</dl>
+<h2 id="miscellaneous">Miscellaneous</h2>
+<p>In addition to the above, the properties tab also lists miscellaneous information about the method in text form. The listed items are:</p>
+<dl>
+<dt>Place notation</dt>
+<dd>The method's place notation, given in Method XML format (see <a href="../place_notation/">Place notation</a>).</dd>
+<dt>Leadhead</dt>
+<dd>The row reached after a single plain lead and, if applicable, the method's alphanumeric <a href="../../advanced/leadhead_codes/">leadhead code</a>.</dd>
+<dt>Divisions</dt>
+<dd>
+<p>Gives the length and arrangement of the method's division(s) if applicable.</p>
+<p>The <strong>length</strong> of each division is the number of rows it contains.</p>
+<p>If the method has more than one division per lead, the lengths of each division are listed and separated by colons (e.g. <code>6:6</code>).</p>
+<p>If the method is usually started at a point <strong>other than the start of a division</strong>, the starting point for the first division will be specified. For example, <code>6:6 after row 2</code> means that the divisions have lengths of 6 and 6, with the first division starting after row 2.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>When counting rows, remember that the method starts from row 0.</p>
+</div>
+</dd>
+<dt>Default calls</dt>
+<dd>
+<p>The <strong>call type</strong> determines which calls will be used by default when creating a composition for the method. The call types that Complib recognises are:</p>
+<ul>
+<li><strong>Near</strong>: calls default toward the front of the change (e.g. 4ths place bobs).</li>
+<li><strong>Far</strong>: calls default toward the back of the change (e.g. n-2's place bobs).</li>
+<li><strong>Mixed</strong>: the method uses multiple call types.</li>
+<li><strong>Grandsire</strong>: the method uses Grandsire-type calls.</li>
+<li><strong>Stedman</strong>: the method uses Stedman-type calls.</li>
+<li><strong>None</strong>: the method has no specified call type.</li>
+</ul>
+</dd>
+<dt>Method above/below</dt>
+<dd>
+<p>For methods which are hunters, if the method shares <strong>above/below work</strong> with another method that was rung prior to it, that method will be listed here. The method listed will (with some exceptions) be the earliest applicable method rung to a peal.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The exceptions to this are where a method which is much more widely known was nevertheless rung to a peal <em>after</em> another more obscure method sharing the same above/below work. One such example is <a href="https://complib.org/method/17029">New Cambridge Surprise Major</a>, which was pealed almost 50 years before <a href="https://complib.org/method/16694">Cambridge Surprise Major</a> even though the latter was (pretty obviously!) known to the Exercise before the former.</p>
+</div>
+</dd>
+<dt>FCH Groups</dt>
+<dd>Lists the codes for the method's <strong>false coursehead groups</strong> (if applicable). See <a href="https://framework.cccbr.org.uk/version2/falsecourseheads.html">this section of the Central Council Framework</a> for a definition of the false course head groups.</dd>
+<dt>Accepted extension path</dt>
+<dd>For methods with a compliant <strong>extension</strong> or <strong>contraction</strong> which has been named, lists the extension path(s) used to derive the accepted extension(s) or contraction(s) (see <a href="../../advanced/extensions/">Extensions</a>).</dd>
+<dt>Compositions designed for this method</dt>
+<dd>The number of (published) compositions on Complib which include this method in their definition. Clicking on the number will jump to a search which lists them all.</dd>
+<dt>Leads in course</dt>
+<dd>The number of leads in the plain course of the method. This is equal to the least common multiple of the lengths of its working bell cycles (see <a href="#working-bell-cycles">Working bell cycles</a>).</dd>
+<dt>Lead length</dt>
+<dd>The number of rows in a plain lead. This is also equal to the number of elements in the method's expanded place notation.</dd>
+<dt>Plain course length</dt>
+<dd>The number of rows in the method's plain course. This is equal to the number of leads in the course multiplied by the lead length.</dd>
+<dt>Hunt bells</dt>
+<dd>The number of bells which return to the same position they started in at the end of each lead (see <a href="#hunt-bells">Hunt bells</a>).</dd>
+<dt>Working bells</dt>
+<dd>The number of bells which end each lead in a different position from where they started. Also equal to the total number of bells minus the number of hunt bells and stationary bells.</dd>
+<dt>Stationary bells</dt>
+<dd>The number of bells which do not change place for the whole of the plain course.</dd>
+<dt>Maximum blows in one place</dt>
+<dd>The maximum number of times any bell remains in the same place between consecutive rows of the method.</dd>
+<dt>Music score (default music scheme)</dt>
+<dd>The music score of the plain course of the method, as determined by the default <a href="../../advanced/music_schemes/">music scheme</a>.</dd>
+</dl>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../blueline_options/" class="btn btn-neutral float-left" title="Customising the blue line"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../adding_methods/" class="btn btn-neutral float-right" title="Adding methods">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../blueline_options/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../adding_methods/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

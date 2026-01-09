@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://help.complib.org/compositions/adding_compositions_tabs_general/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>General tab - Complib Help</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "General tab";
+        var mkdocs_page_input_path = "compositions/adding_compositions_tabs_general.md";
+        var mkdocs_page_url = "/compositions/adding_compositions_tabs_general/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Complib Help
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Introduction</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../concepts/">Core concepts</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User Accounts</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../user/account_signup/">Signing up for an account</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../user/reset_password/">Resetting your password</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../user/user_profile/">User profile and settings</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Compositions</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../overview/">Composition pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../reading_compositions/">How to read compositions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../layout_options/">Customising composition layouts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../composition_properties/">Composition properties</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Adding & Editing Compositions</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../adding_compositions_overview/">Adding compositions: overview</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">General tab</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#title">Title</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#title-warnings-and-errors">Title warnings and errors</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#opus">Opus</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#stage">Stage</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#stage-warnings-and-errors">Stage warnings and errors</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#composer-details">Composer details</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#composer-name">Composer name</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#attribution-type">Attribution type</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#attribution-ordering">Attribution ordering</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#attributions-in-search-results-etc">Attributions in search results, etc.</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#attribution-warnings-and-errors">Attribution warnings and errors</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#year-month-or-date-composed">Year, month or date composed</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#year">Year</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#month">Month</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#day">Day</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#date-warnings-and-errors">Date warnings and errors</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#partheads">Parthead(s)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#non-transposing-partheads">Non-transposing partheads</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#partheads-and-mid-lead-startsfinishes">Partheads and mid-lead starts/finishes</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#parthead-warnings-and-errors">Parthead warnings and errors</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#coursehead-masks">Coursehead mask(s)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#what-are-courseheads">What are courseheads?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#what-is-a-row-mask">What is a row mask?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#how-complib-selects-courseheads">How Complib selects courseheads</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#default-coursehead-masks">Default coursehead masks</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#missing-courseheads">Missing courseheads</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#coursehead-mask-warnings-and-errors">Coursehead mask warnings and errors</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#start-row-number">Start row number</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#starting-at-the-backstroke-snap">Starting at the backstroke snap</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#starting-rows-in-compositions-of-stedman">Starting rows in compositions of Stedman</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#starting-row-warnings-and-errors">Starting row warnings and errors</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#backstroke-start">Backstroke start</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#extents">Extents</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#default-calls">Default calls</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#notes">Notes</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#allow-save-if-false">Allow save if false</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../adding_compositions_tabs_methods/">Methods tab</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../adding_compositions_tabs_calls/">Calls tab</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../adding_compositions_tabs_calling/">Calling tab</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../adding_compositions_tabs_performances/">Performances tab</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../adding_compositions_tabs_references/">References tab</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../calling_positions/">Calling positions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Methods</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../methods/overview/">Method pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../methods/blueline_options/">Customising the blue line</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../methods/method_properties/">Method properties</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../methods/adding_methods/">Adding methods</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../methods/place_notation/">Place notation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../methods/method_designer/">Using the method designer</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Collections</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../collections/overview/">What are collections?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../collections/adding_collections/">Adding collections</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Searching Complib</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../search/quick_search/">Quick search</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../search/method_search/">Method search</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../search/composition_search/">Composition search</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../search/collection_search/">Collection search</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../search/extended_search/">Extended search</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Advanced Topics</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/huntbell_properties/">Hunt bell properties</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/extensions/">Extensions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/leadhead_codes/">Leadhead codes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/music_schemes/">Music schemes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/row_parity/">Row parity</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Complib Help</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Adding & Editing Compositions</li>
+      <li class="breadcrumb-item active">General tab</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="the-general-tab">The General tab</h1>
+<p>The General tab allows you to specify various high-level properties of a custom composition. When creating a new custom composition, this is usually the tab that you will use first.</p>
+<p>Complib will attempt to infer as much information as it can about a composition based on data you have already entered. In particular, several fields in the General tab will <strong>automatically update</strong> other tabs when populated. This can save a lot of time when defining a custom composition.</p>
+<p>The sections on this page describe the entry fields on the General tab in detail. <a href="../adding_compositions_overview/#validation-errors">Validation errors</a> and <a href="../adding_compositions_overview/#validation-warnings">warnings</a> specific to fields in the General tab are listed at the end of the section pertaining to that field.</p>
+<h2 id="title">Title</h2>
+<p>This field specifies the user-defined title of the composition. This is different from the <strong>generated title</strong>, which is provided automatically by Complib upon validation. The user-defined title is how the composition will be referred to elsewhere in the Composition Library once it is published, such as on the home page or in search results. </p>
+<p>The user-defined title can be anything you want: Complib has full Unicode support, so there's nothing to stop you from using titles like "❤️❤️❤️❤️" or "五千四十 B̶͇̊̈́̈r̸̰̈́ī̵̙s̵͈̙̰͆͆͘ť̵̝̉o̶̦͔͌͆͝l̶̜̊ ̸̻͕̰͋̃́Ş̷͛̅u̶̞͚̞̇̽͠r̶̹͉͉̈́͛̈́p̶͉̆r̸͙̼̰̐͆͝i̴̛͕͒s̷̪̻̈́͝e̴͔͗̓͜ ̵̨̛̻̀M̸̧̜͕͐̃a̷̠̼̞̓̀j̸̱̀̏͛ö̴͙̝́͂r̶̨̮̲̎"  if you really want to. However, if you intend to publish the composition, it is best practice to use a title which corresponds closely to the generated title. This makes it easier for others to identify important information about your composition at a glance. </p>
+<p>The generated title formats are:</p>
+<ul>
+<li><strong>Length + Method name + Class + Stage</strong>, for single-method compositions;</li>
+<li><strong>Length + (# of methods)-Spliced + Class + Stage</strong>, for spliced-compositions at a single stage;</li>
+<li><strong>Length + (# of methods)-Spliced + Stage 1 and Stage 2</strong>, for mixed-stage compositions.</li>
+</ul>
+<p>Complib will use the user-defined title to automatically populate certain other data fields if possible. This is another good reason to match the style of generated titles. The other fields which Complib will attempt to infer from the title are:</p>
+<ul>
+<li><a href="#stage">Stage</a></li>
+<li><a href="../adding_compositions_tabs_methods/">Method</a> (for compositions which are recognised to be for a single method)</li>
+</ul>
+<h3 id="title-warnings-and-errors">Title warnings and errors</h3>
+<details class="warning">
+<summary>Warning: Does not start with the pricked length.</summary>
+<hr />
+<p>The title provided does not start with a number which matches the length of the composition as pricked by Complib. With rare exceptions, composition titles begin with their length.</p>
+</details>
+<details class="warning">
+<summary>Warning: Does not match pricked method.</summary>
+<hr />
+<p>The title provided does not contain the full name of the method which is being used to generate the composition's rows. With rare exceptions, you should aim for these to match.</p>
+</details>
+<h2 id="opus">Opus</h2>
+<p>This field allows you to specify an Opus for the composition. Some composers use an Opus to help distinguish between compositions which might otherwise have the same title, or to highlight a notable feature of the composition. Some example compositions using an Opus are: </p>
+<ul>
+<li><a href="https://complib.org/composition/11538">5088 Bristol Surprise Major Op. 4</a> by Donald F Morrison;</li>
+<li><a href="https://complib.org/composition/12496">5016 6-Spliced Maximus Op. Classic</a> by David J Pipe;</li>
+<li><a href="https://complib.org/composition/75325">5014 Stedman Cinques Op. Bobs only</a> by Mark R Eccleston.</li>
+</ul>
+<p>Text entered in the Opus field will be automatically appended to the end of the composition's title whenever it is referenced elsewhere in the Composition Library. For this reason, there is no need to include it in the <a href="#title">Title</a>. The Opus text will be listed in the form <strong>Op. [text]</strong>.</p>
+<h2 id="stage">Stage</h2>
+<p>This field is a drop-down menu which allows you to select the stage the composition is designed for. For mixed-stage compositions, this should be the highest numbered stage.</p>
+<p>The stage of a composition indicates how many bells are being rung. Many stages have historical names which must be learned. The table below gives the names for every stage at which Complib can accept compositions.</p>
+<table>
+<thead>
+<tr>
+<th><em>N</em></th>
+<th>Stage name</th>
+<th></th>
+<th><em>N</em></th>
+<th>Stage name</th>
+<th></th>
+<th><em>N</em></th>
+<th>Stage name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2</td>
+<td>Two</td>
+<td></td>
+<td>13</td>
+<td>Sextuples</td>
+<td></td>
+<td>24</td>
+<td>Twenty-four</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Singles</td>
+<td></td>
+<td>14</td>
+<td>Fourteen</td>
+<td></td>
+<td>25</td>
+<td>Twenty-five</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Minimus</td>
+<td></td>
+<td>15</td>
+<td>Septuples</td>
+<td></td>
+<td>26</td>
+<td>Twenty-six</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Doubles</td>
+<td></td>
+<td>16</td>
+<td>Sixteen</td>
+<td></td>
+<td>27</td>
+<td>Twenty-seven</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Minor</td>
+<td></td>
+<td>17</td>
+<td>Octuples</td>
+<td></td>
+<td>28</td>
+<td>Twenty-eight</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Triples</td>
+<td></td>
+<td>18</td>
+<td>Eighteen</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>8</td>
+<td>Major</td>
+<td></td>
+<td>19</td>
+<td>Nonuples</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>9</td>
+<td>Caters</td>
+<td></td>
+<td>20</td>
+<td>Twenty</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>10</td>
+<td>Royal</td>
+<td></td>
+<td>21</td>
+<td>Decuples</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>11</td>
+<td>Cinques</td>
+<td></td>
+<td>22</td>
+<td>Twenty-two</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>12</td>
+<td>Maximus</td>
+<td></td>
+<td>23</td>
+<td>Twenty-three</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="stage-warnings-and-errors">Stage warnings and errors</h3>
+<details class="warning">
+<summary>Warning: is not the same as stage in Title</summary>
+<hr />
+<p>The stage specified does not match the stage name in the <a href="#title">Title</a> field. In almost all cases these should be the same. </p>
+<p>The warning will also be displayed if: </p>
+<ul>
+<li>No stage name is included in the Title field; or</li>
+<li>The Title field contains <strong>multiple stage names</strong>, even if one of them matches the stage specified. </li>
+</ul>
+<p>An exception to this last point is where exactly two stage names are used with the word "and" between them, and one of these matches the stage specified. In this case the composition is interpreted as being <strong>mixed-stage</strong>.</p>
+</details>
+<h2 id="composer-details">Composer details</h2>
+<p>This field allows you to list the names of people or other named entities (such as computer programs) which were involved in creating a composition.</p>
+<p>To add an attribution to the composition, click on <strong>Add composer</strong>. This will create a new attribution, which has two parts: an <strong>attribution type</strong> and a <strong>name field</strong>.</p>
+<p><img alt="Add composer details" src="../../img/add_composer.png" width="500" /></p>
+<p>To delete an attribution, click the <img alt="Icon: cross" src="../../img/icon_x.png" width="20" /> cross to the right of the name field.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning: adding multiple attributions</p>
+<p><strong>You should only ever add one composer name per attribution</strong>. If you want to attribute the composition to multiple people, you must add them separately by clicking <strong>Add composer</strong> to bring up additional attribution fields.</p>
+<p>You should generally avoid attributing a composition to the same person in multiple different ways (see <a href="#attributions-in-search-results-etc">Attributions in search results, etc.</a>).</p>
+</div>
+<h3 id="composer-name">Composer name</h3>
+<p>This is a text field in which you can enter the name of the person or entity which you wish to attribute. Complib will attempt to auto-complete the name using all the registered composer names in its database. Clicking on a composer's name in the drop-down list will add that name to the text field.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning: Composer names</p>
+<p><strong>You should not add anything to the Composer name field other than a person's name</strong>. Similarly, you should exercise great care when entering a composer's name, as any mistakes will be reflected in Complib's Report data and will have to be corrected manually.</p>
+<p>If the name you enter does not match an existing composer, then saving the composition will create a new composer page under that name. <strong>You should make sure that the name is listed correctly before saving or publishing a composition attributed to a new composer.</strong></p>
+</div>
+<h3 id="attribution-type">Attribution type</h3>
+<p>This field is a drop-down menu which allows you to further specify the kind of attribution you want to make. These attribution types do not have set definitions, and to some extent they are open to interpretation. However, most have commonly accepted meanings. </p>
+<p>When submitting a composition which was produced by someone else, you should use an attribution type which corresponds with their wishes whenever possible.</p>
+<p>The types of attribution are:</p>
+<dl>
+<dt>Composed by</dt>
+<dd>The most common type of attribution. Used to identify the person or entity primarily responsible for creating the composition. </dd>
+<dt>Jointly composed by</dt>
+<dd>For cases in which a team of people were jointly responsible for creating the composition. You should add one attribution of this type for each person you wish to jointly attribute the composition to.</dd>
+<dt>Arranged by</dt>
+<dd>Generally used in cases where the composer considers the composition to be an arrangement of one previously published.</dd>
+<dt>Generated by</dt>
+<dd>Used to identify a computer program which was responsible for producing the composition.</dd>
+<dt>Selected by</dt>
+<dd>Generally used to identify someone who chose the composition from a set generated by a computer program.</dd>
+<dt>After</dt>
+<dd>Used to identify another composer who inspired the composition. As opposed to <strong>Inspired by</strong>, this usually means that a particular stylistic feature or prior composition is being imitated in some way.</dd>
+<dt>Inspired by</dt>
+<dd>Used to identify another composer who inspired the composition.</dd>
+<dt>Also attributed to</dt>
+<dd>Generally used to identify other composers who have previously been credited with producing the composition.</dd>
+</dl>
+<h3 id="attribution-ordering">Attribution ordering</h3>
+<p>There is an implicit order of priority between the attribute types, given by the order in which they appear in the drop-down menu. This determines the order in which attributions are listed on the composition's page as part of its <a href="../overview/#layout">layout</a>.</p>
+<p>If multiple names have the same attribution type, they will be listed on the same line in lexicographical order.</p>
+<h3 id="attributions-in-search-results-etc">Attributions in search results, etc.</h3>
+<p>When a composition appears in search results, or in certain other places such as the Recently Published section, all its attributions will be listed after the composition's title in the format: </p>
+<p>[Title] by [Name 1], [Name 2], ... , and [Name <em>N</em>]. </p>
+<p>Complib will <strong>not</strong> identify whether any of the listed names are identical, which means that the same name may appear multiple times. For this reason, you should generally avoid attributing a composition to the same person in multiple different ways.</p>
+<h3 id="attribution-warnings-and-errors">Attribution warnings and errors</h3>
+<details class="warning">
+<summary>Warning: [Name] will be added as a new composer.</summary>
+<hr />
+<p>The entered name does not match any existing composer in Complib's database. Saving the composition will create a new composer page with the same name as the attribution. <strong>You should only make an attribution using a new name if the name does not appear in the drop-down list</strong>.</p>
+<p>You should also make sure that the name is listed correctly before saving or publishing a composition attributed to a new composer.</p>
+</details>
+<h2 id="year-month-or-date-composed">Year, month or date composed</h2>
+<p>This field lets you specify a year, month or date when the composition was composed. Dates are given in the format <strong>[Day][Month][Year]</strong> and will appear in the composition's <a href="../composition_properties/#miscellaneous">properties tab</a>.</p>
+<p>It's not necessary to specify a full date, as often it is either not known or unnecessarily specific. For example, you might want to record the date as a month and year (e.g. <strong>Feb 2003</strong>), or simply a year (e.g. <strong>1987</strong>).</p>
+<p>There are a number of different ways a year, month or date can be entered. The following are all equivalent ways of entering the same date:</p>
+<ul>
+<li>1/1/10</li>
+<li>1-1-2010</li>
+<li>01/01/2010</li>
+<li>1 Jan 2010</li>
+<li>1 January 2010</li>
+</ul>
+<h3 id="year">Year</h3>
+<p>The year can be given as either a two- or four-digit number. </p>
+<p>If a two-digit number is used, it is assumed to represent a year in the present century, unless that date would be in the future, in which case it is assumed to be in the previous century.</p>
+<h3 id="month">Month</h3>
+<p>The month can be entered as a one- or two-digit number, or as a short or long month name. </p>
+<p>If a month is specified, but no year, then the year will be assumed to be the same as the current year in Local Time.</p>
+<h3 id="day">Day</h3>
+<p>The day can be entered as a one- or two-digit number.</p>
+<h3 id="date-warnings-and-errors">Date warnings and errors</h3>
+<details class="danger">
+<summary>Error: <code>____</code> is invalid.</summary>
+<hr />
+<p>The text entered in the date field does not match any accepted date format. You should use one of the formats described above.</p>
+</details>
+<details class="danger">
+<summary>Error: <code>____</code> is before 1650.</summary>
+<hr />
+<p>Composition dates must fall after 1650, as the earliest known method, Grandsire, dates to around then. </p>
+<p>If you have good reason to believe you are in possession of a composition dating from before 1650, you should immediately notify the Central Council (as well as anyone else who will listen).</p>
+</details>
+<details class="danger">
+<summary>Error: <code>____</code> is in the future.</summary>
+<hr />
+<p>Composition dates must be in the past with respect to the present date in Local Time.</p>
+<p>If you have good reason to believe you are in possession of a composition originating from the future, you should immediately seek medical attention.</p>
+</details>
+<h2 id="partheads">Parthead(s)</h2>
+<p>This field allows you to specify one or more partheads. In a composition that has multiple parts, a parthead is the <strong>first row</strong> of one of the parts. </p>
+<p>Partheads must be valid rows, and must match the currently specified <a href="#stage">stage</a>. If more than one parthead is entered, they must be separated by commas (<code>,</code>).</p>
+<p>Complib will use any specified partheads to generate a set of partheads. The size of this set depends on the partheads themselves, as well as the order in which they are entered. Specifically, Complib generates the set of partheads by repeatedly transposing any defined parthead by itself, and by any which were defined <em>before</em> it.</p>
+<details class="note">
+<summary>Example: Parthead 135264</summary>
+<hr />
+<p>Suppose that your composition uses the parthead 135264. Complib will repeatedly apply the transposition implied by this parthead to obtain the additional partheads 156342, 164523 and 142635. These generated partheads do not themselves generate any new partheads, so these four partheads (together with rounds) form a closed set.</p>
+</details>
+<details class="note">
+<summary>Example: Partheads 123465, 123645</summary>
+<hr />
+<p>Partheads 123465 and 123645 together will generate a set of six partheads: 123465, 123645, 123546, 123654, 123564 and 123456.
+The same set will be generated regardless of the ordering of the two specified partheads.</p>
+</details>
+<p>It is important to bear in mind that the ordering of the custom partheads can change the resulting set of generated partheads. The next example demonstrates this.</p>
+<details class="note">
+<summary>Example: Partheads 123564, 124536</summary>
+<hr />
+<p>The two partheads 123564 and 124536 will produce a total of nine generated partheads. However, the members of those sets depends on which order the two given partheads are specified in.</p>
+<p>123564, 124536:</p>
+<blockquote>
+<p>123456, 123564, 123645, 124536, 124365, <strong>124653</strong>, 125346, <strong>125463</strong>, 125634</p>
+</blockquote>
+<p>124536, 123564:</p>
+<blockquote>
+<p>123456, 124536, 125346, 123564, 125634, <strong>126354</strong>, 123645, <strong>126435</strong>, 124365</p>
+</blockquote>
+<p>It can be seen by inspection that the <strong>bolded</strong> partheads are not shared between the two sets.</p>
+</details>
+<p>Any generated partheads will be listed in the validation readout, with the user-specified parthead(s) highlighted in grey. You should use this to check that Complib is correctly identifying the partheads used in the composition.</p>
+<h3 id="non-transposing-partheads">Non-transposing partheads</h3>
+<p>In some cases, it can be difficult to work out the correct ordering of partheads. There are also some cases in which a generated parthead will not appear in the composition despite being implied by other partheads—for example, a composition might make use of an <a href="../adding_compositions_tabs_calls/#omit">omit</a> to skip one of the partheads.</p>
+<p>If this is causing problems, you can specify that a parthead provided to Complib should <em>not</em> be used to generate additional partheads. This is done by putting a plus (+) at the front of the parthead.</p>
+<details class="note">
+<summary>Example: 13425678, +12436578</summary>
+<hr />
+<p>Normally, the partheads 13425678 and 12436578 together would generate a set of six partheads. However, if the second of these is made a non-transposing parthead, +12436578, then the set generated is:</p>
+<p>13425678, 14235678, 12345678, 12436578</p>
+<p>It can be seen that 13425678 has only been used to transpose itself, and that 12436578 has been left as-is.</p>
+</details>
+<h3 id="partheads-and-mid-lead-startsfinishes">Partheads and mid-lead starts/finishes</h3>
+<p>It is important that the partheads provided to Complib are the actual partheads of the composition. Particular care should be taken when a multipart composition uses a mid-lead start/finish, such as in many multipart compositions of Stedman. </p>
+<p>In such compositions, <strong>the parthead rows typically occur in the middle of a lead/division</strong>—they are not simply the nearest lead- or section-end, as is sometimes used for convenience when writing a composition down by hand.</p>
+<details class="note">
+<summary>Example: Multipart beginning at the backstroke snap</summary>
+<hr />
+<p><a href="https://complib.org/composition/51258">5056 Bristol Surprise Major</a>, Op. 3 (rotated) by Alan G Reading is a two-part composition of <a href="https://complib.org/method/19048">Bristol Surprise Major</a> which begins at the backstroke snap, or row 2 in the lead. </p>
+<p>The leadhead row closest to the partend is 12437586, but the true parthead, 12435678, occurs two changes later. It is this true parthead which the composition must specify. By <a href="https://complib.org/composition/51258/copy">opening a clone of the composition</a> (NB: must be logged in) we can see that 12435678 is indeed the parthead used.</p>
+</details>
+<h3 id="parthead-warnings-and-errors">Parthead warnings and errors</h3>
+<details class="danger">
+<summary>Error: must be a valid row of the same length as the stage</summary>
+<hr />
+<p>This error is encountered if any parthead is an <strong>invalid row</strong>, or if the stage of the composition and the stage of the specified parthead(s) do not match.</p>
+<dl>
+<dt>Valid row</dt>
+<dd>A valid row contains the numbers 1 to <em>N</em>, where <em>N</em> is determined by the <a href="#stage">specified stage</a>. It must contain each number <strong>exactly once</strong>.</dd>
+<dt>Too many/too few commas</dt>
+<dd>
+<p>If the stages match and the partheads are all valid rows, but you are still seeing the error, it may be because the Parthead(s) field contains too many or too few commas. </p>
+<p>Specified partheads must be separated by commas, or Complib will interpret them as being part of the same row. </p>
+<p>Extra commas will prompt Complib to expect additional parthead(s): if it cannot find any, it will interpret this as a parthead of stage zero, which will not match the specified stage.</p>
+</dd>
+</dl>
+</details>
+<details class="danger">
+<summary>Error: The number of partheads specified is <code>___</code> but the composition as pricked only contains <code>___</code> of them.</summary>
+<hr />
+<p>Complib will check whether all generated partheads are included among the pricked rows of the composition. If any are missing, then there is a mismatch between the implied multi-part structure and the actual composition. There are two main causes for this error:</p>
+<dl>
+<dt>Incorrect calling</dt>
+<dd>There is a mistake in the specified <a href="../adding_compositions_tabs_calling/">calling</a> which is preventing the composition from reaching an implied parthead;</dd>
+<dt>Incorrect parthead(s)</dt>
+<dd>
+<p>The partheads are all valid rows, but one or more of them have been entered incorrectly. As a consequence, the generated parthead(s) do not match the intended ones. You should check that any partheads entered in this field exactly match the expected partheads of the composition.</p>
+<p>If the number of generated partheads in the validation readout does not match the number of parts you expect the composition to have, then this is a sign that one or more of them has been entered incorrectly.</p>
+</dd>
+</dl>
+</details>
+<h2 id="coursehead-masks">Coursehead mask(s)</h2>
+<p>This field allows you to specify coursehead masks, which are used by Complib when formatting the composition's <a href="../overview/#layout">layout</a>. Coursehead masks should be at the same <a href="#stage">stage</a> as the composition, and must be separated by commas (<code>,</code>).</p>
+<h3 id="what-are-courseheads">What are courseheads?</h3>
+<p>A coursehead is a starting row of a lead/division which is also the first row of a course.</p>
+<p>When a composition is <a href="../layout_options/#lay-out-composition-by">laid out by courses</a>, the courseheads will be displayed in the leftmost column (provided <a href="../layout_options/#columns">Columns &gt; Coursehead</a> is enabled in the composition layout options):</p>
+<p><img alt="Layout with labelled courseheads" src="../../img/layout_courseheads_annotated.png" width="400" /></p>
+<p>When the composition is laid out by leads and <a href="../layout_options/#rows">Rows &gt; Show all leadheads</a> is enabled, horizontal lines are ruled under each coursehead:</p>
+<p><img alt="Layout by leads with labelled courseheads" src="../../img/layout_courseheads_annotated_byleads.png" width="300" /></p>
+<p>Most of the time, Complib is able to infer the intended courseheads. However, if your composition uses unusual courseheads, or courses of non-standard lengths, you may need to specify the courseheads you want displayed.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If your composition specifies call positions by a number of leads after the course end, Complib needs to have courseheads provided to it in order to count the leads properly. </p>
+<p>Additionally, if a composition has multiple parts, <strong>you must remember to provide appropriate coursehead masks for all the parts</strong>.</p>
+</div>
+<p>Manually specifying all courseheads in a composition can be time-consuming and prone to mistakes. To avoid this, Complib allows you to use <strong>row masks</strong>.</p>
+<h3 id="what-is-a-row-mask">What is a row mask?</h3>
+<p>A row mask takes the form of a valid row at the composition's specified <a href="#stage">stage</a>. However, unlike a normal row, a mask can include <strong>wildcards</strong> which represent any bell not named elsewhere in the row. Wildcards are denoted with an <code>x</code> in place of a bell number. </p>
+<details class="note">
+<summary>Examples</summary>
+<hr />
+<p>The following table gives some examples of row masks, together with the rows which match them.</p>
+<table>
+<thead>
+<tr>
+<th>Row mask</th>
+<th>Matching rows</th>
+<th>Total matches</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>54321</td>
+<td>54321</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1xxx56</td>
+<td>1<strong>234</strong>56, 1<strong>324</strong>56, 1<strong>342</strong>56, 1<strong>432</strong>56, 1<strong>423</strong>56, 1<strong>243</strong>56</td>
+<td>6</td>
+</tr>
+<tr>
+<td>xxxx2468</td>
+<td><strong>1357</strong>2468, <strong>3157</strong>2468, <strong>3517</strong>2468, ... , <strong>7531</strong>2468</td>
+<td>24</td>
+</tr>
+<tr>
+<td>xxxxxx7890E</td>
+<td><strong>123456</strong>7890E, <strong>213456</strong>7890E,  ... , <strong>654321</strong>7890E</td>
+<td>720</td>
+</tr>
+</tbody>
+</table>
+<p>It can be seen that row masks are an efficient way of specifying a large number of potential rows at once. A mask with <em>n</em> wildcards matches <em>n!</em> different rows.</p>
+</details>
+<h3 id="how-complib-selects-courseheads">How Complib selects courseheads</h3>
+<p>A row will be selected as a coursehead and included in the <a href="../overview/#layout">composition layout</a> if the following hold:</p>
+<ul>
+<li>The row belongs to any course reached during the composition; <strong>and</strong></li>
+<li>The row is a leadhead; <strong>and</strong></li>
+<li>The row matches any of the specified coursehead masks.</li>
+</ul>
+<p>If a coursehead satisfies these conditions but is not actually rung during the course to which it belongs, it will be included in the layout (in parentheses).</p>
+<h3 id="default-coursehead-masks">Default coursehead masks</h3>
+<p>All compositions must have at least one coursehead mask. If you do not provide one, Complib will automatically infer a coursehead mask based on the composition's specified <a href="#stage">stage</a>. The default coursehead mask will generally be of the form x...xN, where <em>N</em> is the largest numbered bell at the composition's specified stage.</p>
+<h3 id="missing-courseheads">Missing courseheads</h3>
+<p>If there are courses in the composition which do not contain rows matching any coursehead mask, then:</p>
+<ul>
+<li>The course will be displayed without a coursehead (for compositions <a href="../layout_options/#lay-out-composition-by">laid out by courses</a>);</li>
+<li>No horizontal line will be drawn underneath that course (for compositions laid out by leads with <a href="../layout_options/#rows">Rows &gt; Show all leadheads</a> enabled).</li>
+</ul>
+<h3 id="coursehead-mask-warnings-and-errors">Coursehead mask warnings and errors</h3>
+<details class="danger">
+<summary>Error: must be a valid row mask of the same length as the stage.</summary>
+<hr />
+<p>This error is encountered if any coursehead mask is an <strong>invalid row mask</strong>, or if the stage of the composition and the stage of a coursehead mask do not match.</p>
+<dl>
+<dt>Valid row mask</dt>
+<dd>A valid row mask contains exactly <em>N</em> characters, where <em>N</em> is determined by the composition's <a href="#stage">specified stage</a>. The row mask must contain the numbers 1 to <em>N</em> <strong>at most once</strong>, with any missing numbers replaced by wildcards (<code>x</code>).</dd>
+<dt>Too many/too few commas</dt>
+<dd>
+<p>If the stages match and the coursehead masks are all valid, but you are still seeing the error, it may be because the Coursehead mask(s) field contains too many or too few commas. </p>
+<p>Coursehead masks must be separated by commas, otherwise Complib will interpret them as being part of the same mask. </p>
+<p>Extra commas will prompt Complib to expect additional coursehead mask(s): if it cannot find any, it will interpret this as a coursehead mask of stage zero, which will not match the specified stage.</p>
+</dd>
+</dl>
+</details>
+<h2 id="start-row-number">Start row number</h2>
+<p>Allows you to define which row of the first method's lead/division the composition starts from. Most compositions are rung starting from row 0.</p>
+<p>If no start row number is specified, the field defaults to a value of 0. </p>
+<p>If the start row number is anything other than 0, the starting row will be noted underneath the calling in the <a href="../overview/#layout">composition layout</a>. The exceptions are compositions which <a href="#starting-at-the-backstroke-snap">begin at the treble's backstroke snap</a>, and certain compositions of <a href="#starting-rows-in-compositions-of-stedman">Stedman</a>.</p>
+<h3 id="starting-at-the-backstroke-snap">Starting at the backstroke snap</h3>
+<p>A large proportion of compositions with a non-zero starting row are compositions of treble-dodging methods which begin from the treble's <strong>backstroke snap</strong>. The example below shows the first few rows of <a href="https://complib.org/method/26082">Kent Treble Bob Minor</a>, with the backstroke snap labelled.</p>
+<p><img alt="Starting rows annotated example" src="../../img/starting_rows_example.png" width="400" /></p>
+<p>If a composition begins with a treble-dodging method, and has a starting row number of 2, then <strong>"Start at the backstroke snap"</strong> will be appended to the composition layout.</p>
+<h3 id="starting-rows-in-compositions-of-stedman">Starting rows in compositions of Stedman</h3>
+<p>For historical reasons, touches of Stedman at any stage are usually rung starting from <strong>row 4</strong>. For this reason, compositions of Stedman starting from row 4 do not have a starting row appended to their layouts.</p>
+<p>When a starting row is appended to the layout of a composition of Stedman, it will have a unique format: <strong>"Start with rounds as the [...] row of a [slow/quick] six."</strong></p>
+<h3 id="starting-row-warnings-and-errors">Starting row warnings and errors</h3>
+<details class="danger">
+<summary>Error: <code>___</code> must be a positive integer or zero (the default)</summary>
+<hr />
+<p>Starting row numbers must be greater than or equal to zero. If you encounter this error, it is because you have entered a number which is negative (for whatever reason). </p>
+</details>
+<details class="danger">
+<summary>Error: A method definition's length, its start row number and/or the composition start row number are out of bounds of the method's place notation.</summary>
+<hr />
+<p>This error can be caused by setting a starting row number which is larger than the lead length of the starting method.</p>
+<p>If changing the starting row number does not clear the error, it may be because a method has been incorrectly configured in the <a href="../adding_compositions_tabs_methods/">Methods tab</a>.</p>
+</details>
+<h2 id="backstroke-start">Backstroke start</h2>
+<p>While most compositions are started at handstroke, some compositions are designed to be started at backstroke. You should enable this field if you want to indicate that your custom composition is to be started at backstroke.</p>
+<p>When enabled, a supplementary note will be added to the composition's layout which reads <strong>"Start at backstroke."</strong> Any additional instructions relating to how the composition starts (such as a specific <a href="#start-row-number">starting row</a>) will be appended to this.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Forgetting to set this option may result in the composition's <a href="../overview/#blue-line">blue line</a> being displayed incorrectly when <a href="../../methods/blueline_options/#column-display-options">Column display &gt; Show handstroke/backstroke</a> is enabled. Similarly, stroke-specific properties of the composition such as <a href="../composition_properties/#changes">Changes &gt; Tenors reversed</a> may not be listed accurately. </p>
+<p>It may also lead to errors in the calculated <a href="../overview/#music-score">Music score</a>, e.g. when accounting for handstroke and backstroke wraps, or when using a half-muffled music scheme (see <a href="../../advanced/music_schemes/">Music schemes</a> for more on this).</p>
+<p>For the benefit of conductors who might want to ring your composition, please remember to set this option if appropriate!</p>
+</div>
+<h2 id="extents">Extents</h2>
+<p>This field is used to signal to Complib the number of complete and partial extents the composition contains. If this field is left blank, Complib will infer the number of extents from the composition's <a href="#title">Title</a> and <a href="#stage">Stage</a> if it can. Otherwise, it will default to a value of 1.</p>
+<p>Complib uses the Extents value to determine how many times the composition is expected to return to rounds, as well as the maximum allowable repetitions of a given row before the composition runs false.</p>
+<p>If the Extents value is set too small, there may sections of the composition which are ignored because the composition comes round before that point is reached, or because the maximum number of false rows is been reached.</p>
+<h2 id="default-calls">Default calls</h2>
+<p>This field is a dropdown menu, from which you can select a default call type for the composition. This will determine the way that standard call symbols such as <code>-</code> and <code>s</code> are interpreted in the composition's <a href="../adding_compositions_tabs_calling/">calling</a>. It will also determine the default behaviour of entries in the <a href="../adding_compositions_tabs_calls/">Calls tab</a>.</p>
+<p>This field may autofill with a certain value depending on which <a href="../calling_positions/">calling positions</a> have been used in the composition's <a href="../adding_compositions_tabs_calling/">Calling tab</a>, and which method is defined in the <a href="../adding_compositions_tabs_methods/">Methods tab</a>.</p>
+<p>The default call types are: </p>
+<dl>
+<dt>Near</dt>
+<dd>Calls will default towards the front of the change. Standard bobs and singles will be assumed to be 4ths-place calls unless otherwise specified in the Calls tab.</dd>
+<dt>Far</dt>
+<dd>Calls will default towards the back of the change. Standard bobs and singles will be assumed to be (<em>N</em>-2)ths-place calls unless otherwise specified in the Calls tab.</dd>
+<dt>Grandsire</dt>
+<dd>Calls will be assumed to represent Grandsire-type calls appropriate to the composition's stage. This call type is normally only used in compositions of twin-hunt methods such as Grandsire and Single Oxford, or in Doubles variations like April Day.</dd>
+<dt>Stedman</dt>
+<dd>Calls will be assumed to represent Stedman-type calls appropriate to the composition's stage. This call type is normally only used in compositions of Stedman and Erin.</dd>
+<dt>None</dt>
+<dd>Calls will not default to any particular type. If this call type is selected, then all calls used in the calling must be manually defined in the Calls tab. You should use this call type to signal to the conductor that the composition uses calls which fall outside any of the standard types.</dd>
+</dl>
+<h2 id="notes">Notes</h2>
+<p>This field allows you to provide additional notes to accompany the composition. For instance, this could be a piece of historical information, some interesting feature of the composition, or your favourite recipe for parsnip soup. </p>
+<p>The text entered in this field will be displayed in the <a href="../overview/#library-details">Library details tab</a> on the composition's page.</p>
+<div class="admonition warning">
+<p class="admonition-title">Notes: Things to bear in mind</p>
+<p>It is unnecessary to include certain things in the notes which might be common in other printed or online collections, such as special calls, calling alterations, truth to other methods and musical features. Complib derives and displays all this information automatically.</p>
+<p>The notes field has a character limit of 1000. Entries longer than this will be truncated.</p>
+</div>
+<h2 id="allow-save-if-false">Allow save if false</h2>
+<p>The vast majority of compositions that change ringers use are true (i.e., not false). See <a href="../composition_properties/#truth">Composition properties &gt; Truth</a> for an explanation of what it means for a composition to be true. </p>
+<p>By default, Complib will not allow you to save or publish a composition which is false. Enabling this option will override that behaviour, allowing a false composition to be saved and potentially published. </p>
+<p>There are a number of reasons you might want to save a false composition. For example, some compositions are of historical note, having been used in performances which were only subsequently discovered to be false. Short touches used for practice are usually not held to the same standard as performances, but are still valid and useful compositions in and of themselves.</p>
+<p>Being able to save a work-in-progress so that you can come back to it later, regardless of falseness, is useful in cases when debugging a complex composition, or when testing out new ideas.</p>
+<p>A false composition will be indicated with a <img alt="Icon: false" src="../../img/false.svg" /> next to its title on its composition page and in search results.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../adding_compositions_overview/" class="btn btn-neutral float-left" title="Adding compositions: overview"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../adding_compositions_tabs_methods/" class="btn btn-neutral float-right" title="Methods tab">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../adding_compositions_overview/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../adding_compositions_tabs_methods/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
