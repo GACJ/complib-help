@@ -1,5 +1,5 @@
 # The Performances tab
-The performances tab is a table which allows you to add information about documented performances in which the compostition was used.
+The Performances tab is a table which allows you to link the composition to published [BellBoard](https://bb.ringingworld.co.uk/) performances for which it was used.
 
 ![Performance tab example](../img/performance_tab_example.png){width="600"}
 
