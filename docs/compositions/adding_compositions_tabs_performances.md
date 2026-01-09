@@ -19,7 +19,7 @@ Rung
 You should only use **First rung** if you are reasonably sure that the performance in question was the first use of the composition. If you are not certain, you should default to **Rung**.
 
 ### Bellboard Id
-This is a text field in which you should enter the **BellBoard Id** of the performance in question. This will be a number. A performance's BellBoard Id can be found at the end of its URL:
+This is a text field in which you should enter the **BellBoard ID** of the performance in question. This will be a number. A performance's BellBoard ID can be found at the end of its URL:
 
 ![Performance ID example](../img/performance_id.png){width="500"}
 
