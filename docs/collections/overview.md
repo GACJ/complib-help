@@ -8,6 +8,8 @@ With collections, you might:
 - Create and share a series of methods and/or compositions which your band plans to ring;
 - Collate historical compositions which your society/tower/etc. has in its peal records.
 
+Collections can be kept private, or shared with others publicly.
+
 ## Example collections
 
 [Bell News](https://complib.org/collection/search?group=Bell%20News) and [Ringing World](https://complib.org/collection/search?group=Ringing%20World)
