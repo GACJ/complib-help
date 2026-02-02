@@ -196,7 +196,7 @@ By default, represents **1** in Doubles. Has no default behaviour at other stage
 ### Trim 
 *Default symbol*: **t**
 
-Used to indicate a call which often (but not always) changes the length of a lead. Usually a trim will **skips changes** within a method's lead, or substitutes some of the method's changes with a shorter sequence. Requires a [Changes replaced](#changes-replaced) value to be specified.
+Used to indicate a call which often (but not always) changes the length of a lead. Usually a trim **skips changes** within a method's lead, or substitutes some of the method's changes with a shorter sequence. Requires a [Changes replaced](#changes-replaced) value to be specified.
 
 ### Fill 
 *Default symbol*: **f**

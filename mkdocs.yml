@@ -30,7 +30,7 @@ nav:
     - Using the method designer: methods/method_designer.md
   - 'Collections':
     - What are collections?: collections/overview.md
-    - Adding collections: collections/adding_collections.md 
+    - Creating collections: collections/creating_collections.md 
   - 'Searching Complib':
     - Quick search: search/quick_search.md
     - Method search: search/method_search.md

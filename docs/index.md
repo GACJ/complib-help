@@ -8,7 +8,7 @@ The [Composition Library](https://complib.org), also known as Complib, is an int
 If you register for an account, you will gain the ability to contribute material to the Composition Library, and take full advantage of its more powerful tools. For instance, you will be able to:
 
 - Define [new compositions](compositions/adding_compositions_overview.md) and [methods](methods/adding_methods.md).
-- Create [collections](collections/adding_collections.md) of methods or compositions (e.g. your personal favourites, or the hottest new 23-spliced).
+- Create [collections](collections/creating_collections.md) of methods or compositions (e.g. your personal favourites, or the hottest new 23-spliced).
 - Find compositions which are true to a particular method, or methods which are true to a particular composition via an [extended search](search/extended_search.md).
 
 Registered users can also ask questions, raise issues and request bespoke compositions from other Complib users.

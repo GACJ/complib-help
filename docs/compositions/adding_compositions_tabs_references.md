@@ -17,22 +17,36 @@ Clicking the cross ![Icon: cross](../img/icon_x.png){width="25"} will delete the
 References have a number of data fields, most of which are optional.
 
 ### Collection title
-The title of the collection in which the composition is to be included. This field is a drop-down menu from which you can select the name of any public collection, or any private collection which you own. **Required.**
+(**Required**) The title of the collection in which the composition is to be included. This field is a drop-down menu from which you can select the name of any public collection, or any private collection which you own. 
 
 ### Volume
-This field is a drop-down menu which allows you to select the relevant volume from the collection, for collections which are organised into volumes.
+This field is a drop-down menu which allows you to select the relevant volume from the collection, for collections which are organised into volumes. Volumes must have already been created in the collection before they can be selected here.
 
 ### Sequence
 Allows you to specify a **sequence** number, a positive integer that determines the order in which entries are displayed on a collection page. Smaller numbers have priority over bigger ones.
 
+Sequence numbering takes effect across the **entire collection**. This means that entries which are to be grouped together (particularly entries in the same **chapter**) should all be given the same sequence number.
+
 ### Chapter
-This field is a drop-down menu which allows you to select a chapter from the named collection, if it is organised by chapters. 
+This field is a text field which allows you to enter the name of a chapter from the specified collection, if it is organised by chapters. If a chapter with the entered name does not already exist in the collection, filling out this field will create a new chapter with that name.
+
+For two entries in a collection to be in the same chapter, the names in their respective chapter fields must **exactly match**.
 
 ### Page
 The page number of the entry in the collection. This is usually the page number of the source material (e.g. Ringing World issue, CCCBR publication) which forms the basis for the reference.
 
 ### Reference
-The external reference for the entry in the collection. Usually a relative reference to a digital source (e.g. a [ringing.org](https://ringing.org/) composition number). The entry in this field is appended to the URL specified on the Collection Properties page for the creation of Reference Links.
+The reference for the entry in the collection. When viewing the collection, this will be the entry for the composition in the column named in the [Referenced by](../collections/creating_collections.md/#referenced-by) field.
+
+Usually a relative reference to a digital source (e.g. a [ringing.org](https://ringing.org/) composition number). The entry in this field is appended to the URL specified on the Collection Properties page for the creation of [Reference Links](../collections/creating_collections.md/#url-for-creating-reference-links).
+
+??? note "Example: 13 to 23-Spliced Surprise Major (Norman Smith)"
+    ---
+    [This collection](https://complib.org/collection/10508) contains a series of peal compositions in increasing numbers of methods, working up to [5152 23-Spliced Surprise Major](https://complib.org/composition/10023) by Norman Smith.
+
+    In this collection, "**Adds**" has been entered into the **Referenced by** field (which can be seen by ![Icon: clone](../img/icon_clone.png){width="25"} **cloning** the collection); this becomes the name of the left-hand column which indexes the collection entries. In the **References** tab on each composition, the **References** field has been filled in with the text which appears in this column.
+    
+    The author has used this to indicate which new method is included in each peal in the series.
 
 ### Bellboard Id
-The ID of a BellBoard performance which references the composition. *(PD: Have been unable to find an example of this being used, so not entirely sure what it does, if it differs at all from a performance reference.)*
+The **ID of a BellBoard performance** which used the composition. This will become a link to the performance in the composition's entry in the collection. See the corresponding section in the [Performances tab](adding_compositions_tabs_performances.md/#bellboard-id) for an explanation of BellBoard IDs. 

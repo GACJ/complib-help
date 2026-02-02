@@ -23,10 +23,10 @@ The Add composition page ([https://complib.org/composition/add](https://complib.
 [Calling](adding_compositions_tabs_calling.md)
 :   Edit the calling, or sequence of calls, which defines the composition.
 
-Performances
+[Performances](adding_compositions_tabs_performances.md)
 :   Add performance information. Mostly used when uploading historical compositions.
 
-References
+[References](adding_compositions_tabs_references.md)
 :   Link the composition to collections within the Composition Library.
 
 ## Validating and saving compositions

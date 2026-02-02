@@ -58,7 +58,7 @@ Calling positions are column headers which signal to Complib when a [call](#call
 !!! hint "Tip: Repeated calling positions"
     There is no restriction on the number of times that a given calling position appears. There are circumstances in which you may find it convenient to have the same calling position at the head of multiple columns in the Calling tab.
 
-Compositions generally two types of calling position: [named positions](#named-calling-positions) (represented with letters), or [numbered positions](#numbered-calling-positions). While it's common to only use one type or the other in a given composition, you are free to use a mixture of both.
+Compositions generally use two types of calling position: [named positions](#named-calling-positions) (represented with letters), or [numbered positions](#numbered-calling-positions). While it's common to only use one type or the other in a given composition, you are free to use a mixture of both.
 
 A special kind of named position, unique to Stedman Triples, is used in [twin-bob compositions](#twin-bob-calling-positions).
 
