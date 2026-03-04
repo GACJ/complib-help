@@ -44,6 +44,7 @@ nav:
     - Leadhead codes: advanced/leadhead_codes.md
     - Music schemes: advanced/music_schemes.md
     - Row parity: advanced/row_parity.md
+    - Complib API: advanced/complib_api.md
 
 theme: readthedocs
 markdown_extensions:
