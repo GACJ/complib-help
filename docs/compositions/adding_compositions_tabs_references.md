@@ -25,7 +25,7 @@ This field is a drop-down menu which allows you to select the relevant volume fr
 ### Sequence
 Allows you to specify a **sequence** number, a positive integer that determines the order in which entries are displayed on a collection page. Smaller numbers have priority over bigger ones.
 
-Sequence numbering takes effect across the **entire collection**. This means that entries which are to be grouped together (particularly entries in the same **chapter**) should all be given the same sequence number.
+Sequence numbering takes effect across the **entire collection**. This means that sequence numbers of entries should reflect the ordering of all entries in the collection (e.g. entries in Chapter 2 should have sequence numbers greater than entries in Chapter 1, etc.).
 
 ### Chapter
 This field is a text field which allows you to enter the name of a chapter from the specified collection, if it is organised by chapters. If a chapter with the entered name does not already exist in the collection, filling out this field will create a new chapter with that name.

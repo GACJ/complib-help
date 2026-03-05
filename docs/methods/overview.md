@@ -38,7 +38,7 @@ The toolbar buttons can be identified by hovering over them. Some of the toolbar
 :   Opens a new browser tab displaying all the **rows** of the method's plain course in plaintext format.
 
 ![Icon: print](../img/icon_print.png){width="50"}Printable version
-:   Opens a new browser tab displaying the contents of the [blue line](#blue-line) tab in a form which is easy to print.
+:   Opens a new browser tab displaying the contents of the [blue line](#blue-line) tab in a form which may be easier to print.
 
 ## Tabs overview
 A method page is subdivided into various expandable tabs (click on the name of a tab to skip to a detailed description of its contents):
@@ -129,16 +129,9 @@ This tab lists all named methods which are related to the current method by mean
 
 The image above shows the first leads of [Yorkshire Surprise Major](https://complib.org/method/17060) (left) and [Quedgeley Surprise Major](https://complib.org/method/17064) (right), which are trivial variations of each other. It can be seen by inspection that the two are almost identical, with only slight differences in the blue line.
 
-Complib will determine that two methods are trivial variations if the following conditions all hold:
+A method is a trivial variation of another method if the path of each bell in one method deviates no more than one place away from an **equivalent path** in the other. Equivalent path does not necessarily mean the same bell: [Reverse Canterbury Pleasure Place Doubles](https://complib.org/method/10521) and [Plain Bob Doubles](https://complib.org/method/10550) are trivial variants, but only when considering the paths of bells 3 and 4 to be equivalent.
 
-1. There is a sequence of adjacent changes in the lead where the same two bells are working together in both methods; **and**
-2. The bells are in the same relative position at the start of the sequence in both methods; **and**
-3. The bells are in the same relative position at the end of the sequence in both methods; **and**
-4. The methods differ only by sequences satisfying conditions 1-3.
-
-The word "trivial" is not a value judgement: it does not imply that one method is inherently more original or valuable than another. It is a purely technical classification which describes a similarity between them. 
-
-Indeed, the property of trivial variation is a symmetric relationship: if method B is a trivial variation of method A, then method A is necessarily a trivial variation of method B.
+The property of trivial variation as defined here is a symmetric relationship: if method B is a trivial variation of method A, then method A is necessarily a trivial variation of method B. However, it is *not* a transitive property: if C is another trivial variation of A, it does not necessarily follow that C is also a trivial variation of B.
 
 !!! warning
     A method might differ from its trivial variants in decidedly non-trivial ways. Their plain courses may not have the same rows, and they may have different [false coursehead groups](https://framework.cccbr.org.uk/version2/falsecourseheads.html). 

@@ -196,12 +196,12 @@ By default, represents **1** in Doubles. Has no default behaviour at other stage
 ### Trim 
 *Default symbol*: **t**
 
-Used to indicate a call which often (but not always) changes the length of a lead. Usually a trim **skips changes** within a method's lead, or substitutes some of the method's changes with a shorter sequence. Requires a [Changes replaced](#changes-replaced) value to be specified.
+Used to indicate a call which reduces the length of a lead. Usually a trim **skips changes** within a method's lead, or substitutes some of the method's changes with a shorter sequence. Requires a [Changes replaced](#changes-replaced) value to be specified which is larger than the length of the call notation (or it will cause an error).
 
 ### Fill 
 *Default symbol*: **f**
 
-Used to indicate a call which often (but not always) changes the length of a lead. Usually a fill **inserts extra changes** within a lead, or substitutes some of the method's original changes with a longer sequence. Requires a [Changes replaced](#changes-replaced) value to be specified.
+Used to indicate a call which increases the length of a lead. Usually a fill **inserts extra changes** within a lead, or substitutes some of the method's original changes with a longer sequence. Requires a [Changes replaced](#changes-replaced) value to be specified which is smaller than the length of the call notation (or it will cause an error).
 
 ### Jump 
 *Default symbol*: *none*

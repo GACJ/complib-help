@@ -18,5 +18,8 @@ Collections can be kept private, or shared with others publicly.
 [5152 13–23-Spliced Surprise Major (Norman Smith)](https://complib.org/collection/10508)
 :   This composition collection contains a series of build-up peals in increasing numbers of methods, for bands working towards Norman Smith's all-the-work composition of 23-Spliced Surprise Major.
 
+[The Project Pickled Egg "Core 7" Surprise Major](https://complib.org/collection/12122)
+:   This collection contains the seven "core" methods from Simon Linford's Project Pickled Egg. The collection allows you to easily view and print out the blue lines of all the methods. It can also be used to populate the [Methods tab](../compositions/adding_compositions_tabs_methods.md) with these methods when [creating a composition](../compositions/adding_compositions_overview.md).
+
 [Examples](https://complib.org/collection/10184)
 :   This important collection contains a large number of example compositions to help you understand the various features of Composition Library and how they work. This is especially useful when defining your own [custom compositions](../compositions/adding_compositions_overview.md).
