@@ -114,7 +114,7 @@ You are able to give a custom method on Complib any name you like. However, if y
 4. A method has not been officially named until it is rung.
 :   According to tradition, the initial right to determine a method's name is afforded to the band which first rings it in a compliant **performance**. A custom method which you save to Complib under a certain name may be rung under a different name by someone else, and it is under the latter name that the method will be officially recognised.
 
-For a full explanation of the requirements for method names, see [Section 5](https://framework.cccbr.org.uk/version2/naming.html) of the Central Council Framework for Method Ringing.
+For a full explanation of the requirements for method names, see [Section 5](https://framework.cccbr.org.uk/edition2/naming.html) of the Central Council Framework for Method Ringing.
 
 ## Private and public methods
 A custom method which is successfully saved to Complib will be designated a **private method** and given its own [method page](overview.md). A private method has not been officially named until it is performed and accepted into the Central Council's Method Library.

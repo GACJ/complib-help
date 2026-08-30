@@ -110,7 +110,7 @@ A method with a single non-stationary hunt bell will fall into one and only one 
 
     \*\* A method may be Little in addition to its main hunter class.
 
-For a detailed explanation of the different hunter classes and how they are distinguished, please refer to [Section 4 of the Central Council Framework](https://framework.cccbr.org.uk/version2/classification.html).
+For a detailed explanation of the different hunter classes and how they are distinguished, please refer to [Section 4 of the Central Council Framework](https://framework.cccbr.org.uk/edition2/classification.html).
 
 ## Symmetry
 A **symmetry** is a transformation (rotation, reflection, translation, etc.) which leaves the appearance of something unchanged. A method has one or more **symmetry types**:
@@ -137,7 +137,7 @@ For palindromic methods there is also one symmetry subtype:
 Offset
 :   A palindromic method whose axis of symmetry is not at the halfway point of its place notation. Many twin hunt methods such as Grandsire fall into this category.
 
-For a visual demonstration of the different symmetry types, see [this infographic](https://framework.cccbr.org.uk/version2/images/classification/symmetries.pdf).
+For a visual demonstration of the different symmetry types, see [this infographic](https://framework.cccbr.org.uk/edition2/images/classification/symmetries.pdf).
 
 ## Leadheads
 Almost all methods (currently all methods in Complib's `CCCBR` library) have a plain course which can be divided into one or more sections of fixed, finite length, which are called **leads** or **divisions**. It is common to refer to the starting row of a lead (or division) as the **leadhead** (or **division end**). The collected set of leadheads of a method may satisfy one of a number of conditions:
@@ -216,7 +216,7 @@ Method above/below
         The exceptions to this are where a method which is much more widely known was nevertheless rung to a peal *after* another more obscure method sharing the same above/below work. One such example is [New Cambridge Surprise Major](https://complib.org/method/17029), which was pealed almost 50 years before [Cambridge Surprise Major](https://complib.org/method/16694) even though the latter was (pretty obviously!) known to the Exercise before the former.
 
 FCH Groups
-:   Lists the codes for the method's **false coursehead groups** (if applicable). See [this section of the Central Council Framework](https://framework.cccbr.org.uk/version2/falsecourseheads.html) for a definition of the false course head groups.
+:   Lists the codes for the method's **false coursehead groups** (if applicable). See [this section of the Central Council Framework](https://framework.cccbr.org.uk/edition2/falsecourseheads.html) for a definition of the false course head groups.
 
 Accepted extension path
 :   For methods with a compliant **extension** or **contraction** which has been named, lists the extension path(s) used to derive the accepted extension(s) or contraction(s) (see [Extensions](../advanced/extensions.md)).

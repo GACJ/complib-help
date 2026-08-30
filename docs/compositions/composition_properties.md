@@ -122,7 +122,7 @@ Exact multipart
 :   The composition can be expressed as two or more repeated blocks, all of which have identical changes.
 
 ## Truth
-For a full explanation of the terms used in the following definitions, see [Section 3 (J)](https://framework.cccbr.org.uk/version2/fundamentals.html#truth) of the Central Council Framework for Method Ringing.
+For a full explanation of the terms used in the following definitions, see [Section 3 (J)](https://framework.cccbr.org.uk/edition2/fundamentals.html#truth) of the Central Council Framework for Method Ringing.
 
 True
 :   A composition is **true** if:
@@ -186,7 +186,7 @@ Changes of method
         Change of method does not include any "implied" changes of method between the final and starting methods of a round block. A performance which comprises multiple repetitions of such a round block will therefore have additional changes of method not accounted for here.
 
 Stage
-:   The name of the stage of the composition. For mixed stage compositions, this is the name of the highest-numbered stage. See [Section 3A](https://framework.cccbr.org.uk/version2/fundamentals.html#stages) of the Central Council Framework for an explanation of stages and their names.
+:   The name of the stage of the composition. For mixed stage compositions, this is the name of the highest-numbered stage. See [Section 3A](https://framework.cccbr.org.uk/edition2/fundamentals.html#stages) of the Central Council Framework for an explanation of stages and their names.
 
 True rows
 :   The number of true rows in the composition. For [true](#truth) compositions, this will be equal to the length of the touch. For false compositions, this will be the length of the touch after subtracting any **false rows** (see below).
@@ -204,7 +204,7 @@ Partial extents
 :   The number of incomplete, or partial extents at the effective stage of the composition. For a composition which is [true](#truth), this number will always be either 0 or 1.
 
 Applicable leadhead codes
-:   The [leadhead code(s)](../advanced/leadhead_codes.md) of methods for which the composition could potentially be used. For a detailed explanation of leadhead codes and their definitions, see [Appendix C](https://framework.cccbr.org.uk/version2/leadheadcodes.html) of the Central Council Framework for Method Ringing.
+:   The [leadhead code(s)](../advanced/leadhead_codes.md) of methods for which the composition could potentially be used. For a detailed explanation of leadhead codes and their definitions, see [Appendix C](https://framework.cccbr.org.uk/edition2/leadheadcodes.html) of the Central Council Framework for Method Ringing.
 
     ??? warning "Warning: Limitations of Applicable leadhead codes"
         ---

@@ -47,7 +47,7 @@ A method page is subdivided into various expandable tabs (click on the name of a
 :   A visual representation of the method.
 
 [Properties](#properties)
-:   The structural properties of the method, including its **place notation**, **leadhead group**, **extension path** (if applicable) and more. A large amount of this information relates to the method's **classification**, which derives from the Central Council's [Framework for Method Ringing](https://framework.cccbr.org.uk/version2/index.html).
+:   The structural properties of the method, including its **place notation**, **leadhead group**, **extension path** (if applicable) and more. A large amount of this information relates to the method's **classification**, which derives from the Central Council's [Framework for Method Ringing](https://framework.cccbr.org.uk/edition2/index.html).
 
 [Hunt Bell Path(s)](#hunt-bell-paths)
 :   The features and properties of the paths of the **hunt bell(s)**, if any. 
@@ -134,7 +134,7 @@ A method is a trivial variation of another method if the path of each bell in on
 The property of trivial variation as defined here is a symmetric relationship: if method B is a trivial variation of method A, then method A is necessarily a trivial variation of method B. However, it is *not* a transitive property: if C is another trivial variation of A, it does not necessarily follow that C is also a trivial variation of B.
 
 !!! warning
-    A method might differ from its trivial variants in decidedly non-trivial ways. Their plain courses may not have the same rows, and they may have different [false coursehead groups](https://framework.cccbr.org.uk/version2/falsecourseheads.html). 
+    A method might differ from its trivial variants in decidedly non-trivial ways. Their plain courses may not have the same rows, and they may have different [false coursehead groups](https://framework.cccbr.org.uk/edition2/falsecourseheads.html). 
     
     Because of this, a composition which is true to one method is **not necessarily true** to all (or indeed any) of that method's trivial variations. You should always check a composition is true to the specific method you wish to ring.
 
@@ -162,7 +162,7 @@ Type
     - **Other**: a performance which does not fit into any of the above categories, such as tapped performances;
     - **Mixed**: a performance in which a mixture of the above are used.
 
-    For more about Ringing Styles and how performances are reported, see [Section 6](https://framework.cccbr.org.uk/version2/reporting.html) of the Central Council Framework for Method Ringing.
+    For more about Ringing Styles and how performances are reported, see [Section 6](https://framework.cccbr.org.uk/edition2/reporting.html) of the Central Council Framework for Method Ringing.
 
 Details
 :   The published details of the performance: title, performing Guild or Association (if given), location, and conductor (if given).

@@ -39,11 +39,11 @@ then these are good reasons to raise an issue.
 ### When not to raise an issue
 There are certain circumstances under which we would ask you not to raise an issue.
 
-Change ringing is an art with a very long history, and its technical aspects have been subject to constant development within the change ringing community for centuries. Complib is intended to serve the needs of change ringing **as it is currently practised**. To this end, both Complib and the Help reflect the current [Central Council Framework for Method Ringing](https://framework.cccbr.org.uk/version2/index.html) wherever possible.
+Change ringing is an art with a very long history, and its technical aspects have been subject to constant development within the change ringing community for centuries. Complib is intended to serve the needs of change ringing **as it is currently practised**. To this end, both Complib and the Help reflect the current [Central Council Framework for Method Ringing](https://framework.cccbr.org.uk/edition2/index.html) wherever possible.
 
 Neither Complib itself nor this Help documentation are designed to act as fora for debate on the details of the current Framework, nor indeed should they. Such debate is a crucial part of change ringing culture, but this is not the appropriate place for it.
 
 ## A Note on Terminology
-The change ringing terms used in this documentation are those specified in the Central Council's [Framework for Method Ringing](https://framework.cccbr.org.uk/version2/index.html), and reflect the definitions given there. It is assumed for the purposes of using the Help that you are familiar with at least some of this language.
+The change ringing terms used in this documentation are those specified in the Central Council's [Framework for Method Ringing](https://framework.cccbr.org.uk/edition2/index.html), and reflect the definitions given there. It is assumed for the purposes of using the Help that you are familiar with at least some of this language.
 
 Definitions have been included in the Help wherever it is felt this might aid understanding. However, the Help is not intended as a replacement for the Central Council Framework, and does not attempt to give exhaustive definitions for every term used.
