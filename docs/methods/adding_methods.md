@@ -23,11 +23,31 @@ Stage (required)
 Place Notation (required)
 :   The method's place notation. This can be specified in either full or condensed form. When verifying the method, Complib will automatically condense the place notation as much as possible. To learn how to use place notation, see [Place notation](place_notation.md).
 
+Transforms (optional)
+:   Transforms the method's place notation (and division ends) the next time the `Validate` button is clicked. See [Transforming methods](#transforming-methods) below.
+
 Division Ends (optional)
 :   For methods requiring divisions, specifies the row numbers at which the ends of each division occur. If the method has multiple divisions per lead, the corresponding division end rows should be separated with a colon (e.g., `2:8`).
 
 Notes (optional)
 :   Specifies a message to be displayed in the **Library Details** tab of the custom method's page. This is a good place to put any important information about the method which you may want to keep to hand.
+
+## Transforming methods
+The **Transforms** checkboxes below the place notation allow you to derive a related method from the one entered, without having to work out its place notation by hand. Select one or more transforms, then click `Validate`:
+
+Inverse (put place notation backwards)
+:   Rings the lead backwards: the place notation is put in reverse order, so the rows of each lead are rung in the opposite order. The leadend change remains the last change of the lead. If the method is **palindromic** (see [Symmetry](method_properties.md/#symmetry)), the inverse is identical to the original and a message says so.
+
+Reverse (invert each change)
+:   Turns the method back to front: each change is mirrored, so that places made at the front become places made at the back and vice versa (e.g. on 8 bells, `14` becomes `58`). The notation is also rotated by half a lead so that the leadend change remains last. If the method is **double**, the reverse is identical to the original and a message says so.
+
+Rotate by *n* changes
+:   Moves the first *n* changes of the lead to the end, so that the method starts *n* changes later. A negative number rotates in the opposite direction, moving the last *n* changes to the start, so rotating by `4` and then by `-4` returns to the original method. Numbers greater than the lead length wrap around, e.g. for a method with a lead length of 32, rotating by `34` is the same as rotating by `2`, and rotating by `-2` is the same as rotating by `30`.
+
+The transforms are applied in the order Inverse, Reverse, Rotate, each to the result of the previous one. Any [division ends](#the-add-method-page) are adjusted to match. The new place notation and division ends replace those entered, the checkboxes are cleared, and a message reports the transforms applied. The transformed method is then validated as usual, so you can check its name, diagram and properties before saving.
+
+!!! note
+    Transforms are applied once, when you click `Validate`. To undo a transform, apply the opposite transform (e.g. invert again, or rotate by the negative of the previous number), or re-enter the original place notation.
 
 ## Saving methods, method errors & warnings
 Complib will automatically attempt to validate a custom method as soon as its place notation is specified. If the provided place notation is valid, the custom method's full name, diagram and properties will be generated and displayed. Clicking the `Validate` button will force a re-validation.

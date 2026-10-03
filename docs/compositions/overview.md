@@ -97,7 +97,7 @@ Calling
 
     -   **Number of parts** (for multipart compositions);
     -   **Modifications to the calling** (e.g., calls or methods which change in certain parts);
-    -   **The observation bell**, for compositions in which it is not the highest numbered bell;
+    -   **The observation bell**, for compositions in which it is not the highest numbered bell (see [Alternative observation bell](#alternative-observation-bell));
     -   **Turning course definitions**;
     -   **Non-standard starts** (e.g., for compositions beginning at backstroke, or at a point other than the start of a lead/division);
     -   **Non-standard or user-defined calls**: these will be defined in words (e.g. Far, Near, Grandsire) or using [place notation](../methods/place_notation.md).
@@ -108,8 +108,41 @@ Method details
 Music
 :   A list of common **musical metrics** is given for the composition, together with **named rows** it features such as Queens or Tittums. See also: [Music score](#music-score).
 
+Alternative observation bell
+:   Registered users can present the composition using a different observation bell (see [Alternative observation bell](#alternative-observation-bell) below).
+
 Customise layout options
 :   Users can adjust the form and style of the layout to suit a wide variety of needs and preferences (see [Customising composition layouts](layout_options.md)).
+
+### Alternative observation bell
+Named [calling positions](calling_positions.md) such as **H** (Home) and **W** (Wrong) describe where a call is made by reference to the position of an **observation bell**. Most compositions use the tenor, but some are easier to follow, or to conduct, using a different bell. Registered users can present any composition using any bell of the stage as observation.
+
+Click the **eye** button at the top right of the Layout tab, next to the ![Icon: cog](../img/icon_cog.png){width="25"} layout options button, to open the Alternative observation bell menu:
+
+<!-- TODO: add an image clip of the eye button with its dropdown menu open, e.g. ../img/comp_observation_menu.png -->
+![Alternative observation bell menu](../img/comp_observation_menu.png){width="200"}
+
+Composition
+:   Presents the composition as it was entered. This is the default.
+
+Bells of the stage
+:   Each bell of the stage is listed. The composition's own observation bell is marked **(composition)**, and a tick shows the bell currently in use. Select a bell to lay out the composition with calling positions named relative to that bell.
+
+The rows of the composition are exactly the same whichever observation bell is chosen; only the way the calling is presented changes. While an alternative bell is selected, the eye button is highlighted, and the observation bell is noted under the calling, e.g. *2nd observation*. If the observation bell is not in the same position in every part, it is described as observation *in first part*.
+
+The selected bell is part of the page address, so the printable version, the rows and the blue line follow the same presentation, and a link to the page can be shared. To return to the original presentation, select **Composition**.
+
+#### Multipart compositions
+In a multipart composition, the chosen bell may only be at home at some of the partheads. In that case, the composition is presented with fewer parts, and a note under the calling explains this, for example:
+
+> 6 part presented as a 3 part with the 2nd observation
+
+If the parts cannot be regrouped evenly, the composition is presented as a one-part.
+
+If the composition cannot be laid out using the chosen bell at all, a warning such as *This composition cannot be laid out using the 7 as observation* is shown above the layout, and the original presentation is kept.
+
+!!! note
+    Presenting a composition with an alternative observation bell does not change the stored composition. To change the observation bell used by the composition itself, edit the composition and set the [Observation bell](adding_compositions_tabs_general.md/#observation-bell) on the General tab.
 
 ### Layout colour coding
 Various elements of the composition layout will change colour when displaying a composition which is false. The specific elements which change colour will depend on the format of the layout.
@@ -203,7 +236,7 @@ This tab lists any compositions which are related to the current composition (an
 The types of similarity relation are:
 
 Rotated calling
-:   The two compositions define the same sequence of calls, but beginning at different points.
+:   The two compositions define the same sequence of calls, but beginning at different points. A composition can be rotated in the composition editor using the [Rotate](adding_compositions_tabs_general.md/#rotating-the-composition) transform.
 
 Transposed calling
 :   The two compositions have the same sequence of calls, but with the calling positions transposed.

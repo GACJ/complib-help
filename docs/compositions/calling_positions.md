@@ -1,5 +1,7 @@
 # Calling positions
-Named calling positions denote specific leadheads by reference to the position of an **observation bell**, which on this page is always assumed to be the heaviest working bell.
+Named calling positions denote specific leadheads by reference to the position of an **observation bell**. This is usually the heaviest working bell, but a different bell can be chosen using the [Observation bell](adding_compositions_tabs_general.md/#observation-bell) field in the General tab. On this page, *the observation bell* means whichever bell has been chosen.
+
+A composition can also be viewed using a different observation bell, without changing it, from the [Alternative observation bell](overview.md/#alternative-observation-bell) menu on the composition page.
 
 Compositions have historically used common positions whose names have become standard. When entering a calling in the [Calling tab](adding_compositions_tabs_calling.md), these named positions can be used without needing to define them explicitly elsewhere.
 

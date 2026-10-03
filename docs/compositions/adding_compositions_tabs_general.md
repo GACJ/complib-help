@@ -407,6 +407,37 @@ Complib uses the Extents value to determine how many times the composition is ex
 
 If the Extents value is set too small, there may sections of the composition which are ignored because the composition comes round before that point is reached, or because the maximum number of false rows is been reached.
 
+## Observation bell
+This field is a dropdown menu which specifies the composition's **observation bell**: the bell by whose position the named [calling positions](calling_positions.md) (such as **H**, **W**, **M** and **B**) are interpreted. For example, with the 2nd as observation, a call at **H** is the call which puts the 2nd in the tenor's home position.
+
+The options are:
+
+A bell of the stage
+:   Bells above 9 are shown with their symbol, e.g. **10 (0)**, **11 (E)**. For a new composition, the tenor is selected by default, which is appropriate for most compositions.
+
+None
+:   For compositions which don't use named calling positions, such as those using only [numbered calling positions](adding_compositions_tabs_calling.md/#numbered-calling-positions), or those with no calls.
+
+The default calling positions are generated relative to the selected bell, so there is usually no need to define [observation masks](adding_compositions_tabs_calls.md/#observation-mask) in the Calls tab when using an observation bell other than the tenor. In a multipart composition, the observation bell is the bell observed in the first part; the calling positions in later parts are transposed by the partheads.
+
+!!! warning
+    Changing the observation bell changes the meaning of every named calling position in the calling. If you change it, check that the composition still pricks as you intend.
+
+To see how a composition would look with a different observation bell without editing it, use the [Alternative observation bell](overview.md/#alternative-observation-bell) menu on the composition page.
+
+### Observation bell warnings and errors
+??? danger "Error: `___` must be between 1 and the stage (`___`), or None."
+    ---
+
+    The selected observation bell is higher than the stage, for example because the stage has been reduced. Select a bell of the stage, or **None**.
+
+??? warning "Warning: not specified; tenor assumed for default calling positions."
+    ---
+
+    The observation bell is set to **None**, but the calling uses named calling positions. The tenor is used to interpret them. Select an observation bell to remove the warning.
+
+When the composition is saved, an observation bell is changed to **None** if the calling doesn't need one, i.e. if there are no calls, or only numbered calling positions are used.
+
 ## Default calls
 This field is a dropdown menu, from which you can select a default call type for the composition. This will determine the way that standard call symbols such as `-` and `s` are interpreted in the composition's [calling](adding_compositions_tabs_calling.md). It will also determine the default behaviour of entries in the [Calls tab](adding_compositions_tabs_calls.md).
 
@@ -450,3 +481,64 @@ There are a number of reasons you might want to save a false composition. For ex
 Being able to save a work-in-progress so that you can come back to it later, regardless of falseness, is useful in cases when debugging a complex composition, or when testing out new ideas.
 
 A false composition will be indicated with a ![Icon: false](../img/false.svg) next to its title on its composition page and in search results.
+
+## Transforms
+Transforms change the way a composition is defined, while keeping its changes the same. Any transformations are made in the editor only, and nothing is saved until you save the composition, so you can review the result first.
+
+### Rotating the composition
+Every composition stored in Complib starts and finishes with rounds, so it can equally be rung starting from any of its rows. Rotating a composition rewrites it so that it rings exactly the same changes, and has the same length, but starts from a different point. The new starting row becomes rounds, so the rows rung are transposed accordingly.
+
+The Transforms row reads:
+
+> Rotate composition to row [&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;] or by [&nbsp;&nbsp;&nbsp;] changes **Apply**
+
+Either:
+
+- enter a **row** of the composition to start from, e.g. `13527486`. If the row occurs more than once, e.g. in a multi-extent composition, the first occurrence is used. The row box is cleared after the rotation, and a message reports the number of changes rotated; or
+- enter a **number of changes** to rotate by. A negative number rotates in the opposite direction, so rotating by `6` and then by `-6` returns to the original composition.
+
+If a row is entered, the number of changes is ignored. Then click **Apply**. The calling, partheads, coursehead masks and other fields are updated, and the composition is pricked again so that its properties and layout reflect the new start.
+
+#### What changes
+Start row
+:   The composition starts at the chosen row. If that is part way through a lead, the [Start row number](#start-row-number) is set accordingly.
+
+Observation bell
+:   The new [observation bell](#observation-bell) is the bell that was in the original observation bell's position in the row rotated to. For example, if the tenor is observation in a composition of Major, and the row rotated to is `13527486`, then the 6th becomes the observation bell. A message reports the change. A composition with no observation bell keeps none.
+
+Partheads and calling positions
+:   These are transposed to match the new start. Coursehead masks are not changed, so check that they still suit the rotated composition, and edit them if necessary.
+
+Calling and method calling
+:   The calling is rotated to begin at the new start. [Named blocks](adding_compositions_tabs_calling.md/#named-blocks) are defined at their first use in the rotated calling, and calling alterations in multipart compositions are renumbered for the part in which the rotation starts. Where the structure of the calling cannot be kept, the calling or a named block is written out in full, and a message tells you.
+
+Parts
+:   The rotated composition may be presented with a different number of parts, e.g. as a one-part. A message tells you if this happens.
+
+!!! tip "Trying a different observation bell in a multipart"
+    In a multipart with cyclic partheads, such as a seven-part of Major with parthead `13456782`, rotating to a parthead rings the same rows with the same partheads, but starting from a different part. The effect is to change the observation bell, with the calling rewritten for the new bell. For example, if the 2nd is observation, rotating to `13456782` makes the 8th the observation bell. Rotating to each parthead in turn lets you choose the observation bell that gives the clearest calling. Use **Revert last rotation** to go back.
+
+Backstroke start
+:   Rotating by an odd number of changes does not change the [Backstroke start](#backstroke-start) setting. A message reminds you to check whether it should.
+
+The title, notes and other details are not changed, so check whether any of them need updating.
+
+After a rotation, a **Revert last rotation** button appears. Clicking it restores the composition as it was before the rotation. The button disappears if any other change is made to the composition.
+
+#### When a composition can't be rotated
+**Apply** is unavailable unless the composition:
+
+- has no errors;
+- is a round block; and
+- finishes at the same position in a lead as it starts.
+
+Hover over **Apply** to see the reason it is unavailable.
+
+A rotation is also refused if:
+
+- the row entered does not occur in the composition;
+- the rotation point falls within a call, in which case the message suggests the nearest numbers of changes which can be used instead; or
+- no calling can be found which both rings the rotated composition correctly and can be represented in the Calling tab. This can happen with some complex callings, e.g. calling alterations within named blocks. Expand **Details** under the message to see the closest calling that was found.
+
+!!! note
+    Rotating a composition is different from rotating a method using the [Rotate by](adding_compositions_tabs_methods.md/#rotate-by) field in the Methods tab, which changes the definition of a lead of the method within the composition, rather than the starting point of the whole composition.

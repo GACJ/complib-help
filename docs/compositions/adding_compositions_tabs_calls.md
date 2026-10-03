@@ -262,16 +262,19 @@ HL
 ## Mnemonic
 
 ## Heading
-Only used when defining a custom calling position, or when specifying an observation bell which is not the highest numbered bell. 
+Only used when defining a custom calling position, or a calling position which observes a different bell from the composition's [observation bell](adding_compositions_tabs_general.md/#observation-bell).
 
 The heading must be a single uppercase or lowercase letter [**A–Z, a–z**], or left blank. The heading value is used as a column heading for the corresponding calling position in the composition [layout](overview.md/#layout) when laid out by courses; the heading is inserted after the call's [symbol](#call-type-symbol) in the layout when laid out by leads, or when a calling alteration is given.
 
 The heading used should exactly match a calling position heading used under the [Calling tab](adding_compositions_tabs_calling.md). 
 
 ## Observation mask
-Only used when defining a custom calling position, or when specifying an observation bell which is not the highest numbered bell.
+Only used when defining a custom calling position, or a calling position which observes a different bell from the composition's [observation bell](adding_compositions_tabs_general.md/#observation-bell).
 
 An observation mask is a [**row mask**](adding_compositions_tabs_general.md/#what-is-a-row-mask) which gives the position of the observation bell *after* the call is made at the calling position indicated by the [Heading](#heading) value.
+
+!!! hint "Tip: Compositions with a non-tenor observation bell"
+    If all the calling positions in a composition use the same observation bell, set the [Observation bell](adding_compositions_tabs_general.md/#observation-bell) field in the General tab instead of defining observation masks. The standard calling positions are then generated for that bell automatically. Observation masks which match these standard positions are removed when the composition is saved.
 
 ??? note "Example: 2nd as observation"
     ---
@@ -279,13 +282,15 @@ An observation mask is a [**row mask**](adding_compositions_tabs_general.md/#wha
     ![Observation mask example: Yorkshire Surprise Royal](../img/observation_mask_example_yorkshire.png){width="250"}
     </center>
 
-    In this composition of Yorkshire Surprise Royal, the 2nd is the observation bell: all the calls are made in reference to its position, rather than that of the tenor. To achieve this, observation masks have been specified for all the calling positions used. These can be seen under the Calls tab by opening a [clone of the composition](https://complib.org/composition/123109/copy) (NB: must be logged in):
+    In this composition of Yorkshire Surprise Royal, the 2nd is the observation bell: all the calls are made in reference to its position, rather than that of the tenor. One way to achieve this is to specify observation masks for all the calling positions used. These can be seen under the Calls tab by opening a [clone of the composition](https://complib.org/composition/123109/copy) (NB: must be logged in):
 
     <center>
     ![Observation mask example: Row masks](../img/observation_mask_example_masks.png){width="500"}
     </center>
 
     Each observation mask specifies the position of bell 2 *after* the call at the corresponding calling position. All other bells are represented using wildcards (**x**).
+
+    Setting the [Observation bell](adding_compositions_tabs_general.md/#observation-bell) to **2** in the General tab achieves the same result without defining any observation masks.
 
 ## Further examples
 For more examples of compositions using the Calls tab, [see the Examples reference collection](https://complib.org/collection/10184/?chapter=Calls%20and%20Calling%20Positions). Click on a composition in the collection, then click ![Icon: clone](../img/icon_clone.png){width="25"}**Clone** to duplicate it in the composition editor. Navigating to the Calls tab will give you a peek at how the submitter has defined the calls in their composition.

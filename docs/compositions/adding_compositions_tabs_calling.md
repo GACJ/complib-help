@@ -63,11 +63,11 @@ Compositions generally use two types of calling position: [named positions](#nam
 A special kind of named position, unique to Stedman Triples, is used in [twin-bob compositions](#twin-bob-calling-positions).
 
 ### Named calling positions
-Named calling positions indicate that a call should be made when an **observation bell** reaches a specific part of the course. By default, the observation bell is the heaviest working bell.
+Named calling positions indicate that a call should be made when an **observation bell** reaches a specific part of the course. By default, the observation bell is the heaviest working bell, but a different bell can be chosen using the [Observation bell](adding_compositions_tabs_general.md/#observation-bell) field in the General tab.
 
 Most compositions use a small number of well-known calling positions with special names, such as **H** (Home) and **W** (Wrong). Complib also uses these named calling positions by default. [See the dedicated page on calling positions](calling_positions.md) for a full list of the default positions and their names.
 
-Custom named positions can be created by defining a new [Mnemonic](adding_compositions_tabs_calls.md/#mnemonic) and [Heading](adding_compositions_tabs_calls.md/#heading) in the [Calls tab](adding_compositions_tabs_calls.md). A different observation bell can also be specified using [observation masks](adding_compositions_tabs_calls.md/#observation-mask).
+Custom named positions can be created by defining a new [Mnemonic](adding_compositions_tabs_calls.md/#mnemonic) and [Heading](adding_compositions_tabs_calls.md/#heading) in the [Calls tab](adding_compositions_tabs_calls.md). Individual calling positions can also observe a different bell using [observation masks](adding_compositions_tabs_calls.md/#observation-mask).
 
 ### Numbered calling positions
 Numbered calling positions indicate a number of leads/divisions since the last **coursehead**.

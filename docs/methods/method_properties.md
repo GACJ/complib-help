@@ -216,7 +216,22 @@ Method above/below
         The exceptions to this are where a method which is much more widely known was nevertheless rung to a peal *after* another more obscure method sharing the same above/below work. One such example is [New Cambridge Surprise Major](https://complib.org/method/17029), which was pealed almost 50 years before [Cambridge Surprise Major](https://complib.org/method/16694) even though the latter was (pretty obviously!) known to the Exercise before the former.
 
 FCH Groups
-:   Lists the codes for the method's **false coursehead groups** (if applicable). See [this section of the Central Council Framework](https://framework.cccbr.org.uk/edition2/falsecourseheads.html) for a definition of the false course head groups.
+:   Lists the codes for the method's **false coursehead groups** (if applicable). These are shown for hunters on eight or more bells with Plain Bob leadheads. See [this section of the Central Council Framework](https://framework.cccbr.org.uk/edition2/falsecourseheads.html) for a definition of the false course head groups.
+
+In course FCHs / Out of course FCHs
+:   For even-stage methods with the treble as hunt bell which don't have FCH group codes (i.e. Minimus and Minor methods, and methods on eight or more bells without Plain Bob leadheads), the individual **false courseheads** (FCHs) of the plain course are listed instead. Each false coursehead is a coursehead whose plain course contains rows also found in the plain course from rounds. They are split into:
+
+    - **In course FCHs**, which are even rows, marked with a trailing `+` (e.g. `132546+`);
+    - **Out of course FCHs**, which are odd rows, marked with a trailing `-`.
+
+    A field is omitted if the method has no false courseheads of that kind.
+
+    !!! warning "Treble Dodging Minor"
+        Bands still ring false touches because they assume that the standard callings of Treble Dodging Minor, such as 3(WHW) or 3(IOI), will work for every method. There are now many hundreds of Treble Dodging Minor methods for which this is not the case, including methods which are false in the plain course, have uneven parity, are not palindromic, or contain single changes (four places made simultaneously).
+
+        For Minor, more than one **in course** FCH is a strong sign that true 720s are unlikely to be possible.
+
+        The reliable way to find true touches is to click ![Icon: find true to this](../img/icon_findtrueto.png){width="25"}**Find compositions true to this** on the [method page](overview.md/#toolbar) and select **Any** for length.
 
 Accepted extension path
 :   For methods with a compliant **extension** or **contraction** which has been named, lists the extension path(s) used to derive the accepted extension(s) or contraction(s) (see [Extensions](../advanced/extensions.md)).

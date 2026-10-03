@@ -96,6 +96,9 @@ When a **Rotate by** value is specified, that many changes and their the corresp
 
     The lead length of a method is listed under the Properties tab on its Method page (see [Method properties > Miscellaneous](../methods/method_properties.md/#miscellaneous)).
 
+!!! note
+    **Rotate by** changes the definition of a lead of the method. To start the whole composition from a different row, use the [Rotate](adding_compositions_tabs_general.md/#rotating-the-composition) transform in the General tab instead.
+
 ## Start row number
 This field specifies which row of the method it should be started from. The default value is 0. Almost all methods are rung with a starting row of 0.
 
