@@ -282,6 +282,45 @@ In such compositions, **the parthead rows typically occur in the middle of a lea
 
         If the number of generated partheads in the validation readout does not match the number of parts you expect the composition to have, then this is a sign that one or more of them has been entered incorrectly.
 
+## Section head(s)
+Complib draws a separator line in the composition's [layout](overview.md/#layout) at the start and end of the composition, between parts, and before and after [named blocks](adding_compositions_tabs_calling.md/#named-blocks). This field lets you add further separator lines, to divide the layout into sections of your choosing.
+
+A typical use is a composition with natural parts, e.g. with partheads 12345678, 13425678 and 14235678, which has to be entered as a one-part because the calling, or the methods rung, are different in each part. Adding section heads 13425678 and 14235678 draws a line at the end of each of its "parts", just as if it had been entered as a multipart.
+
+Section heads only affect how the composition is laid out. They are not part of the composition itself: they don't change its rows or properties, and aren't used when searching for compositions or checking for duplicates.
+
+Section heads must be valid rows at the same [stage](#stage) as the composition. If more than one section head is entered, they must be separated by commas (`,`).
+
+### Where the lines are drawn
+Any row of the composition can be used as a section head, though leadheads and courseheads are usually the most natural choice. A line is drawn:
+
+Laid out by courses
+:   under the course containing the section head row. If calls in consecutive courses would normally be compressed into a single line of the layout, the line is split at the section head.
+
+Laid out by leads
+:   under the lead containing the section head row.
+
+Blue line
+:   in purple under the section head row, provided [**Leadend underline**](../methods/blueline_options.md) is selected in the blue line options. Only one line is drawn under a row: a parthead line (green) takes precedence over a section head line, which takes precedence over a coursehead line (blue) and a leadhead line (black).
+
+Only one line is drawn at each point, so a section head at the end of a part, a named block or the composition doesn't add a second line. Lines for section heads within a named block are not drawn when the block is shown by its name, but are drawn when the block is written out in full, e.g. with [**Rows > Expand named blocks**](layout_options.md/#rows) selected.
+
+### Section heads in multipart compositions
+In a multipart composition, a section head is transposed by the [partheads](#partheads) in the same way as the composition, so a line is drawn in the same place in every part. The row entered can be taken from any part. If [**Show all parts**](layout_options.md/#rows) is selected, the line is shown in each part.
+
+As with partheads, you can put a plus (`+`) at the front of a section head to stop it being transposed, so that a line is drawn after that row only. This is useful when the row only occurs in one part, e.g. because of a calling alteration.
+
+??? note "Example: Section heads 13527486, +15738264"
+    ---
+    In a three-part composition with parthead 13425678, the section head 13527486 draws a line at that row in the first part, and at the corresponding rows of the second and third parts, 14537286 and 12547386. Entering either of those rows instead gives the same result.
+
+    The section head +15738264 draws a single line, at the row 15738264 only.
+
+### Repeated rows
+In a multi-extent composition, a row can occur more than once. By default, a section head marks the first occurrence of its row. To choose a later occurrence, add a colon (`:`) and the occurrence number after the row, e.g. `13425678:2` for the second occurrence.
+
+For a transposing section head, the occurrence is counted within each part. For a non-transposing (`+`) section head, it is counted through the whole composition.
+
 ## Coursehead mask(s)
 This field allows you to specify coursehead masks, which are used by Complib when formatting the composition's [layout](overview.md/#layout). Coursehead masks should be at the same [stage](#stage) as the composition, and must be separated by commas (`,`).
 
@@ -508,6 +547,9 @@ Observation bell
 
 Partheads and calling positions
 :   These are transposed to match the new start. Coursehead masks are not changed, so check that they still suit the rotated composition, and edit them if necessary.
+
+Section heads
+:   [Section heads](#section-heads) are changed so that lines are drawn at the same rows as before. Where possible, each section head is transposed to match the new start, otherwise they are recalculated and a message tells you. A section head at the row rotated to is removed, as that row is now the start of the composition, and a message tells you.
 
 Calling and method calling
 :   The calling is rotated to begin at the new start. [Named blocks](adding_compositions_tabs_calling.md/#named-blocks) are defined at their first use in the rotated calling, and calling alterations in multipart compositions are renumbered for the part in which the rotation starts. Where the structure of the calling cannot be kept, the calling or a named block is written out in full, and a message tells you.

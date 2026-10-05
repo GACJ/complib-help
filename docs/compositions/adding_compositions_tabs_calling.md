@@ -360,5 +360,8 @@ A block can be called multiple times in a row by enclosing the block name in ( p
 !!! note
     You will not see named blocks in the composition layout if **Rows > Expand named blocks** is selected in your [layout options](layout_options.md).
 
+!!! tip "Separator lines without named blocks"
+    Named blocks are shown in the layout between separator lines. To add a separator line to the layout without defining a named block, e.g. to mark the natural parts of a composition entered as a one-part, use [Section head(s)](adding_compositions_tabs_general.md/#section-heads) in the General tab.
+
 ## Troubleshooting
 Coming soon... hopefully.

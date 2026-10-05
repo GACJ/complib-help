@@ -93,7 +93,7 @@ Show all coursing orders (by courses)
 :   When selected, consecutive calls at the same position will be expanded in the coursing order display so that all coursing orders are shown. If **Columns > Coursing orders** is deselected, this option will have no effect.
 
 Expand named blocks
-:   When selected, all named blocks in the composition will be written out in full wherever they appear.
+:   When selected, all named blocks in the composition will be written out in full wherever they appear. The separator lines around named blocks are then not drawn, but lines for any [section heads](adding_compositions_tabs_general.md/#section-heads) within them are.
 
 Expand twin bobs
 :   When selected, prevents pairs of consecutive bobs at H, L, S and Q from being compressed in compositions of [Stedman Triples](https://complib.org/method/27985).

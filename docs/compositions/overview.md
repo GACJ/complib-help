@@ -167,6 +167,8 @@ There are a number of blue line options which are unique to compositions. These 
 -   **Plains**: marks plain leads/divisions, similarly to leads with calls. Default: **off**.
 -   **Method mnemonics**: Displays the method mnemonic of the method currently being rung at the beginning of each lead. Default: **on**.
 
+Any [section heads](adding_compositions_tabs_general.md/#section-heads) defined for the composition are underlined in purple when **Leadend underline** is selected. A section head line replaces a coursehead or leadhead line on the same row, but a parthead line takes precedence over it.
+
 !!! warning
     By default, the blue line tab will attempt to display the entire touch at once. For long lengths, or compositions on higher numbers, the rendering process may take some time. 
     
