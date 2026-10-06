@@ -301,7 +301,7 @@ Laid out by leads
 :   under the lead containing the section head row.
 
 Blue line
-:   in purple under the section head row, provided [**Leadend underline**](../methods/blueline_options.md) is selected in the blue line options. Only one line is drawn under a row: a parthead line (green) takes precedence over a section head line, which takes precedence over a coursehead line (blue) and a leadhead line (black).
+:   in purple, provided [**Leadend underline**](../methods/blueline_options.md) is selected in the blue line options. The line is placed in the same way as the coursehead and leadhead lines: above a section head that is a leadhead or coursehead, and below one that is a course end or division end in a method rung by divisions, such as Stedman. Where the method changes at the row it may be both, so two lines are drawn. Any other row is underlined. Only one line is drawn under a row: a parthead line (green) takes precedence over a section head line, which takes precedence over a coursehead line (blue) and a leadhead line (black).
 
 Only one line is drawn at each point, so a section head at the end of a part, a named block or the composition doesn't add a second line. Lines for section heads within a named block are not drawn when the block is shown by its name, but are drawn when the block is written out in full, e.g. with [**Rows > Expand named blocks**](layout_options.md/#rows) selected.
 
