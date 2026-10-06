@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://help.complib.org/collections/creating_collections/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Creating collections - Complib Help</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Creating collections";
+        var mkdocs_page_input_path = "collections/creating_collections.md";
+        var mkdocs_page_url = "/collections/creating_collections/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Complib Help
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Introduction</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../concepts/">Core concepts</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User Accounts</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../user/account_signup/">Signing up for an account</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../user/reset_password/">Resetting your password</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../user/user_profile/">User profile and settings</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Compositions</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../compositions/overview/">Composition pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../compositions/reading_compositions/">How to read compositions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../compositions/layout_options/">Customising composition layouts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../compositions/composition_properties/">Composition properties</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Adding & Editing Compositions</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../compositions/adding_compositions_overview/">Adding compositions: overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../compositions/adding_compositions_tabs_general/">General tab</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../compositions/adding_compositions_tabs_methods/">Methods tab</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../compositions/adding_compositions_tabs_calls/">Calls tab</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../compositions/adding_compositions_tabs_calling/">Calling tab</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../compositions/adding_compositions_tabs_performances/">Performances tab</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../compositions/adding_compositions_tabs_references/">References tab</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../compositions/calling_positions/">Calling positions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Methods</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../methods/overview/">Method pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../methods/blueline_options/">Customising the blue line</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../methods/method_properties/">Method properties</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../methods/adding_methods/">Adding methods</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../methods/place_notation/">Place notation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../methods/method_designer/">Using the method designer</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Collections</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../overview/">What are collections?</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Creating collections</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#type">Type</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#title">Title</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#volume">Volume</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#description">Description</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#additional-keywords-for-search">Additional keywords for search</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#publication-year">Publication year</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#isbn">ISBN</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#referenced-by">Referenced by</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#url-for-creating-page-links">URL for creating page links</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#url-for-creating-reference-links">URL for creating reference links</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#collection-complete">Collection complete</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#adding-items-to-a-collection">Adding items to a collection</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Searching Complib</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../search/quick_search/">Quick search</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../search/method_search/">Method search</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../search/composition_search/">Composition search</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../search/collection_search/">Collection search</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../search/extended_search/">Extended search</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Advanced Topics</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/huntbell_properties/">Hunt bell properties</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/extensions/">Extensions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/leadhead_codes/">Leadhead codes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/music_schemes/">Music schemes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/row_parity/">Row parity</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/complib_api/">Complib API</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Complib Help</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Collections</li>
+      <li class="breadcrumb-item active">Creating collections</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="creating-collections">Creating collections</h1>
+<p>Any registered user can create a custom collection.</p>
+<p>To get started, click on <strong>Create new &gt; New collection</strong> in the navbar or dropdown menu:</p>
+<p><img alt="Navbar Create New" src="../../img/navbar_create_new.png" width="200" />
+<img alt="Dropdown Menu Create New" src="../../img/dropdown_menu_create_new.png" width="200" /></p>
+<p>This will take you to the <strong>Add Collection page</strong> (<a href="https://complib.org/collection/add">https://complib.org/collection/add</a>), which will look something like this:</p>
+<p><img alt="Add Collection page" src="../../img/collection_addnew.png" width="400" /></p>
+<p>The fields on this page allow you to set up the collection however you wish. Some of the fields are required, but most can be ignored unless you have need of them.</p>
+<h3 id="type">Type</h3>
+<p><strong>Required</strong>. A drop-down menu with three options:</p>
+<dl>
+<dt>Mixed</dt>
+<dd>The default collection type. This specifies that the collection contains a mixture of compositions and methods.</dd>
+<dt>Composition</dt>
+<dd>The collection contains only compositions.</dd>
+<dt>Method</dt>
+<dd>The collection contains only methods.</dd>
+</dl>
+<p>The collection's type determines which Composition Library entries it can accept. This becomes relevant when <a href="#adding-items-to-a-collection">adding items to a collection</a>. It also affects the display of collection items when viewing a collection.</p>
+<h3 id="title">Title</h3>
+<p><strong>Required</strong>. The title of the collection. Has full Unicode support, including emoji.</p>
+<h3 id="volume">Volume</h3>
+<p>The name of the volume, for collections which are broken up into multiple volumes.</p>
+<h3 id="description">Description</h3>
+<p>A text description of the collection and what it contains. Use this to indicate to others (or to remind yourself!) what the collection is for.</p>
+<h3 id="additional-keywords-for-search">Additional keywords for search</h3>
+<h3 id="publication-year">Publication year</h3>
+<h3 id="isbn">ISBN</h3>
+<h3 id="referenced-by">Referenced by</h3>
+<h3 id="url-for-creating-page-links">URL for creating page links</h3>
+<h3 id="url-for-creating-reference-links">URL for creating reference links</h3>
+<h3 id="collection-complete">Collection complete</h3>
+<h2 id="adding-items-to-a-collection">Adding items to a collection</h2>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../overview/" class="btn btn-neutral float-left" title="What are collections?"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../search/quick_search/" class="btn btn-neutral float-right" title="Quick search">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../overview/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../search/quick_search/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
