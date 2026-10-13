@@ -35,7 +35,7 @@ Static
 :   The changes of the method are fixed, which is to say that they are not altered as the method is rung (unless a **call** is made).
 
 Dynamic
-:   The changes of the method are not fixed, and are dynamically altered as the method is rung. One type of "method" with dynamic changes is the loosely defined family of **Dixonoids**, where places are made depending on which numbered bell is leading. Complib does not currently support the definition of methods with dynamic changes.
+:   The changes of the method are not fixed, and are dynamically altered as the method is rung. One type of "method" with dynamic changes is the loosely defined family of **Dixonoids**, where places are made depending on which numbered bell is leading. Such methods are defined using conditional notation: see [Dynamic methods](dynamic_methods.md). Only some properties are determined for a Dynamic method, and the others are left blank.
 
 Cross
 :   The method's [place notation](place_notation.md) contains the cross change. This means that there is at least one change when no bell remains in the same place as in the previous row.

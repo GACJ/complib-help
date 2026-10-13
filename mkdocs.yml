@@ -27,6 +27,7 @@ nav:
     - Method properties: methods/method_properties.md
     - Adding methods: methods/adding_methods.md
     - Place notation: methods/place_notation.md
+    - Dynamic methods: methods/dynamic_methods.md
     - Using the method designer: methods/method_designer.md
   - 'Collections':
     - What are collections?: collections/overview.md

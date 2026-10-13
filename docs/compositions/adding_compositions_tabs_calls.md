@@ -259,6 +259,9 @@ SE
 HL
 :   Short for "half lead". Used for trims and fills by default.
 
+\*
+:   Reserved for [dynamic calls](#dynamic-calls), which have no fixed lead position.
+
 ## Mnemonic
 
 ## Heading
@@ -291,6 +294,54 @@ An observation mask is a [**row mask**](adding_compositions_tabs_general.md/#wha
     Each observation mask specifies the position of bell 2 *after* the call at the corresponding calling position. All other bells are represented using wildcards (**x**).
 
     Setting the [Observation bell](adding_compositions_tabs_general.md/#observation-bell) to **2** in the General tab achieves the same result without defining any observation masks.
+
+For a [dynamic call](#dynamic-calls), the observation mask is instead the condition for making the call, and may use the extended syntax described below.
+
+## Dynamic calls
+Dynamic calls can only be used in compositions which include a [Dynamic method](../methods/dynamic_methods.md). Because the leads of a Dynamic method may vary in length, a dynamic call has no fixed position in the lead. Instead, it is made as soon as its condition is satisfied, as if it were an extra clause of the method.
+
+A call is a dynamic call if its [Lead position name](#lead-position-name) is **\***. When a dynamic call is defined, a note to that effect is shown above the table.
+
+### How dynamic calls are made
+When a dynamic call is the next call in the calling, and a lead of a Dynamic method is being rung, Complib tests the call before the method's clauses at each step:
+
+1. The call's notation is applied, and its condition (the observation mask of the calling position) is tested on the **last row of the call**.
+2. If the condition is satisfied, the call's changes are rung, and the next call in the calling is tested straight away.
+3. If not, the method's clauses are applied as usual.
+
+A dynamic call adds its changes to the lead, and replaces none of the method's changes. It is not tested during leads of static methods: it waits until a lead of a Dynamic method is reached, and so do the calls after it in the calling. If the composition ends before the call's condition has been satisfied, an error names the call and its mask.
+
+### Defining dynamic calls
+Call type
+:   Any type other than Plain, Trim or Fill.
+
+Notation
+:   The call's place notation, which must have at least one change. It cannot use conditional notation.
+
+Changes replaced
+:   Must be left blank.
+
+Mnemonic
+:   Each calling position needs either a mnemonic letter, used in the calling as for other calls (e.g. `–H`), or a **lead number**. A lead number is an extra condition: the call is only made in that lead of the course, counting the leads as rung from the coursehead (including leads ended by calls). Lead numbers are used in the calling in the same way, e.g. `–3`, and should be given a blank heading.
+
+Observation mask
+:   The condition for making the call, which is required. It is written in the same way as a [condition in conditional notation](../methods/dynamic_methods.md/#conditions), but without the braces, and each mask must give a bell or `x` for every place:
+
+    - `x` is a wildcard for any bell, e.g. `xxxx56`;
+    - `h` or `b` after a mask requires a handstroke or backstroke row, e.g. `xxxxx6h`;
+    - `+` or `-` after a mask requires an even or odd row;
+    - masks separated by commas are alternatives, e.g. `xxxxx6h,xxxx6xb`;
+    - a final `|` makes the last row of the call a leadhead, e.g. `xxxx56|`.
+
+    In multipart compositions, the masks apply as written in the first part and are transposed by the parthead of each subsequent part, as for other calling positions.
+
+??? note "Example: Dixon's Minor with a dynamic bob"
+    ---
+    | Call type | Symbol | Notation | Changes replaced | Lead position name | Mnemonic | Heading | Observation mask |
+    |-----------|--------|----------|------------------|--------------------|----------|---------|------------------|
+    | Bob       | –      | 14       |                  | \*                 | H        | H       | xxxx56\|         |
+
+    With the calling `–H`, the bob is made at the first row where 14 would bring the 5th and 6th to 5ths and 6ths place, and that row becomes a leadhead. In the layout, the call is described as `– = 14 Bob: H 14{xxxx56|}`.
 
 ## Further examples
 For more examples of compositions using the Calls tab, [see the Examples reference collection](https://complib.org/collection/10184/?chapter=Calls%20and%20Calling%20Positions). Click on a composition in the collection, then click ![Icon: clone](../img/icon_clone.png){width="25"}**Clone** to duplicate it in the composition editor. Navigating to the Calls tab will give you a peek at how the submitter has defined the calls in their composition.

@@ -223,3 +223,6 @@ Leadhead change
 
 ## Jump changes
 Coming soon!
+
+## Conditional notation
+Place notation can also be divided into clauses with conditions, so that the changes rung depend on the rows reached, e.g. `-{h}12{1}|14{2,4}16`. Methods defined in this way are known as Dynamic methods. See [Dynamic methods](dynamic_methods.md) for a full description.

@@ -73,6 +73,9 @@ Every lead different
 Jump method
 :   The composition includes one or more methods which have **jump changes**.
 
+Dynamic method
+:   The composition includes one or more [Dynamic methods](../methods/dynamic_methods.md).
+
 ## Calls
 Standard calls
 :   The composition uses calls belonging to one, and only one, of the **standard call types**. These are:

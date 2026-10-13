@@ -26,8 +26,13 @@ Place Notation (required)
 Transforms (optional)
 :   Transforms the method's place notation (and division ends) the next time the `Validate` button is clicked. See [Transforming methods](#transforming-methods) below.
 
+    The place notation can also use conditional notation, to define a [Dynamic method](dynamic_methods.md).
+
+Conditional Description (required for Dynamic methods)
+:   A description in words of the rule of a [Dynamic method](dynamic_methods.md), shown on the method page. It must be left blank for other methods.
+
 Division Ends (optional)
-:   For methods requiring divisions, specifies the row numbers at which the ends of each division occur. If the method has multiple divisions per lead, the corresponding division end rows should be separated with a colon (e.g., `2:8`).
+:   For methods requiring divisions, specifies the row numbers at which the ends of each division occur. If the method has multiple divisions per lead, the corresponding division end rows should be separated with a colon (e.g., `2:8`). Division ends cannot be specified for a Dynamic method.
 
 Notes (optional)
 :   Specifies a message to be displayed in the **Library Details** tab of the custom method's page. This is a good place to put any important information about the method which you may want to keep to hand.
@@ -43,6 +48,8 @@ Reverse (invert each change)
 
 Rotate by *n* changes
 :   Moves the first *n* changes of the lead to the end, so that the method starts *n* changes later. A negative number rotates in the opposite direction, moving the last *n* changes to the start, so rotating by `4` and then by `-4` returns to the original method. Numbers greater than the lead length wrap around, e.g. for a method with a lead length of 32, rotating by `34` is the same as rotating by `2`, and rotating by `-2` is the same as rotating by `30`.
+
+Transforms cannot be applied to a [Dynamic method](dynamic_methods.md).
 
 The transforms are applied in the order Inverse, Reverse, Rotate, each to the result of the previous one. Any [division ends](#the-add-method-page) are adjusted to match. The new place notation and division ends replace those entered, the checkboxes are cleared, and a message reports the transforms applied. The transformed method is then validated as usual, so you can check its name, diagram and properties before saving.
 

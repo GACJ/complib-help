@@ -65,6 +65,7 @@ At the end of the lead of Lessness, another bob is called to bring up the next l
 ## Courseheads and leadheads
 
 ## Calls
+Calls other than the standard calls are described in notes below the layout, e.g. `– = 14 Bob`. A [dynamic call](adding_compositions_tabs_calls.md/#dynamic-calls), used with [Dynamic methods](../methods/dynamic_methods.md), is described by the clause made at each of its calling positions: the call's notation followed by its condition in braces, e.g. `– = 14 Bob: H 14{xxxx56|}, 3: 14{xxxxx6h}`. Here the bob at H is made at the first row where the 5th and 6th are in 5ths and 6ths place, and that row is a leadhead (`|`); the bob at `3:` is made in the third lead of the course, at the first handstroke row with the 6th in 6ths place.
 
 ## Calling positions
 Calling positions indicate to the conductor exactly where a call is supposed to take place. There are a number of different conventions regarding calling positions, and a number of standard names which conductors and composers need to be familiar with. 

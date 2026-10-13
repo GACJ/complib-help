@@ -7,6 +7,9 @@ To edit any value in the table, simply click on the relevant cell, then type a n
 
 If you have filled out the [Title](adding_compositions_tabs_general.md/#title) field under the [General tab](adding_compositions_tabs_general.md), then the Methods tab may already be populated with one or more entries.
 
+!!! note "Dynamic methods"
+    For a [Dynamic method](../methods/dynamic_methods.md/#dynamic-methods-in-compositions), Rotate by, Start row number and Length cannot be used, and the only lead position allowed is the lead end (row number 0).
+
 ## Method title
 To manually add methods to the table, begin typing its title in the [Method title](#method-title) column. As you type, Complib will attempt to auto-complete with the titles of any matching public methods, or private methods which you own. 
 
