@@ -27,7 +27,7 @@ Note that some calling positions mean different things depending on the stage, d
 | **N** (Ninths)   | 9 ||
 
 ## Dynamic calls
-The calling positions of a [dynamic call](adding_compositions_tabs_calls.md/#dynamic-calls) are not determined by the position of the observation bell. Each is defined in the Calls tab by a mnemonic (or a lead number) and a mask, which is the condition for making the call.
+The calling positions of a [dynamic call](adding_compositions_tabs_calls.md/#dynamic-calls) are not determined by the position of the observation bell. Each is defined in the Calls tab by a mnemonic (or a blank mnemonic, to be called by lead number) and a mask, which is the condition for making the call.
 
 ## Impact on default calls
 If you have not specified any under the General tab, Complib will attempt to guess the [default calls](adding_compositions_tabs_general.md/#default-calls) of a composition based on what named positions are present in the Calling tab.
