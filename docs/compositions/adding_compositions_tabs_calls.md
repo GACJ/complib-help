@@ -325,9 +325,9 @@ Mnemonic
 :   Each calling position needs either a mnemonic letter, used in the calling as for other calls (e.g. `–H`), or it can be called by **lead number**. As for numbered calling positions of other calls, leave the mnemonic and heading blank, and give the lead number in the calling, e.g. `–3`. A number cannot be used as a mnemonic. The lead number is an extra condition: the call is only made in that lead of the course, counting the leads as rung from the coursehead (including leads ended by calls). A dynamic call can have only one calling position with a blank mnemonic, whose mask applies to all the lead numbers called.
 
 Observation mask
-:   The condition for making the call, which is required. It is written in the same way as a [condition in conditional notation](../methods/dynamic_methods.md/#conditions), but without the braces, and each mask must give a bell or `x` for every place:
+:   The condition for making the call, which is required. It is written in the same way as a [condition in conditional notation](../methods/dynamic_methods.md/#conditions), but without the braces:
 
-    - `x` is a wildcard for any bell, e.g. `xxxx56`;
+    - `x` is a wildcard for any bell, e.g. `xxxx56`, and trailing `x`s may be left out, e.g. `xx1b` on six bells means `xx1xxxb`;
     - `h` or `b` after a mask requires a handstroke or backstroke row, e.g. `xxxxx6h`;
     - `+` or `-` after a mask requires an even or odd row;
     - masks separated by commas are alternatives, e.g. `xxxxx6h,xxxx6xb`;
