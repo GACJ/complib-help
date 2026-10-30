@@ -8,7 +8,7 @@ To edit any value in the table, simply click on the relevant cell, then type a n
 If you have filled out the [Title](adding_compositions_tabs_general.md/#title) field under the [General tab](adding_compositions_tabs_general.md), then the Methods tab may already be populated with one or more entries.
 
 !!! note "Dynamic methods"
-    For a [Dynamic method](../methods/dynamic_methods.md/#dynamic-methods-in-compositions), Rotate by, Start row number and Length cannot be used, and the only lead position allowed is the lead end (row number 0).
+    For a [Dynamic method](../methods/dynamic_methods.md/#dynamic-methods-in-compositions), Rotate by, Start row number and Length cannot be used, and the only lead position allowed is the lead end (row number 0). The method may be rung with different [Trigger bells](#trigger-bells).
 
 ## Method title
 To manually add methods to the table, begin typing its title in the [Method title](#method-title) column. As you type, Complib will attempt to auto-complete with the titles of any matching public methods, or private methods which you own. 
@@ -169,6 +169,30 @@ By default, this value will be equal to the method's **Lead length**, which can 
     2. You can define a second instance of the same method in the Methods table with a Length that is less than its Lead length. If so, you will need to give this instance a unique [method mnemonic](#mnemonic), and indicate a change-of-method at the appropriate place in the [Calling](adding_compositions_tabs_calling.md).
 
 ??? error "Error: [Method name] (`__`) - Length must be greater than zero."
+    ---
+
+    Self-explanatory.
+
+## Trigger bells
+This column only applies to [Dynamic methods](../methods/dynamic_methods.md), and must be left blank for other methods. It shows the method's **trigger bells**: the bells used in the [conditions](../methods/dynamic_methods.md/#conditions) of its conditional notation, in ascending order. For example, the trigger bells of Dixon's Minor (`-{h}12{1}|14{2,4}16`) are `124`.
+
+To ring the method with different trigger bells, replace each bell in place, keeping the same number of bells. Every condition of the method is changed in the same way. For example, changing `124` to `134` for Dixon's Minor replaces the 2 by the 3, so that 4ths are made at backstroke when the 3rd or 4th is leading. Each bell may only be used once.
+
+The method with its trigger bells replaced is rung and analysed in its own right (for example, for truth and the leadheads it produces), but it is still the same method in the composition, and is shown with its original title. A note below the layout describes the change, e.g. *Dixon's Minor with trigger bell 2 replaced by 3*, preceded by the method's mnemonic where more than one method is used.
+
+Clear the field, or enter the method's own trigger bells, to restore the method as defined.
+
+??? error "Error: [Method name] (`__`) - Trigger bells '`__`' must have `__` bells, one to replace each of `__`."
+    ---
+
+    The trigger bells must have the same number of bells as the method's own trigger bells, and each bell must be a bell of the stage and used only once.
+
+??? error "Error: [Method name] (`__`) - Trigger bells '`__`' do not give a valid method."
+    ---
+
+    With the trigger bells replaced, the plain course of the method does not come round, or a row is reached where none of its clauses can be rung.
+
+??? error "Error: [Method name] (`__`) - Trigger bells can only be set for a Dynamic method."
     ---
 
     Self-explanatory.

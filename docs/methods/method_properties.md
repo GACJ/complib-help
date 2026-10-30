@@ -157,6 +157,9 @@ Cyclic
 Rounds
 :   The method has only one lead/division and therefore only one leadhead, which must necessarily be equal to rounds on the same number of bells.
 
+Variable
+:   The leads of a [Dynamic method](dynamic_methods.md/#method-properties) do not all permute the bells in the same way, so the method has no single leadhead. The leadhead is shown as **Variable**.
+
 !!! note
     There are methods whose leadheads do not fall into any of the above categories (though a significant majority of methods do).
 
@@ -185,7 +188,7 @@ Place notation
 :   The method's place notation, given in Method XML format (see [Place notation](place_notation.md)).
 
 Leadhead
-:   The row reached after a single plain lead and, if applicable, the method's alphanumeric [leadhead code](../advanced/leadhead_codes.md).
+:   The row reached after a single plain lead and, if applicable, the method's alphanumeric [leadhead code](../advanced/leadhead_codes.md). For a Dynamic method whose leads permute the bells differently, this is shown as **Variable** (see [Leadheads](#leadheads)).
 
 Divisions
 :   Gives the length and arrangement of the method's division(s) if applicable.

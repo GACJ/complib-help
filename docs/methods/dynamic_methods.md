@@ -62,7 +62,11 @@ Dynamic methods are added in the same way as other methods (see [Adding methods]
 - Complib warns if another method has the same plain course.
 
 ## Method properties
-A Dynamic method is classified as **Dynamic** (see [Method properties](method_properties.md/#changes)), and has no class (such as Bob, Surprise or Treble Place). Properties which make sense for a Dynamic method are derived from its plain course, such as truth, the types of change it contains, its leadheads, the number of leads and the lead lengths. Other properties, such as symmetry, the leadhead code, hunt bells, falseness (FCH groups) and extensions, are not determined.
+A Dynamic method is classified as **Dynamic** (see [Method properties](method_properties.md/#changes)), and has no class (such as Bob, Surprise or Treble Place). Properties which make sense for a Dynamic method are derived from its plain course, such as truth, the types of change it contains, its leadheads, the number of leads and the lead lengths. Other properties, such as symmetry, the leadhead code, falseness (FCH groups) and extensions, are not determined.
+
+Hunt bells and working bells are found from the leadheads of the plain course, so the number of hunt bells and working bells always adds up to the stage. A bell is a hunt bell if it is in the same place at every leadhead, and the working bells are grouped into cycles of the bells which take each other's places at any of the leadheads. If lead ends are not marked, the plain course is a single lead, and all the bells are working bells.
+
+Because the leads of a Dynamic method may be different, the plain course does not always have a single **leadhead** (the row reached after one lead). The leadhead is fixed only if lead ends are marked and every lead of the plain course permutes the bells in the same way, as in Plain Bob, even if the leads are of different lengths. Otherwise the leadhead is shown as **Variable**, the method has the **Variable** [leadhead property](method_properties.md/#leadheads), and it is not found when searching by leadhead.
 
 On the method page:
 
@@ -76,6 +80,7 @@ Dynamic methods can be used in compositions, either alone or spliced with static
 - **Starting place** may be used.
 - **Rotate by**, **Start row number** and **Length** cannot be used.
 - Lead positions are counted relative to the lead end, and only the lead end (row number 0) may be used, e.g. the default **LE**.
+- **Trigger bells** may be replaced, to ring the method with its conditions applied to different bells. See [Trigger bells](../compositions/adding_compositions_tabs_methods.md/#trigger-bells).
 
 ### Calls at the lead end
 Calls with a lead position at the lead end (including the default calls) are made when a lead end clause is satisfied: the rows of that clause are replaced by the call, and the last row of the call is the leadhead. The number of changes in the clause must equal the call's [Changes replaced](../compositions/adding_compositions_tabs_calls.md/#changes-replaced) (one change by default). Calls cannot themselves use conditional notation.
@@ -91,6 +96,6 @@ The leadheads of a composition using a Dynamic method are the rows produced by l
 Compositions which use one or more Dynamic methods have the **Dynamic method** property (see [Composition properties](../compositions/composition_properties.md/#methods)), which can also be used in composition searches.
 
 ## Searching and the API
-Dynamic methods can be found in method searches using the **Dynamic** flag. Searching by place notation uses the conditional notation as Complib displays it.
+Dynamic methods can be found in method searches using the **Dynamic** flag, and those without a fixed leadhead using the **Variable** leadheads flag. Searching by place notation uses the conditional notation as Complib displays it.
 
-In the [Complib API](../advanced/complib_api.md), a Dynamic method has its conditional notation as its place notation, the `dynamic` flag set, its conditional description, and null values for the properties which are not determined.
+In the [Complib API](../advanced/complib_api.md), a Dynamic method has its conditional notation as its place notation, the `dynamic` flag set, its conditional description, and null values for the properties which are not determined, including the leadhead if it is variable.
