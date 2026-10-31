@@ -31,12 +31,14 @@ It's possible to add methods from multiple collections in this way, though the m
 Methods already in the table will not be duplicated if they are added again via collection. **If you want multiple copies of a method, you must add them manually.**
 
 ## Mnemonic
-A method mnemonic is a one- or two-character code which is used to represent the method in the composition's [layout](overview.md/#layout). Mnemonics are displayed by default in compositions of spliced, but they can be enabled for any composition by selecting **Columns > Method mnemonics** in the [composition layout options](layout_options.md).
+A method mnemonic is a code of one to four characters which is used to represent the method in the composition's [layout](overview.md/#layout). Mnemonics are displayed by default in compositions of spliced, but they can be enabled for any composition by selecting **Columns > Method mnemonics** in the [composition layout options](layout_options.md).
 
 ![Mnemonics example](../img/mnemonics_annotated.png){width="400"}
 
 !!! warning "Mnemonic restrictions"
-    Method mnemonics must have an uppercase letter [A–Z] as their first character. This may be optionally followed by a lowercase letter [a–z] or number [0–9].
+    Method mnemonics must have an uppercase letter [A–Z] as their first character. This may be optionally followed by up to three characters, each of which is a lowercase letter [a–z] or number [0–9]. For example, B, Bc, B2 and Bris are all valid mnemonics.
+
+    Because a mnemonic can end with numbers, use a space to separate a mnemonic from a following repeat count in a method calling. For example, `B 2(C)` is a lead of B followed by two leads of C, whereas `B2(C)` is an error.
 
     Method mnemonics must be unique. If two methods used in a composition have the same mnemonic, it will cause an error.
 
@@ -179,6 +181,8 @@ This column only applies to [Dynamic methods](../methods/dynamic_methods.md), an
 To ring the method with different trigger bells, replace each bell in place, keeping the same number of bells. Every condition of the method is changed in the same way. For example, changing `124` to `134` for Dixon's Minor replaces the 2 by the 3, so that 4ths are made at backstroke when the 3rd or 4th is leading. Each bell may only be used once.
 
 The method with its trigger bells replaced is rung and analysed in its own right (for example, for truth and the leadheads it produces), but it is still the same method in the composition, and is shown with its original title. A note below the layout describes the change, e.g. *Dixon's Minor with trigger bell 2 replaced by 3*, preceded by the method's mnemonic where more than one method is used.
+
+The same method can be given more than one mnemonic with different trigger bells. A change between them counts as a change of method, so the composition is treated as spliced and its layout shows the mnemonics by default.
 
 Clear the field, or enter the method's own trigger bells, to restore the method as defined.
 
