@@ -187,6 +187,17 @@ In addition to the above, the properties tab also lists miscellaneous informatio
 Place notation
 :   The method's place notation, given in Method XML format (see [Place notation](place_notation.md)).
 
+    The buttons below the **Place notation** label change how it is shown:
+
+    - **Standard**: the place notation as recorded, condensed with a comma where the method is palindromic.
+    - **Full**: the place notation written out in full, not reflected around a comma.
+    - **MicroSiril**: the place notation in [MicroSIRIL notation](place_notation.md/#microsiril-notation), e.g. `&-36-14-12-36-14-56,+12` for Cambridge Surprise Minor.
+    - **Copy**: copies the place notation to the clipboard in the format shown.
+
+    The format chosen is remembered, and is also used for the place notation in method search results, which have the same buttons in their heading and a copy button for each method.
+
+    For a [Dynamic method](dynamic_methods.md), whose changes depend on the rows reached, **Full** and **MicroSiril** give the changes of its plain course, reduced to the shortest sequence that repeats. They are not available if the plain course does not come round. **MicroSiril** is also not available for a method with [jump changes](place_notation.md/#jump-changes), as MicroSIRIL does not support them. Hover over a greyed-out button to see why it is unavailable.
+
 Leadhead
 :   The row reached after a single plain lead and, if applicable, the method's alphanumeric [leadhead code](../advanced/leadhead_codes.md). For a Dynamic method whose leads permute the bells differently, this is shown as **Variable** (see [Leadheads](#leadheads)).
 

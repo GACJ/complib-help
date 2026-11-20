@@ -279,11 +279,6 @@ Lead ends of Dynamic methods are described in the notes below the layout, e.g. *
 
     `L` and `D` can only be used for a static method.
 
-??? error "Error: [Method name] (`__`) - Rotate by is no longer supported. To start each lead at a different row, set the Start row number to that row and Lead ends to L0."
-    ---
-
-    Methods can no longer be rotated in a composition, and this error is only given for a composition submitted with a rotated method, e.g. through the API. See [Starting each lead at a different row](#starting-each-lead-at-a-different-row).
-
 ## Lead position row number and name
 These two values together define the location and name of a **Lead position**.
 

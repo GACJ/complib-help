@@ -183,7 +183,7 @@ which condenses to
 ## Alternative conventions
 When [creating a custom method](adding_methods.md) on Complib, you may use either the full or condensed form of the notation as specified above. You can use either **–** or **x** to represent the cross change. Complib will automatically condense the notation when validating the method, provided that the place notation itself is valid.
 
-While they can't be used for defining methods on Complib, there are other conventions for writing place notation, many of which are still very common. For the sake of convenience, here are a few you are likely to encounter elsewhere.
+There are other conventions for writing place notation, many of which are still very common. For the sake of convenience, here are a few you are likely to encounter elsewhere. Of these, only [MicroSIRIL notation](#microsiril-notation) can be used when defining a method on Complib.
 
 ### MicroSIRIL notation
 MicroSIRIL notation consists of three parts: a method group indicator, a symmetry indicator, and the place notation itself. 
@@ -220,6 +220,19 @@ Leadhead change
 :   A place notation element prefixed with **lh** or **le**, or sometimes simply separated from the main string by a space, is used to denote the leadhead (or leadend) change. This is most often used as an alternative to the method group indicator in MicroSIRIL format.
 
     Sometimes the actual leadhead row will be given rather than the place notation element. In order to obtain the terminal element, you will need to work out what change must be made at the end of the lead to get to the specified row.
+
+#### Using MicroSIRIL notation on Complib
+Place notation in MicroSIRIL notation can be pasted into the Place Notation field when [creating a custom method](adding_methods.md). Complib converts it to standard notation when the method is validated. Any text starting with `&` or `+`, optionally after a method group indicator, is treated as MicroSIRIL notation:
+
+- The place notation may be split into several parts, each starting with `&` (palindromic) or `+` (read as written), optionally separated by commas, e.g. `&-36-14-12-36-14-56,+12`. A final semicolon is ignored.
+- With a **Plain Bob** method group indicator (e.g. `b` at even stages, `p` at odd stages), the indicator's leadend change is added, unless the place notation already includes it. For example, `b &-36-14-12-36-14-56` becomes `-36-14-12-36-14-56,12`.
+- With a **Grandsire** method group indicator (e.g. `a` at odd stages), the place notation must be given for the whole lead.
+- With the method group indicator **z**, the place notation is used as written.
+- The leadend change can be given at the end instead, after `lh`, `le` or a space, e.g. `&-36-14-12-36-14-56 lh 12`. Complib does not accept a leadhead row in place of the change.
+
+Complib checks that the leadhead reached matches the method group indicator, and that the leadend change (for Plain Bob codes) or the change after the leadhead (for Grandsire codes) is the right one for that indicator. MicroSIRIL notation cannot define a [Dynamic method](dynamic_methods.md), or a method with [jump changes](#jump-changes).
+
+Complib can also show the place notation of any method in MicroSIRIL notation (without a method group indicator), using the **MicroSiril** button in the method's [Properties tab](method_properties.md/#miscellaneous).
 
 ## Jump changes
 Coming soon!

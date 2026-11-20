@@ -23,6 +23,8 @@ Stage (required)
 Place Notation (required)
 :   The method's place notation. This can be specified in either full or condensed form. When verifying the method, Complib will automatically condense the place notation as much as possible. To learn how to use place notation, see [Place notation](place_notation.md).
 
+    Place notation in [MicroSIRIL notation](place_notation.md/#microsiril-notation), starting with `&` or `+` (optionally after a leadhead code), can also be pasted in. It is converted to standard notation when the method is validated, e.g. `b &-36-14-12-36-14-56` becomes `-36-14-12-36-14-56,12`.
+
 Transforms (optional)
 :   Transforms the method's place notation (and division ends) the next time the `Validate` button is clicked. See [Transforming methods](#transforming-methods) below.
 
