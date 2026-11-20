@@ -196,10 +196,10 @@ For the great majority of compositions this structure is all that is needed. Som
 - calls at both the lead end and the half-lead: [5024 Bristol Surprise Major](https://complib.org/composition/75722)
 - spliced compositions using fragments of a method's lead of different lengths: [5076 Spliced Royal](https://complib.org/composition/33445)
 - variable hunt compositions: [5040 Grandsire Variable Treble Triples](https://complib.org/composition/76060)
-- methods rung by leads spliced with methods rung by divisions: [1963 3-Spliced Triples and Major](https://complib.org/composition/107515)
+- methods rung by leads spliced with methods rung by divisions, to avoid lines shown above and below a leadhead: [5000 2-Spliced Triples and Major](https://complib.org/composition/136170)
 - methods recorded with divisions presented by leads, or vice versa: [5040 Carter Triples](https://complib.org/composition/141725)
 - methods with divisions structured differently: [1260 Carter Triples](https://complib.org/composition/141415)
-- Dynamic methods with different lead end conditions: [720 Reverse Dixon's (as rung) Minor](https://complib.org/composition/75544)
+- Dynamic methods with different lead end conditions: [720 Reverse Dixon's Minor](https://complib.org/composition/170130)
 
 The Lead ends field gives the method the structure the composition needs, as described below.
 
