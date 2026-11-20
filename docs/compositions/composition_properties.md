@@ -183,6 +183,8 @@ Changes of method
 
         Changes of method which come about in this way are noted in the composition's Properties tab, but they will not be displayed in the composition's [layout](overview.md/#layout).
 
+        A change between two definitions of the same method which differ only in their [Lead ends](adding_compositions_tabs_methods.md/#lead-ends) is not counted, provided the method's changes continue without interruption, as lead ends change only where the leads are drawn and not the changes rung.
+
     ??? warning "Warning: Implied changes of method"
         ---
 

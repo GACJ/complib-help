@@ -343,5 +343,7 @@ Observation mask
 
     With the calling `–H`, the bob is made at the first row where 14 would bring the 5th and 6th to 5ths and 6ths place, and that row becomes a leadhead. In the layout, the call is described as `– = 14 Bob: H 14{xxxx56|}`.
 
+Where a dynamic call has more than one calling position, they are described in the order of the calling position columns of the layout, e.g. `z = 36.1236.36 Special call: D 36.1236.36{x1xx6h|}, B 36.1236.36{61h|}, ...`. Calling positions without a column, and those in layouts by leads, follow in order of mnemonic.
+
 ## Further examples
 For more examples of compositions using the Calls tab, [see the Examples reference collection](https://complib.org/collection/10184/?chapter=Calls%20and%20Calling%20Positions). Click on a composition in the collection, then click ![Icon: clone](../img/icon_clone.png){width="25"}**Clone** to duplicate it in the composition editor. Navigating to the Calls tab will give you a peek at how the submitter has defined the calls in their composition.

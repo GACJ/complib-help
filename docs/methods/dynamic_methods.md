@@ -78,9 +78,10 @@ On the method page:
 Dynamic methods can be used in compositions, either alone or spliced with static methods (changes of method happen at leadheads). In the [Methods tab](../compositions/adding_compositions_tabs_methods.md):
 
 - **Starting place** may be used.
-- **Rotate by**, **Start row number** and **Length** cannot be used.
+- **Start row number** and **Length** cannot be used.
 - Lead positions are counted relative to the lead end, and only the lead end (row number 0) may be used, e.g. the default **LE**.
 - **Trigger bells** may be replaced, to ring the method with its conditions applied to different bells. See [Trigger bells](../compositions/adding_compositions_tabs_methods.md/#trigger-bells).
+- **Lead ends** may be given as a condition which replaces the method's lead end clauses, so that its leads are framed differently without changing the changes rung, e.g. `1xxxxxb` to start each lead when the treble leads at backstroke. See [Lead ends](../compositions/adding_compositions_tabs_methods.md/#dynamic-methods).
 
 ### Calls at the lead end
 Calls with a lead position at the lead end (including the default calls) are made when a lead end clause is satisfied: the rows of that clause are replaced by the call, and the last row of the call is the leadhead. The number of changes in the clause must equal the call's [Changes replaced](../compositions/adding_compositions_tabs_calls.md/#changes-replaced) (one change by default). Calls cannot themselves use conditional notation.
@@ -91,7 +92,7 @@ Calling positions are determined in the same way as for static methods, from the
 Because the leads of a Dynamic method can vary in length, a call is not always best described by its position in the lead. A **dynamic call** has no fixed position: instead it is made as soon as its condition is satisfied, in the same way as a clause of the method. See [Dynamic calls](../compositions/adding_compositions_tabs_calls.md/#dynamic-calls) in the Calls tab.
 
 ### Leadheads, courseheads and partheads
-The leadheads of a composition using a Dynamic method are the rows produced by lead end clauses and by calls. Courseheads are the leadheads which match the [coursehead masks](../compositions/adding_compositions_tabs_general.md), and partheads are found in the usual way. Compositions are laid out by leads or courses as usual; the leads may be of different lengths.
+The leadheads of a composition using a Dynamic method are the rows produced by lead end clauses (or which satisfy the method's [Lead ends](../compositions/adding_compositions_tabs_methods.md/#dynamic-methods) condition, if given) and by calls. Courseheads are the leadheads which match the [coursehead masks](../compositions/adding_compositions_tabs_general.md), and partheads are found in the usual way. Compositions are laid out by leads or courses as usual; the leads may be of different lengths.
 
 Compositions which use one or more Dynamic methods have the **Dynamic method** property (see [Composition properties](../compositions/composition_properties.md/#methods)), which can also be used in composition searches.
 

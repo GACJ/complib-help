@@ -499,6 +499,21 @@ Stedman
 None
 :   Calls will not default to any particular type. If this call type is selected, then all calls used in the calling must be manually defined in the Calls tab. You should use this call type to signal to the conductor that the composition uses calls which fall outside any of the standard types.
 
+### Default calls warnings
+Complib checks that calls which are not defined in the Calls tab, and so take the default call type, suit the methods they are made in. This is particularly useful in spliced compositions of methods with different usual calls, such as Stedman and Grandsire.
+
+??? warning "Warning: Call default: `__` calls are used for calls not defined on the Calls tab, but [Method title] usually has `__` calls."
+    ---
+
+    A method usually rung with a different call type has no call defined for it in the Calls tab, so any calls made in it can only be the default calls. For example, in spliced Stedman and Grandsire with **Grandsire** default calls, and calls defined in the Calls tab only at the Grandsire lead ends, any calls in the Stedman would be Grandsire calls. Define the calls for that method in the Calls tab, or check that the default calls are what you intend.
+
+??? warning "Warning: Call default: `__` calls are used for calls not defined on the Calls tab, but the methods' usual calls are `__`."
+    ---
+
+    The default call type is not the usual call type for any of the methods in the composition, although each method has calls defined for it in the Calls tab. Check that the default calls are correct.
+
+These warnings are only given when the calling uses a call which is not defined in the Calls tab. Near and Far calls are treated as alike.
+
 ## Notes
 This field allows you to provide additional notes to accompany the composition. For instance, this could be a piece of historical information, some interesting feature of the composition, or your favourite recipe for parsnip soup. 
 
@@ -583,4 +598,4 @@ A rotation is also refused if:
 - no calling can be found which both rings the rotated composition correctly and can be represented in the Calling tab. This can happen with some complex callings, e.g. calling alterations within named blocks. Expand **Details** under the message to see the closest calling that was found.
 
 !!! note
-    Rotating a composition is different from rotating a method using the [Rotate by](adding_compositions_tabs_methods.md/#rotate-by) field in the Methods tab, which changes the definition of a lead of the method within the composition, rather than the starting point of the whole composition.
+    Rotating a composition is different from changing where a method's leads start using the [Start row number](adding_compositions_tabs_methods.md/#start-row-number) and [Lead ends](adding_compositions_tabs_methods.md/#lead-ends) fields in the Methods tab, which change the definition of a lead of the method within the composition, rather than the starting point of the whole composition.

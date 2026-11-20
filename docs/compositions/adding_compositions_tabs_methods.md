@@ -8,7 +8,7 @@ To edit any value in the table, simply click on the relevant cell, then type a n
 If you have filled out the [Title](adding_compositions_tabs_general.md/#title) field under the [General tab](adding_compositions_tabs_general.md), then the Methods tab may already be populated with one or more entries.
 
 !!! note "Dynamic methods"
-    For a [Dynamic method](../methods/dynamic_methods.md/#dynamic-methods-in-compositions), Rotate by, Start row number and Length cannot be used, and the only lead position allowed is the lead end (row number 0). The method may be rung with different [Trigger bells](#trigger-bells).
+    For a [Dynamic method](../methods/dynamic_methods.md/#dynamic-methods-in-compositions), Start row number and Length cannot be used, and the only lead position allowed is the lead end (row number 0). The method may be rung with different [Trigger bells](#trigger-bells), and its leads may be framed differently using [Lead ends](#lead-ends).
 
 ## Method title
 To manually add methods to the table, begin typing its title in the [Method title](#method-title) column. As you type, Complib will attempt to auto-complete with the titles of any matching public methods, or private methods which you own. 
@@ -74,36 +74,6 @@ Bells in positions which fall outside the bounds of the method will remain stati
 
     This means that it is only possible for a method to have a starting place greater than 1 when used in a composition whose stage is greater than its own, such as in **mixed-stage compositions**.
 
-## Rotate by
-This field specifies an amount by which the method's changes will be rotated. 
-
-When Complib pricks (generates the rows of) a composition, it does so by sequentially applying the changes of the method as specified in its [place notation](../methods/place_notation.md). By default, the pricker will start every lead from the first change of the method, given by the first element of the place notation. When it reaches the end, it will start again from the beginning, provided there is no change of method.
-
-When a **Rotate by** value is specified, that many changes and their the corresponding place notation elements will be removed from the start of the lead and reinserted at the end. This modified set of changes has become the definition of a lead of the method within the composition, and the final change is the new leadend change.
-
-??? note "Example"
-    ---
-
-    Below are the plain courses of two different rotations of [Double Court Bob Minor](https://complib.org/method/11118), together with their place notations. Lines are drawn through bell number 2, as well as the hunt bell in each case.
-
-    **Rotate by = 0**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`-14-36-16-36-14-16`
-
-    ![Double Court Bob Minor, unrotated](../img/double_court_unrotated.png)
-
-    ---
-
-    **Rotate by = 5**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`16-36-14-16-14-36-`
-
-    ![Double Court Bob Minor, rotated by 5](../img/double_court_rotated.png)
-
-!!! warning "Rotate by: restrictions"
-    The **Rotate by** value must be between 0 and (*L* – 1), where *L* is the **lead length** of the method. Attempting to specify a **Rotate by** value that falls outside this range will cause an error.
-
-    The lead length of a method is listed under the Properties tab on its Method page (see [Method properties > Miscellaneous](../methods/method_properties.md/#miscellaneous)).
-
-!!! note
-    **Rotate by** changes the definition of a lead of the method. To start the whole composition from a different row, use the [Rotate](adding_compositions_tabs_general.md/#rotating-the-composition) transform in the General tab instead.
-
 ## Start row number
 This field specifies which row of the method it should be started from. The default value is 0. Almost all methods are rung with a starting row of 0.
 
@@ -118,8 +88,8 @@ Whenenever a change-of-method results in this method being rung, this operation 
 
     The above diagram shows part of a composition of [Double Norwich Court Bob Major](https://complib.org/method/12470) in which the method's Start row number has been set to 4. Four changes have been removed from the first lead, resulting in a lead which is four rows shorter. 
 
-### Rotate by vs. Start row number
-The effects of a method's Start row number on the actual rows of the composition are, in some cases, identical to that of the [Rotate by](#rotate-by) field. The main difference is in which rows of the method will be treated as **leadheads and courseheads** when laying out the composition.
+### Starting each lead at a different row
+On its own, a method's Start row number only affects where the method starts: the leads of the method still begin at its own leadhead. To start **every** lead of the method from a different row, as if the method's place notation were rotated, set the Start row number to that row and the [Lead ends](#lead-ends) to `L0`. The rows rung are the same either way. The difference is in which rows are treated as **leadheads and courseheads** when laying out the composition.
 
 ??? note "Example"
     ---
@@ -136,13 +106,16 @@ The effects of a method's Start row number on the actual rows of the composition
 
     ---
 
-    A touch containing identical rows can be defined using a rotation instead. However, the appearance of the composition will be different. If instead the **Rotate by** value is set to 4, the blue line diagram becomes:
+    If the Lead ends are also set to `L0`, each lead starts from the 5th row of the method instead, and the blue line diagram becomes:
 
-    ![Grandsire Triples rotated 4 changes, blue line](../img/grandsire_rotated.png)
+    ![Grandsire Triples with each lead starting at row 4, blue line](../img/grandsire_rotated.png)
 
     And the corresponding layout:
 
-    ![Grandsire Triples rotated 4 changes, layout](../img/grandsire_rotated_layout.png){width="300"}
+    ![Grandsire Triples with each lead starting at row 4, layout](../img/grandsire_rotated_layout.png){width="300"}
+
+!!! note
+    This changes the definition of a lead of the method. To start the whole composition from a different row, use the [Rotate](adding_compositions_tabs_general.md/#rotating-the-composition) transform in the General tab instead.
 
 !!! warning 
     A method's Start row number should not be confused with the [composition's Start row number](adding_compositions_tabs_general.md/#start-row-number), which is set under the General tab. 
@@ -200,6 +173,116 @@ Clear the field, or enter the method's own trigger bells, to restore the method 
     ---
 
     Self-explanatory.
+
+## Lead ends
+This field sets where the leads of the method end in the composition, **without changing the changes rung**. It changes only where the lines are drawn in the blue line, which rows are treated as leadheads (and so courseheads and calling positions), and how leads are counted in the layout and when using [numbered calling positions](adding_compositions_tabs_calling.md). Leave it blank to use the lead ends recorded for the method.
+
+When a valid value is entered, it is shown in a standard form when the composition is validated, e.g. `l12,6` is shown as `L0,6`.
+
+### Leads and divisions
+Composers divide the rows of a method into fixed blocks, which are joined either by calls or without them (plains) to build longer true touches. For most methods we call these blocks *leads*; for principles such as Stedman we call them *divisions*. Conventionally, a line is drawn between blocks where they join.
+
+When a composition is presented by leads, only the first row of each block, the *leadhead*, is shown, and the other rows are hidden to keep the layout short. When it is presented by divisions, only the last row of each block is shown: the *division end*, or *six end* in Stedman. When the same composition is presented by courses, only the *course head* (the first leadhead of each course) or the *course end* (the last division end of each course) is shown.
+
+In Complib, a method normally rung by divisions has its divisions recorded with the method. Counting rounds as row 0, Stedman is recorded as divisions of six rows, ending after rows 2 and 8. A method with no recorded divisions is rung by leads: rounds is the first leadhead, and ringing all the changes of the method produces the next one.
+
+This structure also determines how Complib counts leads. The lead number goes up at each line between blocks, i.e. after a division end or before a leadhead. It goes back to 1 at each course end (by divisions) or course head (by leads). [Numbered calling positions](adding_compositions_tabs_calling.md), such as `–3` for a bob in the third lead or division, use these lead numbers. Calling positions such as W, B and H are found from the observation bell instead.
+
+For the great majority of compositions this structure is all that is needed. Some compositions, however, need the rows divided into blocks differently from the method's own leads or divisions, for example:
+
+- methods rotated, e.g. so that the treble's snap is the lead end: [5040 Spinning Jennie Delight Royal](https://complib.org/composition/33336)
+- a method spliced with itself, restarting part way through a lead: [720 Double College Bob Minor](https://complib.org/composition/56966)
+- half-lead spliced, where it is simpler to number the blocks by half-leads: [1280 5-Spliced Surprise Major](https://complib.org/composition/117809)
+- calls at both the lead end and the half-lead: [5024 Bristol Surprise Major](https://complib.org/composition/75722)
+- spliced compositions using fragments of a method's lead of different lengths: [5076 Spliced Royal](https://complib.org/composition/33445)
+- variable hunt compositions: [5040 Grandsire Variable Treble Triples](https://complib.org/composition/76060)
+- methods rung by leads spliced with methods rung by divisions: [1963 3-Spliced Triples and Major](https://complib.org/composition/107515)
+- methods recorded with divisions presented by leads, or vice versa: [5040 Carter Triples](https://complib.org/composition/141725)
+- methods with divisions structured differently: [1260 Carter Triples](https://complib.org/composition/141415)
+- Dynamic methods with different lead end conditions: [720 Reverse Dixon's (as rung) Minor](https://complib.org/composition/75544)
+
+The Lead ends field gives the method the structure the composition needs, as described below.
+
+### Static methods
+For a static (non-Dynamic) method, enter **L** (by leads) or **D** (by divisions), followed by a comma-separated list of row numbers in the lead. Row numbers are counted from the method's [Start row number](#start-row-number), in the same way as the [Lead position row number](#lead-position-row-number-and-name), so changing the Start row number moves the lead ends with it.
+
+L
+:   Each row given is a **leadhead**: the line is drawn above it. For example, `L0` makes the row the method starts from the leadhead, and `L0,6` in a Minor method with a lead of 12 changes divides each lead into two leads of six changes. `L` alone uses the method's own leadheads, and is useful for ringing a method recorded with divisions by leads instead.
+
+D
+:   Each row given is a **division end**: the line is drawn below it. For example, `D5,11` in Plain Bob Minor divides each lead at the half-lead and lead end. `D` alone uses the divisions recorded for the method, e.g. the sixes of Stedman.
+
+Row numbers may be from 0 to the lead length. The lead length is the same row as 0, so `L12` is the same as `L0` for a lead of 12 changes, and the two can't both be given.
+
+??? note "Example: starting each lead at a different row"
+    ---
+
+    Below are the plain courses of [Double Court Bob Minor](https://complib.org/method/11118) as recorded, and with each lead starting at the 6th row of the method. Lines are drawn through bell number 2, as well as the hunt bell in each case.
+
+    **Start row number 0, Lead ends blank**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`-14-36-16-36-14-16`
+
+    ![Double Court Bob Minor, as recorded](../img/double_court_unrotated.png)
+
+    ---
+
+    **Start row number 5, Lead ends `L0`**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`16-36-14-16-14-36-`
+
+    ![Double Court Bob Minor, with each lead starting at the 6th row](../img/double_court_rotated.png)
+
+??? note "Example: spliced Stedman and Grandsire"
+    ---
+
+    In a composition of Stedman spliced with Grandsire, the Grandsire may be rung in fragments which start part of the way through a lead, each defined with its own mnemonic and [Start row number](#start-row-number), e.g. Ga with Start row number 2, Gb with 4, and so on. Giving each fragment the Lead ends `L0` makes the row it starts from a leadhead, so the fragment starts a new lead, and courses and calling positions are counted correctly.
+
+Different lead ends do not make the method a different method. If the same method is given more than one mnemonic, and they differ only by their lead ends, a change between them which continues the method's changes is a change of mnemonic but not a [change of method](composition_properties.md/#miscellaneous), and the composition is not treated as spliced.
+
+Lead ends of static methods are not described in the notes below the layout, as the lines can be seen in the blue line.
+
+### Dynamic methods
+For a [Dynamic method](../methods/dynamic_methods.md), the lead ends are given by a condition which replaces the method's own [lead end clauses](../methods/dynamic_methods.md/#lead-ends), written in the same way as a [condition in conditional notation](../methods/dynamic_methods.md/#conditions) without the braces. A lead ends wherever the condition is satisfied, between whichever clauses it happens to be.
+
+Leadhead condition
+:   A condition on the first row of each lead, e.g. `1xxxxxb` makes a leadhead wherever the treble leads at backstroke.
+
+Leadend and leadhead conditions
+:   Conditions on the rows either side of the line, written `leadend|leadhead`, e.g. `1xxxxxh|1xxxxxb` makes a leadhead only where the treble leads at handstroke and backstroke, i.e. at the end of its full lead. Either side may be left out, e.g. `1xxxxxh|` gives a condition on the leadend alone.
+
+As in other conditions, trailing `x`s may be left out (e.g. `1b` for `1xxxxxb`), `h` or `b` requires a handstroke or backstroke row, `+` or `-` requires an even or odd row, and masks separated by commas are alternatives.
+
+Calls at the lead end are made at the reframed lead ends: the call replaces the change into the reframed leadhead. If the method's [Trigger bells](#trigger-bells) are replaced, the lead ends condition is changed in the same way.
+
+Lead ends of Dynamic methods are described in the notes below the layout, e.g. *Dixon's Minor with leadheads at 1b*.
+
+### Lead ends warnings and errors
+??? error "Error: [Method name] (`__`) - Lead ends '`__`' are not valid. Lead ends '`__`' of a Static method must be L (by leads) or D (by divisions) followed by rows counted from the start row, e.g. L0,6 or D2,8."
+    ---
+
+    Self-explanatory. Conditions such as `1xxxxxb` can only be used for a Dynamic method.
+
+??? error "Error: [Method name] (`__`) - Lead ends '`__`' are not valid. Lead ends '`__`' must be rows from 0 to `__`."
+    ---
+
+    Each row number must be from 0 to the lead length of the method.
+
+??? error "Error: [Method name] (`__`) - Lead ends '`__`' are not valid. Lead ends '`__`' contains row `__` more than once (row `__` is also row 0)."
+    ---
+
+    Each row may only be given once. Remember that the lead length is the same row as row 0.
+
+??? error "Error: [Method name] (`__`) - Lead ends '`__`' are not valid. Lead ends '`__`' must give the rows ending each division, as the method has no recorded divisions."
+    ---
+
+    `D` alone can only be used for a method which has recorded divisions, such as Stedman. For other methods, give the rows which end each division.
+
+??? error "Error: [Method name] (`__`) - Lead ends '`__`' are not valid. Lead ends '`__`' of a Dynamic method must be a condition on the leadhead, e.g. 1xxxxxb, or on the leadend and leadhead, e.g. 1xxxxxh|1xxxxxb."
+    ---
+
+    `L` and `D` can only be used for a static method.
+
+??? error "Error: [Method name] (`__`) - Rotate by is no longer supported. To start each lead at a different row, set the Start row number to that row and Lead ends to L0."
+    ---
+
+    Methods can no longer be rotated in a composition, and this error is only given for a composition submitted with a rotated method, e.g. through the API. See [Starting each lead at a different row](#starting-each-lead-at-a-different-row).
 
 ## Lead position row number and name
 These two values together define the location and name of a **Lead position**.
