@@ -79,6 +79,8 @@ Complib allows you to fine-tune how many lines are displayed and what they look 
 Hunt bell weight
 :   Specifies the **line weight** of all hunt bells. A value of 0 will hide the lines.
 
+    A method with no working bells to choose from, i.e. one whose plain course is a single lead, or a [Dynamic method](dynamic_methods.md) without lead ends, has a line drawn for every bell at this weight, over the bell numbers. Set the weight to 0 to choose the lines and numbers for each bell yourself, using the settings below.
+
 Working bell weight
 :   Specifies the line weight of the default working bell(s). A value of 0 will hide the line.
 
