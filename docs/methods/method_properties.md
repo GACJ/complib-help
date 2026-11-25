@@ -191,7 +191,7 @@ Place notation
 
     - **Standard**: the place notation as recorded, condensed with a comma where the method is palindromic.
     - **Full**: the place notation written out in full, not reflected around a comma.
-    - **MicroSiril**: the place notation in [MicroSIRIL notation](place_notation.md/#microsiril-notation), e.g. `&-36-14-12-36-14-56,+12` for Cambridge Surprise Minor.
+    - **MicroSiril**: the place notation in [MicroSIRIL notation](place_notation.md/#microsiril-notation), as written in MicroSIRIL method libraries: a method group indicator followed by a single string, e.g. `b &-3-4-2-3-4-5` for Cambridge Surprise Minor.
     - **Copy**: copies the place notation to the clipboard in the format shown.
 
     The format chosen is remembered, and is also used for the place notation in method search results, which have the same buttons in their heading and a copy button for each method.

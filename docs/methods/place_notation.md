@@ -227,12 +227,12 @@ Place notation in MicroSIRIL notation can be pasted into the Place Notation fiel
 - The place notation may be split into several parts, each starting with `&` (palindromic) or `+` (read as written), optionally separated by commas, e.g. `&-36-14-12-36-14-56,+12`. A final semicolon is ignored.
 - With a **Plain Bob** method group indicator (e.g. `b` at even stages, `p` at odd stages), the indicator's leadend change is added, unless the place notation already includes it. For example, `b &-36-14-12-36-14-56` becomes `-36-14-12-36-14-56,12`.
 - With a **Grandsire** method group indicator (e.g. `a` at odd stages), the place notation must be given for the whole lead.
-- With the method group indicator **z**, the place notation is used as written.
+- With the method group indicator **z**, the place notation is used as written. If **z** follows the places of a leadend change, e.g. `2z`, that leadend change is added, e.g. `2z &-1-1-1` is `-16-16-16,12`.
 - The leadend change can be given at the end instead, after `lh`, `le` or a space, e.g. `&-36-14-12-36-14-56 lh 12`. Complib does not accept a leadhead row in place of the change.
 
 Complib checks that the leadhead reached matches the method group indicator, and that the leadend change (for Plain Bob codes) or the change after the leadhead (for Grandsire codes) is the right one for that indicator. MicroSIRIL notation cannot define a [Dynamic method](dynamic_methods.md), or a method with [jump changes](#jump-changes).
 
-Complib can also show the place notation of any method in MicroSIRIL notation (without a method group indicator), using the **MicroSiril** button in the method's [Properties tab](method_properties.md/#miscellaneous).
+Complib can also show the place notation of any method in MicroSIRIL notation, using the **MicroSiril** button in the method's [Properties tab](method_properties.md/#miscellaneous). This uses the same format as Complib's MicroSIRIL library export: a method group indicator followed by a single string starting `&` or `+`, with no commas, e.g. `b &-3-4-2-3-4-5` for Cambridge Surprise Minor. A method with a palindromic lead and no method group indicator is shown with its leadend change, e.g. `4z &-1-1-1`, and any other method without one is given in full after `z`.
 
 ## Jump changes
 Coming soon!
